@@ -1,2 +1,2 @@
 test:
-	jshell --start PRINTING ./index.jsh
+	@ jshell -R -ea --feedback silent test.jsh

@@ -1,3 +1,1 @@
-/o PRINTING
-println("Hello, World!")
-/ex
+System.out.print("Hello, World!");
