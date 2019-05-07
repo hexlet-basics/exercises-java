@@ -1,5 +1,3 @@
-/o PRINTING
-println("Robert")
-println("Stannis")
-println("Renly")
-/ex
+System.out.print("Robert");
+System.out.print("Stannis");
+System.out.print("Renly");
