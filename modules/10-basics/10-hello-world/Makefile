@@ -1,2 +1,2 @@
 test:
-	@ jshell -R -ea --feedback silent test.jsh 2>&1
+	@ jshell -R -ea test.jsh 2>&1
