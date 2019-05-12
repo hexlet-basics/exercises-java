@@ -12,3 +12,4 @@ WORKDIR /exercises-java
 ENV JAVAPATH=/exercises-java/src
 
 COPY . /exercises-java
+RUN jshell --help #NOTE: create preferences dir
