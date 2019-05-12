@@ -16,9 +16,6 @@ compose-bash:
 compose-build:
 	docker-compose build
 
-gcloud-builds-submit:
-	gcloud builds submit --config cloudbuild.yaml .
-
 SUBDIRS := $(wildcard modules/**/*/.)
 
 lint:
