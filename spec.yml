@@ -2,6 +2,6 @@
 
 language:
   docker_image: "hexletbasics/exercises-java"
-  extension: jsh
-  exercise_filename: index.jsh
-  exercise_test_filename: test.jsh
+  extension: java
+  exercise_filename: Main.java
+  exercise_test_filename: Test.java
