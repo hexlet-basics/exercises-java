@@ -36,7 +36,8 @@ theory: |
 instructions: |
   Создайте однострочный комментарий с текстом: `You know nothing, John Snow!`.
 
-tips: []
+tips:
+  - "Если в редакторе есть запись `// BEGIN` и `// END`, то код нужно писать между этими строчками."
 
 definitions:
   - name: Комментарий
