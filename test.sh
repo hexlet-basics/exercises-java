@@ -1,1 +1,1 @@
-javac *.java; java Main 2>&1
+javac *.java; java Test 2>&1
