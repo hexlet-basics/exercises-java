@@ -1,2 +1,2 @@
 test:
-	@ javac Test.java; java Main; java Test 2>&1
+	@ javac Main.java; java Main; java Test 2>&1
