@@ -8,10 +8,8 @@ RUN apt-get update && apt-get install -yqq git python3-pip
 
 RUN pip3 install yamllint
 
-WORKDIR /exercises-java
-
-ENV JAVAPATH=/exercises-java/src
-
+WORKDIR /exercises-java-tmp
 COPY . /exercises-java
+WORKDIR /exercises-java
 
 RUN make compile
