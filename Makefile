@@ -21,6 +21,9 @@ SUBDIRS := $(wildcard modules/**/*/.)
 lint:
 	yamllint modules
 
+compile:
+	@(for i in $$(find . -type f -name Main.java); do javac $$(dirname $$i)/*.java ; done)
+
 test: $(SUBDIRS)
 $(SUBDIRS):
 	@echo
