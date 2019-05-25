@@ -13,6 +13,9 @@ class Test {
 
         String actual = out.toString();
 
+        System.setOut(System.out);
+        System.out.println(actual);
+
         if (!expected.equals(actual)) {
             throw new AssertionError("\"" + expected + "\" does not equal to \"" + actual + "\"");
         }

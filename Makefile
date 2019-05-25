@@ -30,4 +30,4 @@ $(SUBDIRS):
 	make test -s -C $@
 	@echo
 
-.PHONY: all $(SUBDIRS)
+.PHONY: all test $(SUBDIRS)
