@@ -16,10 +16,19 @@ compose-bash:
 compose-build:
 	docker-compose build
 
+build:
+	docker-compose build
+
 SUBDIRS := $(wildcard modules/**/*/.)
 
 lint:
 	yamllint modules
+
+compile:
+	@(for i in $$(find . -type f -name Main.java); do javac $$(dirname $$i)/*.java ; done)
+
+clean:
+	@$$(find . -type f -name *.class -delete)
 
 test: $(SUBDIRS)
 $(SUBDIRS):

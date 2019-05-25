@@ -1,4 +1,5 @@
-FROM openjdk:11-jdk-slim
+# https://github.com/k1s/janino-compiler
+FROM k42s/janino
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
@@ -7,8 +8,8 @@ RUN apt-get update && apt-get install -yqq git python3-pip
 
 RUN pip3 install yamllint
 
+WORKDIR /exercises-java-tmp
+COPY . /exercises-java
 WORKDIR /exercises-java
 
-ENV JAVAPATH=/exercises-java/src
-
-COPY . /exercises-java
+RUN make compile
