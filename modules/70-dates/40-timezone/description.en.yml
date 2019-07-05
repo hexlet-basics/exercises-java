@@ -1,0 +1,22 @@
+---
+
+name:  Time zones (timezone)
+theory: |
+
+  One of the most difficult parts when working with dates is time zones (time zones). The whole earth is divided into 24 time zones, so that in the neighboring zones time most often differs by an hour. Zero time is considered [Coordinated Universal Time] (https://ru.wikipedia.org/wiki/World_coordinated_time) (UTC). Time zones around the globe are expressed as a positive or negative offset from UTC. For example, in Moscow, the time zone is +3.
+
+  The highlight of this mechanism adds the transition to summer and winter time. And if the belts are strictly fixed, then the transition to winter and summer time is the prerogative of specific states that periodically introduce or cancel it. UTC time is never translated, offsets occur relative to it. In addition, there are a thousand and one problems.
+
+  The main rule when working with dates - storage and comparison should be made in UTC format. But it is better to display dates in the zone in which the user lives.
+
+  You can check the current zone with the `TimeZone.getDefault()ToString ()` function.
+
+instructions: |
+
+  Display information about the current time zone.
+
+tips:
+  - |
+    [Read more about the TimeZone class] (https://docs.oracle.com/javase/8/docs/api/java/util/TimeZone.html)
+
+definitions: []

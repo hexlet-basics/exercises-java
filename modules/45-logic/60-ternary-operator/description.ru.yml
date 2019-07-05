@@ -1,0 +1,103 @@
+---
+
+name: Тернарный оператор
+theory: |
+
+  #### Вкратце
+
+  ```
+  <predicate> ? <expression on true> : <expression on false>
+
+  // например
+  number >= 0 ? number : -number
+  ```
+
+  ---
+
+  Посмотрите на определение функции, которая возвращает модуль переданного числа:
+
+  ```java
+
+  public static int abs(int number) {
+      if (number >= 0) {
+          return number;
+      }
+
+      return -number;
+  }
+  ```
+
+  Можно ли записать её лаконичнее? Что-то вроде `return ОТВЕТ В ЗАВИСИМОСТИ ОТ УСЛОВИЯ`? Для этого справа от return должно быть выражение, но `if` — это инструкция, а не выражение.
+
+  В Java существует конструкция, которая по своему действию аналогична конструкции *if-else*, но при этом является выражением. Она называется **тернарный оператор**.
+
+  Тернарный оператор — единственный в своем роде оператор, требующий три операнда:
+
+  ```java
+
+  public static int abs(int number) {
+      return number >= 0 ? number : -number;
+  }
+  ```
+
+  Общий паттерн выглядит так: `<predicate> ? <expression on true> : <expression on false>`.
+
+  Давайте перепишем начальный вариант `getTypeOfSentence` аналогично:
+
+  Было:
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Hodor"); // => normal
+    getTypeOfSentence("Hodor?"); // => question
+  }
+
+  static String getTypeOfSentence(String sentence) {
+      var lastChar = sentence.charAt(sentence.length() - 1);
+      if (lastChar == '?') {
+          return "question";
+      }
+
+      return "normal";
+  }
+  ```
+
+  Стало:
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Hodor"); // => normal
+    getTypeOfSentence("Hodor?"); // => question
+  }
+
+  static String getTypeOfSentence(String sentence) {
+      var lastChar = sentence.charAt(sentence.length() - 1);
+      return (lastChar == '?') ? "question" : "normal";
+  }
+  ```
+
+  ---
+
+  Если вы помните, в чём сила выражений, то вероятно уже догадались, что тернарный оператор можно вкладывать в тернарный оператор. **Не делайте этого :)** Такой код тяжело и читать и отлаживать, это очень плохая практика.
+
+instructions: |
+
+  Реализуйте функцию `convertString`, которая принимает на вход строку и, если первая буква не заглавная, возвращает строку повторенную из исходной строки 2 раза. Если первая буква заглавная, то строка возвращается без изменений.
+
+  Примеры вызова:
+
+  ```java
+  convertString("Hello"); // => 'Hello'
+  convertString("hello"); // => 'hellohello'
+  ```
+
+  Повторить строчку можно используя функцию строки `repeat`. Чтобы выяснитья является ли буква заглавной, можно использовать функцию Character.isUpperCase(Char char).
+
+  Попробуйте написать два варианта функции: с обычным if-else, и с тернарным оператором.
+
+tips: []
+
+definitions:
+  - name: "Тернарный оператор"
+    description: |
+      Способ превратить простую условную инструкцию в выражение, например, `number >= 0 ? number : number`

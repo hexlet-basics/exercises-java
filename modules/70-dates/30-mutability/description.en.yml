@@ -1,0 +1,56 @@
+---
+
+name: Date Modifiability
+theory: |
+
+  Unlike all the data types that we dealt with in previous lessons,
+  Date values ​​can be changed. In fact, in Java, all types are divided into primitive
+  and reference. The values ​​of variables of primitive types are stored in the variable itself, and
+  variables of the reference type store not the value itself, but a reference to it. To reference types
+  for example, strings and, in some cases, numbers.
+
+  Since reference variables store only a reference to a value, several such variables
+  may refer to the same value. For strings or numbers this is not so important, because
+  these types are so arranged that they provide no way to change the value. If integer
+  integer number is created with a value of 3, then it will always have that value. But meanings
+  Date can be changed without changing the link itself, as in this example:
+
+  ```java
+  public static void main(String[] args) {
+    var date = new Date();
+    System.out.print(date.getYear())  // 2019
+    showNextYear(date);
+    System.out.print(date.getYear()); // 2020
+  }
+
+  public static void showNextYear(Date date) {
+    date.setYear(date.getYear() + 1);
+    System.out.print(date.getYear()); // 2020
+  }
+  ```
+
+  Do not do this in your functions, such a side effect can make debugging very difficult. If you need to perform any calculations on the date, it is better to create a new instance of Date with the new value of the year, month, day and time - rather than changing the existing one that came into your function from somewhere outside. Other solutions are possible.
+
+  It will not display the current date, as it would after date = new Date (), but the same
+  date, but in 2000. And although we submit the same link to print as before, it has changed
+  the value to which it points, and the effect of it is almost the same as if
+  we reassigned the date variable.
+
+  Besides the fact that in this way you can change the values ​​stored in variables,
+  without changing the variables themselves, the same rule applies to function arguments.
+  By passing to the Date function, we cannot be sure that this function will not change it.
+  (as we already know, such a change to something outside the function will be ** a side effect **).
+  At this stage of training, we are not ready to give any recommendations on this matter,
+  but since the previous lessons affirmed the immutability of function arguments, it is useful
+  be aware of this possibility of circumventing this immutability: of course, the variables passed
+  into a function, it will not change, but here are the Date values ​​to which these variables point -
+  can change, and the effect from the point of view of the calling code may be the same.
+
+instructions: |
+
+  Create the date variable, then set it 2000 year and output the date in the format `dd/mm/yyyy`.
+
+tips:
+  - []
+
+definitions: []

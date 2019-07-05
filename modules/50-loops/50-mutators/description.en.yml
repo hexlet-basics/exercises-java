@@ -1,0 +1,90 @@
+---
+
+name: Increment and Decrement
+theory: |
+
+  #### Briefly
+
+  - `i++` returns `i` and increases it by 1
+  - `i--` returns `i` and decreases it by 1
+
+  - `++i` increases `i` by 1 and returns the new value
+  - `--i` decreases `i` by 1 and returns the new value
+
+  ---
+
+  There are two statements in the Java language: **increment** `++` and **decrement** `--`, which are very often found with cycles. These unary operations increase and decrease by one the number written to the variable:
+
+  ```java
+  i = 0;
+  i++; // => 1
+  i++; // => 2
+
+  i--; // => 1
+  i--; // => 0
+  ```
+
+  In addition to the postfix form, they also have a prefix one:
+
+  ```java
+  i = 0;
+  ++i; // => 1
+  ++i; // => 2
+
+  --i; // => 1
+  --i; // => 0
+  ```
+
+  It seems that there is no difference between the postfix and prefix forms. But here begins the complexity.
+
+  Unlike all other operators that do not have side effects and simply return a new value, increment and decrement not only return a value, but also ** change ** the value of a variable.
+
+  When using prefix notation, the variable is first changed, and then the resulting value is returned.
+
+  When using postfix notation, vice versa: after the change, the value that was returned before the change of the variable is returned.
+
+  The rule works the same for increment and decrement. For simplicity, consider only the increment:
+
+  ```java
+  var x = 5;
+
+  System.out.println(++x); // => 6
+  System.out.println(x);   // => 6
+
+  System.out.println(x++); // => 6
+  System.out.println(x);   // => 7
+  ```
+
+  What's happening?
+
+  1. Brought to the screen `++x`. This is a prefix increment, so at first the value of the variable increased by 1, then the result returned and was displayed on the screen.
+  2. Since the value has changed, `System.out.println(x)` derived 6.
+  3. Now display `x++`. This is a postfix increment, so at first the value returned and was displayed on the screen, and then the variable increased by 1.
+  4. Since the value has changed, `System.out.print(x)` derived 7.
+
+  ---
+
+  Everything becomes especially terrible when the increment is inserted into other operations: `x = i++ - 7 + --h`. It is impossible to understand such a code, and writing it should be considered a serious crime.
+
+  For example, in JavaScript, the linter (the program that checks the code) immediately begins to swear when it sees the use of increment and decrement.
+
+  Recommendations for use:
+
+  * Never interfere with a single expression of an operation / function without side effects with operations / functions that have side effects.
+  * Use increment and decrement only where there is no difference between the prefix and postfix options: separately from everything, on its own line of code.
+
+instructions: |
+
+  Increment and decrement are not very important operations in Java, and you can always do without them. The task in this lesson is not directly related to this topic, but you can use increment and decrement to get used to them. The rest of this exercise - another training work with cycles, lines and conditions.
+
+  Implement the `filterString` function, which accepts a string and a character as input, and returns a new string in which the transferred character is deleted in all its positions.
+
+  Call example:
+
+  ```java
+  var str = "If I look back I am lost";
+  filterString(str, 'I'); // => 'f  look back am lost'
+  filterString(str, 'o'); // => 'If I lk back I am lst'
+  ```
+
+tips: []

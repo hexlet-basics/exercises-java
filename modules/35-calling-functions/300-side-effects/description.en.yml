@@ -1,0 +1,37 @@
+---
+
+name: Side effects
+theory: |
+
+  You have probably already noticed (maybe subconsciously) that `System.out.print` is also a function. It takes data of any type as input and displays it on the screen.
+
+  Attention, question: **what does the `System.out.print` function return?**
+
+  Answer: whatever she returns, this value is not used at all.
+
+  `System.out.print` displays something on the screen, but this is not a return value, it is just some action that the function performs.
+
+  Displaying and returning a value from a function is a different and independent operation. Technically, the output to the screen is equivalent to writing to a file (a bit special, but still a file). To understand this topic, you need to understand a little about the structure of operating systems, which is extremely important for programmers.
+
+  From the point of view of the program, output to the screen is the so-called **side effect**. A side effect is called actions that change the external environment (runtime). Such actions include any network interaction, interaction with the file system (reading and writing files), displaying information on the screen or printing on a printer, and so on. Understanding the principles of working with side effects greatly affects the programming style and the ability to build quality programs. This topic will be fully revealed in the courses on [Hexlet] (https://ru.hexlet.io/).
+
+  If some function calculates something and at the same time displays some data on the screen, then from the point of view of calculating the result, the output to the screen is **a side effect**. Of course, this term is not very suitable for print, because the purpose of this function is to display it, that is, it is its main effect, not a side effect; but
+  if we remember that from the point of view of mathematics, a function is an expression of the result through arguments, rather than the implementation of some actions, it becomes clear why any actions of the function are taken that, besides calculating the result, somehow change something in the program (except variables in the function itself), called side effects. Such actions include any network interaction, interaction with the file system (reading and writing files), displaying information on the screen or printing on a printer, and so on. Understanding the principles of working with side effects greatly affects the programming style and the ability to build quality programs. This topic will be fully revealed in the courses on [Hexlet] (https://ru.hexlet.io/).
+
+  Side effects - one of the main sources of problems and errors in software systems. Code with side effects is more difficult to test and less reliable than code without them. In this case, without side effects programming does not make sense. Without them it would be impossible to get the result of the program (write to the database, display on the screen, send over the network, and so on).
+
+instructions: |
+
+  This task is not directly related to the lesson. But doing it without creating variables is an important step in your professional development.
+
+  Display the mother's name, Dayneris Targaryen ("Daenerys Targaryen"), using the `Functions.parentFor` function without creating variables.
+
+  Recall that `Functions.parentFor` takes the first name of the child and returns the name of the parent. The second parameter function takes the line `father` or `mother`. So the function understands which parent to return. The default setting is `mother`.
+
+tips:
+  - |
+    [Side effect] (https://ru.wikipedia.org/wiki/Side-by_effect_(programming))
+
+definitions:
+  - name: side effect
+    description: "an action that changes the external environment (runtime). For example, displaying on the screen or sending a letter."

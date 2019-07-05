@@ -1,0 +1,64 @@
+---
+
+name: else
+theory: |
+
+  #### Вкратце
+
+  ```
+  if (условие) {
+    // код, который будет выполнен
+    // если условие истинно
+  } else {
+    // код, который будет выполнен
+    // если условие ложно
+  }
+  ```
+
+  ---
+
+  Попробуем изменить функцию из предыдущего примера так, чтобы она возвращала не просто тип предложения, а целую строку `Sentence is normal` или `Sentence is question`.
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Hodor"); // => Sentence is normal
+    getTypeOfSentence("Hodor?"); // => Sentence is question
+  }
+
+  static String getTypeOfSentence(String sentence) {
+    var lastChar = sentence.charAt(sentence.length() - 1);
+    var sentenceType = "";
+    if (lastChar == '?') {
+      sentenceType = "question";
+    } else {
+      sentenceType = "normal";
+    }
+
+    return "Sentence is " + sentenceType;
+  }
+  ```
+
+  Мы добавили `else` и новый блок с фигурными скобками. Этот блок выполнится, только если условие в `if` — ложь.
+
+  "Else" переводится «иначе», «в ином случае».
+
+instructions: |
+
+  Реализуйте функцию `normalizeUrl`, которая выполняет так называемую нормализацию данных. Она принимает адрес сайта и возвращает его с `https://` в начале.
+
+  Функция принимает адреса в виде `АДРЕС` или `https://АДРЕС`, но всегда возвращает адрес в виде `https://АДРЕС`
+
+  Можно использовать функцию `startsWith` чтобы проверить начинается ли строка с префикса `https://`. А потом на основе этого добавлять или не добавлять `https://`.
+
+  Примеры вызова:
+
+  ```java
+  normalizeUrl('google.com'); // => 'https://google.com'
+  normalizeUrl('https://ai.fi'); // => 'https://ai.fi'
+  ```
+
+tips: []
+
+definitions:
+  - name: "else"
+    description: "способ задать блок кода, который будет выполнен, если условие с `if` не удовлетворено"

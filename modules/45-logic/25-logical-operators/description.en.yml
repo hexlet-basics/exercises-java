@@ -1,0 +1,118 @@
+---
+
+name: Boolean operators
+theory: |
+
+  We already know how to write functions that check for single conditions. Now we will learn to build compound conditions.
+
+  A good example: password check. As you know, some sites when registering want a password of 8 to 20 characters in length. Honestly, this is a strange limitation, but what to do.
+
+  In mathematics we would write `8 < x < 20`, but in Java such a trick will not work (although there are languages ​​in which it will pass).
+
+  We have to make two separate logical expressions and connect them with a special operator "AND":
+
+  ##### Password is longer than 8 characters **AND** password is shorter than 20 characters.
+
+  Here is a function that accepts a password and says whether it meets the conditions (`true`) or does not match (`false`):
+
+  ```java
+
+  public static boolean isCorrectPassword(String password) {
+    int length = password.length();
+    return length > 8 && length < 20;
+  }
+
+  public static void main(String[] agrs) {
+    isCorrectPassword("qwerty"); // => false
+    isCorrectPassword("qwerty1234"); // => true
+    isCorrectPassword("zxcvbnmasdfghjkqwertyui"); // => false
+  }
+  ```
+
+  `&&` - means "and" (in mathematical logic it is called a conjunction). An entire expression is considered true only if each operand is true — each of the composite expressions. In other words, `&&` means "the one and the other."
+
+  The priority of this operator is lower than the priority of comparison operators, therefore the expression works correctly without parentheses.
+
+  In addition to `&&`, the operator `||` - “OR” (disjunction) is often used. It means "either that, or the other, or both."
+
+  Operators can be combined in any quantity and any sequence, but when `&&` and `||` occur at the same time, it is better to set the priority in brackets.
+
+  ---
+
+  Another example. We want to buy an apartment that meets the conditions: an area of ​​100 square meters. meters and more on any street **OR** area of ​​80 square meters. meters and more, but on the main street `Main Street`.
+
+  Write a function that checks the apartment. It takes two arguments: the area (number) and the name of the street (line):
+
+  ```java
+  public static void main(String[] agrs) {
+    System.out.print(isGoodApartment(91, "Queens Street")); // => false
+    System.out.print(isGoodApartment(78, "Queens Street")); // => false
+    System.out.print(isGoodApartment(70, "Main Street")); // => false
+
+    System.out.print(isGoodApartment(120, "Queens Street")); // => true
+    System.out.print(isGoodApartment(120, "Main Street")); // => true
+    System.out.print(isGoodApartment(80, "Main Street")); // => true
+  }
+
+  public static boolean isGoodApartment(String area, String street) {
+    return area >= 100 || (area >= 80 && "Main Street".equals(street));
+  }
+  ```
+
+  The area of ​​mathematics in which logical operators are studied is called Boolean algebra. Below are the “truth tables” - from them you can determine what the result of the operator will be:
+
+  #### And `&&`
+
+  | A     | B     | A && B   |
+  | ----- | ----- | -------  |
+  | TRUE  | TRUE  | **TRUE** |
+  | TRUE  | FALSE | FALSE    |
+  | FALSE | TRUE  | FALSE    |
+  | FALSE | FALSE | FALSE    |
+
+
+  #### OR `||`
+
+  | A     | B     | A \|\| B |
+  | ----- | ----- | -------- |
+  | TRUE  | TRUE  | **TRUE** |
+  | TRUE  | FALSE | **TRUE** |
+  | FALSE | TRUE  | **TRUE** |
+  | FALSE | FALSE | FALSE    |
+
+instructions: |
+
+  John instructed Sam to automatically recognize the Lannister soldiers on video. The idea of ​​automating the fortress watch seemed attractive to him. In the process, Sam needed to write a function that determines whether Lannister is in front of him or not. A little thought, Sam highlighted the following rules for determining Lannister:
+
+  ---
+
+  If a soldier has red armor ** And ** there is no shield
+
+  **OR**
+
+  if a soldier has a shield with a lion
+
+  **then this is Lannister**.
+
+  ---
+
+  ![](https://i.imgur.com/x08CIAC.jpg)
+
+  Write the function `isLannisterSoldier`, which takes two arguments as input:
+
+  1. The color of the armor (String). If the armor is red, then the string `red`.
+  2. `null` if there is no shield. The string `lion` if there is a shield, and on it is a lion.
+
+  The function returns `true` if Lannister is recognized, and `false` if not recognized.
+
+tips:
+  - |
+    [Boolean algebra] (https://ru.wikipedia.org/wiki/Buleva_algebra)
+  - |
+    [Conjunction] (https://ru.wikipedia.org/wiki/Conjunction)
+  - |
+    [Disjunction] (https://ru.wikipedia.org/wiki/Disjunction)
+
+definitions:
+  - name: "Logical operators"
+    description: "AND operators (&&), OR (||), allowing to create composite logical conditions."

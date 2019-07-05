@@ -1,0 +1,94 @@
+---
+
+name: Combining operations and functions
+theory: |
+
+  Logical operations are expressions. So **logical operations can be combined with other expressions**.
+
+  We want to check the parity of a number, that is, the multiplicity of two. In programming, use this approach: check the remainder of the division by 2:
+
+  - if the balance is 0, then the number was even
+  - if the remainder is not 0, then the number was odd
+
+  The remainder of division in arithmetic is one of the results of the division operation with the remainder. It is formed if the result of the division cannot be expressed by an integer, while the remainder of the division must be in absolute value less than the divisor. If the numbers are divided by each other without a remainder, or completely, then consider that the remainder is zero.
+
+  The operator `%` calculates the remainder of the division:
+
+  - `7 % 2` → `1`
+  - `21 % 3` → `0`
+  - `19 % 5` → `4`
+
+  With the help of it we will write the parity function:
+
+  ```java
+  public static void main(String[] args) {
+    isEven(10); // => true
+    isEven(3);  // => false
+  }
+
+  static boolean isEven(int number) {
+    return number % 2 == 0;
+  }
+  ```
+
+  In one expression, we combined the logical operator `==` (equality test) and the arithmetic operator `%`.
+
+  **The priority of arithmetic operations is higher than logical ones.** So, the arithmetic expression `number % 2` is calculated first, then the result participates in logical comparison.
+
+  This can be deciphered as follows: *“calculate the remainder of dividing the number number by 2 and compare with zero; then return the comparison result*.
+
+  ---
+
+  Another example: write a function that accepts a string and checks if the first letter is capitalized.
+
+  Algorithm:
+
+  1. Get and write to the variable the first character from the argument string.
+  2. Compare whether a character is equal to its large (capital) version.
+  3. We will return the result.
+
+  To work with characters in Java, the primitive data type char is used.
+
+  ```java
+  public static void main(String[] args) {
+    isFirstLetterInUpperCase("marmont"); // => false
+    isFirstLetterInUpperCase("Robb"); // => true
+  }
+
+  public static boolean isFirstLetterInUpperCase(String string) {
+    char firstLetter = string.charAt(0);
+    return Character.isUpperCase(firstLetter);
+  }
+  ```
+
+  We used the `Character.isUpperCase` function, it takes a symbol and checks if the character is in upper case. We pass it the first character of the string.
+
+  Try to say what is happening, in the same way as we deciphered the process in the example with isEven at the beginning of the lesson.
+
+  ---
+
+  ```java
+
+  String firstName = "Alexander";
+
+  firstName.charAt(0); // => A
+  ```
+
+instructions: |
+
+  Sam decided to study the history of Targaryenov from the time of the first people, but there were many books and information could be in any of them. Fortunately for Sam, most of the books were digitized by young maisters. He thought that it would be nice to write a function that analyzes the texts for the presence of references to the Targaryenov name.
+
+  Implement the `hasTargaryenReference` function, which accepts a string as input and checks if it starts with `Targaryen`. This can be done easily using the `startsWith` line function, which takes one parameter as input:
+
+  * Estimated start of line
+
+  ```java
+
+  hasTargaryenReference(""); // => false
+  hasTargaryenReference("Targari"); // => false
+  hasTargaryenReference("targaryen"); // => false
+  hasTargaryenReference("Targaryen"); // => true
+  ```
+
+tips:
+    - []

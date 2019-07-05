@@ -1,0 +1,61 @@
+---
+
+name: Return values
+theory: |
+
+  In the function call module, we mainly worked with functions that return a result, rather than display it on the screen. To be honest, the output to the screen is actually a learning element. In real code, no one displays anything on the screen (except for command line utilities). Functions return data that is consumed by other functions.
+
+  And only ultimately something is displayed on the screen, and sometimes nothing, because a Java application can simply respond to a request that some other application makes to it, and the result of the request is also returned to this application in some way, but already it will show it on the screen.
+
+  Learning to write functions that return information is the first step towards building truly useful programs.
+
+  Let's start with a trivial example: create and call a function that takes two numbers and returns the first number minus the second. Call it `sub`.
+
+  ```java
+  public static void main(String[] args) {
+    System.out.print(sub(10, 7));
+  }
+
+  static int sub(int a, int b) {
+    var result = a - b;
+    return result;
+  }
+  ```
+
+  <pre class='hexlet-basics-output'>3</pre>
+
+  Note: we know that **a function call is an expression**, so we transferred a call to one function to a call to another function - `System.out.print(sub(10, 7))`.
+
+  Return is given by the special instruction `return`. The right of `return` is the expression. Any expression. That is, we can do the calculations right after `return` without creating the variable `result`:
+
+  ```java
+  public static void main(String[] args) {
+    System.out.print(sub(2018, 1975));
+  }
+
+  static int sub(int a, int b) {
+    return a - b;
+  }
+  ```
+
+  <pre class='hexlet-basics-output'>43</pre>
+
+  After the execution of the function, the returned result "gets up" at the call site.
+
+instructions: |
+
+  Sam creates the family tree of different families. He constantly has to calculate the amount of space occupied by the names of the parents on the screen.
+
+  Create a `App.getParentNamesTotalLength` function for Sam. It should take one argument - the name of the child, and return the total number of characters in the names of the mother and father. The function should not display anything on the screen, only return a number.
+
+  To implement, use the existing function `Functions.parentFor`:
+
+  * Getting the mother name `Functions.parentFor(child, "mother")`, where `child` is the name of the child.
+  * Getting the father’s name `Functions.parentFor(child, "father")`, where `child` is the child’s name
+  * The length of the str string can be obtained as follows: `str.length()` is a special way of calling functions, which we will not study in detail yet.
+
+  You do not need to call your function, just define it.
+
+  As usual, the function needs to be public static, not just static, so that we can call it from another class.
+
+tips: []

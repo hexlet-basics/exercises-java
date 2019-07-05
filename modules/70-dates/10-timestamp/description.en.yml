@@ -1,0 +1,30 @@
+---
+
+name: Time
+theory: |
+
+  Have you ever thought about how time is stored in a computer? Turning the computer on and off does not affect the clock. It can be concluded that the clock in the computer works by itself.
+
+  It really is. The main computer clock is hardware, they live independent lives and have their own battery. When turned on, the computer reads the data of this watch, writes it to its memory and starts counting the time on its own. These watches are called system. Any change in the system clock affects the hardware.
+
+  In most operating systems (Linux, Unix, MacOS), the system time is in the Unix time format. It is defined as the number of seconds since midnight (00:00:00 UTC) on January 1, 1970 (Thursday); time from now is called the “Unix Era” (Unix Epoch). Unix time is represented by an integer number, which increases with each second passed without the need for calculations to determine the year, month, day, hour, or minute for human perception.
+
+  The specific date in the Unix time format is called the timestamp. For example, to get the current timestamp in Java, the `System.currentTimeMillis()` function is used.
+
+  ```java
+  System.currentTimeMillis(); // 1532435204
+  ```
+
+instructions: |
+
+  Implement the `getYear` function, which returns the year passed to the timestamp
+
+  ```java
+  getYear(1532435204); // 2018
+  `` `
+
+  For rounding down, use the function Math.floor(double a).
+
+tips: []
+
+definitions: []

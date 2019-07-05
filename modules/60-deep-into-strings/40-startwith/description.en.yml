@@ -1,0 +1,29 @@
+---
+
+name: Search for a starting position
+theory: |
+
+  One of the common tasks when working with strings is to determine whether one string is part of a (other substring) of another string. Most programming languages ​​have a built-in function designed specifically for this task. They are in Java, but it will be useful to write your own implementations.
+
+  ```java
+  "Valar Morgulis".indexOf("Morgulis"));  // 6
+  ```
+
+  In the example above, the function returns 6, which corresponds to the index of the letter M.
+
+  ```
+  "Valar Morgulis".indexOf("Valar"));  // 0
+  ```
+
+instructions: |
+
+  Implement the `startsWith` function, which determines whether the string starts with a substring.
+
+  ```
+  startsWith("Baratheon", "on"); // false
+  startsWith("Baratheon", "Bar"); // true
+  ```
+
+tips: []
+
+definitions: []

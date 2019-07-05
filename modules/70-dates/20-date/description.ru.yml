@@ -1,0 +1,46 @@
+---
+
+name: Date
+theory: |
+
+  Один  из главных функций способов для работы с датой и временем  - это класс java.util.Date.
+
+  Если создать объекта Date с пустым конструктором — результатом будет текущая дата и время на момент создания объекта.
+
+  ```java
+  Date date = new Date();
+  System.out.print(date); //Wen Feb 27 16:06:53 YEKT 2019
+  ```
+
+  Существует и другой конструктор для Date: можно указать точное количество миллисекунд, которое прошло с 00:00 1 января 1970 года до требуемой даты, и она будет создана:
+
+  ```java
+  Date date = new Date(1212121212121L);
+  System.out.println(date); //Fri May 30 10:20:12 YEKST 2008
+  ```
+
+  Для того, чтобы отображать дату и время в удобном формате можно использовать класс SimpleDataFormat:
+
+  ```java
+  Date d = new Date();
+  SimpleDateFormat format1 = new SimpleDateFormat("dd.MM.yyyy hh:mm");
+  SimpleDateFormat format2 = new SimpleDateFormat("День dd Месяц MM Год yyyy Время hh:mm");
+  System.out.println(format1.format(d));  // 25.02.2013 09:03
+  System.out.println(format2.format(d));  // День 25 Месяц 02 Год 2013 Время 09:03
+  ```
+
+instructions: |
+
+  Реализуйте функцию `getCustomDate`, которая возвращает строку в формате `15/03/1985` на основе переданного timestamp.
+
+  ```java
+  getCustomDate(1532435204); // 24/07/2018;
+  getCustomDate(532435204); // 15/11/1986;
+  getCustomDate(5324352); // 03/03/1970;
+  ```
+
+tips:
+  - |
+    [Примеры форматов дат] (https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html)
+
+definitions: []

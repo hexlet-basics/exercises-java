@@ -1,0 +1,47 @@
+---
+
+name: Boolean operators 2
+theory: |
+
+  Logical operators - an important topic, so you should fix it with an additional example and exercise.
+
+  Let's try to implement a function that checks the year for leap year. A year will be a leap year, if it is a multiple of 400 or it is a multiple of 4 and not a multiple of 100. As you can see, the definition already contains all the necessary logic, it remains only to shift it to the code:
+
+  ```java
+  public static void main(String[] args) {
+    isLeapYear(2018); // => false
+    isLeapYear(2017); // => false
+    isLeapYear(2016); // => true
+  }
+
+  public static boolean isLeapYear(int year) {
+    return year % 400 == 0 || (year % 4 == 0 && year % 100 !== 0);
+  }
+  ```
+
+  We will analyze in parts:
+
+  - the first condition `year% 400 == 0`: the remainder of dividing by 400 is 0, then the number is a multiple of 400
+  - `||` **OR**
+  - the second condition `(year% 4 == 0 && year% 100! = 0)`
+    - `year% 4 == 0`: the remainder of dividing by 4 is 0, so the number is a multiple of 4
+    - `&&` ** and **
+    - `year% 100! = 0`: the remainder of the division by 100 is not equal to 0, which means that the number is not a multiple of 100
+
+
+instructions: |
+
+  Write the function `isNeutralSoldier`, which takes two arguments as input:
+
+  1. The color of the armor (string). The options are: "red", "yellow", "black".
+  2. The color of the shield (string). The options are: "red", "yellow", "black".
+
+  The function returns `true` if *the color of the armor is not red* and *the color of the shield is black*. In other cases, it returns `false`.
+
+  Call examples:
+
+  ```java
+  isNeutralSoldier("yellow", "black"); // => true
+  isNeutralSoldier("red", "black");    // => false
+  isNeutralSoldier("red", "red");      // => false
+  ```

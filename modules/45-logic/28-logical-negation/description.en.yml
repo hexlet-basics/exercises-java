@@ -1,0 +1,37 @@
+---
+
+name: Negation
+theory: |
+
+  Along with the conjunction (**AND**) and the disjunction (**OR**), the operation “**negative**” is often used. Negation changes the logical value to the opposite.
+
+  In programming, it corresponds to the unary operator `!`.
+
+  If there is a function that checks the parity of a number, then using the negation you can perform oddness checking:
+
+  ```java
+  public static void main(String[] args) {
+    isEven(10);  // => true
+    !isEven(10); // => false
+  }
+  static boolean isEven(int number) {
+    return number % 2 == 0;
+  }
+  ```
+
+  That is, we simply added `!` To the left of the function call and got the opposite effect.
+
+  Denial is a powerful tool that allows you to succinctly express the conceived rules in your code without having to write new functions.
+
+instructions: |
+
+  Implement the `App.isNotLannisterSoldier` function, which checks that the soldier is not a Lannister. The function accepts the input of the same arguments as the function `isLannisterSoldier`:
+
+  1. The color of the armor (string). If the armor is red, then the string `red`.
+  2. `null` if there is no shield. The string `lion` if there is a shield, and on it is a lion.
+
+  You can use the ready-to-use function `Functions.isLannisterSoldier`. You can use it to not write all the logical conditions again.
+
+tips:
+  - |
+    [Laws of De Morgan] (https://ru.wikipedia.org/wiki/Laws_de_Morgana)

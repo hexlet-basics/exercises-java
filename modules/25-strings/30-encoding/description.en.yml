@@ -1,0 +1,65 @@
+---
+
+name: Encoding
+theory: |
+
+  At the deepest level, the computer operates exclusively with the numbers `0` and` 1`. This is the so-called [binary code] (https://ru.wikipedia.org/wiki/Dual_code), and the ones and zeros are called bits, from "binary digit" - "binary digit".
+
+  The usual numbers familiar to us in the decimal number system are encoded using binary numbers:
+
+  - 0 ← 0
+  - 1 ← 1
+  - 2 ← 10
+  - 3 ← 11
+  - 4 ← 100
+  - 5 ← 101
+
+  But what about the text? The computer does not really know anything about letters, punctuation and other text characters. All these characters are also encoded with numbers.
+
+  You can take the English alphabet and give each letter a number, starting from one in order:
+
+  - a ← 1
+  - b ← ​​2
+  - c ← 3
+  - d ← 4
+  - ...
+  - z ← 26
+
+  Then you can teach a computer to understand this table and translate text into numbers and vice versa - numbers into text:
+
+  - `hello` → `8` `5` `12` `12` `15`
+  - `7` `15` `15` `4` → `good`
+
+  This is the essence of **encodings**.
+
+  In addition to letters of the alphabet, punctuation marks and other useful characters are included in the charset tables. You've probably come across encodings like [ASCII] (https://ru.wikipedia.org/wiki/ASCII) or [UTF-8] (https://ru.wikipedia.org/wiki/UTF-8).
+
+  Different encodings contain different numbers of characters. Initially, small tables like ASCII were sufficient for most tasks. But it has only Latin letters, a few simple characters like `%` and `?` And special control characters such as line breaks.
+
+  With the spread of computers, different countries needed their own wider tables. Including for Cyrillic letters, oriental hieroglyphs, Arabic script, additional mathematical and typographic symbols, and later even for emoji-emoticons.
+
+  Today, in most cases, one of the [unicode] variants is used (https://ru.wikipedia.org/wiki/Unicode), which includes signs of almost all the written languages ​​of the world.
+
+instructions: |
+
+  In Java, you can "request" and display any character from the ASCII encoding. For example:
+
+  ```java
+  System.out.print((char) 63);
+  ```
+
+  The character with the number 63 is displayed on the screen - the question mark `?`. In this way, you can display any character.
+
+  Find the ASCII code table on the Internet. You can use queries like "ascii codes table" or "ascii codes". Usually in such tables, codes are indicated in several numeral systems: decimal, binary, octal and hexadecimal. We are interested in decimal code (*dec* or *decimal*).
+
+  Using the example above and the table found, display `~^%`.
+
+  (Of course, you can “trick” the tests and just do `System.out.print("~^%")`, but it will be completely uninteresting :)
+
+
+tips: []
+
+
+definitions:
+  - name: "Encoding"
+    description: "A set of characters encoded using numbers to represent text electronically."

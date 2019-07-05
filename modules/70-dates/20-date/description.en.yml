@@ -1,0 +1,44 @@
+---
+
+name: Date
+theory: |
+
+  One of the main functions of the methods for working with date and time is the java.util.Date class.
+
+  If you create a Date object with an empty constructor, the result will be the current date and time at the time the object was created.
+
+  ```java
+  Date date = new Date();
+  System.out.print(date); //Wen Feb 27 16:06:53 YEKT 2019
+  ```
+
+  There is another constructor for Date: you can specify the exact number of milliseconds that elapsed from 00:00 on January 1, 1970 to the required date, and it will be created:
+
+  ```java
+  Date date = new Date(1212121212121L);
+  System.out.println(date); //Fri May 30 10:20:12 YEKST 2008
+  ```
+
+  In order to display the date and time in a convenient format, you can use the SimpleDataFormat class:
+
+  ```java
+  Date d = new Date();
+  SimpleDateFormat format1 = new SimpleDateFormat("dd.MM.yyyy hh:mm");
+  System.out.println(format1.format(d));  // 25.02.2019 09:03
+  ```
+
+instructions: |
+
+  Implement the `getCustomDate` function, which returns a string in the format` 15/03/1985` based on the timestamp passed.
+
+  ```java
+  getCustomDate(1532435204); // 24/07/2018;
+  getCustomDate(532435204); // 15/11/1986;
+  getCustomDate(5324352); // 03/03/1970;
+  ```
+
+tips:
+  - |
+    [Examples of date formats] (https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html)
+
+definitions: []

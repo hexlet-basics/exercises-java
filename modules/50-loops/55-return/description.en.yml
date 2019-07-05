@@ -1,0 +1,63 @@
+---
+
+name: Return from cycles
+theory: |
+
+  Working with cycles usually comes down to two scenarios:
+
+  1. The accumulation of the result during the iterations and work with it after the cycle. The reversal of the line refers to such an option.
+  2. Cycle to achieve the desired result and exit. For example, the task of finding prime numbers. Recall that a prime number is a number that is divided without remainder only by itself and by one.
+
+  Consider a simple algorithm for checking the simplicity of a number. We will divide the required number `x` into all numbers from two to `x - 1` and watch the remainder. If the remainder of the division is never zero, then we have a prime number.
+
+  If you think about it, you will notice that it is enough to check the numbers not up to `x - 1`, but up to half the number. For example, 11 is not divisible by 2, 3, 4, 5. But even then it is guaranteed that it will not be divisible by more than half of its numbers. This means you can make a small optimization and check the division only up to `x / 2`.
+
+  ```java
+  public static void main(String[] args) {
+    isPrime(1); // false
+    isPrime(2); // true
+    isPrime(3); // true
+    isPrime(4); // false
+  }
+
+  static boolean isPrime(int number) {
+    if (number < 2) {
+      return false;
+    }
+
+    var divider = 2;
+
+    while (divider <= number / 2) {
+      if (number % divider == 0) {
+          return false;
+      }
+
+      divider += 1;
+    }
+
+    return true;
+  }
+  ```
+
+  The algorithm is constructed in such a way that if during successive division into numbers up to `x / 2` there is at least one that divides without remainder, then the argument passed is not a prime number, which means further calculations do not make sense. At this point, the return is `false`.
+
+  And only if the cycle has worked entirely, we can conclude that the number is a simple one, since not a single number has been found that divides the number without a remainder.
+
+instructions: |
+
+  Implement the `doesContain` function, which checks (case sensitive) whether the string contains the specified letter. The function takes two parameters:
+
+  * Line
+  * Letter to search
+
+  Call example:
+
+  ```java
+  doesContain("Renly", "R"); // true
+  doesContain("Renly", "r"); // false
+  doesContain("Tommy", "m"); // true
+  doesContain("Tommy", "d"); // false
+  ```
+
+tips:
+  - "[List of prime numbers] (https://ru.wikipedia.org/wiki/Lists of simple numbers)"

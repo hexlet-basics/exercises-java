@@ -1,0 +1,54 @@
+---
+
+name: Predicates
+theory: |
+
+  Recall the function `isInfant` from the previous lesson:
+
+  ```java
+  static boolean isInfant(int age) {
+    return age < 1;
+  }
+  ```
+
+  `isInfant` is a predicate function.
+
+  **The predicate answers the yes or no question by returning a boolean value.**
+
+  Predicates in all languages ​​are called in a special way for ease of analysis. In Java, predicates usually begin with the prefix `is` or `has`:
+
+    * `isInfant` - “is it a baby?”
+    * `hasChildren` - "do you have children?"
+    * `isEmpty` - "Is it empty?"
+    * `hasErrors` - “are there any errors?”
+
+  A function can be considered a predicate **only** if it returns a boolean.
+
+  ---
+
+  Let's write another predicate function. It takes a string and checks if it is empty. An empty string is the string "" - its length is 0. As we remember, to calculate the length of the string str, you can use the expression str.length():
+
+  ```java
+  public static void main(String[] args) {
+    System.out.print(isEmpty("Sea"));
+  }
+
+  static boolean isEmpty(String str) {
+    return str.length() == 0;
+  }
+  ```
+
+  <pre class='hexlet-10-basics-output'>false</pre>
+
+
+instructions: |
+
+  Write a `isNegative` function that takes a number and checks if it is negative.
+
+tips:
+  - |
+    [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+definitions:
+  - name: "Predicate"
+    description: "an expression that answers a yes or no question using a boolean type."

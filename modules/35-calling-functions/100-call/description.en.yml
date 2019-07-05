@@ -1,0 +1,61 @@
+---
+
+name: Functions and their call
+theory: |
+
+  As you noticed, each operation requires its own character (operator): for adding numbers - `+`, for concatenating strings - `.`, for dividing numbers - `/`, and so on. This approach is justified only for the most frequent operations, because in real life there are thousands of different tasks. In addition, even if the programming language included a thousand different operators, at some point a new programmer would be needed.
+
+  Any programming language allows you to expand the set of operations. Such new operations are called "functions". Let's first learn how to use the already created functions, and only then we will create new functions.
+
+  Similarly to mathematics, in Java a function is a kind of transformation that is applied to some argument values ​​and expresses its value through them, that is, it calculates a certain result based on the argument values, which is called the function value for these argument values. Another value of the function is called the return value - because it is returned from the function to its calling code). Thus, the function of taking the smaller of the two numbers compares them, and by its result assigns the one that is smaller.
+
+  The java instruction to calculate the value of a function on the given values ​​of the arguments is called a function call.
+
+  In Java, there is a function for finding the minimum number of two. Call it:
+
+  ```java
+  var result = Math.min(1, 5);
+  ```
+
+  We created the `result` variable and set to write the result (return value) into it, which the function `Math.min` returns. The entry `Math.min(1, 5)` means that a function is called with the name `Math.min` and with arguments (or with a parameter) 1 and 5. The called function has returned a value.
+
+  Arguments are the information that the function receives when it is called. It is on the basis of this information that the function, as a rule, calculates something and gives the result.
+
+  The `Math.min` function returns the minimum number of two. In our example, we were looking for the minimum of the numbers 1 and 5, so the result was `1` in the end turned out to be 1.
+
+  You may have noticed similarities between calling this function and calling System.out.print(); This is because System.out.print is also a function, only it returns no value. Normally, functions are called to use the values ​​returned by them, but sometimes (there will be a side effect on side effects), the function is called for something else that this function does in the process of calculating the result, in the case of System.out.print () the function in the course of its work outputs the argument passed to it to the console, and it is for this side effect that we call it.
+
+  Here is an example of a function that takes no arguments:
+
+  ```java
+  var result = "Hello world!".length();
+  ```
+
+  The `length` function returns the length of a string.
+
+  You can create your own functions - we will do this in the next module. Any action you can imagine is represented in programming by functions.
+
+instructions: |
+
+  In 7 kingdoms there lived one person who had access to computers and knew how to program - Sam Tarley. He was involved in cartography, so he wrote for himself the function `calculateDistance`, which calculates the distance (in leagues) between cities. The function takes two string parameters - names of two cities, and returns a number - the distance between them. Any function in java belongs to a class, Sam referred to the class Functions.
+
+  Here is an example of use, where the distance between Lannisport and Bayasabhad is displayed:
+
+  ```java
+  var distance = Functions.calculateDistance("Lannisport", "Bayasabhad");
+  System.out.print(distance);
+  ```
+
+  Sam wrote his function in a separate class, so before the name of the function we indicate the name of the class in which this function is defined.
+    
+  This code starts the calculation of the function calculateDistance.
+
+  Use the function `calculateDistance` and display the distance between the cities of Qarth and Vaes Dothrak. Do not copy the example, but create a variable with a different name and write the code from scratch yourself.
+
+tips: []
+
+definitions:
+  - name: Function
+    description: "an operation that can receive data and return a result; the function is called like this: `foo()`"
+  - name: Argument
+    description: "information that the function receives when it is called. For example, `foo(42)` - passing the argument `42` to the function `foo`"

@@ -1,0 +1,53 @@
+---
+
+name: Environment
+theory: |
+
+  What value will be inside the `result` variable after executing the code?
+
+  ```java
+  public static void main(String[] args) {
+    var age = 5;
+    var result = generate();
+  }
+
+  static int generate() {
+    return age + 3;
+  }
+  ```
+
+  The correct answer is: the code will fail with an error. Because inside the function there is no variable named `age`, but the function tries to use it.
+
+  The function does not have access to variables declared in other functions.
+
+  ---
+
+  Consider another example:
+
+  ```java
+  public static void main(String[] args) {
+    var age = 5;
+    var result = generate();
+  }
+
+  static int generate() {
+    var age = 10;
+    return age + 3;
+  }
+  ```
+
+  The age variable in main from within generate is not available, it does not interfere with declaring a variable with the same name in generate - but it will be a different variable. The generate function will be under the name of age to see its variable, and the main - its own.
+    
+  In this case, the result will be the number `13`....`age = 5` does not affect the function code.
+
+instructions: |
+
+  This task is not directly related to the lesson, it is just another useful exercise in working with functions.
+
+  Write a function `getAgeDifference`, which takes two years of birth and returns a string with an age difference in the form` The age difference is 11`.
+
+  As usual, the function needs to be public static, not just static, so that we can call it from another class.
+
+tips:
+ - |
+  Recall that in Java there is a `Math.abs` function that returns the module of the transferred number: for example, `Math.abs (-12)` will return `12`.
