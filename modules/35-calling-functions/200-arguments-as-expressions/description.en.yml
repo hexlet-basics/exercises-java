@@ -1,0 +1,60 @@
+---
+
+name: Arguments as expressions
+theory: |
+
+  Consider this code:
+
+  ```java
+  var result = Math.min(1, 5);
+  ```
+
+  The `Math.min` function is called with the arguments `1` and `5`.
+
+  We found out that *expressions turn into values ​*. That is, from the Java point of view, values ​​and expressions are something similar. Therefore, any values ​​in the program can technically be replaced by expressions.
+
+  When calling a function, you can pass an expression **into it with the argument**:
+
+  ```java
+  var result = Math.min(1, 2 + 3);
+  ```
+
+  The result will be the same as in the first example, because the expression `2 + 3` will turn into the value `5`, and `Math.min` will be called with the arguments `1` and `5`.
+
+  Moreover, you can use variables interspersed with values ​​and other expressions:
+
+  ```java
+  var number = 2 + 2;
+  var result = Math.min(1, 1 + number);
+  ```
+
+  Naturally, this works not only with numbers, but with any values ​​and expressions. For example, with strings.
+
+  Let's summarize. Take a look at a few examples from the current lesson:
+
+  ```java
+
+  // simple calls
+  var result = Math.min(1, 5);       // 1
+
+  // expressions in arguments
+  var result = Math.min(1, 2 + 3);   // 1
+
+  // expressions with variables in arguments
+  var number = 2 + 2;
+  var result = Math.min(1, 1 + number);  // 1
+  ```
+
+  Notice the similarity: in all calls, some information is passed to the function, but sometimes this is a simple, “ready” value, and sometimes a compound expression is “not ready” value (`2 + 3`, `1 + number`, etc. ). In this case, in all examples two arguments are passed.
+
+instructions: |
+
+  The function `calculateDistanceBetweenTowns` is available to you. It takes one argument, which must contain the names of the two cities through a hyphen. In response, it returns the distance between these cities. Here is an example of use:
+
+  ```java
+  var distance = calculateDistanceBetweenTowns("Lannisport-Bayasabhad");
+  ```
+
+  Write a program that uses the `calculateDistanceBetweenTowns` function and displays the distance between cities recorded in the `from` and `to` variables.
+
+tips: []

@@ -8,5 +8,5 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/exercises-java-tmp
+      - .:/exercises-java
     command: make lint test

@@ -1,0 +1,29 @@
+---
+
+name: Explicit type conversion
+theory: |
+
+  Type conversion is quite a frequent operation in web development. On the one hand, to perform it, you can rely on weak typing, on the other hand, in many situations it is better to do the conversion explicitly using a special syntax. Such code is clearer and more predictable.
+
+  ```java
+  System.out.print((int) "345");
+  ```
+
+  An explicit type conversion works like this: before the value, the desired type is indicated in parentheses. As a result, the value on the right is converted to a value of another type indicated on the left in parentheses. At the moment we are familiar with only two types, but the transformation works only for the primitive type.
+
+  Type conversion can be used inside compound expressions:
+
+  ```java
+  //Additional brackets help to visually separate parts of the expression from each other
+  System.out.print("It's" + ((int) 5.1));
+  ```
+
+  It's 5
+
+instructions: |
+
+  Display the string `2 times`, obtained from the number 2.9 and the string` times`, using type conversions and concatenation.
+
+definitions: []
+
+tips: []

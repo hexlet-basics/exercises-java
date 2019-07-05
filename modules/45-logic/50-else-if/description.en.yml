@@ -1,0 +1,96 @@
+---
+
+name: else if
+theory: |
+
+  The `getTypeOfSentence` function from the previous lesson only distinguishes interrogative and regular sentences. Let's try adding support for exclamation sentences:
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Who?");  // => 'Sentence is question'
+    getTypeOfSentence("No'");   // => 'Sentence is normal'
+    getTypeOfSentence("No!");   // => 'Sentence is exclamation'
+  }
+
+  static String getTypeOfSentence(String sentence) {
+    var lastChar = sentence.charAt(sentence.length() - 1);
+    var sentenceType = "";
+    if (lastChar == '?') {
+      sentenceType = "question";
+    }
+
+    if (lastChar == '!') {
+      sentenceType = "exclamation";
+    } else {
+      sentenceType = "normal";
+    }
+
+    return "Sentence is " + sentenceType;
+  }
+  ```
+
+  We added another check. Technically, the function works, but in terms of semantics there are problems.
+
+  - Check for the presence of an exclamation mark occurs in any case, even if a question mark has already been detected.
+  - The `else` branch is described for the second condition, but not for the first one.
+
+  It would be more correct to use another possibility of conditional construction:
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Who?"); // => 'Sentence is question'
+    getTypeOfSentence("No");   // => 'Sentence is normal'
+    getTypeOfSentence("No!");  // => 'Sentence is exclamation'
+  }
+
+  static String getTypeOfSentence(String sentence)
+  {
+    var lastChar = sentence.charAt(sentence.length() - 1);
+    var sentenceType = "";
+
+    if (lastChar == '?') {
+      sentenceType = "question";
+    } else if (lastChar == '!') {
+      sentenceType = "exclamation";
+    } else {
+      sentenceType = "normal";
+    }
+
+    return "Sentence is " + sentenceType;
+  }
+  ```
+
+  Now all the conditions are built in a single structure. `else if` is «if the previous condition is not met, but the current condition is met.» It turns out this scheme:
+
+  - if the last symbol is `?`, then `"question"`
+  - otherwise, if the last symbol is `!`, then `"exclamation"`
+  - otherwise `"normal"`
+
+  Only one of the code blocks relating to the whole `if` construct will be executed.
+
+instructions: |
+
+  On the electronic map of Westeros, which Sam implemented, the Starks' allies are shown in a green circle, the enemies in red, and neutral families in gray.
+
+  Write for Sam the function `whoIsThisHouseToStarks`, which accepts the family name as an input and returns one of three values:` `friend '`, `` enemy' `,` `neutral '`.
+
+  Rules for determining:
+
+    *Friends (`"friend"`): "Karstark", "Tally"
+    * Enemies (`"enemy"'): "Lannister", "Frey"
+    * Any other families are considered neutral.
+
+  Call examples:
+
+  ```java
+  whoIsThisHouseToStarks("Karstark"); // => 'friend'
+  whoIsThisHouseToStarks("Frey");     // => 'enemy'
+  whoIsThisHouseToStarks("Joar");     // => 'neutral'
+  whoIsThisHouseToStarks("Ivanov");   // => 'neutral'
+  ```
+
+tips: []
+
+definitions:
+  - name: "else if"
+    description: "a way to set several alternative conditions"

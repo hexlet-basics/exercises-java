@@ -1,0 +1,44 @@
+---
+
+name: Extract characters from string
+theory: |
+
+  Sometimes you need to get one character from a string. For example, if the site knows the user's first and last name, and at some point you need to display this information in the format `A. Ivanov`, then you need to take the first character from the name.
+
+  ```java
+  var firstName = "Alexander";
+
+  System.out.print(firstName.charAt(0)); // => A
+  ```
+
+  charAt(int index) is a special method for extracting a character from a string. **Index** is the position of the character within the string. Indices start with 0 in almost all programming languages ​​- therefore, to get the first character, you need to specify the index `0`.
+
+  An index can be not only a specific number, but also the value of a variable. Here is an example that will lead to the same result - displaying the `A` symbol on the screen, but the index inside the square brackets is written not by a number, but by a variable:
+
+  ```
+  var firstName = "Alexander";
+  var index = 0;
+
+  System.out.print(firstName.charAt(index)); // => A
+  ```
+
+  Although the character is not a string, the concatenation operation (+) can work if one of the arguments is a character. It will make a string of it and compute it as a concatenation of two strings. But don't try to concatenate characters with each other, not with a string - the Java compiler will decide that you want to add the numeric codes of these characters, and the result will be some number.
+
+  ```java
+  System.out.print('H' + 'A'); // => 137
+  System.out.print('H' + " " + 'A');  // => "H A"
+  ```
+
+instructions: |
+
+  You are given three variables with the names of different people. Compose and display a word of characters in this order:
+
+  1. the third character from the first line;
+  2. the second character from the second line;
+  3. the fourth character from the third line;
+  4. the fifth character from the second line;
+  5. the third character from the second line.
+
+  The output should be something like this: "a b c d e"
+
+tips: []

@@ -1,0 +1,62 @@
+---
+
+name: else
+theory: |
+
+  #### Briefly
+
+  ```
+  if (condition) {
+    // code to be executed
+    // if the condition is true
+  } else {
+    // code to be executed
+    // if the condition is false
+  }
+  ```
+
+  ---
+
+  Let's try to change the function from the previous example so that it returns not just the sentence type, but the whole string `Sentence is normal` or `Sentence is question`.
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Hodor"); // => Sentence is normal
+    getTypeOfSentence("Hodor?"); // => Sentence is question
+  }
+
+  static String getTypeOfSentence(String sentence) {
+    var lastChar = sentence.charAt(sentence.length() - 1);
+    var sentenceType = "";
+    if (lastChar == '?') {
+      sentenceType = "question";
+    } else {
+      sentenceType = "normal";
+    }
+
+    return "Sentence is " + sentenceType;
+  }
+  ```
+
+  We added `else` and a new block with curly braces. This block will only be executed if the condition in `if` is false.
+
+instructions: |
+
+  Implement the function `normalizeUrl`, which performs the so-called data normalization. It takes the address of the site and returns it with `https://` at the beginning.
+
+  The function accepts addresses in the form `ADDRESS` or `https://ADDRESS`, but always returns the address in the form `https://ADDRESS`
+
+  You can use the `startsWith` function to check if the string starts with the `https://`prefix. And then based on this, add or not add `https://`.
+
+  Call examples:
+
+  ```java
+  normalizeUrl('google.com'); // => 'https://google.com'
+  normalizeUrl('https://ai.fi'); // => 'https://ai.fi'
+  ```
+
+tips: []
+
+definitions:
+  - name: "else"
+    description: "a way to specify a block of code that will be executed if the condition with `if` is not satisfied "

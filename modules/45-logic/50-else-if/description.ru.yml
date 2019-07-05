@@ -1,0 +1,96 @@
+---
+
+name: else if
+theory: |
+
+  Функция `getTypeOfSentence` из предыдущего урока различает только вопросительные и обычные предложения. Давайте попробуем добавить поддержку восклицательных предложений:
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Who?"); // => 'Sentence is question'
+    getTypeOfSentence("No'");   // => 'Sentence is normal'
+    getTypeOfSentence("No!");  // => 'Sentence is exclamation'
+  }
+
+  public static String getTypeOfSentence(String sentence) {
+    var lastChar = sentence.charAt(sentence.length() - 1);
+    var sentenceType = "";
+    if (lastChar == '?') {
+      sentenceType = "question";
+    }
+
+    if (lastChar == '!') {
+      sentenceType = "exclamation";
+    } else {
+      sentenceType = "normal";
+    }
+
+    return "Sentence is " + sentenceType;
+  }
+  ```
+
+  Мы добавили еще одну проверку ("exclamation" переводится «восклицание»). Технически функция работает, но с точки зрения семантики есть проблемы.
+
+  - Проверка на наличие восклицательного знака происходит в любом случае, даже если уже был обнаружен вопросительный знак.
+  - Ветка `else` описана именно для второго условия, но не для первого.
+
+  Правильнее будет воспользоваться ещё одной возможностью условной конструкции:
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Who?"); // => 'Sentence is question'
+    getTypeOfSentence("No");   // => 'Sentence is normal'
+    getTypeOfSentence("No!");  // => 'Sentence is exclamation'
+  }
+
+  static String getTypeOfSentence(String sentence)
+  {
+    var lastChar = sentence.charAt(sentence.length() - 1);
+    var sentenceType = "";
+
+    if (lastChar == '?') {
+      sentenceType = "question";
+    } else if (lastChar == '!') {
+      sentenceType = "exclamation";
+    } else {
+      sentenceType = "normal";
+    }
+
+    return "Sentence is " + sentenceType;
+  }
+  ```
+
+  Теперь все условия выстроены в единую конструкцию. `else if` — это «если не выполнено предыдущее условие, но выполнено текущее». Получается такая схема:
+
+  - если последний символ `?`, то `"question"`
+  - иначе, если последний символ `!`, то `"exclamation"`
+  - иначе `"normal"`
+
+  Выполнится только один из блоков кода, относящихся ко всей конструкции `if`.
+
+instructions: |
+
+  На электронной карте Вестероса, которую реализовал Сэм, союзники Старков отображены зеленым кружком, враги — красным, а нейтральные семьи — серым.
+
+  Напишите для Сэма функцию `whoIsThisHouseToStarks`, которая принимает на вход фамилию семьи и возвращает одно из трех значений: `"friend"`, `"enemy"`, `"neutral"`.
+
+  Правила определения:
+
+    * Друзья (`"friend"`): "Karstark", "Tally"
+    * Враги (`"enemy'"): "Lannister", "Frey"
+    * Любые другие семьи считаются нейтральными
+
+  Примеры вызова:
+
+  ```java
+  whoIsThisHouseToStarks("Karstark"); // => 'friend'
+  whoIsThisHouseToStarks("Frey");     // => 'enemy'
+  whoIsThisHouseToStarks("Joar");     // => 'neutral'
+  whoIsThisHouseToStarks("Ivanov");   // => 'neutral'
+  ```
+
+tips: []
+
+definitions:
+  - name: "else if"
+    description: "способ задать несколько альтернативных условий"

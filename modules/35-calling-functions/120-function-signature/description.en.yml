@@ -1,0 +1,24 @@
+---
+
+name: function signature
+theory: |
+
+  The `Math.min` function, which returns the minimum number of two, takes 2 parameters. If you call `Math.min` without parameters, Java will display the following: `no suitable method found for Math.min(no arguments)`. We are told that such a function Math.min without parameters does not exist.
+
+  How do we know how many parameters need the `Math.min` function and what type of value does it return? We looked at the ** signature ** of this function. The signature determines the input parameters and their types, also the output parameter and its type. You can read about the function `Math.min` in [official Java documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html).
+
+  You can pass parameters only in the sequence in which they are defined in the signature.
+
+  Any function always returns only one value (unless the type of the result is void, then it returns nothing). At the same time, the return value can be of a complex type and represent, for example, a list of some values.
+
+instructions: |
+
+  In Java, the String class has a function `concat`. Examine its signature at [https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#concat(java.lang.String]].
+
+  Write a program that uses the `concat` function with the` text` variable and displays the result on the screen.
+
+tips: []
+
+definitions:
+  - name: function signature
+    description: "a formal description of the types of arguments and the return type of the function."
