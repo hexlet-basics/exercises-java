@@ -101,3 +101,4 @@ definitions:
   - name: "Ternary operator"
     description: |
         A way to turn a simple conditional statement into an expression, for example, `number >= 0? number : number`
+

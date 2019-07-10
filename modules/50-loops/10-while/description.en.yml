@@ -42,7 +42,7 @@ theory: |
 
   * Keyword `while`.
   * Predicate in brackets after `while`.
-  * Code block in curly brackets (loop body).
+  * Code block in curly brackets (loop body)
 
   Each body execution is called an **iteration**. In our example, the call `printNumbers(3)` spawned three iterations, on each of which the variable `i` was displayed.
 
@@ -66,10 +66,10 @@ instructions: |
   // => 2
   // => 1
   // => finished!
-  ```
+  ```
 
 tips: []
 
 definitions:
-  - name: "While loop"
-    description: "instruction to repeat the code until some condition is satisfied."
+  - name: "While loop"
+    description: "instruction to repeat the code until some condition is satisfied."

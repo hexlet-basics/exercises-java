@@ -30,8 +30,9 @@ instructions: |
 
 tips:
   - |
-    [Side effect] (https://ru.wikipedia.org/wiki/Side-by_effect_(programming))
+    [Side effect] (https://ru.wikipedia.org/wiki/Side-by_effect_(programming))
 
 definitions:
   - name: side effect
     description: "an action that changes the external environment (runtime). For example, displaying on the screen or sending a letter."
+

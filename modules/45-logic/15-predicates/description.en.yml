@@ -7,7 +7,7 @@ theory: |
 
   ```java
   static boolean isInfant(int age) {
-    return age < 1;
+      return age < 1;
   }
   ```
 
@@ -17,16 +17,16 @@ theory: |
 
   Predicates in all languages ​​are called in a special way for ease of analysis. In Java, predicates usually begin with the prefix `is` or `has`:
 
-    * `isInfant` - “is it a baby?”
-    * `hasChildren` - "do you have children?"
-    * `isEmpty` - "Is it empty?"
-    * `hasErrors` - “are there any errors?”
+    * `isInfant` — «is it a baby?»
+    * `hasChildren` — «do you have children?»
+    * `isEmpty` — «Is it empty?»
+    * `hasErrors` — «are there any errors?»
 
   A function can be considered a predicate **only** if it returns a boolean.
 
   ---
 
-  Let's write another predicate function. It takes a string and checks if it is empty. An empty string is the string "" - its length is 0. As we remember, to calculate the length of the string str, you can use the expression str.length():
+  Let's write another predicate function. It takes a string and checks if it is empty. An empty string is the string "" — its length is 0. As we remember, to calculate the length of the string str, you can use the expression str.length().:
 
   ```java
   public static void main(String[] args) {
@@ -34,7 +34,7 @@ theory: |
   }
 
   static boolean isEmpty(String str) {
-    return str.length() == 0;
+      return str.length() == 0;
   }
   ```
 
@@ -47,8 +47,8 @@ instructions: |
 
 tips:
   - |
-    [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
+    [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
 
 definitions:
-  - name: "Predicate"
-    description: "an expression that answers a yes or no question using a boolean type."
+  - name: "Predicate"
+    description: "an expression that answers a yes or no question using a boolean type."

@@ -10,7 +10,7 @@ theory: |
     // loop body
   }
 
-  //eg
+  // eg
   for (var index = 10; index >= 0; index--) {
     // ...
   }
@@ -39,7 +39,7 @@ theory: |
 
   In the definition of the `for` loop there is:
 
-  1. the initial value of the counter
+  1. the initial value of the counter
   2. predicate-condition for repeating cycles
   3. description of how the counter changes after each step
 
@@ -49,7 +49,7 @@ theory: |
   var s = "";
   for (; s.length < 3; ) { s += "*"; }
   ```
-  - this code creates the string s from three "asterisks", with neither the declaration of the counter, nor the instruction for changing the counter is indicated - only the condition being checked. But in such cases - when there is no counter - the for loop has no advantage in compactness of the code over the while and then the while is usually used.
+  -  this code creates the string s from three "asterisks", with neither the declaration of the counter, nor the instruction for changing the counter is indicated - only the condition being checked. But in such cases - when there is no counter - the for loop has no advantage in compactness of the code over the while and then the while is usually used.
 
   ---
 

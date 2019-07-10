@@ -35,3 +35,4 @@ instructions: |
   The idea is to create a separate counter variable and increment it by 1 each time the specified character is found in a line. You will need to nest a conditional statement in the loop body. To increase the counter, use syntactic sugar.
 
 tips: []
+
