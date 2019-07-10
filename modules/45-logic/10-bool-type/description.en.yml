@@ -59,3 +59,4 @@ instructions: |
 definitions:
   - name: "Boolean type (boolean)"
     description: "data type with two possible values: true (true) and false (false)."
+

@@ -12,7 +12,6 @@ theory: |
   The java instruction to calculate the value of a function on the given values ​​of the arguments is called a function call.
 
   In Java, there is a function for finding the minimum number of two. Call it:
-
   ```java
   var result = Math.min(1, 5);
   ```
@@ -45,9 +44,8 @@ instructions: |
   var distance = Functions.calculateDistance("Lannisport", "Bayasabhad");
   System.out.print(distance);
   ```
+  Sam wrote his function in a separate class, so before the name of the function we indicate the name of the class in which this function is defined.
 
-  Sam wrote his function in a separate class, so before the name of the function we indicate the name of the class in which this function is defined.
-    
   This code starts the calculation of the function calculateDistance.
 
   Use the function `calculateDistance` and display the distance between the cities of Qarth and Vaes Dothrak. Do not copy the example, but create a variable with a different name and write the code from scratch yourself.
@@ -56,6 +54,6 @@ tips: []
 
 definitions:
   - name: Function
-    description: "an operation that can receive data and return a result; the function is called like this: `foo()`"
-  - name: Argument
-    description: "information that the function receives when it is called. For example, `foo(42)` - passing the argument `42` to the function `foo`"
+    description: "an operation that can receive data and return a result; the function is called like this: `foo()`"
+  - name: Argument
+    description: "information that the function receives when it is called. For example, `foo(42)` - passing the argument `42` to the function `foo`"

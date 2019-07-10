@@ -7,8 +7,8 @@ theory: |
 
   ```
   if (condition) {
-    // code to be executed
-    // if the condition is true
+    // code to be executed
+    // if the condition is true
   }
   ```
 
@@ -25,41 +25,43 @@ theory: |
   }
 
   static String getTypeOfSentence(String sentence) {
-    var lastChar = sentence.charAt(sentence.length() - 1); // способ извлечь последний символ
-    if (lastChar == '?') { //lastChar is of type "character", not "string", characters are compared with ==
-      return "question";
-    }
-    return "normal";
+      var lastChar = sentence.charAt(sentence.length() - 1); // way to extract the last character
+      if (lastChar == '?') { // lastChar is of type "character", not "string", characters are compared with ==
+          return "question";
+      }
+
+      return "normal";
   }
   ```
 
-  `if` - instruction. In parentheses, the predicate expression is passed to it, and then the block of code in curly brackets is described. This **сode block will be executed only if the predicate is true**.
+  `if` — instruction. In parentheses, the predicate expression is passed to it, and then the block of code in curly brackets is described. This **сode block will be executed only if the predicate is true**.
 
   If the predicate is computed to false, then the block of code in braces is skipped, and the function continues its execution.
 
   In our case, the next line of code - `return "normal";` - causes the function to return a string and end.
 
+
   But if the expression that was checked in if turned out to be true, then the block is executed inside {} with the if statement, and the `return "question"` statement. Under normal circumstances, after executing this block {}, the function would continue to execute from the next statement after if. But the return statement inside if causes the function to return "question" as its value, and then not to be executed. Therefore, `return "normal"` will no longer be executed.
 
-  As you can see, `return` can be anywhere in a function. Including inside the code block with the condition.
+  As you can see, `return` can be anywhere in a function. Including inside the code block with the condition.
 
-  ---
+  ---
 
   If the curly brackets after `if` contain only one line of code, then you can not write curly brackets and do so:
 
   ```java
   public static void main(String[] args) {
-    System.out.println(getTypeOfSentence("Hodor")); // => normal
-    System.out.printl(getTypeOfSentence("Hodor?")); // => question
+      System.out.println(getTypeOfSentence("Hodor")); // => normal
+      System.out.printl(getTypeOfSentence("Hodor?")); // => question
   }
 
   static String getTypeOfSentence(String sentence) {
-    var lastChar = sentence.charAt(sentence.length() - 1); // способ извлечь последний символ
-    if (lastChar == '?')
-      return "question";
+        var lastChar = sentence.charAt(sentence.length() - 1); // way to extract the last character
+        if (lastChar == '?')
+            return "question";
 
-    return "normal";
-  }
+        return "normal";
+    }
   ```
 
   We advise you not to do this and **always write curly brackets**. In this case, it is clearly visible where the body of the condition begins and ends. The code becomes more clear and understandable.
@@ -72,11 +74,11 @@ instructions: |
 
   1. Generate an uppercase string based on the str argument string using `str.toUpperCase()`.
   2. Compare it with the source line:
-     - If the strings are equal, then the string is an uppercase argument.
-     - Otherwise, the string-argument is not uppercase.
+      - If the strings are equal, then the string is an uppercase argument.
+      - Otherwise, the string-argument is not uppercase.
 
 tips: []
 
 definitions:
-  - name: "Conditional construction"
-    description: "a way to set a condition for code execution. For example, `if (x > 10) {...}`"
+  - name: "Conditional construction"
+    description: "a way to set a condition for code execution. For example, `if (x > 10) {...}`"

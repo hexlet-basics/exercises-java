@@ -11,19 +11,19 @@ theory: |
 
   What can be said about him? What conclusions do? Try to complete these statements yourself:
 
-  - `distance` is \_\_\_\_\_\_\_\_\_\_
+  - `distance` is \_\_\_\_\_\_\_\_\_\_
   - the function `calculateDistance` is called with \_\_\_\_\_\_\_\_\_\_\_ `"Lannisport"` and `"Bayasabhad"`
   - the function `calculateDistance` returns a value whose type is \_\_\_\_\_.
   - after executing the code in the variable $ distance` it will be \_\_\_\_\_\_\_\_, returned by the call of the function `calculateDistance`
 
-  To understand this lesson, you need to remember the concept of "**expression**" from the module about modules.variables. Recall that an expression is a code that, when a program is executed, becomes ** the value **.
+   To understand this lesson, you need to remember the concept of "**expression**" from the module about modules.variables. Recall that an expression is a code that, when a program is executed, becomes ** the value **.
 
   Which of these code snippets are expressions?
 
   1. `42`
   2. `10 * 45`
   3. `"Kings" + "road"`
-  4. `calculateDistance("Lannisport","Bayasabhad")`
+  4. `calculateDistance("Lannisport", "Bayasabhad")`
 
   Numbers and mathematical operations are probably the easiest options. The expression `42` will turn into the value `42`, the expression `10 * 45` will become the value `450`.
 
@@ -63,7 +63,7 @@ instructions: |
 
   Unfortunately, the `Functions.calculateDistance` function can only calculate the distance between two points. Therefore, you will first have to find out the distance from Winterfell to the Freew Castle, and then the distance to the Eagle's Nest.
 
-  The names of the castles in English:
+  The names of the castles in English:
 
     - Winterfell - `Winterfell`
     - Gemini (Freew Castle) - `The Twins`

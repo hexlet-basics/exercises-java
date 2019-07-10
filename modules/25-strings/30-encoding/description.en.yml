@@ -63,3 +63,4 @@ tips: []
 definitions:
   - name: "Encoding"
     description: "A set of characters encoded using numbers to represent text electronically."
+

@@ -29,11 +29,11 @@ theory: |
   }
   ```
 
-  `&&` - means "and" (in mathematical logic it is called a conjunction). An entire expression is considered true only if each operand is true — each of the composite expressions. In other words, `&&` means "the one and the other."
+  `&&` — means "and" (in mathematical logic it is called a conjunction). An entire expression is considered true only if each operand is true — each of the composite expressions. In other words, `&&` means "the one and the other."
 
   The priority of this operator is lower than the priority of comparison operators, therefore the expression works correctly without parentheses.
 
-  In addition to `&&`, the operator `||` - “OR” (disjunction) is often used. It means "either that, or the other, or both."
+  In addition to `&&`, the operator `||` — “OR” (disjunction) is often used. It means "either that, or the other, or both."
 
   Operators can be combined in any quantity and any sequence, but when `&&` and `||` occur at the same time, it is better to set the priority in brackets.
 
@@ -59,7 +59,7 @@ theory: |
   }
   ```
 
-  The area of ​​mathematics in which logical operators are studied is called Boolean algebra. Below are the “truth tables” - from them you can determine what the result of the operator will be:
+  The area of ​​mathematics in which logical operators are studied is called Boolean algebra. Below are the “truth tables” — from them you can determine what the result of the operator will be:
 
   #### And `&&`
 
@@ -107,12 +107,13 @@ instructions: |
 
 tips:
   - |
-    [Boolean algebra] (https://ru.wikipedia.org/wiki/Buleva_algebra)
+    [Boolean algebra] (https://ru.wikipedia.org/wiki/Buleva_algebra)
   - |
-    [Conjunction] (https://ru.wikipedia.org/wiki/Conjunction)
+    [Conjunction] (https://ru.wikipedia.org/wiki/Conjunction)
   - |
-    [Disjunction] (https://ru.wikipedia.org/wiki/Disjunction)
+    [Disjunction] (https://ru.wikipedia.org/wiki/Disjunction)
 
 definitions:
   - name: "Logical operators"
     description: "AND operators (&&), OR (||), allowing to create composite logical conditions."
+

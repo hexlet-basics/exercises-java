@@ -7,34 +7,34 @@ theory: |
 
   ```
   - Are you hungry?
-  - Aaaarrrgh!
+  - Aaaarrrgh!
   ```
 
   If you display a line with the following text:
 
   ```java
-  System.out.print("- Are you hungry? - Aaaarrrgh!");
+  System.out.print("— Are you hungry?— Aaaarrrgh!");
   ```
 
   it will turn out like this:
 
   ```
-  - Are you hungry? - Aaaarrrgh!
+  — Are you hungry?— Aaaarrrgh!
   ```
 
-  We need to somehow tell the interpreter "click on enter" - to make a line break after the question mark.
+  We need to somehow tell the interpreter "click on enter" — to make a line break after the question mark.
 
   In Java, `\n` is a line break:
 
   ```java
-  System.out.print("- Are you hungry? \n- Aaaarrrgh!");
+  System.out.print("— Are you hungry?\n— Aaaarrrgh!");
   ```
 
   result:
 
   ```
-  - Are you hungry?
-  - Aaaarrrgh!
+  — Are you hungry?
+  — Aaaarrrgh!
   ```
 
   `\n` is an example **of the escape sequence** (escape sequence). They are also called control structures.
@@ -42,9 +42,9 @@ theory: |
   While typing in some Word, you press Enter at the end of the line. The editor puts a special invisible character at the end of the line, which is called LINE FEED (LF). In some editors, you can even turn on the display of invisible characters. Then the text will look something like this:
 
   ```
-  - Hello!¶
-  - Oh, hi!¶
-  - How are you?
+  — Hello!¶
+  — Oh, hi!¶
+  — How are you?
   ```
 
   A device that outputs the corresponding text takes this symbol into account. For example, the printer, when meeting with LF, pulls the paper up one line, and the text editor transfers all subsequent text below, also one line.
@@ -60,7 +60,7 @@ theory: |
   The screen will display:
 
   ```
-  Gregor clegane
+  Gregor Clegane
   Dunsen
   Polliver
   Chiswyck
@@ -72,9 +72,9 @@ theory: |
   System.out.println("Hello");
   System.out.println("World");
   ```
-  The screen will display:
+  The screen will display:
 
-  ```
+  ```
   Hello
   World
   ```
@@ -83,23 +83,24 @@ theory: |
 
   1\. It does not matter what comes before or after `\n`: a character or an empty string. The transfer will be detected and executed in any case.
 
-  2\. Remember that a string can contain only one character or zero characters at all? And the line can contain only `\n`:
+  2\. Remember that a string can contain only one character or zero characters at all? And the line can contain only `\n`:
 
   ```java
   System.out.print("Gregor Clegane");
-  System.out.print("\ n");
+  System.out.print("\n");
   System.out.print("Dunsen");
   ```
+
   Here we print one line with the name, then one line “line feed”, and then another line. The program will display:
 
   ```
-  Gregor clegane
+  Gregor Clegane
   Dunsen
   ```
 
   3\. Despite the fact that in the source code of a program, a sequence of type `\n` looks like two characters, from the point of view of the interpreter it is a special single character.
 
-  4\. If we need to display `\n` exactly as text (two separate printable characters), then we can use the already known screening method, adding one more `\` at the beginning. That is, the sequence `\\n` is displayed as the characters `\`and `n` following each other.
+  4\. If we need to display `\n` exactly as text (two separate printable characters), then we can use the already known screening method, adding one more `\` at the beginning. That is, the sequence `\\n` is displayed as the characters `\` and `n` following each other.
 
   ```java
   System.out.print("Joffrey loves using \\n");
@@ -117,14 +118,14 @@ instructions: |
 
   Write a program that displays:
 
-      - Did Joffrey agree?
-      - He did. He also said "I love using \n".
+      — Did Joffrey agree?
+      — He did. He also said "I love using \n".
 
   The program uses only one `println`, but the result on the screen should look exactly like the one shown above.
 
 definitions:
-  - name: "Escape sequence"
-    description: "a special combination of characters in the text. For example, _\\n_ is a line break."
+  - name: "Escape sequence"
+    description: "a special combination of characters in the text. For example, _\\n_ is a line break."
 
 tips:
-    - "[String History] (https://ru.wikipedia.org/wiki/Translate_String#History)"
+  - "[String History] (https://ru.wikipedia.org/wiki/Translate_String#History)"

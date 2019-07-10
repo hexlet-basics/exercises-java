@@ -56,3 +56,4 @@ instructions: |
   Use the same approach as in a function to flip a line from a lesson: collect the result string in a loop, looping through the starting line until a certain point.
 
 tips: []
+

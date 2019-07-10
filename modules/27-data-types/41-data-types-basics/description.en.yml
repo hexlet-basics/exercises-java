@@ -53,12 +53,12 @@ theory: |
 
   Note that the number `5` and the string` "5" `are completely different things, although the output of `println` for this data is identical.
 
-  Integers (`1`,` 34`, `-19`, etc.) and rational numbers (`1.3`, `1.0`, `-14.324`, etc.) are two separate **types data**. This separation is associated with the characteristics of the device computers. **There are other types**, we will get to know them later.
+  Integers (`1`,` 34`, `-19`, etc.) and rational numbers (`1.3`, `1.0`, `-14.324`, etc.) are two separate **types data**. This separation is associated with the characteristics of the device computers. **There are other types**, we will get to know them later.
 
   Here is another example, but with a rational number:
 
   ```java
-  System.out.print(10.234);
+  System.out.print(10.234);
   ```
 
   The lines in programming are called "strings", and the lines of text files are called "lines." For example, the code above has three lines (lines), and there are no lines (strings). In all the lessons we will say **string** to indicate the data type "string", and **line** to indicate lines (lines) in files).
@@ -69,14 +69,14 @@ instructions: |
   Display the number `-0.304`.
 
 tips:
- - |
-   [Article on fractional numbers] (https://habrahabr.ru/post/112953/)
+  - |
+    [Article on fractional numbers] (https://habrahabr.ru/post/112953/)
 
 definitions:
   - name: "Data Type"
-    description: "a set of data in the code (a kind of information). The type determines what can be done with the elements of a particular set. For example, integers, rational numbers, strings are different data types."
-  - name: "Primitive data types"
+    description: "a set of data in the code (a kind of information). The type determines what can be done with the elements of a particular set. For example, integers, rational numbers, strings are different data types."
+  - name: "Primitive data types"
     description: "simple types built into the programming language itself."
-  - name: "String"
-    description: |
-      data type describing the character set (in other words, text); for example, `"text"`
+  - name: "String"
+    description: |
+      data type describing the character set (in other words, text); for example, `"text"`

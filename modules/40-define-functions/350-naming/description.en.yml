@@ -19,9 +19,9 @@ theory: |
   - `result`
   - `euros`
 
-  Adopt the following structure: function - verb, variable - noun.
+  Adopt the following structure: function — verb, variable — noun.
 
-  *(We also had a `parentFor` function, and this name is not a verb. One could call it` getParentFor`, but names like `parentFor`,` childOf`, `priceAt`, `min`, `max` are common forms. "Function - verb" - not an iron rule, but it is almost always better to stick with it).*
+  *(We also had a `parentFor` function, and this name is not a verb. One could call it` getParentFor`, but names like `parentFor`,` childOf`, `priceAt`, `min`, `max` are common forms. "Function — verb" — not an iron rule, but it is almost always better to stick with it).*
 
   In the lesson about variables, we asked you to come up with the name of the variable and write it in a notebook or send it to your email. Find this title and take a fresh look at it: is it understandable? Describes the essence unequivocally or requires understanding?
 
@@ -65,4 +65,5 @@ instructions: |
 
 tips:
   - |
-    [An article on naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
+    [An article on naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
+

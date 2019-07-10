@@ -52,3 +52,4 @@ tips:
 definitions:
   - name: "Предикат"
     description: "выражение, отвечающее на вопрос «да» или «нет» с помощью типа boolean."
+

@@ -45,3 +45,4 @@ instructions: |
   isNeutralSoldier("red", "black");    // => false
   isNeutralSoldier("red", "red");      // => false
   ```
+
