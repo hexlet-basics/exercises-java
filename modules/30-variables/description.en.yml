@@ -1,6 +1,6 @@
 ---
 
 name: Variables
-description:
-   Information can be placed in special "storage", and then use as many times as necessary. These storages are called modules.variables, and they help simplify the code and reduce unnecessary repetitions.
+description: |
+  Information can be placed in special "storage", and then use as many times as necessary. These storages are called modules.variables, and they help simplify the code and reduce unnecessary repetitions.
 

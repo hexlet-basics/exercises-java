@@ -1,1 +1,2 @@
-javac *.java; java Test 2>&1
+javac -sourcepath "/exercises-java/src" *.java
+java -cp `pwd`:/exercises-java/src Test 2>&1

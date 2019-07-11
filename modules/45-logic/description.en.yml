@@ -1,6 +1,6 @@
 ---
 
 name: Logic
-description:
-   Logical operators and conditional instructions allow you to create programs that "make decisions" based on certain conditions.
+description: |
+  Logical operators and conditional instructions allow you to create programs that "make decisions" based on certain conditions.
 

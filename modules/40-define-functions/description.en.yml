@@ -1,6 +1,6 @@
 ---
 
 name: Definition of functions
-description:
-   Functions allow you to extend the language with new actions. Defining your own functions is the key to creating full-fledged, meaningful and useful programs.
+description: |
+  Functions allow you to extend the language with new actions. Defining your own functions is the key to creating full-fledged, meaningful and useful programs.
 
