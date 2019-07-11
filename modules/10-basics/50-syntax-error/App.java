@@ -1,9 +1,9 @@
 
-class Main {
+class App {
 
     public static void main(String[] args) {
         //BEGIN
-        // You know nothing, John Snow!
+        System.out.print("What Is Dead May Never Die");
         //END
     }
 

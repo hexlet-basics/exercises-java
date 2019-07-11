@@ -11,7 +11,7 @@ class Test {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
 
-        Main.main(null);
+        App.main(null);
 
         String actual = out.toString();
 

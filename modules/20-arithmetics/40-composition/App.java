@@ -1,9 +1,9 @@
 
-class Main {
+class App {
 
     public static void main(String[] args) {
         //BEGIN
-        System.out.print("What Is Dead May Never Die");
+        System.out.print(8 / 2 + 5 - -3 / 2);
         //END
     }
 

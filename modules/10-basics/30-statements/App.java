@@ -1,5 +1,5 @@
 
-class Main {
+class App {
 
     public static void main(String[] args) {
         //BEGIN
