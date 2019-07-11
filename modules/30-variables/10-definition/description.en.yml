@@ -45,9 +45,9 @@ theory: |
 instructions: |
     Create a variable with the name `motto` and the contents of `What is Dead May Never Die!`. Print the contents of the variable.
 
-tips:
-  - |
-    [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
+# tips:
+#   - |
+#     [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
 
 # definitions:
 #   - name: variable
