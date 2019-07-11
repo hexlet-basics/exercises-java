@@ -68,8 +68,8 @@ instructions: |
   // => finished!
   ```
 
-tips: []
+# tips: []
 
-definitions:
-  - name: "While loop"
-    description: "instruction to repeat the code until some condition is satisfied."
+# definitions:
+#   - name: "While loop"
+#     description: "instruction to repeat the code until some condition is satisfied."

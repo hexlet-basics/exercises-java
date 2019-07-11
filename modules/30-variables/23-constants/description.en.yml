@@ -19,9 +19,8 @@ instructions: |
   Create the constant `DRAGONS_BORN_COUNT` and write the number 3 in it - the number of dragons born to Dayenerys.
 
 
-tips: []
+# tips: []
 
-definitions:
-  - name: "Constant"
-    description: "a way to save information and give it a name for later use in code; constants cannot be changed, unlike modules.variables"
-
+# definitions:
+#   - name: "Constant"
+#     description: "a way to save information and give it a name for later use in code; constants cannot be changed, unlike modules.variables"

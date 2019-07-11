@@ -68,5 +68,4 @@ instructions: |
 
   As usual, the function needs to be public static, not just static, so that we can call it from another class.
 
-tips: []
-
+# tips: []

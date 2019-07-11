@@ -29,6 +29,5 @@ instructions: |
 
   Write a function `isMister`, which takes a string and checks whether it is the word `"Mister"`.
 
-tips:
-  - []
-
+# tips:
+#   - []

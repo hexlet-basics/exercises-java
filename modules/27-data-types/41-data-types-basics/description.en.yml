@@ -68,15 +68,15 @@ theory: |
 instructions: |
   Display the number `-0.304`.
 
-tips:
-  - |
-    [Article on fractional numbers] (https://habrahabr.ru/post/112953/)
+# tips:
+#   - |
+#     [Article on fractional numbers] (https://habrahabr.ru/post/112953/)
 
-definitions:
-  - name: "Data Type"
-    description: "a set of data in the code (a kind of information). The type determines what can be done with the elements of a particular set. For example, integers, rational numbers, strings are different data types."
-  - name: "Primitive data types"
-    description: "simple types built into the programming language itself."
-  - name: "String"
-    description: |
-      data type describing the character set (in other words, text); for example, `"text"`
+# definitions:
+#   - name: "Data Type"
+#     description: "a set of data in the code (a kind of information). The type determines what can be done with the elements of a particular set. For example, integers, rational numbers, strings are different data types."
+#   - name: "Primitive data types"
+#     description: "simple types built into the programming language itself."
+#   - name: "String"
+#     description: |
+#       data type describing the character set (in other words, text); for example, `"text"`

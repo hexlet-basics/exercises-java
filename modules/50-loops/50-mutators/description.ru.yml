@@ -87,4 +87,4 @@ instructions: |
   filterString(str, 'o'); // => 'If I lk back I am lst'
   ```
 
-tips: []
+# tips: []

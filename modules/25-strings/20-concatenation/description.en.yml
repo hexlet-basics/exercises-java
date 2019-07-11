@@ -61,7 +61,7 @@ instructions: |
 
   using concatenation of words. Each word must be represented in a separate line. Do not forget about the spaces.
 
-definitions:
-  - name: "Concatenation"
-    description: |
-      the operation of joining two strings. For example, `System.out.print("King's " + " Landing");`
+# definitions:
+#   - name: "Concatenation"
+#     description: |
+#       the operation of joining two strings. For example, `System.out.print("King's " + " Landing");`

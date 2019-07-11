@@ -71,4 +71,4 @@ instructions: |
 
   Display the full length of the Arya route. Recall that the `Functions.calculateDistance` function takes two arguments and returns a number.
 
-tips: []
+# tips: []

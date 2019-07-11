@@ -32,7 +32,6 @@ instructions: |
 
   You can use the ready-to-use function `Functions.isLannisterSoldier`. You can use it to not write all the logical conditions again.
 
-tips:
-  - |
-    [Laws of De Morgan] (https://ru.wikipedia.org/wiki/Laws_de_Morgana)
-
+# tips:
+#   - |
+#     [Laws of De Morgan] (https://ru.wikipedia.org/wiki/Laws_de_Morgana)

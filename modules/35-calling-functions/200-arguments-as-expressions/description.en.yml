@@ -57,5 +57,4 @@ instructions: |
 
   Write a program that uses the `calculateDistanceBetweenTowns` function and displays the distance between cities recorded in the `from` and `to` variables.
 
-tips: []
-
+# tips: []

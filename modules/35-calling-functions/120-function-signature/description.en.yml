@@ -17,9 +17,8 @@ instructions: |
 
   Write a program that uses the `concat` function with the` text` variable and displays the result on the screen.
 
-tips: []
+# tips: []
 
-definitions:
-  - name: function signature
-    description: "a formal description of the types of arguments and the return type of the function."
-
+# definitions:
+#   - name: function signature
+#     description: "a formal description of the types of arguments and the return type of the function."

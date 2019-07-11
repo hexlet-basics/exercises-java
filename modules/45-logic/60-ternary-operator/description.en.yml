@@ -95,10 +95,9 @@ instructions: |
 
   Try to write two variants of the function: with the usual if-else, and with the ternary operator.
 
-tips: []
+# tips: []
 
-definitions:
-  - name: "Ternary operator"
-    description: |
-        A way to turn a simple conditional statement into an expression, for example, `number >= 0? number : number`
-
+# definitions:
+#   - name: "Ternary operator"
+#     description: |
+#         A way to turn a simple conditional statement into an expression, for example, `number >= 0? number : number`

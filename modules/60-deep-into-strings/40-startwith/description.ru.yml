@@ -26,6 +26,6 @@ instructions: |
   startsWith("Баратеон", "Бар"); // true
   ```
 
-tips: []
+# tips: []
 
-definitions: []
+# definitions: []

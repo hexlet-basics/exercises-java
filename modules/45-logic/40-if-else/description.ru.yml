@@ -57,8 +57,8 @@ instructions: |
   normalizeUrl('https://ai.fi'); // => 'https://ai.fi'
   ```
 
-tips: []
+# tips: []
 
-definitions:
-  - name: "else"
-    description: "способ задать блок кода, который будет выполнен, если условие с `if` не удовлетворено"
+# definitions:
+#   - name: "else"
+#     description: "способ задать блок кода, который будет выполнен, если условие с `if` не удовлетворено"

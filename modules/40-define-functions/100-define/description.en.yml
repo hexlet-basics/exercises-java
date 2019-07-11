@@ -127,7 +127,6 @@ instructions: |
 
   <pre class = 'hexlet-basics-output'>JAIME: Farewell, my friend ...</ pre>
 
-tips:
-   - |
-     [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
-
+# tips:
+#    - |
+#      [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)

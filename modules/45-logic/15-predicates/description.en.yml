@@ -45,10 +45,10 @@ instructions: |
 
   Write a `isNegative` function that takes a number and checks if it is negative.
 
-tips:
-  - |
-    [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
+# tips:
+#   - |
+#     [Naming in programming] (https://ru.hexlet.io/blog/posts/naming-in-programming)
 
-definitions:
-  - name: "Predicate"
-    description: "an expression that answers a yes or no question using a boolean type."
+# definitions:
+#   - name: "Predicate"
+#     description: "an expression that answers a yes or no question using a boolean type."

@@ -56,7 +56,6 @@ instructions: |
 
   Write the function `isPensioner`, which takes the age as the only argument and checks if this age is retirement. Pension is considered the age of 60 years and more.
 
-definitions:
-  - name: "Boolean type (boolean)"
-    description: "data type with two possible values: true (true) and false (false)."
-
+# definitions:
+#   - name: "Boolean type (boolean)"
+#     description: "data type with two possible values: true (true) and false (false)."

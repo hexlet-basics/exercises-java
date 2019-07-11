@@ -52,9 +52,8 @@ instructions: |
 
   Perform the job using only two `System.out.print`.
 
-tips:
-  - |
-    Consider with which line and in what order you need to glue the modules.variables together in order to get such a two-line output of the letter body.
-  - |
-    Remember that you can create a string that contains only the control sequence `\n`.
-
+# tips:
+#   - |
+#     Consider with which line and in what order you need to glue the modules.variables together in order to get such a two-line output of the letter body.
+#   - |
+#     Remember that you can create a string that contains only the control sequence `\n`.

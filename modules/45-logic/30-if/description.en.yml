@@ -77,8 +77,8 @@ instructions: |
       - If the strings are equal, then the string is an uppercase argument.
       - Otherwise, the string-argument is not uppercase.
 
-tips: []
+# tips: []
 
-definitions:
-  - name: "Conditional construction"
-    description: "a way to set a condition for code execution. For example, `if (x > 10) {...}`"
+# definitions:
+#   - name: "Conditional construction"
+#     description: "a way to set a condition for code execution. For example, `if (x > 10) {...}`"

@@ -57,4 +57,4 @@ instructions: |
 
   Напишите программу, которая использует функцию `Functions.calculateDistanceBetweenTowns` и выводит на экран расстояние между городами, записанными в переменные `from` и `to`.
 
-tips: []
+# tips: []

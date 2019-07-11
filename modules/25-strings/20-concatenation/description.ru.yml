@@ -61,7 +61,7 @@ instructions: |
 
   используя конкатенацию слов. Каждое слово должно быть представлено отдельной строкой. Не забудьте о пробелах.
 
-definitions:
-  - name: "Конкатенация"
-    description: |
-      операция соединения двух строк. Например, `System.out.print("King's " + " Landing");`
+# definitions:
+#   - name: "Конкатенация"
+#     description: |
+#       операция соединения двух строк. Например, `System.out.print("King's " + " Landing");`

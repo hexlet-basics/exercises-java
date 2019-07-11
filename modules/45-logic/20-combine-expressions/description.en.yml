@@ -90,6 +90,5 @@ instructions: |
   hasTargaryenReference("Targaryen"); // => true
   ```
 
-tips:
-    - []
-
+# tips:
+#     - []

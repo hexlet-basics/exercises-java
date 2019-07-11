@@ -50,10 +50,10 @@ instructions: |
 
   Use the function `calculateDistance` and display the distance between the cities of Qarth and Vaes Dothrak. Do not copy the example, but create a variable with a different name and write the code from scratch yourself.
 
-tips: []
+# tips: []
 
-definitions:
-  - name: Function
-    description: "an operation that can receive data and return a result; the function is called like this: `foo()`"
-  - name: Argument
-    description: "information that the function receives when it is called. For example, `foo(42)` - passing the argument `42` to the function `foo`"
+# definitions:
+#   - name: Function
+#     description: "an operation that can receive data and return a result; the function is called like this: `foo()`"
+#   - name: Argument
+#     description: "information that the function receives when it is called. For example, `foo(42)` - passing the argument `42` to the function `foo`"

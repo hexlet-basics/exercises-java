@@ -123,9 +123,9 @@ instructions: |
 
   The program uses only one `println`, but the result on the screen should look exactly like the one shown above.
 
-definitions:
-  - name: "Escape sequence"
-    description: "a special combination of characters in the text. For example, _\\n_ is a line break."
+# definitions:
+#   - name: "Escape sequence"
+#     description: "a special combination of characters in the text. For example, _\\n_ is a line break."
 
-tips:
-  - "[String History] (https://ru.wikipedia.org/wiki/Translate_String#History)"
+# tips:
+#   - "[String History] (https://ru.wikipedia.org/wiki/Translate_String#History)"

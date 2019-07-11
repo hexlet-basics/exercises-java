@@ -89,8 +89,8 @@ instructions: |
   whoIsThisHouseToStarks("Ivanov");   // => 'neutral'
   ```
 
-tips: []
+# tips: []
 
-definitions:
-  - name: "else if"
-    description: "способ задать несколько альтернативных условий"
+# definitions:
+#   - name: "else if"
+#     description: "способ задать несколько альтернативных условий"
