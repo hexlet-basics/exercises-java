@@ -38,7 +38,7 @@ theory: |
 
   With the spread of computers, different countries needed their own wider tables. Including for Cyrillic letters, oriental hieroglyphs, Arabic script, additional mathematical and typographic symbols, and later even for emoji-emoticons.
 
-  Today, in most cases, one of the [unicode] variants is used (https://ru.wikipedia.org/wiki/Unicode), which includes signs of almost all the written languages ​​of the world.
+  Today, in most cases, one of the [unicode] variants is used (https://ru.wikipedia.org/wiki/Unicode), which includes signs of almost all the written languages of the world.
 
 instructions: |
 
@@ -62,4 +62,3 @@ tips: []
 definitions:
   - name: "Encoding"
     description: "A set of characters encoded using numbers to represent text electronically."
-
