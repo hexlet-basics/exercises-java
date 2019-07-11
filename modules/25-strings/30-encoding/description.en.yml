@@ -57,8 +57,8 @@ instructions: |
   (Of course, you can “trick” the tests and just do `System.out.print("~^%")`, but it will be completely uninteresting :)
 
 
-tips: []
+# tips: []
 
-definitions:
-  - name: "Encoding"
-    description: "A set of characters encoded using numbers to represent text electronically."
+# definitions:
+#   - name: "Encoding"
+#     description: "A set of characters encoded using numbers to represent text electronically."
