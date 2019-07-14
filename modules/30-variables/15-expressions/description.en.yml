@@ -17,13 +17,13 @@ theory: |
   Any string is an expression. String concatenation is also an expression. When the program sees the expression, it processes it and generates the result — **the value of the expression**. Here are some examples of expressions, and in the comments to the right of each expression is the total value:
 
   ```java
-  62.5 // => 62.5
-  50 * 1.25 // => 62.5
-  120/10 * 2 // => 24
-  (int) "100" // => 100
+  62.5                         // => 62.5
+  50 * 1.25                    // => 62.5
+  120 / 10 * 2                 // => 24
+  Integer.parseInt("100")      // => 100
 
-  "hello" // => "hello"
-  "Good" + "will" // => "Goodwill"
+  "hello"                      // => "hello"
+  "Good" + "will"              // => "Goodwill"
   ```
 
   The rules for constructing code (language grammar) are such that in those places where an expression is expected, you can put any calculation (not only mathematical, but also, for example, string — as concatenation), and the program will remain operable. For this reason, it is impossible to describe and show all use cases of all operations.
