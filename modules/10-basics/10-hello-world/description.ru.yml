@@ -20,7 +20,7 @@ instructions: |
   Наберите в редакторе код из задания символ в символ и нажмите «Проверить».
 
   ```java
-  class Main {
+  class App {
 
       public static void main(String[] args) {
           System.out.print("Hello, World!");
