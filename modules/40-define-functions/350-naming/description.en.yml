@@ -57,7 +57,7 @@ instructions: |
 
   <pre class='hexlet-basics-output'>Today is February 0008</pre>
 
-  Implement the `getFormattedBirthday` function, which takes three parameters as input: day, month, and year of birth, and returns them as a string in a formatted form, for example: `30-02-1953`.
+  Implement the `printFormattedBirthday` function, which takes three parameters as input: day, month, and year of birth, and returns them as a string in a formatted form, for example: `30-02-1953`.
 
   The day and month must be formatted so that, if necessary, `0` is added to the left. For example, if the month came the number `7`, then in the output line it should be represented as` 07`.
 
