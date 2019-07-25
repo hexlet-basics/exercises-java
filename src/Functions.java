@@ -6,7 +6,7 @@ public class Functions {
         return ("red".equals(color) && shield.equals("null")) || ("lion".equals(shield));
     }
 
-    public static String parentFor(String child, String parent) throws Exception {
+    public static String parentFor(String child, String parent) throws RuntimeException {
 
         if (parent == null) {
             parent = "mother";
@@ -26,20 +26,20 @@ public class Functions {
                 parents.put("mother", "Cersei Lannister");
                 return parents.get(parent);
             default:
-                throw new Exception("Wrong child's name " + child);
+                throw new RuntimeException("Wrong child's name " + child);
         }
     }
 
-    public static String parentFor(String child) throws Exception{
+    public static String parentFor(String child) throws RuntimeException{
         return parentFor(child, null);
     }
 
-    public static int calculateDistanceBetweenTowns(String param) throws Exception{
+    public static int calculateDistanceBetweenTowns(String param) throws RuntimeException{
         String[] towns  = param.split("-");
         return calculateDistance(towns[0], towns[1]);
     }
 
-    public static int calculateDistance(String source, String dest) throws Exception{
+    public static int calculateDistance(String source, String dest) throws RuntimeException{
         String w = "Winterfell";
         String t = "The Twins";
         String e = "The Eyrie";
@@ -54,7 +54,7 @@ public class Functions {
         else if (q.equals(source) && d.equals(dest) || d.equals(source) && q.equals(dest)) {
             return 125;
         }
-        throw new Exception("Unknown cities: " + source + " and " + dest + ". Please check names");
+        throw new RuntimeException("Unknown cities: " + source + " and " + dest + ". Please check names");
     }
 
     public static String repeat(String text, int count) {
