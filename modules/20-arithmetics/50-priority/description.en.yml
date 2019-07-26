@@ -24,13 +24,13 @@ theory: |
   Before:
 
   ```java
-  System.out.print(8 / 2 + 5 - -4 / 2); // => 11
+  System.out.print(8 / 2 + 5 - -3 / 2); // => 11
   ```
 
   After:
 
   ```java
-  System.out.print(((8 / 2) + 5) - (-4 / 2)); // => 11
+  System.out.print(((8 / 2) + 5) - (-3 / 2)); // => 11
   ```
 
   Remember: code is for people, because it'll be read by people, and machines will only execute it. The only thing that matters for the machines is the correctness of code. They don't distinguish between "clear" or "confusing".
