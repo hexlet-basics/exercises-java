@@ -52,10 +52,10 @@ instructions: |
   Пример вызова:
 
   ```java
-  doesContain("Renly", "R"); // true
-  doesContain("Renly", "r"); // false
-  doesContain("Tommy", "m"); // true
-  doesContain("Tommy", "d"); // false
+  doesContain("Renly", 'R'); // true
+  doesContain("Renly", 'r'); // false
+  doesContain("Tommy", 'm'); // true
+  doesContain("Tommy", 'd'); // false
   ```
 
 
