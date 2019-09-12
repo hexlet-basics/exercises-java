@@ -3,7 +3,7 @@ import java.io.PrintStream;
 
 class Test {
     public static void main(String[] args) {
-        final var expected = "Khal Drogo's favorite word is \"athjahakar\"";
+        final var expected = "\"Khal Drogo's favorite word is \"athjahakar\"\"";
 
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
