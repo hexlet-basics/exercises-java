@@ -54,7 +54,7 @@ theory: |
     System.out.print(isGoodApartment(80, "Main Street")); // => true
   }
 
-  public static boolean isGoodApartment(String area, String street) {
+  public static boolean isGoodApartment(int area, String street) {
     return area >= 100 || (area >= 80 && "Main Street".equals(street));
   }
   ```
