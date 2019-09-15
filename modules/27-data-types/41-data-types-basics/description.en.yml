@@ -61,7 +61,7 @@ theory: |
   System.out.print(10.234);
   ```
 
-  The lines in programming are called "strings", and the lines of text files are called "lines." For example, the code above has three lines (lines), and there are no lines (strings). In all the lessons we will say **string** to indicate the data type "string", and **line** to indicate lines (lines) in files).
+  The lines in programming are called "strings", and the lines of text files are called "lines." For example, the code above has one line (lines), and there are no lines (strings). In all the lessons we will say **string** to indicate the data type "string", and **line** to indicate lines (lines) in files).
 
   Programmers themselves can create new data types, albeit with certain restrictions.
 
