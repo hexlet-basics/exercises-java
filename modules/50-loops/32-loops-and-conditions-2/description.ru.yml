@@ -29,7 +29,7 @@ theory: |
     var result = "";
 
     while (counter != num) {
-      result +=counter;
+      result += counter;
       counter += 1;
     }
 
