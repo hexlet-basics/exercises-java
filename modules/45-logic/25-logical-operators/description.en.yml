@@ -101,7 +101,7 @@ instructions: |
   Write the function `isLannisterSoldier`, which takes two arguments as input:
 
   1. The color of the armor (String). If the armor is red, then the string `red`.
-  2. `null` if there is no shield. The string `lion` if there is a shield, and on it is a lion.
+  2. Empty string if there is no shield. The string `lion` if there is a shield, and on it is a lion.
 
   The function returns `true` if Lannister is recognized, and `false` if not recognized.
 
