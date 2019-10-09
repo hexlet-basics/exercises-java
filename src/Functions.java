@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class Functions {
     public static boolean isLannisterSoldier(String color, String shield) {
-        return ("red".equals(color) && shield.equals("null")) || ("lion".equals(shield));
+        return ("red".equals(color) && shield.isEmpty()) || ("lion".equals(shield));
     }
 
     public static String parentFor(String child, String parent) throws RuntimeException {
