@@ -28,7 +28,7 @@ theory: |
     var counter = 1;
     var result = "";
 
-    while (counter != $num) {
+    while (counter != num) {
       result +=counter;
       counter += 1;
     }
@@ -50,7 +50,7 @@ theory: |
   It works, but not to the end: the last number was not displayed. Apparently, the cycle is working, but it stops one step earlier than we need. Completion of the loop depends on the predicate in `while`, let's take a closer look at it:
 
   ```java
-  while (counter != $num)
+  while (counter != num)
   ```
 
   *"While the counter is not equal to `num` "*. It turns out, when the counter is equal to `num`, the cycle is no longer executed. But we need it to be executed one more time, when the counter is `num`, and then it has already stopped.
