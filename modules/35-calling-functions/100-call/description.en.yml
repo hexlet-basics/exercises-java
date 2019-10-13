@@ -3,13 +3,13 @@
 name: Functions and their call
 theory: |
 
-  As you noticed, each operation requires its own character (operator): for adding numbers - `+`, for concatenating strings - `.`, for dividing numbers - `/`, and so on. This approach is justified only for the most frequent operations, because in real life there are thousands of different tasks. In addition, even if the programming language included a thousand different operators, at some point a new programmer would be needed.
+  As you noticed, each operation requires its own character (operator): for adding numbers and for concatenating strings - `+`, for dividing numbers - `/`, and so on. This approach is justified only for the most frequent operations, because in real life there are thousands of different tasks. In addition, even if the programming language included a thousand different operators, at some point a new programmer would be needed.
 
   Any programming language allows you to expand the set of operations. Such new operations are called "functions". Let's first learn how to use the already created functions, and only then we will create new functions.
 
-  Similarly to mathematics, in Java a function is a kind of transformation that is applied to some argument values ​​and expresses its value through them, that is, it calculates a certain result based on the argument values, which is called the function value for these argument values. Another value of the function is called the return value - because it is returned from the function to its calling code). Thus, the function of taking the smaller of the two numbers compares them, and by its result assigns the one that is smaller.
+  Similarly to mathematics, in Java a function is a kind of transformation that is applied to some argument values and expresses its value through them, that is, it calculates a certain result based on the argument values, which is called the function value for these argument values. Another value of the function is called the return value - because it is returned from the function to its calling code). Thus, the function of taking the smaller of the two numbers compares them, and by its result assigns the one that is smaller.
 
-  The java instruction to calculate the value of a function on the given values ​​of the arguments is called a function call.
+  The java instruction to calculate the value of a function on the given values of the arguments is called a function call.
 
   In Java, there is a function for finding the minimum number of two. Call it:
   ```java
