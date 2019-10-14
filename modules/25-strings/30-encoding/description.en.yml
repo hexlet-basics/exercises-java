@@ -3,7 +3,7 @@
 name: Encoding
 theory: |
 
-  At the deepest level, the computer operates exclusively with the numbers `0` and` 1`. This is the so-called [binary code] (https://ru.wikipedia.org/wiki/Dual_code), and the ones and zeros are called bits, from "binary digit" - "binary digit".
+  At the deepest level, the computer operates exclusively with the numbers `0` and `1`. This is the so-called [binary code] (https://ru.wikipedia.org/wiki/Dual_code), and the ones and zeros are called bits, from "binary digit" - "binary digit".
 
   The usual numbers familiar to us in the decimal number system are encoded using binary numbers:
 
