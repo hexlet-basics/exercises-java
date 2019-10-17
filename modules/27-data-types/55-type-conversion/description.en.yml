@@ -23,7 +23,7 @@ theory: |
   In case above, in spite of the fact, that 5.1 is the number, it has double type not int. Expression above bring this number type to int type, reject fraction part, because int type doesn't keep fraction part.
 
 instructions: |
-  Display the string `2 times`, obtained from the number 2.9 and the string` times`, using type conversions and concatenation.
+  Display the string `2 times`, obtained from the number 2.9 and the string `times`, using type conversions and concatenation.
 
 # definitions: []
 
