@@ -3,7 +3,7 @@
 name: Encoding
 theory: |
 
-  At the deepest level, the computer operates exclusively with the numbers `0` and `1`. This is the so-called [binary code] (https://ru.wikipedia.org/wiki/Dual_code), and the ones and zeros are called bits, from "binary digit" - "binary digit".
+  At the deepest level, the computer operates exclusively with the numbers `0` and `1`. This is the so-called [binary code] (https://en.wikipedia.org/wiki/Dual_code), and the ones and zeros are called bits, from "binary digit" - "binary digit".
 
   The usual numbers familiar to us in the decimal number system are encoded using binary numbers:
 
@@ -32,13 +32,13 @@ theory: |
 
   This is the essence of **encodings**.
 
-  In addition to letters of the alphabet, punctuation marks and other useful characters are included in the charset tables. You've probably come across encodings like [ASCII] (https://ru.wikipedia.org/wiki/ASCII) or [UTF-8] (https://ru.wikipedia.org/wiki/UTF-8).
+  In addition to letters of the alphabet, punctuation marks and other useful characters are included in the charset tables. You've probably come across encodings like [ASCII] (https://en.wikipedia.org/wiki/ASCII) or [UTF-8] (https://en.wikipedia.org/wiki/UTF-8).
 
   Different encodings contain different numbers of characters. Initially, small tables like ASCII were sufficient for most tasks. But it has only Latin letters, a few simple characters like `%` and `?` And special control characters such as line breaks.
 
   With the spread of computers, different countries needed their own wider tables. Including for Cyrillic letters, oriental hieroglyphs, Arabic script, additional mathematical and typographic symbols, and later even for emoji-emoticons.
 
-  Today, in most cases, one of the [unicode] variants is used (https://ru.wikipedia.org/wiki/Unicode), which includes signs of almost all the written languages of the world.
+  Today, in most cases, one of the [unicode] variants is used (https://en.wikipedia.org/wiki/Unicode), which includes signs of almost all the written languages of the world.
 
 instructions: |
 
