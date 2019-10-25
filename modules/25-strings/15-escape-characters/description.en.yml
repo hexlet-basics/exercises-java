@@ -112,7 +112,7 @@ theory: |
   Joffrey loves using \n
   ```
 
-  A small but important note about Windows. On Windows, `\r\n` is used to translate strings by default. Such a combination works well only in Windows, but creates problems when transferring to other systems (for example, when the development team has both Windows and Linux users). The fact is that the sequence `\ r \ n` has a different interpretation depending on the selected encoding (discussed later). For this reason, in the development environment, it is customary to always use `\n` without` \r`, since LF is always treated the same way and works fine in any system. Remember to configure your editor to use `\n`.
+  A small but important note about Windows. On Windows, `\r\n` is used to translate strings by default. Such a combination works well only in Windows, but creates problems when transferring to other systems (for example, when the development team has both Windows and Linux users). The fact is that the sequence `\r\n` has a different interpretation depending on the selected encoding (discussed later). For this reason, in the development environment, it is customary to always use `\n` without `\r`, since LF is always treated the same way and works fine in any system. Remember to configure your editor to use `\n`.
 
 instructions: |
 
