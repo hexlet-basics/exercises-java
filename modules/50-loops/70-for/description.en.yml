@@ -63,7 +63,7 @@ theory: |
 
 instructions: |
 
-  Implement the function `sumOfSeries`, which counts the sum of [a series of integers] (https://ru.wikipedia.org/wiki/Number). The series is given by two numbers - the initial and final.
+  Implement the function `sumOfSeries`, which counts the sum of [a series of integers] (https://en.wikipedia.org/wiki/Number). The series is given by two numbers - the initial and final.
 
   The function takes two argument-numbers and returns the sum of the series. For example, for arguments `4, 7` the sum would be `4 + 5 + 6 + 7 = 22`.
 
