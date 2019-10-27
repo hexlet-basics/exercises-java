@@ -30,7 +30,7 @@ theory: |
   }
   ```
 
-  Inside curly `{ }` brackets after `if` there will be a code that will be executed only if` length> 5`. There will be a cycle for repeating 100 times.
+  Inside curly `{ }` brackets after `if` there will be a code that will be executed only if `length > 5`. There will be a cycle for repeating 100 times.
 
   Recall the strategy for creating such cycles:
 
