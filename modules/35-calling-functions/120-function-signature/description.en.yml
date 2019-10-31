@@ -13,7 +13,7 @@ theory: |
 
 instructions: |
 
-  In Java, the String class has a function `concat`. Examine its signature at [https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#concat(java.lang.String]].
+  In Java, the String class has a function `concat`. Examine its signature at [java.lang.String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#concat-java.lang.String-).
 
   Write a program that uses the `concat` function with the` text` variable and displays the result on the screen.
 
