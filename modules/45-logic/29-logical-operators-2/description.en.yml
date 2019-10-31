@@ -21,12 +21,12 @@ theory: |
 
   We will analyze in parts:
 
-  - the first condition `year% 400 == 0`: the remainder of dividing by 400 is 0, then the number is a multiple of 400
+  - the first condition `year % 400 == 0`: the remainder of dividing by 400 is 0, then the number is a multiple of 400
   - `||` **OR**
-  - the second condition `(year% 4 == 0 && year% 100! = 0)`
-    - `year% 4 == 0`: the remainder of dividing by 4 is 0, so the number is a multiple of 4
+  - the second condition `(year % 4 == 0 && year % 100 != 0)`
+    - `year % 4 == 0`: the remainder of dividing by 4 is 0, so the number is a multiple of 4
     - `&&` ** and **
-    - `year% 100! = 0`: the remainder of the division by 100 is not equal to 0, which means that the number is not a multiple of 100
+    - `year % 100 != 0`: the remainder of the division by 100 is not equal to 0, which means that the number is not a multiple of 100
 
 
 instructions: |
