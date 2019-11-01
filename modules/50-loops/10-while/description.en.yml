@@ -36,7 +36,7 @@ theory: |
 
   <pre class='hexlet-basics-output'>1<br>2<br>3<br>finished!</pre>
 
-  The while construct reads: “do what is indicated in the body of the loop while the condition (predicate)` i <= lastNumber` is true”. At the same time, the truth of the condition is checked before each execution of the loop body, including before the first one.
+  The while construct reads: “do what is indicated in the body of the loop while the condition (predicate) `i <= lastNumber` is true”. At the same time, the truth of the condition is checked before each execution of the loop body, including before the first one.
 
   The while loop consists of three elements:
 
@@ -48,7 +48,7 @@ theory: |
 
   The most important thing in the cycle is completion (exit). The process that generates the cycle must eventually stop, otherwise the cycle will continue indefinitely. The responsibility for stopping lies entirely with the programmer.
 
-  Often, ensuring the finiteness of a cycle comes down to introducing a variable called “counter”, firstly because it’s so easy to convey the idea of ​​“repeat N times”, and secondly, the value of the counter can be used in the body of the cycle itself - as in our example i for print. First, the counter is initialized, that is, it is given an initial value. In our example, this is done by the instruction `i = 1`. Then in the cycle condition it is checked whether the counter has reached its limit value.
+  Often, ensuring the finiteness of a cycle comes down to introducing a variable called “counter”, firstly because it’s so easy to convey the idea of “repeat N times”, and secondly, the value of the counter can be used in the body of the cycle itself - as in our example i for print. First, the counter is initialized, that is, it is given an initial value. In our example, this is done by the instruction `i = 1`. Then in the cycle condition it is checked whether the counter has reached its limit value.
 
   In our example, the limit value is determined by the function argument. If the cycle condition is not met, the body is not met and the interpreter moves on, following the instructions after the loop. But if the condition of the cycle is true, then the body in which the key element of the stop is located is the change in the counter. It is usually done at the end of the body. In our example, the line `i = i + 1` is responsible for the change.
 
