@@ -12,7 +12,7 @@ theory: |
   System.out.print(dollars);
   ```
 
-  In the previous lesson we wrote down a specific value in a variable. And here `var dollars = 50 * 1.25;` to the right of the sign equals **expression**. The program will calculate the result — `62.5` — and write it into a variable. From the point of view of the program, it does not matter what is in front of him: `62.5` or` 50 * 1.25`, both of these options are expressions that need to be calculated. And they are calculated in the same value — `62.5`.
+  In the previous lesson we wrote down a specific value in a variable. And here `var dollars = 50 * 1.25;` to the right of the sign equals **expression**. The program will calculate the result — `62.5` — and write it into a variable. From the point of view of the program, it does not matter what is in front of him: `62.5` or `50 * 1.25`, both of these options are expressions that need to be calculated. And they are calculated in the same value — `62.5`.
 
   Any string is an expression. String concatenation is also an expression. When the program sees the expression, it processes it and generates the result — **the value of the expression**. Here are some examples of expressions, and in the comments to the right of each expression is the total value:
 
