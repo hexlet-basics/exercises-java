@@ -14,7 +14,7 @@ theory: |
   - `distance` is \_\_\_\_\_\_\_\_\_\_
   - the function `calculateDistance` is called with \_\_\_\_\_\_\_\_\_\_\_ `"Lannisport"` and `"Bayasabhad"`
   - the function `calculateDistance` returns a value whose type is \_\_\_\_\_.
-  - after executing the code in the variable $ distance` it will be \_\_\_\_\_\_\_\_, returned by the call of the function `calculateDistance`
+  - after executing the code in the variable  `distance` it will be \_\_\_\_\_\_\_\_, returned by the call of the function `calculateDistance`
 
    To understand this lesson, you need to remember the concept of "**expression**" from the module about modules.variables. Recall that an expression is a code that, when a program is executed, becomes ** the value **.
 
