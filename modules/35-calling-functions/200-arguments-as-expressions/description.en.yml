@@ -11,7 +11,7 @@ theory: |
 
   The `Math.min` function is called with the arguments `1` and `5`.
 
-  We found out that *expressions turn into values ​*. That is, from the Java point of view, values ​​and expressions are something similar. Therefore, any values ​​in the program can technically be replaced by expressions.
+  We found out that *expressions turn into values*. That is, from the Java point of view, values and expressions are something similar. Therefore, any values in the program can technically be replaced by expressions.
 
   When calling a function, you can pass an expression **into it with the argument**:
 
@@ -21,14 +21,14 @@ theory: |
 
   The result will be the same as in the first example, because the expression `2 + 3` will turn into the value `5`, and `Math.min` will be called with the arguments `1` and `5`.
 
-  Moreover, you can use variables interspersed with values ​​and other expressions:
+  Moreover, you can use variables interspersed with values and other expressions:
 
   ```java
   var number = 2 + 2;
   var result = Math.min(1, 1 + number);
   ```
 
-  Naturally, this works not only with numbers, but with any values ​​and expressions. For example, with strings.
+  Naturally, this works not only with numbers, but with any values and expressions. For example, with strings.
 
   Let's summarize. Take a look at a few examples from the current lesson:
 
