@@ -18,7 +18,7 @@ theory: |
   But what will be displayed if you call `System.out.print(number);`? The old value is displayed: `7.7`.
 
   The `Math.round` function returned *new* data, but did not change the data passed to it. More importantly, it could not do this in principle, because **the function arguments in Java are immutable**.
-    
+
   In fact, we can assume that if the function f is declared with some argument arg, and it is called as f(number), then there is a variable arg inside the function, and the transferred value is written to this variable (which in this case is taken from the number variable). A function can change its arg variable (inside the function), but such changes will not affect the variable number. Even if the argument in the signature of the function is also called number - it is still another variable number, and not the one whose value is passed to the function.
 
 instructions: |
