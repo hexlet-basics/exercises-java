@@ -72,7 +72,7 @@ instructions: |
 
   On the electronic map of Westeros, which Sam implemented, the Starks' allies are shown in a green circle, the enemies in red, and neutral families in gray.
 
-  Write for Sam the function `whoIsThisHouseToStarks`, which accepts the family name as an input and returns one of three values:` `friend '`, `` enemy' `,` `neutral '`.
+  Write for Sam the function `whoIsThisHouseToStarks`, which accepts the family name as an input and returns one of three values: `"friend"`, `"enemy"`, `"neutral"`.
 
   Rules for determining:
 
