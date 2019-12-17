@@ -46,7 +46,7 @@ instructions: |
 
   The function accepts addresses in the form `ADDRESS` or `https://ADDRESS`, but always returns the address in the form `https://ADDRESS`
 
-  You can use the `startsWith` function to check if the string starts with the `https://`prefix. And then based on this, add or not add `https://`.
+  You can use the `startsWith` function to check if the string starts with the `https://` prefix. And then based on this, add or not add `https://`.
 
   Call examples:
 
