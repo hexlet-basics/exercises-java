@@ -76,7 +76,7 @@ instructions: |
 
   Rules for determining:
 
-    *Friends (`"friend"`): "Karstark", "Tally"
+    * Friends (`"friend"`): "Karstark", "Tally"
     * Enemies (`"enemy"'): "Lannister", "Frey"
     * Any other families are considered neutral.
 
