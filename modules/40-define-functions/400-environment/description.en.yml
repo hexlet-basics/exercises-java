@@ -44,7 +44,7 @@ instructions: |
 
   This task is not directly related to the lesson, it is just another useful exercise in working with functions.
 
-  Write a function `getAgeDifference`, which takes two years of birth and returns a string with an age difference in the form` The age difference is 11`.
+  Write a function `getAgeDifference`, which takes two years of birth and returns a string with an age difference in the form `The age difference is 11`.
 
   As usual, the function needs to be public static, not just static, so that we can call it from another class.
 
