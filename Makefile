@@ -1,3 +1,4 @@
+compose-setup: compose-build compose-install
 compose:
 	docker-compose up
 
@@ -6,6 +7,9 @@ gcloud-builds-submit:
 
 compose-test:
 	docker-compose run exercises make test
+
+compose-lint:
+	docker-compose run exercises make lint
 
 compose-install:
 	docker-compose run exercises npm install
