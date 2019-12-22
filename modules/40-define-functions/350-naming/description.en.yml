@@ -21,7 +21,7 @@ theory: |
 
   Adopt the following structure: function — verb, variable — noun.
 
-  *(We also had a `parentFor` function, and this name is not a verb. One could call it` getParentFor`, but names like `parentFor`,` childOf`, `priceAt`, `min`, `max` are common forms. "Function — verb" — not an iron rule, but it is almost always better to stick with it).*
+  *(We also had a `parentFor` function, and this name is not a verb. One could call it `getParentFor`, but names like `parentFor`, `childOf`, `priceAt`, `min`, `max` are common forms. "Function — verb" — not an iron rule, but it is almost always better to stick with it).*
 
   In the lesson about variables, we asked you to come up with the name of the variable and write it in a notebook or send it to your email. Find this title and take a fresh look at it: is it understandable? Describes the essence unequivocally or requires understanding?
 
@@ -59,7 +59,7 @@ instructions: |
 
   Implement the `printFormattedBirthday` function, which takes three parameters as input: day, month, and year of birth, and returns them as a string in a formatted form, for example: `30-02-1953`.
 
-  The day and month must be formatted so that, if necessary, `0` is added to the left. For example, if the month came the number `7`, then in the output line it should be represented as` 07`.
+  The day and month must be formatted so that, if necessary, `0` is added to the left. For example, if the month came the number `7`, then in the output line it should be represented as `07`.
 
   As usual, the function needs to be public static, not just static, so that we can call it from another class.
 
