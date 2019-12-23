@@ -54,7 +54,7 @@ instructions: |
 
   <pre class='hexlet-basics-output'>=-=-=-=-</pre>
 
-  Sam is not very pleased. It is inconvenient to call `repeat` hundreds of times inside the` System.out.print` call.
+  Sam is not very pleased. It is inconvenient to call `repeat` hundreds of times inside the `System.out.print` call.
 
   Write for Sam the function `printSeq`, which itself displays the resulting repetitions. It takes two arguments, a string and a number, and prints a repeating string to the screen. To generate a string, use `repeat`.
 
