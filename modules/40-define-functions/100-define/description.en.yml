@@ -59,7 +59,7 @@ theory: |
 
   Not only the main function, but also showDate is described in the App class, so the showDate function is called by the App.showDate expression - but in fact if both functions are described in the same class as here, then one of them can call the other without class name indication: not App.showDate(), but just showDate().
 
-  <pre class = 'hexlet-basics-output'>Today is: December 5</ pre>
+  <pre class = 'hexlet-basics-output'>Today is: December 5</pre>
 
   ---
 
@@ -80,7 +80,7 @@ theory: |
   }
   ```
 
-  <pre class = 'hexlet-basics-output'>Today is: January 29</ pre>
+  <pre class = 'hexlet-basics-output'>Today is: January 29</pre>
 
   Now it is clear why we needed parentheses after the function name: *you can* specify the arguments in. Now our function takes one argument - `text`, which is of type String (this is the type in Java that matches the string of text).
 
@@ -105,7 +105,7 @@ theory: |
   }
   ```
 
-  <pre class = 'hexlet-basics-output'>Today is: January 29</ pre>
+  <pre class = 'hexlet-basics-output'>Today is: January 29</pre>
 
   The main thing is to remember about the order: in what order the arguments are in the definition of the function, in the same order they must be transmitted when calling.
 
@@ -125,7 +125,7 @@ instructions: |
 
   so that we can call this function from another class, we need to mark it not only with the keyword static, but also public.
 
-  <pre class = 'hexlet-basics-output'>JAIME: Farewell, my friend ...</ pre>
+  <pre class = 'hexlet-basics-output'>JAIME: Farewell, my friend ...</pre>
 
 # tips:
 #    - |
