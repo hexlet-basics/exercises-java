@@ -55,7 +55,7 @@ theory: |
   var result = Functions.numberOfKnights("Winterfell") + Functions.numberOfKnights("Oldtown");
   ```
 
-  There are two different function calls, but each call is an expression, so you end up with the addition of two values ​​- two numbers (the number of knights of the castle `Winterfell` and the number of knights of the castle `Oldtown`).
+  There are two different function calls, but each call is an expression, so you end up with the addition of two values - two numbers (the number of knights of the castle `Winterfell` and the number of knights of the castle `Oldtown`).
 
 instructions: |
 
@@ -63,11 +63,11 @@ instructions: |
 
   Unfortunately, the `Functions.calculateDistance` function can only calculate the distance between two points. Therefore, you will first have to find out the distance from Winterfell to the Freew Castle, and then the distance to the Eagle's Nest.
 
-  The names of the castles in English:
+  The names of the castles:
 
-    - Winterfell - `Winterfell`
-    - Gemini (Freew Castle) - `The Twins`
-    - Eagle's Nest - `The Eyrie`
+  - Winterfell — `Winterfell`
+  - Gemini (Freew Castle) — `The Twins`
+  - Eagle's Nest — `The Eyrie`
 
   Display the full length of the Arya route. Recall that the `Functions.calculateDistance` function takes two arguments and returns a number.
 
