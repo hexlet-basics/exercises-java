@@ -38,9 +38,9 @@ instructions: |
 
   Write a program that will generate the header and body of the letter, using the ready-made variables, and display the resulting lines on the screen.
 
-  For the title, use the variables `firstName` and` greeting`, a comma and an exclamation point. Display it in the correct order.
+  For the title, use the variables `firstName` and `greeting`, a comma and an exclamation point. Display it in the correct order.
 
-  For the body of the letter, use the variables `info` and` intro`, with the second sentence should be on a new line.
+  For the body of the letter, use the variables `info` and `intro`, with the second sentence should be on a new line.
 
   The result on the screen will look like this:
 
