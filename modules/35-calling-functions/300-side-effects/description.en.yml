@@ -28,9 +28,9 @@ instructions: |
 
   Recall that `Functions.parentFor` takes the first name of the child and returns the name of the parent. The second parameter function takes the line `father` or `mother`. So the function understands which parent to return. The default setting is `mother`.
 
-# tips:
-#   - |
-#     [Side effect] (https://ru.wikipedia.org/wiki/Side-by_effect_(programming))
+tips:
+  - |
+    [Side effect](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))
 
 # definitions:
 #   - name: side effect

@@ -71,6 +71,6 @@ instructions: |
   - 1 euro = 1.25 dollars
   - 1 dollar = 60 rubles
 
-# tips:
-#   - |
-#     To translate a line, you can use `\ n` between the withdrawal of dollars and rubles.
+tips:
+  - |
+    To translate a line, you can use `\ n` between the withdrawal of dollars and rubles.

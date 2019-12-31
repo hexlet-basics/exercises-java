@@ -48,6 +48,6 @@ instructions: |
 
   As usual, the function needs to be public static, not just static, so that we can call it from another class.
 
-# tips:
-#  - |
-#   Recall that in Java there is a `Math.abs` function that returns the module of the transferred number: for example, `Math.abs (-12)` will return `12`.
+tips:
+ - |
+  Recall that in Java there is a `Math.abs` function that returns the module of the transferred number: for example, `Math.abs (-12)` will return `12`.
