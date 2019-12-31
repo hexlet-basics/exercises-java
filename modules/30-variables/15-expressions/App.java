@@ -1,13 +1,13 @@
 public class App {
     public static void main(String[] args) {
-        var euros = 100;
+        var eurosCount = 100;
 
         // BEGIN
-        var dollars = euros * 1.25;
-        System.out.print(dollars);
+        var dollarsCount = eurosCount * 1.25;
+        System.out.print(dollarsCount);
         System.out.print("\n");
-        var rubles = dollars * 60;
-        System.out.print(rubles);
+        var rublesCount = dollarsCount * 60;
+        System.out.print(rublesCount);
         // END
     }
 }
