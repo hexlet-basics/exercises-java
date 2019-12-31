@@ -8,11 +8,11 @@ theory: |
   To begin with we will transfer 50 euros to dollars. Suppose that one euro — 1.25 dollars:
 
   ```java
-  var dollars = 50 * 1.25;
-  System.out.print(dollars);
+  var dollarsCount = 50 * 1.25;
+  System.out.print(dollarsCount);
   ```
 
-  In the previous lesson we wrote down a specific value in a variable. And here `var dollars = 50 * 1.25;` to the right of the sign equals **expression**. The program will calculate the result — `62.5` — and write it into a variable. From the point of view of the program, it does not matter what is in front of him: `62.5` or `50 * 1.25`, both of these options are expressions that need to be calculated. And they are calculated in the same value — `62.5`.
+  In the previous lesson we wrote down a specific value in a variable. And here `var dollarsCount = 50 * 1.25;` to the right of the sign equals **expression**. The program will calculate the result — `62.5` — and write it into a variable. From the point of view of the program, it does not matter what is in front of him: `62.5` or `50 * 1.25`, both of these options are expressions that need to be calculated. And they are calculated in the same value — `62.5`.
 
   Any string is an expression. String concatenation is also an expression. When the program sees the expression, it processes it and generates the result — **the value of the expression**. Here are some examples of expressions, and in the comments to the right of each expression is the total value:
 
@@ -34,31 +34,31 @@ theory: |
 
   ```java
   var rublesPerDollar = 60;
-  var dollars = 50 * 1.25; // => 62.5
-  var rubles = dollars * rublesPerDollar; // => 3750
+  var dollarsCount = 50 * 1.25; // => 62.5
+  var rublesCount = dollarsCount * rublesPerDollar; // => 3750
 
-  System.out.print(rubles);
+  System.out.print(rublesCount);
   ```
 
   Now let's add text to the output using concatenation:
 
   ```java
   var rublesPerDollar = 60;
-  var dollars = 50 * 1.25; // => 62.5
-  var rubles = dollars * rublesPerDollar; // => 3750
+  var dollarsCount = 50 * 1.25; // => 62.5
+  var rublesCount = dollarsCount * rublesPerDollar; // => 3750
 
-  System.out.print("The price is" + rubles + "rubles");
+  System.out.print("The price is" + rublesCount + "rubles");
   ```
 
   The price is 3750 rubles
 
   Any variable can be part of any expression. At the time of calculation, the value of the variable is substituted for its value.
 
-  The value of `dollars` is calculated before it is used in other expressions. When the time comes to use a variable, Java "knows" the value, because it has already calculated it.
+  The value of `dollarsCount` is calculated before it is used in other expressions. When the time comes to use a variable, Java "knows" the value, because it has already calculated it.
 
 instructions: |
 
-  Write a program that takes the original amount of euros recorded in the variable `euros`, converts the euro into dollars and displays on the screen. Then, the resulting value translates into rubles and displays on the new line.
+  Write a program that takes the original amount of euros recorded in the variable `eurosCount`, converts the euro into dollars and displays on the screen. Then, the resulting value translates into rubles and displays on the new line.
 
   Example withdrawal for 100 euros:
 
