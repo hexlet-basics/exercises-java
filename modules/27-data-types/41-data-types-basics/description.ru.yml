@@ -68,9 +68,9 @@ theory: |
 instructions: |
   Выведите на экран число `-0.304`.
 
-# tips:
-#   - |
-#     [Статья о дробных числах](https://habrahabr.ru/post/112953/)
+tips:
+  - |
+    [Статья о дробных числах](https://habrahabr.ru/post/112953/)
 
 # definitions:
 #   - name: "Тип данных"

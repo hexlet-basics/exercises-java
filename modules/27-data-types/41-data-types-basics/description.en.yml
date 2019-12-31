@@ -68,9 +68,9 @@ theory: |
 instructions: |
   Display the number `-0.304`.
 
-# tips:
-#   - |
-#     [Article on fractional numbers](https://habrahabr.ru/post/112953/)
+tips:
+  - |
+    [Article on fractional numbers](https://habrahabr.ru/post/112953/)
 
 # definitions:
 #   - name: "Data Type"
