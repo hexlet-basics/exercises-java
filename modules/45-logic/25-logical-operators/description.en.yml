@@ -105,13 +105,13 @@ instructions: |
 
   The function returns `true` if Lannister is recognized, and `false` if not recognized.
 
-# tips:
-#   - |
-#     [Boolean algebra] (https://ru.wikipedia.org/wiki/Buleva_algebra)
-#   - |
-#     [Conjunction] (https://ru.wikipedia.org/wiki/Conjunction)
-#   - |
-#     [Disjunction] (https://ru.wikipedia.org/wiki/Disjunction)
+tips:
+  - |
+    [Boolean algebra] (https://en.wikipedia.org/wiki/Boolean_algebra)
+  - |
+    [Conjunction] (https://en.wikipedia.org/wiki/Logical_conjunction)
+  - |
+    [Disjunction] (https://en.wikipedia.org/wiki/Logical_disjunction)
 
 # definitions:
 #   - name: "Logical operators"

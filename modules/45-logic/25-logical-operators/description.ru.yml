@@ -105,13 +105,13 @@ instructions: |
 
   Функция возвращает `true`, если распознан Ланнистер, и `false`, если не распознан.
 
-# tips:
-#   - |
-#     [Булева алгебра](https://ru.wikipedia.org/wiki/Булева_алгебра)
-#   - |
-#     [Конъюнкция](https://ru.wikipedia.org/wiki/Конъюнкция)
-#   - |
-#     [Дизъюнкция](https://ru.wikipedia.org/wiki/Дизъюнкция)
+tips:
+  - |
+    [Булева алгебра](https://ru.wikipedia.org/wiki/Булева_алгебра)
+  - |
+    [Конъюнкция](https://ru.wikipedia.org/wiki/Конъюнкция)
+  - |
+    [Дизъюнкция](https://ru.wikipedia.org/wiki/Дизъюнкция)
 
 # definitions:
 #   - name: "Логические операторы"

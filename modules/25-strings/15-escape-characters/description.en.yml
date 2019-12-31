@@ -123,9 +123,10 @@ instructions: |
 
   The program uses only one `println`, but the result on the screen should look exactly like the one shown above.
 
+tips:
+  - |
+    [String History](https://en.wikipedia.org/wiki/Newline#History)j
+
 # definitions:
 #   - name: "Escape sequence"
 #     description: "a special combination of characters in the text. For example, _\\n_ is a line break."
-
-# tips:
-#   - "[String History](https://en.wikipedia.org/wiki/Newline#History)"
