@@ -9,20 +9,20 @@ theory: |
 
   ```java
   public static void main(String[] args) {
-    reverseString("Game Of Thrones");  // => senorhT fO emaG
+      reverseString("Game Of Thrones");  // => senorhT fO emaG
   }
   static String reverseString(String str)
   {
-    var index = str.length() - 1;
-    var reversedString = "";
+      var index = str.length() - 1;
+      var reversedString = "";
 
-    while (index >= 0) {
-      var currentChar = str.charAt(index);
-      reversedString = reversedString + currentChar;
-      index = index - 1;
-    }
+      while (index >= 0) {
+          var currentChar = str.charAt(index);
+          reversedString = reversedString + currentChar;
+          index = index - 1;
+      }
 
-    return reversedString;
+      return reversedString;
   }
 
   ```

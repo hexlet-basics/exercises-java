@@ -3,7 +3,7 @@
 name: Search for a starting position
 theory: |
 
-  One of the common tasks when working with strings is to determine whether one string is part of a (other substring) of another string. Most programming languages ​​have a built-in function designed specifically for this task. They are in Java, but it will be useful to write your own implementations.
+  One of the common tasks when working with strings is to determine whether one string is part of a (other substring) of another string. Most programming languages have a built-in function designed specifically for this task. They are in Java, but it will be useful to write your own implementations.
 
   ```java
   "Valar Morgulis".indexOf("Morgulis"));  // 6

@@ -12,7 +12,7 @@ theory: |
   We call the function `Math.min` and pass two arguments to it:
 
   - the number `1`
-    
+
   - the result of calling the function `Math.min` with arguments `2` and `3`
 
   You can do the same, but with intermediate steps:

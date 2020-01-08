@@ -5,7 +5,7 @@ theory: |
 
   #### Вкратце
 
-  ```
+  ```java
   while (условие) {
       // код, который будет повторяться
       // пока условие истинно
@@ -20,17 +20,17 @@ theory: |
 
   ```java
   public static void main(String[] args) {
-    printNumbers(3);
+      printNumbers(3);
   }
 
   static void printNumbers(int lastNumber) {
-    var i = 1;
+      var i = 1;
 
-    while (i <= lastNumber) {
-      System.out.println(i);
-      i = i + 1;
-    }
-    System.out.print("finished!");
+      while (i <= lastNumber) {
+          System.out.println(i);
+          i = i + 1;
+      }
+      System.out.print("finished!");
   }
   ```
 

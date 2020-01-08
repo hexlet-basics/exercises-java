@@ -11,7 +11,7 @@ theory: |
   System.out.print(firstName.charAt(0)); // => A
   ```
 
-  charAt(int index) is a special method for extracting a character from a string. **Index** is the position of the character within the string. Indices start with 0 in almost all programming languages ​​- therefore, to get the first character, you need to specify the index `0`.
+  charAt(int index) is a special method for extracting a character from a string. **Index** is the position of the character within the string. Indices start with 0 in almost all programming languages - therefore, to get the first character, you need to specify the index `0`.
 
   An index can be not only a specific number, but also the value of a variable. Here is an example that will lead to the same result - displaying the `A` symbol on the screen, but the index inside the square brackets is written not by a number, but by a variable:
 
