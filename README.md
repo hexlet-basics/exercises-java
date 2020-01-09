@@ -1,3 +1,5 @@
+[![github action status](https://github.com/hexlet-basics/exercises-java/workflows/Main%20workflow/badge.svg)](https://actions-badge.atrox.dev/hexlet-basics/exercises-java/goto)
+
 ## Develop
 
 ```sh
@@ -11,6 +13,9 @@ $ make compose-test
 
 # run linters
 $ make compose-lint
+
+# run linters
+$ make compose-schema-validate
 ```
 
 ##
