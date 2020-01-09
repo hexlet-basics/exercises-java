@@ -2,7 +2,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 class Test {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         final var expected = "125";
 
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
