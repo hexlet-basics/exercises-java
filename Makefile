@@ -11,6 +11,11 @@ compose-test:
 compose-lint:
 	docker-compose run exercises make lint
 
+compose-schema-validate:
+	docker-compose run exercises make lint
+
+compose-check: compose-schema-validate compose-lint compose-test
+
 compose-install:
 	docker-compose run exercises npm install
 
@@ -34,10 +39,12 @@ compile:
 clean:
 	@$$(find . -type f -name *.class -delete)
 
-test: $(SUBDIRS)
+test:
+	@(for i in $$(find modules/** -type f -name Makefile); do make test -C $$(dirname $$i) ; done)
+
+validate-schema: $(SUBDIRS)
 $(SUBDIRS):
-	@echo
-	make test -s -C $@
-	@echo
+	yq . $@/description.ru.yml > /tmp/current-description.json && ajv -s /exercises-java/schema.json -d /tmp/current-description.json
+	yq . $@/description.en.yml > /tmp/current-description.json && ajv -s /exercises-java/schema.json -d /tmp/current-description.json || true
 
 .PHONY: all test $(SUBDIRS)

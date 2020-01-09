@@ -126,7 +126,3 @@ instructions: |
   so that we can call this function from another class, we need to mark it not only with the keyword static, but also public.
 
   <pre class = 'hexlet-basics-output'>JAIME: Farewell, my friend ...</pre>
-
-tips:
-   - |
-     [Naming in programming](https://ru.hexlet.io/blog/posts/naming-in-programming)
