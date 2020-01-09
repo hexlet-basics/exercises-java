@@ -12,7 +12,7 @@ compose-lint:
 	docker-compose run exercises make lint
 
 compose-schema-validate:
-	docker-compose run exercises make lint
+	docker-compose run exercises make validate-schema
 
 compose-check: compose-schema-validate compose-lint compose-test
 
