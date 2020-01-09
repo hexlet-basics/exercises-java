@@ -12,7 +12,7 @@ compose-lint:
 	docker-compose run exercises make lint
 
 compose-schema-validate:
-	docker-compose run exercises make validate-schema
+	docker-compose run exercises make schema-validate
 
 compose-check: compose-schema-validate compose-lint compose-test
 
@@ -42,7 +42,7 @@ clean:
 test:
 	@(for i in $$(find modules/** -type f -name Makefile); do make test -C $$(dirname $$i) ; done)
 
-validate-schema: $(SUBDIRS)
+schema-validate: $(SUBDIRS)
 $(SUBDIRS):
 	yq . $@/description.ru.yml > /tmp/current-description.json && ajv -s /exercises-java/schema.json -d /tmp/current-description.json
 	yq . $@/description.en.yml > /tmp/current-description.json && ajv -s /exercises-java/schema.json -d /tmp/current-description.json || true
