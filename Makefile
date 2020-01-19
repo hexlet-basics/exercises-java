@@ -8,8 +8,8 @@ gcloud-builds-submit:
 compose-test:
 	docker-compose run exercises make test
 
-compose-lint:
-	docker-compose run exercises make lint
+compose-lint-descriptions:
+	docker-compose run exercises make lint-descriptions
 
 compose-schema-validate:
 	docker-compose run exercises make schema-validate
@@ -30,8 +30,11 @@ build:
 
 SUBDIRS := $(wildcard modules/**/*/.)
 
-lint:
+lint-descriptions:
 	yamllint modules
+
+lint-code:
+	java -jar /opt/checkstyle.jar modules
 
 compile:
 	@(for i in $$(find . -type f -name Main.java); do javac $$(dirname $$i)/*.java ; done)
