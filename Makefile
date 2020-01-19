@@ -40,7 +40,7 @@ clean:
 	@$$(find . -type f -name *.class -delete)
 
 test:
-	@(for i in $$(find modules/** -type f -name Makefile); do make test -C $$(dirname $$i) ; done)
+	@(for i in $$(find modules/** -type f -name Makefile); do make test -C $$(dirname $$i) || exit 1; done)
 
 schema-validate: $(SUBDIRS)
 $(SUBDIRS):

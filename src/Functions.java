@@ -34,12 +34,15 @@ public class Functions {
         return parentFor(child, null);
     }
 
-    public static int calculateDistanceBetweenTowns(String param) throws RuntimeException{
-        String[] towns  = param.split("-");
+    public static int calculateDistanceBetweenTowns(String path) throws RuntimeException {
+        if (!path.contains("-")) {
+            throw new RuntimeException("Wrong format: " + path + ". Expected city1-city2.");
+        }
+        String[] towns  = path.split("-");
         return calculateDistance(towns[0], towns[1]);
     }
 
-    public static int calculateDistance(String source, String dest) throws RuntimeException{
+    public static int calculateDistance(String source, String dest) throws RuntimeException {
         String w = "Winterfell";
         String t = "The Twins";
         String e = "The Eyrie";
@@ -54,7 +57,7 @@ public class Functions {
         else if (q.equals(source) && d.equals(dest) || d.equals(source) && q.equals(dest)) {
             return 125;
         }
-        throw new RuntimeException("Unknown cities: " + source + " and " + dest + ". Please check names");
+        throw new RuntimeException("Unknown cities: " + source + " and " + dest + ". Please check the names.");
     }
 
     public static String repeat(String text, int count) {
