@@ -1,3 +1,5 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Test {
     public static void main(String[] args) {
         String str1 = "A";
@@ -8,8 +10,8 @@ class Test {
         String shoutStr2 = "HELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLO";
         String shoutStr3 = "HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!";
 
-        assert shoutStr1.equals(App.shouter(str1));
-        assert shoutStr2.equals(App.shouter(str2));
-        assert shoutStr3.equals(App.shouter(str3));
+        assertThat(App.shouter(str1)).isEqualTo(shoutStr1);
+        assertThat(App.shouter(str2)).isEqualTo(shoutStr2);
+        assertThat(App.shouter(str3)).isEqualTo(shoutStr3);
     }
 }

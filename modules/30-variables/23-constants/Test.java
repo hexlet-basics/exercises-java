@@ -1,20 +1,22 @@
 import java.io.ByteArrayOutputStream;
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
 import java.io.PrintStream;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final var expected = "";
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(out));
 
-        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        App.main(null);
 
-        final PrintStream normal = System.out;
-        System.setOut(new PrintStream(baos));
-        App.main(new String[] {});
-        System.setOut(normal);
+        final String actual = out.toString();
 
-        final String grabbed = new String(baos.toByteArray(), java.nio.charset.Charset.defaultCharset());
-        System.out.println(grabbed);
+        System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
+        System.out.println(actual);
 
-        assert expected.equals(grabbed);
+        assertThat(actual).isEmpty();
     }
 }

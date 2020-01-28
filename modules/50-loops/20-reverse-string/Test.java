@@ -1,7 +1,9 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Test {
     public static void main(String[] args) {
-        assert "got".equals(App.mysubstr("got", 3));
-        assert "go".equals(App.mysubstr("got", 2));
-        assert "g".equals(App.mysubstr("got", 1));
+        assertThat(App.mysubstr("got", 3)).isEqualTo("got");
+        assertThat(App.mysubstr("got", 2)).isEqualTo("go");
+        assertThat(App.mysubstr("got", 1)).isEqualTo("g");
     }
 }

@@ -1,9 +1,11 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Test {
-    public static void main(String[] args) throws Exception {
-        assert "friend".equals(App.whoIsThisHouseToStarks("Tally"));
-        assert "friend".equals(App.whoIsThisHouseToStarks("Karstark"));
-        assert "enemy".equals(App.whoIsThisHouseToStarks("Lannister"));
-        assert "neutral".equals(App.whoIsThisHouseToStarks("Martell"));
-        assert "neutral".equals(App.whoIsThisHouseToStarks("undefined"));
+    public static void main(String[] args) {
+        assertThat(App.whoIsThisHouseToStarks("Tally")).isEqualTo("friend");
+        assertThat(App.whoIsThisHouseToStarks("Karstark")).isEqualTo("friend");
+        assertThat(App.whoIsThisHouseToStarks("Lannister")).isEqualTo("enemy");
+        assertThat(App.whoIsThisHouseToStarks("Martell")).isEqualTo("neutral");
+        assertThat(App.whoIsThisHouseToStarks("undefined")).isEqualTo("neutral");
     }
 }

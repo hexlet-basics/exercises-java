@@ -1,8 +1,10 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Test {
     public static void main(String[] args) {
-        assert !App.isNeutralSoldier("red", "black");
-        assert !App.isNeutralSoldier("red", "yellow");
-        assert !App.isNeutralSoldier("red", "red");
-        assert App.isNeutralSoldier("black", "black");
+        assertThat(App.isNeutralSoldier("red", "black")).isFalse();
+        assertThat(App.isNeutralSoldier("red", "yellow")).isFalse();
+        assertThat(App.isNeutralSoldier("red", "red")).isFalse();
+        assertThat(App.isNeutralSoldier("black", "black")).isTrue();
     }
 }

@@ -1,7 +1,9 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Test {
-    public static void main(String[] args) throws Exception{
-        assert !App.isNotLannisterSoldier("red", "lion");
-        assert App.isNotLannisterSoldier("red", "shield");
-        assert !App.isNotLannisterSoldier("red", "");
+    public static void main(String[] args) {
+        assertThat(App.isNotLannisterSoldier("red", "lion")).isFalse();
+        assertThat(App.isNotLannisterSoldier("red", "shield")).isTrue();
+        assertThat(App.isNotLannisterSoldier("red", "")).isFalse();
     }
 }
