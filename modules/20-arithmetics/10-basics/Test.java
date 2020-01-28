@@ -3,6 +3,8 @@ import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Test {
 
     public static void main(String[] args) {
@@ -17,10 +19,9 @@ class Test {
 
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         System.out.print(actual);
+        System.out.println(actual);
 
-        if (!expected.equals(actual)) {
-            throw new AssertionError("\"" + expected + "\" does not equal to \"" + actual + "\"");
-        }
+        assertThat(actual).isEqualTo(expected);
 
     }
 

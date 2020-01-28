@@ -1,8 +1,10 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Test {
     public static void main(String[] args) {
-        assert App.doesContain("Renly", 'R');
-        assert !App.doesContain("Renly", 'r');
-        assert App.doesContain("Tommy", 'm');
-        assert !App.doesContain("Tommy", 'd');
+        assertThat(App.doesContain("Renly", 'R')).isTrue();
+        assertThat(App.doesContain("Renly", 'r')).isFalse();
+        assertThat(App.doesContain("Tommy", 'm')).isTrue();
+        assertThat(App.doesContain("Tommy", 'd')).isFalse();
     }
 }

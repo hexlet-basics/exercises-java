@@ -1,9 +1,11 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Test {
-    public static void main(String[] args){
-        assert "normal".equals(App.getSentenceTone("normal"));
-        assert "normal".equals(App.getSentenceTone("normal?"));
-        assert "normal".equals(App.getSentenceTone("NoRmal?"));
-        assert "scream".equals(App.getSentenceTone("SCREAM"));
-        assert "scream".equals(App.getSentenceTone("SCREAM!"));
+    public static void main(String[] args) {
+        assertThat(App.getSentenceTone("normal")).isEqualTo("normal");
+        assertThat(App.getSentenceTone("normal?")).isEqualTo("normal");
+        assertThat(App.getSentenceTone("NoRmal?")).isEqualTo("normal");
+        assertThat(App.getSentenceTone("SCREAM")).isEqualTo("scream");
+        assertThat(App.getSentenceTone("SCREAM!")).isEqualTo("scream");
     }
 }
