@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         var from = "The Twins";
         var to = "The Eyrie";
 

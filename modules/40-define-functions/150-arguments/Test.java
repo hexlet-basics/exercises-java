@@ -1,22 +1,24 @@
 import java.io.ByteArrayOutputStream;
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
 import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final var expected = "0-0-0-0-0-";
+        final String expected = "0-0-0-0-0-";
 
-        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(out));
 
-        final PrintStream normal = System.out;
-        System.setOut(new PrintStream(baos));
         App.printSeq("0-", 5);
-        System.setOut(normal);
 
-        final String grabbed = new String(baos.toByteArray(), java.nio.charset.Charset.defaultCharset());
-        System.out.println(grabbed);
+        final String actual = out.toString();
 
-        assertThat(grabbed).isEqualTo(expected);
+        System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
+        System.out.println(actual);
+
+        assertThat(actual).isEqualTo(expected);
     }
 }
