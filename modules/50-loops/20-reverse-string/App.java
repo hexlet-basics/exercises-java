@@ -1,7 +1,6 @@
 public class App {
     // BEGIN
-    public static String mysubstr(String str, int length)
-    {
+    public static String mysubstr(String str, int length) {
         var index = 0;
         var result = "";
         while (index < length) {

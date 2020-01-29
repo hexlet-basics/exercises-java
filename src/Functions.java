@@ -30,7 +30,7 @@ public class Functions {
         }
     }
 
-    public static String parentFor(String child) throws RuntimeException{
+    public static String parentFor(String child) throws RuntimeException {
         return parentFor(child, null);
     }
 
@@ -50,11 +50,9 @@ public class Functions {
         String d = "Vaes Dothrak";
         if (w.equals(source) && t.equals(dest) || t.equals(source) && w.equals(dest)) {
             return 60;
-        }
-        else if (t.equals(source) && e.equals(dest) || e.equals(source) && t.equals(dest)) {
+        } else if (t.equals(source) && e.equals(dest) || e.equals(source) && t.equals(dest)) {
             return 20;
-        }
-        else if (q.equals(source) && d.equals(dest) || d.equals(source) && q.equals(dest)) {
+        } else if (q.equals(source) && d.equals(dest) || d.equals(source) && q.equals(dest)) {
             return 125;
         }
         throw new RuntimeException("Unknown cities: " + source + " and " + dest + ". Please check the names.");
