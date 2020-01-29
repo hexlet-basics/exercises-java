@@ -2,8 +2,11 @@ compose-setup: compose-build compose-install
 compose:
 	docker-compose up
 
-gcloud-builds-submit:
-	gcloud builds submit --config cloudbuild.yaml .
+docker-build:
+	docker build . --cache-from hexletbasics/exercises-java --file Dockerfile --tag hexletbasics/exercises-java
+
+docker-push:
+	docker push  hexletbasics/exercises-java
 
 compose-test:
 	docker-compose run exercises make test

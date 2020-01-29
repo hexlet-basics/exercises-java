@@ -1,12 +1,14 @@
 ---
 
-version: '3'
+version: '3.7'
 
 services:
   exercises:
     build:
       context: .
       dockerfile: Dockerfile
+      cache_from:
+        - hexletbasics/exercises-java
     volumes:
       - .:/exercises-java
-    command: make lint-descriptions lint-code test schema-validate
+    command: make lint-descriptions lint-code schema-validate test

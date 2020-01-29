@@ -1,0 +1,17 @@
+name: Push
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run tests
+      run: make compose
+    - name: Build The Docker Image
+      run: make docker-build
+    - name: Push The Docker Image
+      run: make docker-push
