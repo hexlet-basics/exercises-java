@@ -6,6 +6,7 @@ on:
   pull_request:
 jobs:
   build:
+    if: github.repository == 'hexlet-basics/exercises-java'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
