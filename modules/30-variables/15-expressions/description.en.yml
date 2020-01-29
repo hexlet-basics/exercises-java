@@ -63,8 +63,8 @@ instructions: |
   Example withdrawal for 100 euros:
 
   ```
-  125
-  7500
+  125.0
+  7500.0
   ```
 
   We believe that:
