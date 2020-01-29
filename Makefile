@@ -11,10 +11,13 @@ compose-test:
 compose-lint-descriptions:
 	docker-compose run exercises make lint-descriptions
 
+compose-lint-code:
+	docker-compose run exercises make lint-code
+
 compose-schema-validate:
 	docker-compose run exercises make schema-validate
 
-compose-check: compose-schema-validate compose-lint compose-test
+compose-check: compose-schema-validate compose-lint-descriptions compose-lint-code compose-test
 
 compose-install:
 	docker-compose run exercises npm install
