@@ -9,4 +9,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/exercises-java
-    command: make lint-descriptions test schema-validate
+    command: make lint-descriptions lint-code test schema-validate
