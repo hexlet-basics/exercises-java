@@ -4,7 +4,7 @@
 
 ```sh
 # Prepare
-# make compose-setup
+$ make compose-setup
 
 # Check everything
 $ make compose
