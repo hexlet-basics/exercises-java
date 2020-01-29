@@ -1,4 +1,5 @@
 compose-setup: compose-build compose-install
+
 compose:
 	docker-compose up
 

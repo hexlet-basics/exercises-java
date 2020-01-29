@@ -3,6 +3,9 @@
 ## Develop
 
 ```sh
+# Prepare
+# make compose-setup
+
 # Check everything
 $ make compose
 ```
