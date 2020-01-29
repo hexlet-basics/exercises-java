@@ -3,19 +3,8 @@
 ## Develop
 
 ```sh
-# setup
-$ make
-# run
+# Check everything
 $ make compose
-
-# run tests
-$ make compose-test
-
-# run linters
-$ make compose-lint
-
-# run linters
-$ make compose-schema-validate
 ```
 
 ##

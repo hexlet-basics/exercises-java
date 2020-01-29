@@ -11,4 +11,4 @@ services:
         - hexletbasics/exercises-java
     volumes:
       - .:/exercises-java
-    command: make lint-descriptions lint-code schema-validate test
+    command: make check

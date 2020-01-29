@@ -20,7 +20,8 @@ compose-lint-code:
 compose-schema-validate:
 	docker-compose run exercises make schema-validate
 
-compose-check: compose-schema-validate compose-lint-descriptions compose-lint-code compose-test
+compose-check:
+	docker-compose run exercises make check
 
 compose-install:
 	docker-compose run exercises npm install
@@ -31,8 +32,7 @@ compose-bash:
 compose-build:
 	docker-compose build
 
-build:
-	docker-compose build
+check: schema-validate lint-descriptions lint-code test
 
 SUBDIRS := $(wildcard modules/**/*/.)
 
