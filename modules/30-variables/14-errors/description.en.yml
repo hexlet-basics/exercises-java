@@ -21,7 +21,7 @@ theory: |
   The number of such errors is reduced by using a properly configured editor. This editor highlights the names that are used without the announcement and warns of possible problems.
 
 instructions: |
-  Find an undeclared variable in the program and declare it assigning to it the value of `Dragon`;
+  Find an undeclared variable in the program and declare it assigning to it the value of `"Dragon"`;
 
 # tips: []
 
