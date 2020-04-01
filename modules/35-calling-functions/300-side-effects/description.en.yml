@@ -26,7 +26,7 @@ instructions: |
 
   Display the mother's name, Dayneris Targaryen ("Daenerys Targaryen"), using the `Functions.parentFor` function without creating variables.
 
-  Recall that `Functions.parentFor` takes the first name of the child and returns the name of the parent. The second parameter function takes the line `father` or `mother`. So the function understands which parent to return. The default setting is `mother`.
+  Recall that `Functions.parentFor` takes the first name of the child and returns the name of the parent. The second parameter function takes the line `"father"` or `"mother"`. So the function understands which parent to return. The default setting is `"mother"`.
 
 tips:
   - |

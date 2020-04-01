@@ -28,7 +28,7 @@ theory: |
 
 instructions: |
 
-  To build the family tree of the Starks family, Sam wrote the `parentFor` function, which returns the name of the parent if the first parameter is baby's full name. The second parameter function takes the line `father` or `mother`. So the function understands which parent to return.
+  To build the family tree of the Starks family, Sam wrote the `parentFor` function, which returns the name of the parent if the first parameter is baby's full name. The second parameter function takes the line `"father"` or `"mother"`. So the function understands which parent to return.
 
   Write a program that displays the name **grandfather **Joffrey on the maternal line. Full name of Joffrey: `Joffrey Baratheon`.
 
