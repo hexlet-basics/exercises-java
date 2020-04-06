@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class Test {
 
     public static void main(String[] args) {
-        final String expected = "9";
+        final String expected = "9\n";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
@@ -18,7 +18,6 @@ class Test {
         final String actual = out.toString();
 
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
-        System.out.print(actual);
         System.out.println(actual);
 
         assertThat(actual).isEqualTo(expected);

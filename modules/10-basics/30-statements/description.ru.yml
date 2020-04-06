@@ -20,7 +20,7 @@ theory: |
   Теоретически инструкции можно написать последовательно друг за другом без переноса на новую строчку:
 
   ```java
-  System.out.print("Mother of Dragons."); System.out.print("Dracarys!");
+  System.out.print("Mother of Dragons.");System.out.print("Dracarys!");
   ```
 
   Результат на экране будет таким же, но на практике такой подход считается плохим.
