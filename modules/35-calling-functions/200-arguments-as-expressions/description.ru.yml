@@ -55,6 +55,7 @@ instructions: |
   var distance = Functions.calculateDistanceBetweenTowns("Lannisport-Bayasabhad");
   ```
 
+  Внимательно изучите то, как должен выглядеть аргумент функции `Functions.calculateDistanceBetweenTowns`. Для решения этого упражнения может быть полезно вспомнить урок по конкатенации строк.
   Напишите программу, которая использует функцию `Functions.calculateDistanceBetweenTowns` и выводит на экран расстояние между городами, записанными в переменные `from` и `to`.
 
 # tips: []
