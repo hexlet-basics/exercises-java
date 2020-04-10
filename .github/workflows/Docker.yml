@@ -30,15 +30,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
 
-    steps:
-      - name: Push the docker image
+    steps:      
       - uses: actions/checkout@master
       - uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: ${{ env.IMAGE_NAME }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - name: Notify slack channel
       - uses: rtCamp/action-slack-notify@v2.0.0
         env:
           SLACK_CHANNEL: '#code'
