@@ -5,7 +5,7 @@ public class App {
         // BEGIN
         var numberOfCastles = 6;
         var roomsPerCastle = 17;
-        System.out.print(king + " has " + (numberOfCastles * roomsPerCastle) + " rooms.");
+        System.out.println(king + " has " + (numberOfCastles * roomsPerCastle) + " rooms.");
         // END
     }
 }

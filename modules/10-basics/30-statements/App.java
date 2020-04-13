@@ -3,9 +3,9 @@ class App {
 
     public static void main(String[] args) {
         //BEGIN
-        System.out.print("Robert");
-        System.out.print("Stannis");
-        System.out.print("Renly");
+        System.out.println("Robert");
+        System.out.println("Stannis");
+        System.out.println("Renly");
         //END
     }
 

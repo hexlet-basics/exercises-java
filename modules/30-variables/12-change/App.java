@@ -6,6 +6,6 @@ public class App {
         name = "anneirB";
         // END
 
-        System.out.print(name);
+        System.out.println(name);
     }
 }

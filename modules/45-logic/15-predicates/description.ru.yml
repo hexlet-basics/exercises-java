@@ -30,7 +30,7 @@ theory: |
 
   ```java
   public static void main(String[] args) {
-    System.out.print(isEmpty("Sea"));
+    System.out.println(isEmpty("Sea"));
   }
 
   static boolean isEmpty(String str) {

@@ -34,7 +34,7 @@ theory: |
 
   ```java
   public static void main(String[] args) {
-    System.out.print(isInfant(3));
+    System.out.println(isInfant(3));
   }
 
   static boolean isInfant(int age) {
@@ -47,7 +47,7 @@ theory: |
   А теперь проверим ребенка, которому полгода - ноль полных лет:
 
   ```java
-  System.out.print(isInfant(0));
+  System.out.println(isInfant(0));
   ```
 
   <pre class='hexlet-basics-output'>true</pre>

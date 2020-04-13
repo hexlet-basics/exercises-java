@@ -9,7 +9,7 @@ class Test {
     public static void main(String[] args) {
         final String expected = "Hello, Joffrey!\n"
                 + "Here is important information about your account security.\n"
-                + "We couldn't verify you mother's maiden name.";
+                + "We couldn't verify you mother's maiden name.\n";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));

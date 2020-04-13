@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class Test {
 
     public static void main(String[] args) {
-        final String expected = "RobertStannisRenly";
+        final String expected = "Robert\nStannis\nRenly\n";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));

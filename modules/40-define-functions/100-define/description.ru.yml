@@ -9,7 +9,7 @@ theory: |
 
   ```java
   static void sayHello() {
-    System.out.print("Hello world!");
+    System.out.println("Hello world!");
   }
   ```
   Функции могут возвращать или не возвращать значения, могут вызываться с указанием параметров или без. Тип возвращаемых данных указывают при объявлении функции — перед её именем.
@@ -34,7 +34,7 @@ theory: |
   ```java
   static void showDate() {
     var text = "Today is: December 5";
-    System.out.print(text);
+    System.out.println(text);
   }
   ```
 
@@ -50,7 +50,7 @@ theory: |
 
     static void showDate() {
       var text = "Today is: December 5";
-      System.out.print(text);
+      System.out.println(text);
     }
   }
   ```
@@ -74,7 +74,7 @@ theory: |
 
   static void showDate(String date) {
     var text = "Today is: " + date;
-    System.out.print(text);
+    System.out.println(text);
   }
   ```
 
@@ -99,7 +99,7 @@ theory: |
 
   static void showDate(String month, String day) {
     var text = "Today is: " + month + " " + day;
-    System.out.print(text);
+    System.out.println(text);
   }
   ```
 

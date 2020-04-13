@@ -3,7 +3,7 @@ public class App {
         var result = "Hello";
         var text = " world!";
         // BEGIN
-        System.out.print(result.concat(text));
+        System.out.println(result.concat(text));
         // END
     }
 }

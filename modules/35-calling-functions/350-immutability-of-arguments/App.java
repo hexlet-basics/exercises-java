@@ -5,6 +5,6 @@ public class App {
         // BEGIN
         str = str.toUpperCase();
         // END
-        System.out.print(str);
+        System.out.println(str);
     }
 }

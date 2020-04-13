@@ -8,13 +8,14 @@ theory: |
   class App {
 
       public static void main(String[] args) {
-          System.out.print("Hello, World!");
+          System.out.println("Hello, World!");
       }
 
   }
   ```
 
-  Чтобы вывести что-то на экран, нужно дать компьютеру специальную команду. В языке Java такая команда — `System.out.print`.
+  Чтобы вывести что-то на экран, нужно дать компьютеру специальную команду. В языке Java такая команда — `System.out.println`, 'println' - это сокращение от английского `print line`. По этой команде компьютер напечатает на экране переданный текст, а также перенесёт курсор на новую строку, то есть весь последующий вывод будет с новой строки.
+
   То, что присутствует на экране помимо этой команды, нужно для работы любой программы на языке Java, мы разберем это позднее.
 instructions: |
   Наберите в редакторе код из задания символ в символ и нажмите «Проверить».
@@ -23,7 +24,7 @@ instructions: |
   class App {
 
       public static void main(String[] args) {
-          System.out.print("Hello, World!");
+          System.out.println("Hello, World!");
       }
 
   }

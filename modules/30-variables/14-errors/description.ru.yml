@@ -7,7 +7,7 @@ theory: |
   Главное правило: переменная должна быть объявлена до ее использования. Если сделать это позже, то программа просто не заработает.
 
   ```java
-  System.out.print(greeting);
+  System.out.println(greeting);
   greeting = "Father!";
   ```
 

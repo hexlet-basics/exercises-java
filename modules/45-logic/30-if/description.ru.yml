@@ -51,7 +51,7 @@ theory: |
   ```java
   public static void main(String[] args) {
       System.out.println(getTypeOfSentence("Hodor")); // => normal
-      System.out.printl(getTypeOfSentence("Hodor?")); // => question
+      System.out.println(getTypeOfSentence("Hodor?")); // => question
   }
 
   static String getTypeOfSentence(String sentence) {

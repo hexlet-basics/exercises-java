@@ -9,11 +9,11 @@ theory: |
   ```java
   // greeting - переводится как приветствие
   var greeting = "Father!";
-  System.out.print(greeting);
-  System.out.print(greeting);
+  System.out.println(greeting);
+  System.out.println(greeting);
   greeting = "Mother!";
-  System.out.print(greeting);
-  System.out.print(greeting);
+  System.out.println(greeting);
+  System.out.println(greeting);
   ```
 
   Имя осталось тем же, но внутри другие данные. Следует заметить, что при изменении переменных тип находящихся в них данных меняться не может (это не совсем так для объектно-ориентированного программирования, но пока не будем вдаваться в подробности). Если переменной была присвоена строка, то уже при компиляции этого присваивания - даже еще до запуска программы - java сопоставляет этой переменной тип данных "строка", и знает, что там всегда будут только строки, и не даст поместить в нее что-то иное.

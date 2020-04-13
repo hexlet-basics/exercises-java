@@ -42,7 +42,7 @@ theory: |
   Запустим:
 
   ```java
-  System.out.print(getEvenNumbersUpTo(5));
+  System.out.println(getEvenNumbersUpTo(5));
   ```
 
   <pre class='hexlet-basics-output'>1234</pre>
@@ -74,7 +74,7 @@ theory: |
   Запустим:
 
   ```java
-  System.out.print(getEvenNumbersUpTo(5));
+  System.out.println(getEvenNumbersUpTo(5));
   ```
 
   <pre class='hexlet-basics-output'>12345</pre>
@@ -104,13 +104,13 @@ theory: |
   Запустим:
 
   ```java
-  System.out.print(getEvenNumbersUpTo(5));
+  System.out.println(getEvenNumbersUpTo(5));
   ```
 
   <pre class='hexlet-basics-output'>24</pre>
 
   ```java
-  System.out.print(getEvenNumbersUpTo(9));
+  System.out.println(getEvenNumbersUpTo(9));
   ```
 
   <pre class='hexlet-basics-output'>2468</pre>

@@ -4,7 +4,7 @@ public class App {
         var firstNumber = 1.10;
         var secondNumber = -100;
 
-        System.out.print(firstNumber * secondNumber);
+        System.out.println(firstNumber * secondNumber);
         // END
     }
 }
