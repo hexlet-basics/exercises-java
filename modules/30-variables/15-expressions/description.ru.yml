@@ -9,7 +9,7 @@ theory: |
 
   ```java
   var dollarsCount = 50 * 1.25;
-  System.out.print(dollarsCount);
+  System.out.println(dollarsCount);
   ```
 
   В предыдущем уроке мы записывали в переменную конкретное значение. А здесь `var dollarsCount = 50 * 1.25;` справа от знака равно находится **выражение**. Программа вычислит результат — `62.5` — и запишет его в переменную. С точки зрения программы не важно, что написано: `62.5` или `50 * 1.25`, эти оба варианта — выражения, которые надо вычислить. И они вычисляются в одно и тоже значение — `62.5`.
@@ -37,7 +37,7 @@ theory: |
   var dollarsCount = 50 * 1.25; // => 62.5
   var rublesCount = dollarsCount * rublesPerDollar; // => 3750
 
-  System.out.print(rublesCount);
+  System.out.println(rublesCount);
   ```
 
   А теперь давайте добавим к выводу текст с помощью конкатенации:
@@ -47,7 +47,7 @@ theory: |
   var dollarsCount = 50 * 1.25; // => 62.5
   var rublesCount = dollarsCount * rublesPerDollar; // => 3750
 
-  System.out.print("The price is " + rublesCount + " rubles");
+  System.out.println("The price is " + rublesCount + " rubles");
   ```
 
   The price is 3750 rubles
@@ -73,4 +73,4 @@ instructions: |
 
 tips:
   - |
-    Для перевода строчки можно использовать `\n` между выводом долларов и рублей.
+    Для перевода строчки можно использовать `\n` между выводом долларов и рублей, либо нужное количество раз использовать метод `println`.

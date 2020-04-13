@@ -23,7 +23,7 @@ theory: |
   Такой вариант программы отработает корректно:
 
   ```java
-  System.out.print("Dragon's mother");
+  System.out.println("Dragon's mother");
   ```
 
   А что, если мы хотим создать такую строку:
@@ -37,7 +37,7 @@ theory: |
   Для этого используют **символ экранирования**: `\`. Если поставить `\` перед кавычкой, это будет означать, что кавычку нужно рассматривать не как начало или конец строки, а как часть строки.
 
   ```java
-  System.out.print("Dragon's mother said \"No\"");
+  System.out.println("Dragon's mother said \"No\"");
   ```
 
 instructions: |

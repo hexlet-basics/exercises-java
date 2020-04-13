@@ -8,7 +8,7 @@ theory: |
   ```java
   var firstName = "Alexander";
 
-  System.out.print(firstName.charAt(0)); // => A
+  System.out.println(firstName.charAt(0)); // => A
   ```
 
   charAt(int index) — это специальный метод извлечения символа из строки. **Индекс** — это позиция символа внутри строки. Индексы начинаются с 0 почти во всех языках программирования — поэтому, чтобы получить первый символ, нужно указать индекс `0`.
@@ -19,14 +19,14 @@ theory: |
   var firstName = "Alexander";
   var index = 0;
 
-  System.out.print(firstName.charAt(index)); // => A
+  System.out.println(firstName.charAt(index)); // => A
   ```
 
   Хотя символ и не строка, но операция конкатенации (+) может работать, если один из аргументов - символ. Она сделает из него строку и вычислится как конкатенация двух строк. Но не пытайтесь конкатенировать символы друг с другом, а не со строкой - компилятор Java решит, что вы хотите сложить числовые коды этих символов, и результатом будет какое-то число.
 
   ```java
-  System.out.print('H' + 'A');        // => 137
-  System.out.print('H' + " " + 'A');  // => "H A"
+  System.out.println('H' + 'A');        // => 137
+  System.out.println('H' + " " + 'A');  // => "H A"
   ```
 
 instructions: |

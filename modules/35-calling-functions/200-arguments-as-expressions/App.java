@@ -5,7 +5,7 @@ public class App {
 
         // BEGIN
         var distance = Functions.calculateDistanceBetweenTowns(from + "-" + to);
-        System.out.print(distance);
+        System.out.println(distance);
         // END
     }
 }

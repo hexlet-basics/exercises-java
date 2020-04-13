@@ -7,20 +7,21 @@ theory: |
   Вот пример кода с двумя инструкциями:
 
   ```java
-  System.out.print("Mother of Dragons.");
-  System.out.print("Dracarys!");
+  System.out.println("Mother of Dragons.");
+  System.out.println("Dracarys!");
   ```
 
   При запуске этого кода на экран последовательно выводятся два предложения:
 
   ```
-  Mother of Dragons.Dracarys!
+  Mother of Dragons.
+  Dracarys!
   ```
 
   Теоретически инструкции можно написать последовательно друг за другом без переноса на новую строчку:
 
   ```java
-  System.out.print("Mother of Dragons.");System.out.print("Dracarys!");
+  System.out.println("Mother of Dragons.");System.out.println("Dracarys!");
   ```
 
   Результат на экране будет таким же, но на практике такой подход считается плохим.
@@ -29,10 +30,12 @@ instructions: |
   Выведите на экран друг за другом три имени: `Robert`, `Stannis`, `Renly`. В результате на экране должно отобразиться:
 
   ```
-  RobertStannisRenly
+  Robert
+  Stannis
+  Renly
   ```
   
-  Для каждого имени используйте свой собственный вызов `System.out.print`.
+  Для каждого имени используйте свой собственный вызов `System.out.println`.
 # tips: []
 
 # definitions:

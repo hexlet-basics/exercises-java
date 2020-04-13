@@ -13,7 +13,7 @@ theory: |
 
   ```java
   public static void main(String[] args) {
-    System.out.print(sub(10, 7));
+    System.out.println(sub(10, 7));
   }
 
   static int sub(int a, int b) {
@@ -24,13 +24,13 @@ theory: |
 
   <pre class='hexlet-basics-output'>3</pre>
 
-  Обратите внимание: мы знаем, что **вызов функции — выражение**, поэтому мы передали вызов одной функции в вызов другой функции — `System.out.print(sub(10, 7))`.
+  Обратите внимание: мы знаем, что **вызов функции — выражение**, поэтому мы передали вызов одной функции в вызов другой функции — `System.out.println(sub(10, 7))`.
 
   Возврат задаётся специальной инструкцией `return`. Cправа от `return` помещается выражение. Любое выражение. То есть, мы можем делать вычисления сразу после `return` без создания переменной `result`:
 
   ```java
   public static void main(String[] args) {
-    System.out.print(sub(2018, 1975));
+    System.out.println(sub(2018, 1975));
   }
 
   static int sub(int a, int b)

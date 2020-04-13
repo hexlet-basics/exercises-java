@@ -8,6 +8,7 @@ public class App {
         System.out.print("\n");
         var rublesCount = dollarsCount * 60;
         System.out.print(rublesCount);
+        System.out.print("\n");
         // END
     }
 }

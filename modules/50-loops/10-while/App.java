@@ -6,7 +6,7 @@ public class App {
             System.out.println(i);
             i = i - 1;
         }
-        System.out.print("finished!");
+        System.out.println("finished!");
         // END
     }
 }

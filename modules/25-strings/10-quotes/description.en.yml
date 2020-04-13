@@ -23,7 +23,7 @@ theory: |
   This version of the program will work correctly:
 
   ```java
-  System.out.print("Dragon's mother");
+  System.out.println("Dragon's mother");
   ```
     
   And what if we want to create such a string:
@@ -37,7 +37,7 @@ theory: |
   To do this, use the **escape character**: `\`. If you put `\` before the quotation mark (single or double), it will mean that the quotation mark should be viewed not as the beginning or end of the line, but as part of the line.
 
   ```java
-  System.out.print("Dragon's mother said \"No\"");
+  System.out.println("Dragon's mother said \"No\"");
   ```
 
 instructions: |
