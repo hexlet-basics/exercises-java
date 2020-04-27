@@ -27,4 +27,5 @@ instructions: |
 
   Возможно, вам покажется, что код получился странным. Это типичный пример: переписывание переменных делает код менее понятным и более запутанным.
 
-# tips: []
+tips:
+  - Изучить сигнатуру функции `toUpperCase` можно на странице [java.lang.String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#toUpperCase--)
