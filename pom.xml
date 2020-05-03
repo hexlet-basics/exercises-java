@@ -1,0 +1,125 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.hexlet</groupId>
+    <artifactId>base</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <java.version>13</java.version>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-versions-plugin.version>2.7</maven-versions-plugin.version>
+        <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
+        <junit.version>4.13</junit.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <!-- <scope>test</scope> -->
+        </dependency>
+
+        <dependency>
+          <groupId>io.jschneider</groupId>
+          <artifactId>java-power-assert</artifactId>
+          <version>0.9.1</version>
+          <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <sourceDirectory>modules</sourceDirectory>
+        <!-- <finalName>java-compound-data</finalName> -->
+        <!-- <directory>/tmp/target</directory> -->
+        <plugins>
+
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>versions-maven-plugin</artifactId>
+              <version>${maven-versions-plugin.version}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <!-- put your configurations here -->
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <includes>
+                      <include>50-loops/10-while/App.java</include>
+                      <include>50-loops/10-while/AppTest.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-enforcer-plugin</artifactId>
+              <version>${maven-enforcer-plugin.version}</version>
+              <executions>
+                <execution>
+                  <id>enforce-maven</id>
+                  <goals>
+                    <goal>enforce</goal>
+                  </goals>
+                  <configuration>
+                    <rules>
+                      <requireMavenVersion>
+                        <version>3.6.3</version>
+                      </requireMavenVersion>
+                    </rules>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <dependencies>
+                  <dependency>
+                    <groupId>org.apache.maven.surefire</groupId>
+                    <artifactId>surefire-junit4</artifactId>
+                    <version>${maven-surefire-plugin.version}</version>
+                  </dependency>
+                </dependencies>
+                <configuration>
+                  <includes>
+                    <include>50-loops/10-while/Test.java</include>
+                  </includes>
+                  <properties>
+                    <property>
+                      <name>junit</name>
+                      <value>true</value>
+                    </property>
+                  </properties>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>bintray-jkschneider-maven</id>
+            <name>bintray-jkschneider-maven</name>
+            <url>https://dl.bintray.com/jkschneider/maven</url>
+        </repository>
+    </repositories>
+
+</project>
