@@ -46,9 +46,9 @@ theory: |
   A space is the same character as the others, therefore, how many spaces to put in a line will be as much:
 
   ```java
-  System.out.print("King's " + " Landing");   // => Kings  Landing
+  System.out.print("King's " + " Landing");   // => King's  Landing
 
-  System.out.print("King's  " + "  Landing"); // => Kings    Landing
+  System.out.print("King's  " + "  Landing"); // => King's    Landing
   ```
 
 instructions: |
