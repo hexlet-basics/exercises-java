@@ -46,9 +46,9 @@ theory: |
   Пробел — такой же символ, как и другие, поэтому сколько пробелов поставить в строке — столько и получится:
 
   ```java
-  System.out.println("King's " + " Landing");   // => Kings  Landing
+  System.out.println("King's " + " Landing");   // => King's  Landing
 
-  System.out.println("King's  " + "  Landing"); // => Kings    Landing
+  System.out.println("King's  " + "  Landing"); // => King's    Landing
   ```
 
 instructions: |
