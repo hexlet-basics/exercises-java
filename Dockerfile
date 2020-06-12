@@ -1,6 +1,6 @@
 FROM melodyn/base-image:latest
 
-# openjdk:15-oracle
+RUN apt-get install -y default-jdk
 
 RUN curl -L https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.31/checkstyle-8.31-all.jar > /opt/checkstyle.jar
 RUN chmod 777 /opt/checkstyle.jar

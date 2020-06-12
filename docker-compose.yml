@@ -4,11 +4,7 @@ version: '3.7'
 
 services:
   exercises:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      cache_from:
-        - hexletbasics/exercises-java
+    build: .
     volumes:
       - .:/exercises-java
     command: make check
