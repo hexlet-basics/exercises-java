@@ -1,27 +1,26 @@
-import java.io.ByteArrayOutputStream;
-import java.io.FileDescriptor;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.stream.Collectors;
 
 class Test {
 
     public static void main(String[] args) {
-        final String expected = "Hello, World!\n";
+        final String expected = "Hello, World!";
 
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
+        final String actual = getConsoleStdIn();
 
-        App.main(null);
+        assert !actual.contains("Error:") : "\n" + actual;
 
-        final String actual = out.toString();
-
-        System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         System.out.println(actual);
 
-        assertThat(actual).isEqualTo(expected);
-
+        final var errorMsg = "\nExpected value: <%s>\nmust be equal to:\nActual value:   <%s>\nbut was not.";
+        assert expected.equals(actual) : String.format(errorMsg, expected, actual);
     }
 
+    private static String getConsoleStdIn() {
+        return new BufferedReader(new InputStreamReader(System.in))
+                .lines()
+                .collect(Collectors.joining("\n"))
+                .replace("-> ", "");
+    }
 }
