@@ -1,4 +1,4 @@
-FROM melodyn/base-image:latest
+FROM hexletbasics/base-image:latest
 
 RUN apt-get install -y default-jdk
 
@@ -10,6 +10,6 @@ RUN chmod 777 /opt/assertj.jar
 
 WORKDIR /exercises-java
 
-COPY --from=melodyn/base-image:latest /tmp/basics/common/* ./
+COPY --from=hexletbasics/base-image:latest /tmp/basics/common/* ./
 COPY . .
 
