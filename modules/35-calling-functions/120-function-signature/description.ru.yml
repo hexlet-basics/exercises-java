@@ -17,7 +17,7 @@ instructions: |
 
   В Java у класса String есть функция `concat`. Изучите её сигнатуру на странице [java.lang.String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#concat-java.lang.String-).
 
-  Напишите программу, которая использует функцию `concat` с переменной `text` и выводит результат на экран.
+  Напишите программу, которая с помощью функции `concat` связывает переменную `result` с `text` и выводит результат на экран.
 
 # tips: []
 
