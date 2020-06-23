@@ -10,6 +10,5 @@ RUN chmod 777 /opt/assertj.jar
 
 WORKDIR /exercises-java
 
-COPY --from=hexletbasics/base-image:latest /tmp/basics/common/* ./
 COPY . .
 
