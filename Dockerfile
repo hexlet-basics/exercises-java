@@ -1,5 +1,6 @@
 FROM hexletbasics/base-image:latest
 
+RUN apt-get update -y
 RUN apt-get install -y default-jdk
 
 RUN curl -L https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.31/checkstyle-8.31-all.jar > /opt/checkstyle.jar
