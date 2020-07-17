@@ -16,3 +16,9 @@ compile:
 
 clean:
 	@$$(find . -type f -name *.class -delete)
+
+compose-bash:
+	docker-compose run exercises bash
+
+compose-test:
+	docker-compose run exercises make test
