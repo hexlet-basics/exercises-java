@@ -17,7 +17,7 @@ theory: |
 
   The bottom line: the lines should not be compared using ==, but using equals.
 
-  Line inequality, similarly, should be checked not with !=, But as a negation of equality, using the logical negation operator: !str.equals(str2).
+  Line inequality, similarly, should be checked not with !=, But as a negation of equality, using the logical negation operator: !str1.equals(str2).
 
   In previous lessons, it is mentioned that extracting a character from a string by its index returns a value of type "character", not "string". It is necessary in this connection to keep in mind two facts:
 
