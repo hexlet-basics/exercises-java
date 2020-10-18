@@ -6,8 +6,8 @@ theory: |
   Для закрепления предыдущей темы попробуем использовать переменные с конкатенацией. Синтаксически ничего не меняется: мы умеем конкатенировать (склеивать) две строки:
 
   ```java
-
   var what = "Kings" + "road";
+  
   System.out.println(what); // => "Kingsroad"
   ```
 
@@ -23,11 +23,10 @@ theory: |
   … и даже конкатенировать две переменные, в которых записаны строки:
 
   ```java
-
   var first = "Kings";
   var last = "road";
-
   var what = first + last;
+
   System.out.println(what); //=> "Kingsroad"
   ```
 
@@ -43,13 +42,13 @@ instructions: |
 
   Результат на экране будет выглядеть так:
 
-  ```
+  <pre class='hexlet-basics-output'>
   Hello, Joffrey!
   Here is important information about your account security.
   We couldn't verify you mother's maiden name.
-  ```
+  </pre>
 
-  Выполните задание, используя только два `System.out.println`.
+  Выполните задание, используя только два `System.out.println()`.
 
 tips:
   - |

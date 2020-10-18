@@ -17,13 +17,13 @@ theory: |
   Любая строка — выражение. Конкатенация строк — тоже выражение. Когда программа видит выражение, она обрабатывает его и генерирует результат — **значение выражения**. Вот несколько примеров выражений, а в комментариях справа от каждого выражения — итоговое значение:
 
   ```java
-  62.5                         // => 62.5
-  50 * 1.25                    // => 62.5
-  120 / 10 * 2                 // => 24
-  Integer.parseInt("100")      // => 100
+  62.5                         //  62.5
+  50 * 1.25                    //  62.5
+  120 / 10 * 2                 //  24
+  Integer.parseInt("100")      //  100
 
-  "hello"                      // => "hello"
-  "Good" + "will"              // => "Goodwill"
+  "hello"                      //  "hello"
+  "Good" + "will"              //  "Goodwill"
   ```
 
   Правила построения кода (грамматика языка) таковы, что в тех местах, где ожидается выражение, можно поставить любое вычисление (не только математическое, но и, например, строковое — как конкатенация), и программа останется работоспособной. По этой причине невозможно описать и показать все случаи использования всех операций.
@@ -34,23 +34,21 @@ theory: |
 
   ```java
   var rublesPerDollar = 60;
-  var dollarsCount = 50 * 1.25; // => 62.5
-  var rublesCount = dollarsCount * rublesPerDollar; // => 3750
+  var dollarsCount = 50 * 1.25; // 62.5
+  var rublesCount = dollarsCount * rublesPerDollar; // 3750
 
-  System.out.println(rublesCount);
+  System.out.println(rublesCount); // => 3750
   ```
 
   А теперь давайте добавим к выводу текст с помощью конкатенации:
 
   ```java
   var rublesPerDollar = 60;
-  var dollarsCount = 50 * 1.25; // => 62.5
-  var rublesCount = dollarsCount * rublesPerDollar; // => 3750
+  var dollarsCount = 50 * 1.25; // 62.5
+  var rublesCount = dollarsCount * rublesPerDollar; // 3750
 
-  System.out.println("The price is " + rublesCount + " rubles");
+  System.out.println("The price is " + rublesCount + " rubles"); // => The price is 3750 rubles
   ```
-
-  The price is 3750 rubles
 
   Любая переменная может быть частью любого выражения. В момент вычисления вместо имени переменной подставляется её значение.
 
@@ -62,10 +60,10 @@ instructions: |
 
   Пример вывода для 100 евро:
 
-  ```
+  <pre class='hexlet-basics-output'>
   125.0
   7500.0
-  ```
+  </pre>
 
   Считаем, что:
   - 1 евро = 1.25 долларов
@@ -73,4 +71,4 @@ instructions: |
 
 tips:
   - |
-    Для перевода строчки можно использовать `\n` между выводом долларов и рублей, либо нужное количество раз использовать метод `println`.
+    Для перевода строчки можно использовать `\n` между выводом долларов и рублей, либо нужное количество раз использовать метод `println()`.

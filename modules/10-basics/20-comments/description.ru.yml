@@ -16,7 +16,7 @@ theory: |
   или может находиться на строчке после какого-нибудь кода:
 
   ```java
-  System.out.println("I am the King"); // For Lannisters!
+  System.out.println("I am the King"); // => For Lannisters!
   ```
 
   **Многострочные комментарии** начинаются с `/*` и заканчиваются на `*/`. Принято каждую строчку начинать с символа `*`, хотя технически это и не обязательно.
@@ -26,7 +26,7 @@ theory: |
    * The night is dark and
    * full of terrors.
    */
-  System.out.println("I am the King");
+  System.out.println("I am the King"); // => I am the King
   ```
 
   **Документирующие комментарии** начинаются с `/**` и заканчивается на `*/` и уже для них обязательно каждую строчку начинать с символа `*`.

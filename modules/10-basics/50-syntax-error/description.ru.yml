@@ -16,7 +16,6 @@ theory: |
   |  Error:
   |  unclosed string literal
   |  System.out.println("alala
-  |                     ^
   </pre>
 
   Чтобы исправить ошибку, нужно добавть в конце последней строки `");`.
@@ -26,6 +25,7 @@ theory: |
 instructions: |
   Это задание не связано с уроком напрямую. Но будет полезным потренироваться с выводом на экран.
   Выведите на экран `What Is Dead May Never Die`.
+
 
 # tips: []
 
