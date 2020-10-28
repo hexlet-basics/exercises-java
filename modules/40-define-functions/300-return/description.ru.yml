@@ -56,7 +56,7 @@ instructions: |
   Вам не нужно вызывать свою функцию, только определить её.
 
   Как обычно, функцию нужно сделать `public static`, а не просто `static`, чтобы мы смогли вызвать ее из другого класса.
-  
+
   ```java
   App.getParentNamesTotalLength("Daenerys Targaryen"); // 35
   ```

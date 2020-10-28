@@ -7,7 +7,7 @@ theory: |
 
   ```java
   var what = "Kings" + "road";
-  
+
   System.out.println(what); // => "Kingsroad"
   ```
 
