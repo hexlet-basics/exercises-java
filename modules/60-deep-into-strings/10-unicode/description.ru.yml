@@ -19,7 +19,7 @@ theory: |
 
 instructions: |
 
-  Допишите реализацию функции `invertCase`, которая инвертирует регистр каждого символа в переданной строке. Можете использовать методы `Character.isUpperCase(char ch)`, `Character.toUpperCase(char ch)` и `Character.toLowerCase(char ch)`.
+  Допишите реализацию функции `invertCase()`, которая инвертирует регистр каждого символа в переданной строке. Можете использовать методы `Character.isUpperCase(char ch)`, `Character.toUpperCase(char ch)` и `Character.toLowerCase(char ch)`.
   ```java
   String str = "ПрИвЕт!";
   invertCase(str); // пРиВеТ!
