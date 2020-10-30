@@ -123,7 +123,9 @@ instructions: |
 
   чтобы мы могли вызвать эту функцию из другого класса, нужно ее пометить не только ключевым словом `static`, но еще и `public`.
 
-  <pre class='hexlet-basics-output'>JAIME:  Farewell, my friend...</pre>
+  <pre class='hexlet-basics-output'>
+  JAIME:  Farewell, my friend...
+  </pre>
 
 tips:
   - |

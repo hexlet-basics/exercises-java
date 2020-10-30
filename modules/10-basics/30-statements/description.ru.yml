@@ -34,7 +34,7 @@ instructions: |
   Stannis
   Renly
   </pre>
-  
+
   Для каждого имени используйте свой собственный вызов `System.out.println()`.
 # tips: []
 

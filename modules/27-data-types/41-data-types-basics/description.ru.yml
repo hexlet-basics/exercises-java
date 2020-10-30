@@ -67,6 +67,9 @@ theory: |
 
 instructions: |
   Выведите на экран число `-0.304`.
+  <pre class='hexlet-basics-output'>
+  -0.304
+  </pre>
 
 tips:
   - |
