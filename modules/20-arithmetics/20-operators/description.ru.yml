@@ -35,6 +35,8 @@ theory: |
 instructions: |
 
   Напишите программу, которая посчитает разность между `6` и `-81` и выведет ответ на экран.
+  <pre class='hexlet-basics-output'>87</pre>
+
 
 # definitions:
 #   - name: "Арифметическая операция"
