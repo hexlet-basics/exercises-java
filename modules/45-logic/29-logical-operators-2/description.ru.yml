@@ -45,3 +45,7 @@ instructions: |
   isNeutralSoldier("red", "black");    // => false
   isNeutralSoldier("red", "red");      // => false
   ```
+
+  tips:
+  - |
+    Чтобы стравнить строки, используйте функцию `equals()`.
