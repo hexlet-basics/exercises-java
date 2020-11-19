@@ -90,4 +90,6 @@ instructions: |
   hasTargaryenReference("Targaryen"); // => true
   ```
 
-# tips: []
+tips:
+  - |
+    Подробнее изучить функцию `startsWith()` можно на странице [java.lang.String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#startsWith(java.lang.String))
