@@ -1,13 +1,15 @@
 public class App {
     // BEGIN
     public static String whoIsThisHouseToStarks(String houseName) {
+        var statusFamily = "";
         if ("Karstark".equals(houseName) || "Tally".equals(houseName)) {
-            return "friend";
+            statusFamily = "friend";
         } else if ("Lannister".equals(houseName) || "Frey".equals(houseName)) {
-            return "enemy";
+            statusFamily = "enemy";
+        } else {
+            statusFamily = "neutral";
         }
-
-        return "neutral";
+        return statusFamily;
     }
     // END
 }
