@@ -7,12 +7,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String expected = "JAIME: Farewell, my friend...\n";
+        final String expected = "Winter is coming\n";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
 
-        App.printJaimesLine("Farewell, my friend...");
+        App.printMotto();
 
         final String actual = out.toString();
 
