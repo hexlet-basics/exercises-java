@@ -46,6 +46,6 @@ instructions: |
   isNeutralSoldier("red", "red");      // => false
   ```
 
-  tips:
+tips:
   - |
-    Чтобы стравнить строки, используйте функцию `equals()`.
+    Чтобы сравнить строки, используйте функцию `equals()`.
