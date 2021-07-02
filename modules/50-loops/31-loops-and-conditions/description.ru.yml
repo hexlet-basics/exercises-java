@@ -7,9 +7,9 @@ theory: |
 
   #### Пример 1: Запуск цикла при условии
 
-  Задача: написать функцию `shouter()`, которая принимает строку и, если в строке больше 5 символов, выводит её на экран 100 раз. Если в строке 5 символов или меньше, то функция ничего не делает.
+  Задача: написать метод `shouter()`, которая принимает строку и, если в строке больше 5 символов, выводит её на экран 100 раз. Если в строке 5 символов или меньше, то метод ничего не делает.
 
-  Начнём писать функцию:
+  Начнём писать:
 
   ```java
   static void shouter(String str) {
@@ -64,7 +64,7 @@ theory: |
 
   <pre class='hexlet-basics-output'>HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!</pre>
 
-  А теперь давайте модифицируем функцию так, чтобы она возвращала результат, а не выводила его на экран. Воспользуемся тем же приёмом, что был в функции для переворота строки: создадим пустую строку `result` и будем её наполнять в цикле, а потом вернём из функции.
+  А теперь давайте модифицируем метод так, чтобы он возвращал результат, а не выводил его на экран. Воспользуемся тем же приёмом, что был в методе для переворота строки: создадим пустую строку `result` и будем её наполнять в цикле, а потом вернём из метода.
 
   ```java
   static String shouter(String str) {
@@ -83,7 +83,7 @@ theory: |
 
 instructions: |
 
-  Модифицируйте последний вариант функции `shouter()`, добавив такие условия:
+  Модифицируйте последний вариант метода `shouter()`, добавив такие условия:
 
   1. Если длина строки больше 0 и меньше 5, то вернуть оригинальную строку без повторений.
   2. Если длина строки ровно 5 символов, то вернуть строку, повторенную 10 раз.
