@@ -44,7 +44,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `doesContain()`, которая проверяет (с учётом регистра), содержит ли строка указанную букву. Функция принимает два параметра:
+  Реализуйте метод `doesContain()`, который проверяет (с учётом регистра), содержит ли строка указанную букву. Метод принимает два параметра:
 
   * Строка
   * Буква для поиска
@@ -52,10 +52,10 @@ instructions: |
   Пример вызова:
 
   ```java
-  doesContain("Renly", 'R'); // true
-  doesContain("Renly", 'r'); // false
-  doesContain("Tommy", 'm'); // true
-  doesContain("Tommy", 'd'); // false
+  App.doesContain("Renly", 'R'); // true
+  App.doesContain("Renly", 'r'); // false
+  App.doesContain("Tommy", 'm'); // true
+  App.doesContain("Tommy", 'd'); // false
   ```
 
 
