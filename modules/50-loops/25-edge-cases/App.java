@@ -6,9 +6,9 @@ public class App {
         } else if (length < 0) {
             return false;
         } else if (index > str.length() - 1) {
-                 return false;
+            return false;
         } else if (index + length > str.length()) {
-                return false;
+            return false;
         }
         return true;
     }

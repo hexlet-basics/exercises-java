@@ -8,5 +8,7 @@ class Test {
         assertThat(App.isArgumentsForSubstrCorrect(str, 10, 10)).isFalse();
         assertThat(App.isArgumentsForSubstrCorrect(str, 11, 1)).isFalse();
         assertThat(App.isArgumentsForSubstrCorrect(str, 3, 3)).isTrue();
+        assertThat(App.isArgumentsForSubstrCorrect(str, 11, 0)).isFalse();
+        assertThat(App.isArgumentsForSubstrCorrect(str, 6, 5)).isTrue();
     }
 }
