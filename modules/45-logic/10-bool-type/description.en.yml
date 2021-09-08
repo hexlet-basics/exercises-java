@@ -14,7 +14,7 @@ theory: |
   * `==` equal
   * `!=` not equal
 
-  The logical operation of the type `5 > 4` is an expression, and its result is the value of the logical type. The Java boolean type bool is a value that is written as true or false, for example, var isFivePositive = (5 > 0).
+  The logical operation of the type `5 > 4` is an expression, and its result is the value of the logical type. The Java boolean type `boolean` is a value that is written as true or false, for example, var isFivePositive = (5 > 0).
 
   ---
 
