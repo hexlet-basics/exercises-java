@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         final String expected = "Hello, World!\n";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
