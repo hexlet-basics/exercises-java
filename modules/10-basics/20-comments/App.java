@@ -1,10 +1,7 @@
-
 class App {
-
     public static void main(String[] args) {
-        //BEGIN
+        // BEGIN
         // You know nothing, Jon Snow!
-        //END
+        // END
     }
-
 }

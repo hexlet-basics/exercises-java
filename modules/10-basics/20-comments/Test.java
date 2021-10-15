@@ -6,8 +6,7 @@ import java.io.PrintStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
-
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
 
@@ -19,7 +18,5 @@ class Test {
         System.out.println(actual);
 
         assertThat(actual).isEmpty();
-
     }
-
 }

@@ -2,9 +2,9 @@
 class App {
 
     public static void main(String[] args) {
-        //BEGIN
+        // BEGIN
         System.out.println(6 - -81);
-        //END
+        // END
     }
 
 }
