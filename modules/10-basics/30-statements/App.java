@@ -1,6 +1,5 @@
 
 class App {
-
     public static void main(String[] args) {
         // BEGIN
         System.out.println("Robert");
@@ -8,5 +7,4 @@ class App {
         System.out.println("Renly");
         // END
     }
-
 }
