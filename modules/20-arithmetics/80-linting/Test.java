@@ -4,9 +4,8 @@ import java.io.PrintStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
-
     public static void main(String[] args) {
-        final String expected = "87\n";
+        final String expected = "-14\n";
 
         App.main(null);
 
@@ -18,7 +17,5 @@ class Test {
         final String actual = out.toString();
 
         assertThat(actual).isEqualTo(expected);
-
     }
-
 }
