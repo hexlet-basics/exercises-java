@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String expected = "49\n";
+        final String expected = "0.0858\n";
 
         App.main(null);
 
