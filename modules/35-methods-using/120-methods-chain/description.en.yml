@@ -1,0 +1,74 @@
+---
+
+name: Function call - expression
+theory: |
+
+  Look at the code from one of the previous lessons:
+
+  ```java
+  var distance = Functions.calculateDistance("Lannisport", "Bayasabhad");
+  ```
+
+  What can be said about him? What conclusions do? Try to complete these statements yourself:
+
+  - `distance` is \_\_\_\_\_\_\_\_\_\_
+  - the function `calculateDistance` is called with \_\_\_\_\_\_\_\_\_\_\_ `"Lannisport"` and `"Bayasabhad"`
+  - the function `calculateDistance` returns a value whose type is \_\_\_\_\_.
+  - after executing the code in the variable  `distance` it will be \_\_\_\_\_\_\_\_, returned by the call of the function `calculateDistance`
+
+   To understand this lesson, you need to remember the concept of "**expression**" from the module about modules.variables. Recall that an expression is a code that, when a program is executed, becomes ** the value **.
+
+  Which of these code snippets are expressions?
+
+  1. `42`
+  2. `10 * 45`
+  3. `"Kings" + "road"`
+  4. `calculateDistance("Lannisport", "Bayasabhad")`
+
+  Numbers and mathematical operations are probably the easiest options. The expression `42` will turn into the value `42`, the expression `10 * 45` will become the value `450`.
+
+  String concatenation is also an expression that will turn into the corresponding value (new string).
+
+  But here is the fourth option! This is also an expression! The power and flexibility of a programming language is largely due to the fact that **a function call is an expression**.
+
+  Let's return to the first example:
+
+  ```java
+  var distance = Functions.calculateDistance("Lannisport", "Bayasabhad");
+  ```
+
+  The variable `distance` records the result of evaluating the expression. Unlike operations (for example, `10 + 12`), where you can clearly see what kind of calculation is performed, in functions the calculation itself is hidden from us, and we see only the result. Therefore, it is said that the function "returns" value. You can apply this terminology to ordinary operations. For example, say concatenation of two strings returns a new string.
+
+  *What is an expression and what is not?* Now it may seem that this is one of the boring parts of a programming textbook. But this is a really important question. Anything that works as an expression can be used in other expressions, as well as in all places where expressions are expected at the input. Recognizing expressions in code is an important skill a programmer needs every day.
+
+  Suppose in class Functions we have a function `numberOfKnights`, which takes the name of a castle in the kingdom and returns the number of knights in this castle. Knowing that ** a function call is an expression **, we can assume that such code will work:
+
+  ```java
+  var result = 4 + Functions.numberOfKnights("Winterfell");
+  ```
+
+  Because it is the addition of two expressions: the expression `4` and the expression `numberOfKnights ("Winterfell")`. The result is `4 + some number`.
+
+  This means that such code will work:
+
+  ```java
+  var result = Functions.numberOfKnights("Winterfell") + Functions.numberOfKnights("Oldtown");
+  ```
+
+  There are two different function calls, but each call is an expression, so you end up with the addition of two values - two numbers (the number of knights of the castle `Winterfell` and the number of knights of the castle `Oldtown`).
+
+instructions: |
+
+  Arya is going on a trip from Winterfel to Eagle's Nest to visit Lisa Arren, but on the way she needs to go to the Freyas to commit an act of retribution. She needs to calculate the total length of the route.
+
+  Unfortunately, the `Functions.calculateDistance` function can only calculate the distance between two points. Therefore, you will first have to find out the distance from Winterfell to the Freew Castle, and then the distance to the Eagle's Nest.
+
+  The names of the castles:
+
+  - Winterfell — `Winterfell`
+  - Gemini (Freew Castle) — `The Twins`
+  - Eagle's Nest — `The Eyrie`
+
+  Display the full length of the Arya route. Recall that the `Functions.calculateDistance` function takes two arguments and returns a number.
+
+# tips: []
