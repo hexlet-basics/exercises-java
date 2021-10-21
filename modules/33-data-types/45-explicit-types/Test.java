@@ -5,9 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String expected = "1\n";
-
-        App.main(null);
+        final String expected = "One more time\n";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
@@ -15,6 +13,8 @@ class Test {
         App.main(null);
 
         final String actual = out.toString();
+
+        App.main(null);
 
         assertThat(actual).isEqualTo(expected);
     }

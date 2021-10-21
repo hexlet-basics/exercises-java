@@ -1,7 +1,10 @@
 public class App {
     public static void main(String[] args) {
         // BEGIN
-        System.out.println(3 / 2);
+        String greeting;
         // END
+
+        greeting = "Hello Hexlet!";
+        System.out.println(greeting);
     }
 }
