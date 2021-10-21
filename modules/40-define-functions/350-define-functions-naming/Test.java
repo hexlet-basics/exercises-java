@@ -14,7 +14,7 @@ class Test {
 
         App.printFormattedBirthday(1, 1, 2001);
 
-        final String actual = out.toString();
+        final String actual = out.toString().trim();
 
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         System.out.println(actual);

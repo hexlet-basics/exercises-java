@@ -7,14 +7,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String expected = "Rhaella Targaryen\n";
+        final String expected = "Rhaella Targaryen";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
 
         App.main(null);
 
-        final String actual = out.toString();
+        final String actual = out.toString().trim();
 
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         System.out.println(actual);

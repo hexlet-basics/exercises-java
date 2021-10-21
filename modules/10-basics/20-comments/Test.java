@@ -12,7 +12,7 @@ class Test {
 
         App.main(null);
 
-        final String actual = out.toString();
+        final String actual = out.toString().trim();
 
         assertThat(actual).isEmpty();
     }

@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String expected = "h o d o r\n";
+        final String expected = "h o d o r";
 
         App.main(null);
 
@@ -14,7 +14,7 @@ class Test {
 
         App.main(null);
 
-        final String actual = out.toString();
+        final String actual = out.toString().trim();
 
         assertThat(actual).isEqualTo(expected);
     }

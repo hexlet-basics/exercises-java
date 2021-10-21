@@ -7,7 +7,7 @@ class Test {
     public static void main(String[] args) {
         final String expected = "Hello, Joffrey!\n"
                 + "Here is important information about your account security.\n"
-                + "We couldn't verify you mother's maiden name.\n";
+                + "We couldn't verify you mother's maiden name.";
 
         App.main(null);
 
@@ -16,7 +16,7 @@ class Test {
 
         App.main(null);
 
-        final String actual = out.toString();
+        final String actual = out.toString().trim();
 
         assertThat(actual).isEqualTo(expected);
     }
