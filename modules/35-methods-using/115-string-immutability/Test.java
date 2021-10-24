@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final var expected = "80";
+        final var expected = "support@hexlet.io";
 
         App.main(null);
 
