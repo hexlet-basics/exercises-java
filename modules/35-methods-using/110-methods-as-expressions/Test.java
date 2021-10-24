@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String expected = "h o d o r";
+        final String expected = "First: N\nLast: t";
 
         App.main(null);
 
