@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String expected = "Hello, Joffrey!\n"
+        final var expected = "Hello, Joffrey!\n"
                 + "Here is important information about your account security.\n"
                 + "We couldn't verify you mother's maiden name.";
 
@@ -16,7 +16,7 @@ class Test {
 
         App.main(null);
 
-        final String actual = out.toString().trim();
+        final var actual = out.toString().trim();
 
         assertThat(actual).isEqualTo(expected);
     }

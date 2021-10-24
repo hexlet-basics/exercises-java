@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String expected = "What Is Dead May Never Die!";
+        final var expected = "What Is Dead May Never Die!";
 
         App.main(null);
 
@@ -14,7 +14,7 @@ class Test {
 
         App.main(null);
 
-        final String actual = out.toString().trim();
+        final var actual = out.toString().trim();
 
         assertThat(actual).isEqualTo(expected);
     }

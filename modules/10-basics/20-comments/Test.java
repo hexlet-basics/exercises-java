@@ -4,7 +4,7 @@ import java.io.PrintStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
-    public static void main(final String[] args) {
+    public static void main(final var[] args) {
         App.main(null);
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -12,7 +12,7 @@ class Test {
 
         App.main(null);
 
-        final String actual = out.toString().trim();
+        final var actual = out.toString().trim();
 
         assertThat(actual).isEmpty();
     }

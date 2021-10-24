@@ -2,13 +2,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final String str1 = "A";
-        final String str2 = "HELLO";
-        final String str3 = "HELLO!";
+        final var str1 = "A";
+        final var str2 = "HELLO";
+        final var str3 = "HELLO!";
 
-        final String shoutStr1 = "A";
-        final String shoutStr2 = "HELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLO";
-        final String shoutStr3 = "HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!"
+        final var shoutStr1 = "A";
+        final var shoutStr2 = "HELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLOHELLO";
+        final var shoutStr3 = "HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!"
                 + "HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!"
                 + "HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!"
                 + "HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!"
