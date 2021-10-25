@@ -1,0 +1,103 @@
+---
+
+name: Ternary operator
+theory: |
+
+  #### Briefly
+
+  ```
+  <predicate> ? <expression on true> : <expression on false>
+
+  // eg
+  number >= 0 ? number : -number;
+  ```
+
+  ---
+
+  Look at the definition of the function that returns the module of the transferred number:
+
+  ```java
+
+  public static int abs(int number) {
+      if (number >= 0) {
+          return number;
+      }
+
+      return -number;
+  }
+  ```
+
+  Is it possible to write it more concisely? Something like `return ANSWER DEPENDING ON CONDITION`? To do this, there must be an expression to the right of return, but `if` is an instruction, not an expression.
+
+  In Java, there is a construct that is similar in its action to the *if-else* construct, but it is an expression. It is called a **ternary operator**.
+
+  The ternary operator is a unique operator requiring three operands:
+
+  ```java
+
+  public static int abs(int number) {
+      return number >= 0 ? number : -number;
+  }
+  ```
+
+  The general pattern is: `<predicate> ? <expression on true> : <expression on false>`.
+
+  Let's rewrite the initial version of `getTypeOfSentence` in the same way:
+
+  It was:
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Hodor"); // => normal
+    getTypeOfSentence("Hodor?"); // => question
+  }
+
+  static String getTypeOfSentence(String sentence) {
+      var lastChar = sentence.charAt(sentence.length() - 1);
+      if (lastChar == '?') {
+          return "question";
+      }
+
+      return "normal";
+  }
+  ```
+
+  It became:
+
+  ```java
+  public static void main(String[] args) {
+    getTypeOfSentence("Hodor"); // => normal
+    getTypeOfSentence("Hodor?"); // => question
+  }
+
+  static String getTypeOfSentence(String sentence) {
+    var lastChar = sentence.charAt(sentence.length() - 1);
+    return (lastChar == '?') ? "question" : "normal";
+  }
+  ```
+
+  ---
+
+  If you remember what the power of expressions is, you probably already guessed that the ternary operator can be nested in the ternary operator. **Do not do this:)** Such code is hard to read and debug, this is a very bad practice.
+
+instructions: |
+
+  Implement the function `convertString`, which accepts a string as input and, if the first letter is not capitalized, returns the string repeated from the source string 2 times. If the first letter is capitalized, the string is returned unchanged.
+
+  Call examples:
+
+  ```java
+  convertString("Hello"); // => 'Hello'
+  convertString("hello"); // => 'hellohello'
+  ```
+
+  You can repeat the line using the function `repeat`.
+
+  Try to write two variants of the function: with the usual if-else, and with the ternary operator.
+
+# tips: []
+
+# definitions:
+#   - name: "Ternary operator"
+#     description: |
+#         A way to turn a simple conditional statement into an expression, for example, `number >= 0? number : number`
