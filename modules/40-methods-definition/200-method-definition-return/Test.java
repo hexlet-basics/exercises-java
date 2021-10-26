@@ -1,9 +1,9 @@
 import static org.assertj.core.api.Assertions.assertThat;
+import java.time.LocalDate;
 
 class Test {
     public static void main(String[] args) {
-        var formatter = java.time.format.DateTimeFormatter.ofPattern("YYYY");
-        var expected = java.time.format(formatter);
+        var expected = LocalDate.now().getYear();
 
         final int actual = App.getCurrentYear();
 

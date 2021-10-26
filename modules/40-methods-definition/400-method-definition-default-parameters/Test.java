@@ -2,10 +2,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final int expected = 35;
+        var actual = App.getHiddenCard("1234123412341234");
+        assertThat(actual).isEqualTo("****1234");
 
-        final int actual = App.getParentNamesTotalLength("Daenerys Targaryen");
-
-        assertThat(actual).isEqualTo(expected);
+        var actual2 = App.getHiddenCard("1234123412344321", 6);
+        assertThat(actual2).isEqualTo("******4321");
     }
 }

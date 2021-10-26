@@ -15,6 +15,6 @@ class Test {
 
         final var actual = out.toString().trim();
 
-        assertThat(actual).toEquals("10");
+        assertThat(actual).isEqualTo("66");
     }
 }

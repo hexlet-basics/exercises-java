@@ -15,6 +15,6 @@ class Test {
 
         final var actual = out.toString().trim();
 
-        assertThat(actual).contains("App.main(null)");
+        assertThat(actual).isEqualTo(":-)");
     }
 }
