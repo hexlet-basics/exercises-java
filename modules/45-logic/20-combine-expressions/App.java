@@ -1,7 +1,7 @@
 public class App {
     // BEGIN
-    public static boolean hasTargaryenReference(String string)  {
-        return string.startsWith("Targaryen");
+    public static boolean isInternationalPhone(String phone)  {
+        return phone.charAt(0) == '+';
     }
     // END
 }
