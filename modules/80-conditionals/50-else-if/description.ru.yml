@@ -3,60 +3,42 @@
 name: Конструкция else if
 theory: |
 
-  Метод `getTypeOfSentence()` из предыдущего урока различает только вопросительные и обычные предложения. Давайте попробуем добавить поддержку восклицательных предложений:
+  В самой полной версии, конструкция `if` содержит не только ветку `else`, но и другие условные проверки с помощью `else if`. Такой вариант используется при большом количестве проверок, которые взаимоисключают друг друга.
 
   ```java
-  public static void main(String[] args) {
-    getTypeOfSentence("Who?"); // => 'Sentence is question'
-    getTypeOfSentence("No'");   // => 'Sentence is normal'
-    getTypeOfSentence("No!");  // => 'Sentence is exclamation'
-  }
+  if (/* что-то */) {
 
-  public static String getTypeOfSentence(String sentence) {
-    var lastChar = sentence.charAt(sentence.length() - 1);
-    var sentenceType = "";
-    if (lastChar == '?') {
-      sentenceType = "question";
-    }
+  } else if (/* другая проверка */) {
 
-    if (lastChar == '!') {
-      sentenceType = "exclamation";
-    } else {
-      sentenceType = "normal";
-    }
+  } else if (/* другая проверка */) {
 
-    return "Sentence is " + sentenceType;
+  } else {
+
   }
   ```
 
-  Мы добавили еще одну проверку ("exclamation" переводится «восклицание»). Технически метод работает, но с точки зрения семантики есть проблемы.
+  Два момента. Ветка `else` может отсутствовать. Количество `else if` условий может быть любым, хоть одно, хоть десять.
 
-  - Проверка на наличие восклицательного знака происходит в любом случае, даже если уже был обнаружен вопросительный знак.
-  - Ветка `else` описана именно для второго условия, но не для первого.
-
-  Правильнее будет воспользоваться ещё одной возможностью условной конструкции:
+  Напишем для примера расширенный метод определяющий тип предложения. Он распознает три вида предложений:
 
   ```java
-  public static void main(String[] args) {
-    getTypeOfSentence("Who?"); // => 'Sentence is question'
-    getTypeOfSentence("No");   // => 'Sentence is normal'
-    getTypeOfSentence("No!");  // => 'Sentence is exclamation'
-  }
+  App.getTypeOfSentence("Who?"); // "Sentence is question"
+  App.getTypeOfSentence("No");   // "Sentence is general"
+  App.getTypeOfSentence("No!");  // "Sentence is exclamation"
 
-  static String getTypeOfSentence(String sentence)
+  public static String getTypeOfSentence(String sentence)
   {
-    var lastChar = sentence.charAt(sentence.length() - 1);
-    var sentenceType = "";
+      var sentenceType = "";
 
-    if (lastChar == '?') {
-      sentenceType = "question";
-    } else if (lastChar == '!') {
-      sentenceType = "exclamation";
-    } else {
-      sentenceType = "normal";
-    }
+      if (sentense.endsWith('?')) {
+          sentenceType = "question";
+      } else if (sentense.endsWith('!')) {
+          sentenceType = "exclamation";
+      } else {
+          sentenceType = "general";
+      }
 
-    return "Sentence is " + sentenceType;
+      return "Sentence is " + sentenceType;
   }
   ```
 
@@ -64,7 +46,7 @@ theory: |
 
   - если последний символ `?`, то `"question"`
   - иначе, если последний символ `!`, то `"exclamation"`
-  - иначе `"normal"`
+  - иначе `"general"`
 
   Выполнится только один из блоков кода, относящихся ко всей конструкции `if`.
 
@@ -83,10 +65,10 @@ instructions: |
   Примеры вызова:
 
   ```java
-  App.whoIsThisHouseToStarks("Karstark"); // => 'friend'
-  App.whoIsThisHouseToStarks("Frey");     // => 'enemy'
-  App.whoIsThisHouseToStarks("Joar");     // => 'neutral'
-  App.whoIsThisHouseToStarks("Ivanov");   // => 'neutral'
+  App.whoIsThisHouseToStarks("Karstark"); // "friend"
+  App.whoIsThisHouseToStarks("Frey");     // "enemy"
+  App.whoIsThisHouseToStarks("Joar");     // "neutral"
+  App.whoIsThisHouseToStarks("Ivanov");   // "neutral"
   ```
 
 # tips: []
