@@ -1,7 +1,7 @@
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import org.assertj.core.api.Assertions;
 
 class Test {
     public static void main(final String[] args) {
@@ -16,6 +16,6 @@ class Test {
 
         final var actual = out.toString().trim();
 
-        assertThat(actual).isEqualTo(expected);
+        Assertions.assertThat(actual).isEqualTo(expected);
     }
 }
