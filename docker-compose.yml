@@ -6,5 +6,5 @@ services:
   exercises:
     build: .
     volumes:
-      - .:/exercises-java
+      - .:/exercises-csharp
     command: make check
