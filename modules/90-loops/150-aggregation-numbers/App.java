@@ -1,12 +1,15 @@
 public class App {
-    public static void printNumbers(int firstNumber) {
+    public static int multiplyNumbersFromRange(int start, int finish) {
         // BEGIN
-        var i = firstNumber;
-        while (i >= 1) {
-            System.out.println(i);
-            i = i - 1;
+        var i = start;
+        var result = 1;
+
+        while (i <= finish) {
+          result = result * i;
+          i = i + 1;
         }
-        System.out.println("finished!");
+
+        return result;
         // END
     }
 }
