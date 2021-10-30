@@ -10,7 +10,7 @@ public class App {
             } else {
                 result = result + current;
             }
-        i += 1;
+        i++;
     }
 
     return result;

@@ -13,28 +13,28 @@ theory: |
   Если задуматься, то можно заметить, что достаточно проверять числа не до `x - 1`, а до половины числа. Например, 11 не делится на 2, 3, 4, 5. Но и дальше гарантированно не будет делиться на числа больше своей половины. Значит, можно провести небольшую оптимизацию и проверять деление только до `x / 2`.
 
   ```java
-  const isPrime = (number) => {
-    if (number < 2) {
-        return false;
-    }
-
-    let divider = 2;
-
-    while (divider <= number / 2) {
-      if (number % divider === 0) {
+  public static boolean isPrime(int number) {
+      if (number < 2) {
           return false;
       }
 
-      divider += 1;
-    }
+      var divider = 2;
 
-    return true;
+      while (divider <= number / 2) {
+          if (number % divider == 0) {
+              return false;
+          }
+
+          divider++;
+      }
+
+      return true;
   }
 
-  isPrime(1); // false
-  isPrime(2); // true
-  isPrime(3); // true
-  isPrime(4); // false
+  App.isPrime(1); // false
+  App.isPrime(2); // true
+  App.isPrime(3); // true
+  App.isPrime(4); // false
   ```
 
   Алгоритм построен таким образом, что если во время последовательного деления на числа до `x / 2` находится хоть одно, которое делит без остатка, то переданный аргумент — не простое число, а значит дальнейшие вычисления не имеют смысла. В этом месте стоит возврат `false`.

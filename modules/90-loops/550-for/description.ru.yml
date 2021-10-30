@@ -10,7 +10,7 @@ theory: |
   ```java
   public static String reverseString(String str) {
       var result = "";
-      for (var i = 0; i < str.length(); i += 1) {
+      for (var i = 0; i < str.length(); i++) {
           result = str.charAt(i) + result;
       }
 
