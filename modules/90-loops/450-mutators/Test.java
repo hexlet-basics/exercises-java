@@ -7,18 +7,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(String[] args) {
-        final var expected = "3\n2\n1\nfinished!";
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
-
-        App.printNumbers(3);
-
-        final var actual = out.toString().trim();
-
-        System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
-        System.out.println(actual);
-
-        assertThat(actual).isEqualTo(expected);
+        var text = "I never look back";
+        assertThat(App.makeItFunny(text, 3)).isEqualTo("I NevEr LooK bAck");
+        assertThat(App.makeItFunny("hello", 2)).isEqualTo("hElLo");
     }
 }

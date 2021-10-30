@@ -1,12 +1,13 @@
 public class App {
-    public static void printNumbers(int firstNumber) {
+    public static String encrypt(String str) {
         // BEGIN
-        var i = firstNumber;
-        while (i >= 1) {
-            System.out.println(i);
-            i = i - 1;
+        var result = "";
+        for (var i = 0; i < str.length(); i += 2) {
+            var nextSymbol = (i + 2 > str.length()) ? "" : str.substring(i + 1, i + 2);
+            result = result + nextSymbol + str.charAt(i);
         }
-        System.out.println("finished!");
+
+        return result;
         // END
     }
 }

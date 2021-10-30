@@ -1,12 +1,14 @@
 public class App {
-    public static void printNumbers(int firstNumber) {
+    public static String reverse(String str) {
         // BEGIN
-        var i = firstNumber;
-        while (i >= 1) {
-            System.out.println(i);
+        var i = str.length() - 1;
+        var result = "";
+        while (i >= 0) {
+            result = result + str.charAt(i);
             i = i - 1;
         }
-        System.out.println("finished!");
+
+        return result;
         // END
     }
 }

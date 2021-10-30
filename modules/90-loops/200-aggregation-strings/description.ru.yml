@@ -5,27 +5,27 @@ theory: |
 
   Агрегация применяется не только к числам, но и к строкам. Это такие задачи, в которых строка формируется динамически, то есть заранее неизвестно, какого она размера и что будет содержать.
 
-  Представьте себе функцию, которая умеет «умножать» строку, то есть она повторяет её указанное количество раз:
+  Представьте себе метод, который умеет «умножать» строку, то есть она повторяет её указанное количество раз:
 
   ```java
-  repeat('hexlet', 3); // 'hexlethexlethexlet'
+  App.repeat("hexlet", 3); // "hexlethexlethexlet"
   ```
 
-  Принцип работы этой функции довольно простой: в цикле происходит «наращивание» строки указанное количество раз:
+  Принцип работы этого метода довольно простой: в цикле происходит «наращивание» строки указанное количество раз:
 
   ```java
-  const repeat = (text, times) => {
-    // Нейтральный элемент для строк – пустая строка
-    let result = '';
-    let i = 1;
+  public static String repeat(String text, int times) {
+      // Нейтральный элемент для строк – пустая строка
+      var result = "";
+      var i = 1;
 
-    while (i <= times) {
-      // Каждый раз добавляем строку к результату
-      result = `${result}${text}`;
-      i = i + 1;
-    }
+      while (i <= times) {
+          // Каждый раз добавляем строку к результату
+          result = result + text;
+          i = i + 1;
+      }
 
-    return result;
+      return result;
   };
   ```
 
@@ -33,20 +33,20 @@ theory: |
 
   ```java
   // Для вызова repeat('hexlet', 3);
-  let result = '';
-  result = `${result}hexlet`; // hexlet
-  result = `${result}hexlet`; // hexlethexlet
-  result = `${result}hexlet`; // hexlethexlethexlet
+  var result = "";
+  result = result + hexlet; // hexlet
+  result = result + hexlet; // hexlethexlet
+  result = result + hexlet; // hexlethexlethexlet
   ```
 
 instructions: |
 
-  Реализуйте функцию `joinNumbersFromRange()`, которая объединяет все числа из диапазона в строку:
+  Реализуйте метод `joinNumbersFromRange()`, который объединяет все числа из диапазона в строку:
 
   ```java
-  joinNumbersFromRange(1, 1); // '1'
-  joinNumbersFromRange(2, 3); // '23'
-  joinNumbersFromRange(5, 10); // '5678910'
+  App.joinNumbersFromRange(1, 1); // '1'
+  App.joinNumbersFromRange(2, 3); // '23'
+  App.joinNumbersFromRange(5, 10); // '5678910'
   ```
 
 tips: []

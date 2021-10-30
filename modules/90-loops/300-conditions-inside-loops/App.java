@@ -1,24 +1,17 @@
 public class App {
-    public static void printNumbers(int firstNumber) {
-const countChars = (str, char) => {
+    public static int countChars(String str, char ch) {
         // BEGIN
-  let i = 0;
-  let count = 0;
-  while (i < str.length) {
-    if (str[i].toLowerCase() === char.toLowerCase()) {
-      count += 1;
-    }
-    i = i + 1;
-  }
-
-  return count;
-};
-        var i = firstNumber;
-        while (i >= 1) {
-            System.out.println(i);
-            i = i - 1;
+        var i = 0;
+        var count = 0;
+        while (i < str.length()) {
+            var currentChar = Character.toLowerCase(str.charAt(i));
+            if (currentChar == Character.toLowerCase(ch)) {
+                count = count + 1;
+            }
+            i = i + 1;
         }
-        System.out.println("finished!");
+
+        return count;
         // END
     }
 }
