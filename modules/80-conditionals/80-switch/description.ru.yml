@@ -62,7 +62,7 @@ instructions: |
 
   Реализуйте метод `getNumberExplanation()`, который принимает на вход число и возвращает объяснение этого числа. Если для числа нет объяснения, то возвращается `null`:
 
-  ```javascript
+  ```java
   App.getNumberExplanation(8);   // null
 
   // Объяснения есть только для указанных ниже чисел
@@ -73,7 +73,7 @@ instructions: |
 
 # tips:
 #   - |
-#     [switch](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
+#     [switch](https://developer.mozilla.org/ru/docs/Web/java/Reference/Statements/switch)
 
 definitions: []
 

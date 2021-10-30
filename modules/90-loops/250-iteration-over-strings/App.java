@@ -1,12 +1,11 @@
 public class App {
-    public static void printNumbers(int firstNumber) {
+    public static void printReversedNameBySymbol(String name) {
         // BEGIN
-        var i = firstNumber;
-        while (i >= 1) {
-            System.out.println(i);
+        var i = name.length() - 1;
+        while (i >= 0) {
+            System.out.println(name.charAt(i));
             i = i - 1;
         }
-        System.out.println("finished!");
         // END
     }
 }

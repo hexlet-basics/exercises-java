@@ -7,13 +7,13 @@ theory: |
 
   Представьте себе функцию, которая умеет «умножать» строку, то есть она повторяет её указанное количество раз:
 
-  ```javascript
+  ```java
   repeat('hexlet', 3); // 'hexlethexlethexlet'
   ```
 
   Принцип работы этой функции довольно простой: в цикле происходит «наращивание» строки указанное количество раз:
 
-  ```javascript
+  ```java
   const repeat = (text, times) => {
     // Нейтральный элемент для строк – пустая строка
     let result = '';
@@ -31,7 +31,7 @@ theory: |
 
   Распишем выполнение этого кода по шагам:
 
-  ```javascript
+  ```java
   // Для вызова repeat('hexlet', 3);
   let result = '';
   result = `${result}hexlet`; // hexlet
@@ -43,7 +43,7 @@ instructions: |
 
   Реализуйте функцию `joinNumbersFromRange()`, которая объединяет все числа из диапазона в строку:
 
-  ```javascript
+  ```java
   joinNumbersFromRange(1, 1); // '1'
   joinNumbersFromRange(2, 3); // '23'
   joinNumbersFromRange(5, 10); // '5678910'
