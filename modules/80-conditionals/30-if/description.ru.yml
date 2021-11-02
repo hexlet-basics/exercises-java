@@ -24,12 +24,12 @@ theory: |
 
 instructions: |
 
-  Реализуйте метод `getSentenceTone()`, которая принимает строку и определяет тон предложения. Если все символы в верхнем регистре, то это вопль — `scream`. В ином случае — нормальное предложение — `general`.
+  Реализуйте метод `getSentenceTone()`, которая принимает строку и определяет тон предложения. Если все символы в верхнем регистре, то это вопль — `scream`. В ином случае — нормальное предложение — `normal`.
 
   Примеры вызова:
 
   ```java
-  App.getSentenceTone("Hello"); // "general"
+  App.getSentenceTone("Hello"); // "normal"
   App.getSentenceTone("WOW");  // "scream"
   ```
 
