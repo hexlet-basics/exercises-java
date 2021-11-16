@@ -49,7 +49,7 @@ theory: |
   ```java
   public static boolean isFirstLetterInUpperCase(String string) {
     var firstLetter = string.charAt(0);
-    // Проверяет то, что переданный симол в верхнем регистре
+    // Проверяет то, что переданный символ в верхнем регистре
     return Character.isUpperCase(firstLetter);
   }
 
