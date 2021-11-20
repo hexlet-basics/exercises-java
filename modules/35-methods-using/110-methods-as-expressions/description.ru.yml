@@ -50,7 +50,7 @@ theory: |
   ```java
   var name = "Java";
   // toUpperCase – переводит слово в верхний регистр
-  System.out.println("Привет" + name.toUpperCase()); // "Привет JAVA"
+  System.out.println("Привет " + name.toUpperCase()); // "Привет JAVA"
   ```
 
 instructions: |
