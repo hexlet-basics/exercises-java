@@ -5,5 +5,6 @@ class Test {
         assertThat(App.isPalindrome("wow")).isTrue();
         assertThat(App.isPalindrome("hexlet")).isFalse();
         assertThat(App.isPalindrome("asdffdsa")).isTrue();
+        assertThat(App.isPalindrome("Wow")).isTrue();
     }
 }
