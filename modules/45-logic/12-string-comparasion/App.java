@@ -4,7 +4,7 @@ public class App {
     // BEGIN
     public static boolean isPalindrome(String word) {
         var reversedWord = StringUtils.reverse(word.toLowerCase());
-        return word.equals(reversedWord);
+        return reversedWord.equals(word.toLowerCase());
     }
     // END
 }
