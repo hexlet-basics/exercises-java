@@ -29,7 +29,7 @@ theory: |
 
   ```java
   var language = "JAVA"
-  processedLanguage = language.toLowerCase();
+  var processedLanguage = language.toLowerCase();
   System.out.println(processedLanguage); // => "java"
   ```
 
