@@ -23,10 +23,8 @@ theory: |
   System.out.println("road" + "Kings"); // => roadKings
 
   // Конкатенировать можно абсолютно любые строки
-  System.out.println("King's" + "Landing'); // => King'sLanding
+  System.out.println("King's" + "Landing"); // => King'sLanding
   ```
-
-  Как видите, строки можно склеивать, даже если они записаны с разными кавычками.
 
   В последнем примере название города получилось с ошибкой: *King's Landing* нужно писать через пробел. Но в наших начальных строках не было пробелов, а пробелы в самом коде слева и справа от символа `+` не имеют значения, потому что они не являются частью строк.
 
@@ -40,15 +38,15 @@ theory: |
   System.out.println("King's" + " Landing"); //  => King's Landing
 
   // Добавляем пробел отдельно
-  System.out.println("King"s" + " " + "Landing'); //  => King's Landing
+  System.out.println("King's" + " " + "Landing"); //  => King's Landing
   ```
 
   Пробел — такой же символ, как и другие. Чем больше пробелов, тем шире отступы:
 
   ```java
-  System.out.println("King's " + ' Landing');   // => King's  Landing
+  System.out.println("King's " + " Landing");   // => King's  Landing
 
-  System.out.println("King's  " + '  Landing'); // => King's    Landing
+  System.out.println("King's  " + "  Landing"); // => King's    Landing
   ```
 
 instructions: |
