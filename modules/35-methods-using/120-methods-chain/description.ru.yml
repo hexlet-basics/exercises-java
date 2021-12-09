@@ -17,20 +17,20 @@ theory: |
 
   ```java
   // Название введенное пользователем. Для простоты на английском
-  var name = " How match is the fish?   ";
+  var name = " How much is the fish?   ";
   name = name.trim(); // вырезаем концевые пробелы
   name = name.replace("?", ""); // Удаляем вопрос
   name = name.replace(" ", "-"); // Заменяем пробелы на дефис
   name = name.toLowerCase(); // в нижний регистр
-  System.out.println(name); // => "how-match-is-the-fish"
+  System.out.println(name); // => "how-much-is-the-fish"
   ```
 
   Если внимательно посмотреть на этот код, то можно заметить общий шаблон. Метод возвращает данные, которые мы присваиваем переменные и дальше, по цепочке, обрабатываем. Этот шаблон можно упростить, убрав промежуточное перезаписывание переменной:
 
   ```java
-  var name = " How match is the fish?   ";
+  var name = " How much is the fish?   ";
   name = name.trim().replace("?", "").replace(" ", "-").toLowerCase();
-  System.out.println(name); // => "how-match-is-the-fish"
+  System.out.println(name); // => "how-much-is-the-fish"
   ```
 
   Благодаря тому, что каждый метод возвращает новую строку, мы можем продолжать обрабатывать ее вызывая методы подряд. Если цепочка методов становится слишком длинной, то ее можно разбить на несколько строк:
