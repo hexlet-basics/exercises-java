@@ -1,8 +1,8 @@
 FROM hexletbasics/base-image:latest
 
-RUN apt-get update && apt-get install -y openjdk-11-jdk
+RUN apt-get update && apt-get install -y openjdk-17-jdk
 
-ENV CHECKSTYLE_VERSION 9.0.1
+ENV CHECKSTYLE_VERSION 9.2
 RUN curl -L https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${CHECKSTYLE_VERSION}/checkstyle-${CHECKSTYLE_VERSION}-all.jar > /opt/checkstyle.jar
 RUN chmod 777 /opt/checkstyle.jar
 
