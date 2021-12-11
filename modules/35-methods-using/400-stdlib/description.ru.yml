@@ -19,11 +19,11 @@ instructions: |
 
   ```java
   // С даты
-  LocalDate dateBefore = LocalDate.of(2017, Month.MAY, 24);
+  LocalDate dateFrom = LocalDate.of(2017, Month.MAY, 24);
   // По дату
-  LocalDate dateAfter = LocalDate.of(2017, Month.JULY, 29);
+  LocalDate dateTo = LocalDate.of(2017, Month.JULY, 29);
   // Количество дней между этими датами
-  long noOfDaysBetween = ChronoUnit.DAYS.between(dateBefore, dateAfter);
+  long noOfDaysBetween = ChronoUnit.DAYS.between(dateFrom, dateTo);
   System.out.println(noOfDaysBetween);
   ```
 
