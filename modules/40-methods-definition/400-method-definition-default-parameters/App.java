@@ -1,10 +1,8 @@
-import org.apache.commons.lang3.StringUtils;
-
 public class App {
     // BEGIN
     public static String getHiddenCard(String cardNumber, int starsCount) {
         var visibleDigitsLine = cardNumber.substring(12);
-        return StringUtils.leftPad(visibleDigitsLine, starsCount + 4, '*');
+        return "*".repeat(16 - starsCount) + visibleDigitsLine;
     };
 
     public static String getHiddenCard(String cardNumber) {
