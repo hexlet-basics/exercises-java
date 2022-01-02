@@ -14,7 +14,7 @@ theory: |
 
   ```java
   // внутри класса App
-  // Вместо Void теперь String, потому что у метода есть возврат
+  // Вместо void теперь String, потому что у метода есть возврат
   public static String greetHexlet() {
       var message = "Hello, Hexlet!";
       return message;
