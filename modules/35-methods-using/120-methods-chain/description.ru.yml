@@ -52,7 +52,7 @@ instructions: |
 
   ```java
   // 1 параметр – индекс, 2 – длина извлекаемой подстроки
-  "hexlet".substring(0, 1); // "H"
+  "hexlet".substring(0, 1); // "h"
   // По умолчанию до конца строки
   "hexlet".substring(1); // "exlet"
   ```
