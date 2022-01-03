@@ -32,11 +32,11 @@ theory: |
   Распишем выполнение этого кода по шагам:
 
   ```java
-  // Для вызова repeat('hexlet', 3);
+  // Для вызова repeat("hexlet", 3);
   var result = "";
-  result = result + hexlet; // hexlet
-  result = result + hexlet; // hexlethexlet
-  result = result + hexlet; // hexlethexlethexlet
+  result = result + "hexlet"; // "hexlet"
+  result = result + "hexlet"; // "hexlethexlet"
+  result = result + "hexlet"; // "hexlethexlethexlet"
   ```
 
 instructions: |
@@ -44,9 +44,9 @@ instructions: |
   Реализуйте метод `joinNumbersFromRange()`, который объединяет все числа из диапазона в строку:
 
   ```java
-  App.joinNumbersFromRange(1, 1); // '1'
-  App.joinNumbersFromRange(2, 3); // '23'
-  App.joinNumbersFromRange(5, 10); // '5678910'
+  App.joinNumbersFromRange(1, 1); // "1"
+  App.joinNumbersFromRange(2, 3); // "23"
+  App.joinNumbersFromRange(5, 10); // "5678910"
   ```
 
 tips: []
