@@ -19,7 +19,7 @@ theory: |
   * Какой будет проверка на вхождение символа?
 
   ```java
-  public static int countChars(String str, char ch) => {
+  public static int countChars(String str, char ch) {
     var i = 0;
     var count = 0;
     while (i < str.length()) {
