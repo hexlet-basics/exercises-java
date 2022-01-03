@@ -21,13 +21,13 @@ theory: |
 
   ```java
   switch (status) {
-      case 'processing':
+      case "processing":
           // Делаем раз
           break;
-      case 'paid':
+      case "paid":
           // Делаем два
           break;
-      case 'new':
+      case "new":
           // Делаем три
           break;
       default: // else
