@@ -59,7 +59,7 @@ theory: |
 
   public static int sum(int x) {
     // Вызываем уже готовый метод суммирования
-    return Math.sum(x, 10);
+    return App.sum(x, 10);
   }
   ```
 
