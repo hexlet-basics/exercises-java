@@ -31,7 +31,7 @@ theory: |
           System.out.println(i);
           i = i + 1;
       }
-      System.out.println('finished!');
+      System.out.println("finished!");
   }
 
   App.printNumbers(3);
