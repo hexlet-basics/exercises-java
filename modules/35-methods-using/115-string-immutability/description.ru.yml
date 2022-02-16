@@ -20,7 +20,7 @@ theory: |
   Но как же все таки поступать, если данные нужно поменять? Для этого достаточно заменить значение переменной:
 
   ```java
-  var language = "JAVA"
+  var language = "JAVA";
   language = language.toLowerCase();
   System.out.println(language); // => "java"
   ```
@@ -28,7 +28,7 @@ theory: |
   С другой стороны, именно в такой ситуации можно создать новую переменную, с другим именем.
 
   ```java
-  var language = "JAVA"
+  var language = "JAVA";
   var processedLanguage = language.toLowerCase();
   System.out.println(processedLanguage); // => "java"
   ```
