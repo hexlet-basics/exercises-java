@@ -8,7 +8,7 @@ theory: |
   Напишем, для примера, метод, который определяет тип переданного предложения. Для начала она будет отличать обычные предложения от вопросительных.
 
   ```java
-  public static String getTypeOfSentence(sentence) {
+  public static String getTypeOfSentence(String sentence) {
       if (sentence.endsWith("?")) {
           return "question";
       }
