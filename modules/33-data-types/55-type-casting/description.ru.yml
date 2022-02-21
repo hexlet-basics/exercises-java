@@ -21,7 +21,8 @@ theory: |
 
   ```java
   // Дополнительные скобки помогают визуально отделить части выражения друг от друга
-  System.out.println(10 + ((int) 5.1)); // => 15
+  var result = 10 + ((int) 5.1);
+  System.out.println(result); // => 15
   ```
 
 instructions: |
