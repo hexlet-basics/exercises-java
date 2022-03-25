@@ -80,7 +80,7 @@ instructions: |
   number % 10 === 0
 
   // Проверяем что number не кратен 10
-  number % 10 !== 0
+  number % 10 != 0
   ```
 
 tips:
