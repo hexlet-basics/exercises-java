@@ -5,3 +5,6 @@ language:
   extension: java
   exercise_filename: App.java
   exercise_test_filename: Test.java
+  learn_as: first_language
+  progress: completed
+  name: Java
