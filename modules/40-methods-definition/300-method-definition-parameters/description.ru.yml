@@ -24,7 +24,7 @@ theory: |
   App.getLastChar(name1); // 't'
 
   var name2 = "Goo";
-  App.getLastChar(name2); // 't'
+  App.getLastChar(name2); // 'o'
   ```
 
   У метода `getLastChar()` ровно один параметр типа `String" и он обязателен. Если попробовать вызвать метод без параметра, то компилятор выдаст ошибку:
