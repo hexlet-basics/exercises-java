@@ -1,5 +1,5 @@
 // BEGIN
-public class Hexlet {
+public class App {
     public static void gogo() {
         System.out.println("It works!");
     }
