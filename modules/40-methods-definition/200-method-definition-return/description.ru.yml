@@ -113,8 +113,8 @@ theory: |
   ```java
   class App {
       public static long doubleFive() {
-          var result = 5 + 5;
           // или return 5 + 5;
+          var result = 5 + 5;
           return result;
       }
   }
@@ -126,9 +126,11 @@ theory: |
 
   ```java
   // Определение
-  public static int run() {
-      return 5;
-      return 10;
+  class App {
+      public static int run() {
+          return 5;
+          return 10;
+      }
   }
 
   // Использование
