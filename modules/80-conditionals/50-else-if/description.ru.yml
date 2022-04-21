@@ -30,9 +30,9 @@ theory: |
   {
       var sentenceType = "";
 
-      if (sentense.endsWith('?')) {
+      if (sentence.endsWith('?')) {
           sentenceType = "question";
-      } else if (sentense.endsWith('!')) {
+      } else if (sentence.endsWith('!')) {
           sentenceType = "exclamation";
       } else {
           sentenceType = "general";
