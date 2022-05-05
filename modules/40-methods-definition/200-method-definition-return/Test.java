@@ -3,7 +3,7 @@ import java.time.LocalDate;
 
 class Test {
     public static void main(String[] args) {
-        var expected = LocalDate.now().getYear();
+        var expected = 27;
 
         final int actual = App.getCurrentYear();
 
