@@ -101,7 +101,7 @@ theory: |
   ```java
   class App {
       public static String greeting() {
-          var message = "Winter is coming!"
+          var message = "Winter is coming!";
           return message;
       }
   }
