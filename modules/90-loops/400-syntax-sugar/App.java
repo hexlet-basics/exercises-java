@@ -6,7 +6,7 @@ public class App {
         while (i < str.length()) {
             var currentChar = str.charAt(i);
             if (currentChar != ch) {
-                result = result + currentChar;
+                result += currentChar;
             }
             i += 1;
         }
