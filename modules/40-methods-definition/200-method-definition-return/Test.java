@@ -3,9 +3,9 @@ import java.time.LocalDate;
 
 class Test {
     public static void main(String[] args) {
-        var expected = 27;
+        var expected = "hurray! hurray! hurray!";
 
-        final int actual = App.getCurrentYear();
+        final String actual = App.sayHurrayThreeTimes();
 
         assertThat(actual).isEqualTo(expected);
     }

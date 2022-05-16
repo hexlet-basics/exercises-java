@@ -139,11 +139,11 @@ theory: |
 
 instructions: |
 
-  Реализуйте статический метод `getCubeOfThree()`, который возвращает куб числа 3 (3 в степени 3).
+  Реализуйте статический метод `sayHurrayThreeTimes()`, которая возвращает строку 'hurray! hurray! hurray!'.
 
   ```java
-  var cubeOfThree = App.getCubeOfThree();
-  System.out.println(cubeOfThree); // => 27
+  var hurray = App.sayHurrayThreeTimes();
+  System.out.println(hurray); // => 'hurray! hurray! hurray!'
   ```
 
 # tips: []

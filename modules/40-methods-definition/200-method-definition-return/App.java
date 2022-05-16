@@ -2,8 +2,9 @@ import java.time.LocalDate;
 
 public class App {
     // BEGIN
-    public static int getCurrentYear() {
-        return 3 * 3 * 3;
+    public static String sayHurrayThreeTimes() {
+        var word = "hurray!";
+        return word + " " + word + " " + word;
     }
     // END
 }
