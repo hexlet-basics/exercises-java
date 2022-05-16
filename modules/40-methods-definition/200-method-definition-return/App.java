@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-
 public class App {
     // BEGIN
     public static String sayHurrayThreeTimes() {
