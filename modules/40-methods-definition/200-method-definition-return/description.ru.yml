@@ -139,18 +139,11 @@ theory: |
 
 instructions: |
 
-  Реализуйте статический метод `getCurrentYear()`, который возвращает наружу текущий год в виде числа
+  Реализуйте статический метод `sayHurrayThreeTimes()`, которая возвращает строку 'hurray! hurray! hurray!'.
 
   ```java
-  var year = App.getCurrentYear();
-  System.out.println(year); // выведет текущий год
+  var hurray = App.sayHurrayThreeTimes();
+  System.out.println(hurray); // => 'hurray! hurray! hurray!'
   ```
-
-  Для выполнения этого задания, вам понадобится выполнить несколько действий:
-
-  * Получить текущую дату с помощью метода `LocalDate.now()`. Этот метод возвращает объект типа `LocalDate`. В реальности у этого объекта есть метод `getYear()`, который выполняет нашу задачу, но здесь мы хотим потренироваться и не будем его использовать.
-  * Преобразовать дату в строку с помощью метода `toString()`. Формат строки: *yyyy-mm-dd*, например, *2021-11-05*
-  * Извлечь из неё год с помощью метода [substring()](https://ru.hexlet.io/qna/java/questions/kak-izvlech-podstroku-iz-stroki-v-java)
-  * Преобразовать год из строки в число с помощью метода `Integer.parseInt()` и вернуть наружу
 
 # tips: []
