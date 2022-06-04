@@ -76,6 +76,7 @@ theory: |
       public static String greeting() {
           return "Winter is coming!";
           // Любой код ниже не выполнится никогда
+          // Недостижимый код в Java даже не скомпилируется
           System.out.println("Я никогда не выполнюсь");
       }
   }
