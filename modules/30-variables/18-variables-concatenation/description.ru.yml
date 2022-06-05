@@ -7,7 +7,7 @@ theory: |
 
   ```java
   var what = "Kings" + "road";
-  System.out.println(what); // => "Kingsroad"
+  System.out.println(what); // => Kingsroad
   ```
 
   … а значит сумеем конкатенировать строку и одну переменную, в которой записана строка:
@@ -16,7 +16,7 @@ theory: |
   var first = "Kings";
   var what = first + "road";
 
-  System.out.println(what); // => "Kingsroad"
+  System.out.println(what); // => Kingsroad
   ```
 
   … и даже конкатенировать две переменные, в которых записаны строки:
@@ -26,7 +26,7 @@ theory: |
   var last = "road";
   var what = first + last;
 
-  System.out.println(what); //=> "Kingsroad"
+  System.out.println(what); //=> Kingsroad
   ```
 
 instructions: |
