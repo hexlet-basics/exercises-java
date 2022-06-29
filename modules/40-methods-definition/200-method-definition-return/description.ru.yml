@@ -66,14 +66,14 @@ theory: |
   // Теперь этот код работает
   var message = App.greeting();
   // Мы можем выполнить какие-то действия над результатом
-  System.out.println(message.toUpperCase()); // => "WINTER IS COMING!"
+  System.out.println(message.toUpperCase()); // => WINTER IS COMING!
   ```
 
   Любой код после `return` не выполняется:
 
   ```java
   class App {
-      public static String greeting() {
+      public static String greetingWithCodeAfterReturn() {
           return "Winter is coming!";
           // Любой код ниже не выполнится никогда
           // Недостижимый код в Java даже не скомпилируется
@@ -86,7 +86,7 @@ theory: |
 
   ```java
   class App {
-      public static String greeting() {
+      public static String greetingWithReturnAndPrinting() {
           System.out.println("Я появлюсь в консоли");
           return "Winter is coming!";
       }
@@ -94,7 +94,7 @@ theory: |
 
   // Где-то в другом методе
   // И напечатает текст на экран и вернет значение
-  var value = App.greeting();
+  var value = App.greetingWithReturnAndPrinting();
   ```
 
   Возвращать можно не только конкретное значение. Так как `return` работает с выражениями, то справа от него может появиться почти все что угодно. Здесь нужно руководствоваться принципами читаемости кода:
@@ -123,7 +123,7 @@ theory: |
 
   В этом примере в определении метода использовался `long` так как возвращается целое число.
 
-  Вопрос на самопроверку. Что выведет этот код?
+  Вопрос на самопроверку. Что вернет вызов определенного ниже метода `run()`?
 
   ```java
   // Определение
@@ -134,8 +134,8 @@ theory: |
       }
   }
 
-  // Использование
-  App.run(); // => ?
+  // Что будет выведено на экран?
+  System.out.println(run()); // => ?
   ```
 
 instructions: |
