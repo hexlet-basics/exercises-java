@@ -50,6 +50,8 @@ theory: |
   System.out.print("The price is" + rublesCount + "rubles");
   ```
 
+  https://replit.com/@hexlet/java-basics-variables-3
+
   The price is 3750 rubles
 
   Any variable can be part of any expression. At the time of calculation, the value of the variable is substituted for its value.

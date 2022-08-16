@@ -33,6 +33,8 @@ theory: |
   System.out.println(processedLanguage); // => "java"
   ```
 
+  https://replit.com/@hexlet/java-basics-methods-as-expressions
+
   Такой подход нередко предпочтительнее, по соображением читаемости. Переменные, которые постоянно меняются сложнее анализировать. В конечном итоге все зависит от задачи и понимание того как лучше приходит с опытом.
 
 instructions: |

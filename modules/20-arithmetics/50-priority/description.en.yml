@@ -35,6 +35,8 @@ theory: |
 
   Remember: code is for people, because it'll be read by people, and machines will only execute it. The only thing that matters for the machines is the correctness of code. They don't distinguish between "clear" or "confusing".
 
+  https://replit.com/@hexlet/java-basics-arithmetics
+
 instructions: |
 
   Consider an expression: `70 * 3 + 4 / 8 + 2`.

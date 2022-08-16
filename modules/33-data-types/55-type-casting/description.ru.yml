@@ -25,6 +25,8 @@ theory: |
   System.out.println(result); // => 15
   ```
 
+  https://replit.com/@hexlet/java-basics-data-types
+
 instructions: |
 
   Выведите на экран строку `2 times`, полученную из числа 2.9 и строки `times`, используя преобразования типов и конкатенацию.

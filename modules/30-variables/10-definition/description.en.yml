@@ -27,6 +27,8 @@ theory: |
     Father!
   </pre>
 
+  https://replit.com/@hexlet/java-basics-variables-1
+
   For the name of the variable, any set of valid characters is used, which include letters of the English alphabet, numbers and the characters `-`, `_`. In this case, the number can not be put at the beginning. Variable names are case-sensitive, that is, the name `hello` and the name `heLLo` are two different names, and therefore two variables.
 
   The number of variables created is not limited in any way; large programs contain tens and hundreds of thousands of variable names:

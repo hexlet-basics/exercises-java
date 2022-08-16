@@ -37,6 +37,8 @@ theory: |
   "hexlet".substring(3, 6); // "let"
   ```
 
+  https://replit.com/@hexlet/java-basics-methods-calling-1
+
 instructions: |
 
   Вам даны три переменные с фамилиями разных людей. Составьте и выведите на экран слово из символов в таком порядке:

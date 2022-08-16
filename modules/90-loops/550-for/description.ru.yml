@@ -18,6 +18,8 @@ theory: |
   }
   ```
 
+  https://replit.com/@hexlet/java-basics-conditions-for
+
   Можно читать так: *цикл с индексом `i` повторяется пока `i < str.length()` и после каждого шага увеличивает `i` на 1*.
 
   В определении цикла `for` есть:
