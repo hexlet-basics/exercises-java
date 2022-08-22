@@ -12,6 +12,7 @@ class Test {
 
             App.main(null);
             var actual = Integer.parseInt(out.toString().trim());
+            System.out.println(actual);
             assertThat(actual).isBetween(0, 10);
         });
     }
