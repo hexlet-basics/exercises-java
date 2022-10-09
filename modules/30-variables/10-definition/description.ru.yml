@@ -54,7 +54,7 @@ theory: |
   Для удобства анализа программы, переменные принято создавать как можно ближе к тому месту где они используются.
 
 instructions: |
-  Создайте переменную с именем `motto` и содержимым `What Is Dead May Never Die!`. Распечайте содержимое переменной.
+  Создайте переменную с именем `motto` и содержимым `What Is Dead May Never Die!`. Распечатайте содержимое переменной.
   <pre class='hexlet-basics-output'>
   What Is Dead May Never Die!
   </pre>
