@@ -108,7 +108,7 @@ instructions: |
   Результат вызова `main()` в таком случае будет таким:
 
   ```java
-  App.main(); // => "It works!"
+  // => "It works!"
   ```
 
 # tips:
