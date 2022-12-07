@@ -15,7 +15,7 @@ theory: |
   // Пароль длиннее 8 символов **И** пароль короче 20 символов
   public static boolean isCorrectPassword(String password) {
       var length = password.length();
-      return length >= 8 && length <= 20;
+      return length > 8 && length < 20;
   }
 
   isCorrectPassword("qwerty"); // false

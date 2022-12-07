@@ -27,7 +27,7 @@ theory: |
               return false;
           }
 
-          divider += 1;
+          divider++;
       }
 
       return true;

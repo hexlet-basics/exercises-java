@@ -33,7 +33,7 @@ theory: |
           var trimmedEmail = email.trim();
           // Приводим к нижнему регистру
           var preparedEmail = trimmedEmail.toLowerCase();
-          System.out.println(preparedEmail); // => "support@hexlet.io"
+          System.out.println(preparedEmail); // => support@hexlet.io
           // Записываем в базу данных
       }
   }
@@ -70,7 +70,7 @@ theory: |
   // Теперь этот код работает
   var message = App.greeting();
   // Мы можем выполнить какие-то действия над результатом
-  System.out.println(message.toUpperCase()); // => "WINTER IS COMING!"
+  System.out.println(message.toUpperCase()); // => WINTER IS COMING!
   ```
 
   Любой код после `return` не выполняется:
@@ -149,7 +149,7 @@ instructions: |
 
   ```java
   var hurray = App.sayHurrayThreeTimes();
-  System.out.println(hurray); // => 'hurray! hurray! hurray!'
+  System.out.println(hurray); // => hurray! hurray! hurray!
   ```
 
 # tips: []

@@ -47,7 +47,7 @@ theory: |
 
   // Вызов метода
   // Обязательно указывать имя класса
-  App.showCurrentDate(); // => "Today is: 2021-10-25"
+  App.showCurrentDate(); // => Today is: 2021-10-25
   ```
 
   https://replit.com/@hexlet/java-basics-methods-definition
@@ -93,7 +93,7 @@ instructions: |
 
   ```java
   // Класс App уже определен
-  App.printMotto(); // => "Winter is coming"
+  App.printMotto(); // => Winter is coming
   ```
 
   Чтобы мы могли вызвать этот метод снаружи, нужно его пометить не только ключевым словом `static`, но еще и `public`.

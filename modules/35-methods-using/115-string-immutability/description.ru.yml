@@ -24,7 +24,7 @@ theory: |
   ```java
   var language = "JAVA";
   language = language.toLowerCase();
-  System.out.println(language); // => "java"
+  System.out.println(language); // => java
   ```
 
   С другой стороны, именно в такой ситуации можно создать новую переменную с другим именем:
@@ -32,7 +32,7 @@ theory: |
   ```java
   var language = "JAVA";
   var processedLanguage = language.toLowerCase();
-  System.out.println(processedLanguage); // => "java"
+  System.out.println(processedLanguage); // => java
   ```
 
   https://replit.com/@hexlet/java-basics-methods-as-expressions
