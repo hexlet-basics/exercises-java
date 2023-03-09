@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
     public static void main(final String[] args) {
-        final var expected = "What Is Dead May Never Die";
+        final var expected = "What Is Dead May Never Die.";
 
         App.main(null);
 
