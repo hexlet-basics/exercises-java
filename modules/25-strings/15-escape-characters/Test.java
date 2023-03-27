@@ -8,6 +8,7 @@ class Test {
         final var expected = "- Did Joffrey agree?\n- He did. He also said \"I love using \\n\".";
 
         App.main(null);
+        System.out.println();
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
