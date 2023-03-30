@@ -9,7 +9,7 @@ public class App {
             case 42:
                 return "answer for everything";
             default:
-                return null;
+                return "just a number";
         }
     }
     // END
