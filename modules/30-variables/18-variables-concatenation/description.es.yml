@@ -1,56 +1,58 @@
 ---
 
-name: Variables and Concatenation
+name: Variables y Concatenación
 
 theory: |
-  Variables and concatenation can be combined. Syntaxically nothing changes, because we know how to concatenate - that is, to join two strings:
+  Las variables y la concatenación se pueden combinar. Sintácticamente nada cambia, porque sabemos cómo concatenar, es decir, unir dos cadenas:
 
   ```java
-  var what = "Kings" + "road";
-  System.out.println(what); // => Kingsroad
+  var que = "Camino" + "de Reyes";
+  System.out.println(que); // => CaminodeReyes
   ```
 
-  This means that we can concatenate a string and a variable that contains a string:
+ Esto significa que podemos concatenar una cadena y una variable que contiene una cadena:
 
   ```java
-  var first = "Kings";
-  var what = first + "road";
-  System.out.println(what); // => Kingsroad
+ var primero = "Caminos";
+ var que = primero + "de Reyes";
+ System.out.println(que); // => CaminodeReyes
+
   ```
 
-  We can even concatenate two variables that contain strings:
+  Incluso podemos concatenar dos variables que contienen cadenas:
 
   ```java
-  var first = "Kings";
-  var last = "road";
-  var what = first + last;
-  System.out.println(what); //=> Kingsroad
+  var primero = "Caminos";
+  var ultimo = "de Reyes";
+  var que = primero + ultimo;
+  System.out.println(que); // => CaminodeReyes
+
   ```
 
   https://replit.com/@hexlet/java-basics-variables-4
 
 instructions: |
 
-  Websites constantly send emails to their users. A typical task is to automatically send a personalized email, where the username will be in the subject. If the user's name is stored somewhere in the website's database as a string, the task of generating the subject comes down to concatenation: for example, you need to concatenate the string *Hello* with the string that contains the name.
+  Los sitios web constantemente envían correos electrónicos a sus usuarios. Una tarea típica es enviar automáticamente un correo electrónico personalizado, donde el nombre de usuario estará en el asunto. Si el nombre del usuario se almacena en algún lugar de la base de datos del sitio web como una cadena, la tarea de generar el asunto se reduce a la concatenación: por ejemplo, debes concatenar la cadena Hola con la cadena que contiene el nombre.
 
-  Write a program that will generate the subject and body of the email, using the already defined variables, and output the resulting strings to the screen.
+  Escribe un programa que genere el asunto y el cuerpo del correo electrónico, utilizando las variables ya definidas, y muestre las cadenas resultantes en la pantalla.
 
-  For the subject, use the variables `firstName` and `greeting`, a comma, and an exclamation mark. Print this in the correct order.
+  Para el asunto, utiliza las variables nombre y saludo, una coma y un signo de exclamación. Muestra esto en el orden correcto.
 
-  For the body of the email, use the variables `info` and `intro`, with the second sentence on a new line.
+  Para el cuerpo del correo electrónico, utiliza las variables informacion e introduccion, con la segunda oración en una nueva línea.
 
-  The result on the screen should look like this:
+  El resultado en la pantalla debería lucir así:
 
   <pre class='hexlet-basics-output'>
-  Hello, Joffrey!
-  Here is important information about your account security.
-  We couldn't verify your mother's maiden name.
+  ¡Hola, Joffrey!
+  Aquí tienes información importante sobre la seguridad de tu cuenta.
+  No pudimos verificar el nombre de soltera de tu madre.
   </pre>
 
-  Complete the task using only two `System.out.println()`.
+  Completa la tarea utilizando solamente dos System.out.println().
 
 tips:
   - |
-    Think about which string and in what order you need to concatenate the variables to get such a two-line output for the body of the email.
+    Piensa en qué cadena y en qué orden debes concatenar las variables para obtener una salida de dos líneas para el cuerpo del correo electrónico.
   - |
-    Remember that you can create a string that contains only the control sequence `\n`.
+    Recuerda que puedes crear una cadena que contenga solo la secuencia de control \n.
