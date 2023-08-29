@@ -1,0 +1,153 @@
+---
+
+name: Return Values
+
+theory: |
+  The methods we defined in previous lessons ended their work by printing some data to the screen:
+
+  ```java
+  public class App {
+      public static void greeting() {
+          System.out.println("Winter is coming");
+      }
+  }
+  ```
+
+  There is not much benefit from such methods, as their results cannot be used within the program.
+
+  Let's consider this with an example. Let's take the task of processing email. When a user registers on a website, they can enter their email in any way:
+
+  * Add random spaces at the beginning or end `_support@hexlet.io__`
+  * Use letters in different cases `SUPPORT@hexlet.io`
+
+  If we save the address in this form in the database, the user will not be able to log in to the website if they enter the address without spaces and in a different case.
+
+  To prevent this from happening, the address needs to be prepared for storage in the database - converted to lowercase and trimmed of spaces at the beginning and end of the string. The whole task can be solved in a couple of lines:
+
+  ```java
+  class App {
+      public static void main(String[] args) {
+          // Get the address from the form
+          var email = "  SuppORT@hexlet.IO";
+          // Trim whitespace characters
+          var trimmedEmail = email.trim();
+          // Convert to lowercase
+          var preparedEmail = trimmedEmail.toLowerCase();
+          System.out.println(preparedEmail); // => support@hexlet.io
+          // Save to the database
+      }
+  }
+  ```
+
+  This code became possible only thanks to the return value. The `trim()` and `toLowerCase()` methods do not print anything to the screen. They **return** the result of their work, so we can assign it to variables. If instead of returning the result, they printed to the screen, we would not be able to assign the result of their work to a variable. Just like we cannot do with the `greeting()` method defined above:
+
+  ```java
+  // Java will complain that `greeting()` does not return anything
+  // The code will not work
+  var message = App.greeting();
+  ```
+
+  Let's modify the `greeting()` method so that it starts returning data instead of printing it. To do this, we need to make two changes:
+
+  * Specify the return data type - in this case, it is a string `String`
+  * Use the `return` statement instead of printing to the screen
+
+  Let's look at the modified code:
+
+  ```java
+  class App {
+      public static String greeting() {
+          return "Winter is coming!";
+      }
+  }
+  ```
+
+  Instead of `void`, we now have `String` because the method has a return value. This way, we told Java that the result of the method's work will be a string.
+
+  Also, pay attention to the `return` statement - it is a special instruction. It takes the expression on the right and passes it to the code that called the method. As soon as Java encounters `return`, the execution of the method ends:
+
+  ```java
+  // Now this code works
+  var message = App.greeting();
+  // We can perform some actions on the result
+  System.out.println(message.toUpperCase()); // => WINTER IS COMING!
+  ```
+
+  Any code after `return` is not executed:
+
+  ```java
+  class App {
+      public static String greeting() {
+          return "Winter is coming!";
+          // Any code below will never be executed
+          // Unreachable code in Java will not even compile
+          System.out.println("I will never be executed");
+      }
+  }
+  ```
+
+  Even if a method returns data, it does not limit it from printing. In addition to returning data, we can also print it:
+
+  ```java
+  class App {
+      public static String greeting() {
+          System.out.println("I will appear in the console");
+          return "Winter is coming!";
+      }
+  }
+
+  // Somewhere in another method of the program
+  // it will print the text to the screen and return the value
+  var value = App.greeting();
+  ```
+
+  It is possible to return not only a specific value. Since `return` works with expressions, almost anything can appear to the right of it. Here, we should follow the principles of code readability:
+
+  ```java
+  class App {
+      public static String greeting() {
+          var message = "Winter is coming!";
+          return message;
+      }
+  }
+  ```
+
+  Here, we are not returning the variable itself - we are always returning the value that is stored in this variable. Below is an example with calculations:
+
+  ```java
+  class App {
+      public static long doubleFive() {
+          // or return 5 + 5;
+          var result = 5 + 5;
+          return result;
+      }
+  }
+  ```
+
+  In this example, `long` was used in the method definition because an integer is returned.
+
+  To test your knowledge from this lesson, try to answer the question. What do you think this code will output?
+
+  ```java
+  // Definition
+  class App {
+      public static int run() {
+          return 5;
+          return 10;
+      }
+  }
+
+  // Usage
+  App.run(); // => ?
+  ```
+
+instructions: |
+
+  Implement a static method `sayHurrayThreeTimes()` that returns the string 'hurray! hurray! hurray!'.
+
+  ```java
+  var hurray = App.sayHurrayThreeTimes();
+  System.out.println(hurray); // => hurray! hurray! hurray!
+  ```
+
+# tips: []

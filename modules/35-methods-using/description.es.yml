@@ -1,0 +1,5 @@
+---
+
+name: Llamada a métodos
+description: |
+  Para expresar cualquier operación arbitraria en programación, existe el concepto de "función". Las funciones son los bloques de construcción con los que los programadores construyen sistemas. En Java, las funciones se llaman métodos. En este módulo aprenderemos a utilizar los métodos ya creados. Veremos la firma de los métodos en la documentación y entenderemos cómo utilizarla.

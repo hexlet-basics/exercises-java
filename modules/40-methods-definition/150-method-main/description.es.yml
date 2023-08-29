@@ -1,0 +1,117 @@
+---
+
+name: Método main
+
+theory: |
+  Es posible que te sorprendas, pero a lo largo de todas las lecciones anteriores, hemos estado creando nuestro propio método. El esqueleto del método ya estaba escrito de antemano, y se te pedía que añadieras su cuerpo. La práctica se veía así:
+
+  ```java
+  public class App {
+      public static void main(String[] args) {
+          // BEGIN
+          // Aquí escribías tu código
+          // END
+      }
+  }
+  ```
+
+  ¿Por qué creamos un método? Java está diseñado de tal manera que no se puede ejecutar código fuera de los métodos. No puedes simplemente escribir código a nivel de archivo y ejecutarlo. El compilador mostrará un error:
+
+  ```java
+  // El archivo con este código no se compila
+  System.out.println("Aunque parezca mentira");
+  ```
+
+  Pero este código funcionará:
+
+  ```java
+  public class App {
+      public static void main(String[] args) {
+          System.out.println("Aunque parezca mentira");
+      }
+  }
+  ```
+
+  En tu trabajo, a menudo verás ejemplos fuera de los métodos. ¿Por qué hacemos esto? Únicamente por conveniencia.
+
+  Si envolvemos cada línea de código en una clase y un método, el volumen de ruido y material aumentará significativamente. Siempre ten esto en cuenta, ya que los creadores de estos materiales asumen que entiendes cómo funciona Java.
+
+  Si ves código que se ejecuta sin métodos, siempre añade la envoltura como se muestra arriba. Así podrás ejecutar fácilmente ese código, por ejemplo, localmente.
+
+  ## Método main
+
+  ¿Por qué el método en nuestros ejemplos se llama `main`? Podríamos haber escrito un ejemplo como este:
+
+  ```java
+  public class App {
+      // run - el nombre se elige arbitrariamente
+      // el nombre puede ser cualquier cosa que el autor del código quiera
+      public static void run() {
+          // aquí hay algún código
+      }
+  }
+  ```
+
+  Podríamos haberlo hecho así, y todo funcionaría, pero hay un detalle. En esta forma, el método `main`, tal como lo definimos, tiene un significado especial para Java.
+
+  Java lo llama automáticamente cuando se ejecuta el programa desde la consola:
+
+  ```bash
+  # El archivo App contiene una clase llamada App
+  java App.java # compila y ejecuta
+  # Dentro se ejecutará el método App.main, si está definido
+  ```
+
+  Otros métodos no se llaman automáticamente. Es por eso que siempre usamos `main`, ya que así puedes fácilmente llevar el código del entrenador a tu editor y ejecutarlo.
+
+  ¿Es obligatorio definirlo? No, Java no impone ninguna restricción sobre qué métodos y cuántos métodos defines en una clase. Tampoco hay restricciones sobre la cantidad y los nombres de las clases.
+
+  Para simplificar, siempre usamos el nombre `App`, pero en el código real encontrarás miles de nombres y clases diferentes. Aunque con la condición de que en un archivo haya exactamente una clase:
+
+  ```java
+  class MySuperClassName {
+      public static void oneMethod() {
+      }
+      public static void twoMethod() {
+      }
+      public static void threeMethod() {
+      }
+  }
+  ```
+
+  Hablaremos de esto en el curso de [POO en Java](https://ru.hexlet.io/courses/java-oop-basics).
+
+  Lo más importante que debes recordar ahora es que cualquier método estático se llama usando un punto después del nombre de la clase, y las llamadas en sí se realizan dentro de otros métodos:
+
+  ```java
+  // Solo un ejemplo de llamadas de métodos entre sí
+  class MySuperClassName {
+      public static void oneMethod() {
+          MySuperClassName.twoMethod();
+      }
+
+      public static void twoMethod() {
+          MySuperClassName.threeMethod();
+      }
+
+      public static void threeMethod() {
+      }
+  }
+  ```
+
+instructions: |
+
+  Implementa una clase llamada `App` con dos métodos:
+
+  1. El método `gogo()`, que imprime en la pantalla la cadena `¡Funciona!`
+  2. El método `main()`, como se define arriba, que llama al método `gogo()`
+
+  El resultado de llamar a `main()` en este caso será:
+
+  ```java
+  // => "¡Funciona!"
+  ```
+
+# tips:
+#   - |
+#     [Nomenclatura en programación](https://ru.hexlet.io/blog/posts/naming-in-programming)

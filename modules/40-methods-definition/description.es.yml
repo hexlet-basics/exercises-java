@@ -1,0 +1,5 @@
+---
+
+name: Definición de métodos
+description: |
+  La definición de métodos propios simplifica en gran medida la escritura y el mantenimiento de programas. Por ejemplo, la capacidad de definir métodos permite combinar operaciones complejas en una sola, ocultando toda la complejidad en un método simple. Al aprender a crear métodos, darás el primer paso hacia la construcción de programas realmente útiles. Y nosotros te ayudaremos en esto. En este módulo crearás tu primer método y aprenderás a darle nombres claros (y también a las variables).

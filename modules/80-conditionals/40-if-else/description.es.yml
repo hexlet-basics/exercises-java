@@ -1,0 +1,57 @@
+---
+
+name: Estructura if-else
+
+theory: |
+  La estructura condicional `if` tiene varias variantes. Una variante incluye un bloque que se ejecuta si la condición es falsa:
+
+  ```java
+  if (x > 5) {
+      // Si la condición es verdadera
+  } else {
+      // Si la condición es falsa
+  }
+  ```
+
+  Esta estructura puede ser útil para la inicialización de valores. En el siguiente ejemplo, se verifica la existencia de un `email`. Si está ausente, se establece un valor predeterminado; si se proporciona, se realiza una normalización:
+
+  ```java
+  // Aquí viene el email
+
+  if (email.equals("")) { // Si el email está vacío, establecer el valor predeterminado
+      email = "support@hexlet.io";
+  } else { // De lo contrario, realizar la normalización
+      email = email.trim().toLowerCase();
+  }
+
+  // Aquí se utiliza este correo electrónico
+  ```
+
+  Si la rama `if` contiene un `return`, entonces el `else` no es necesario, se puede omitir simplemente:
+
+  ```java
+  if (/* condición */) {
+      return /* algún valor */;
+  }
+
+  // Continuar haciendo algo, porque no se necesita el else
+  ```
+
+instructions: |
+
+  Implementa el método `normalizeUrl()`, que realiza lo que se conoce como normalización de datos. Recibe una dirección de un sitio web y devuelve la dirección con *https://* al principio.
+
+  El método recibe direcciones en forma de *DIRECCIÓN* o *https://DIRECCIÓN*, pero siempre devuelve la dirección en forma de *https://DIRECCIÓN*.
+
+  Puedes usar el método `startsWith()` para verificar si una cadena comienza con el prefijo *https://*. Luego, en base a esto, agregar o no agregar *https://*.
+
+  ```java
+  App.normalizeUrl("google.com"); // "https://google.com"
+  App.normalizeUrl("https://ai.fi"); // "https://ai.fi"
+  ```
+
+# tips: []
+
+# definitions:
+#   - name: "else"
+#     description: "forma de especificar un bloque de código que se ejecutará si la condición del `if` no se cumple"

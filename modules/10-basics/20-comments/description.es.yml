@@ -1,0 +1,38 @@
+---
+
+name: Comentarios
+theory: |
+  Casi todos los lenguajes de programación permiten dejar comentarios en el código. Estos comentarios no son utilizados por el código y son únicamente para las personas: para que los programadores dejen notas para sí mismos y para otros programadores.
+
+  En Java, hay tres tipos de comentarios:
+
+  * **Comentarios de una línea** que comienzan con `//`. Después de estos dos caracteres puede seguir cualquier texto, la línea completa no será analizada ni ejecutada.
+
+      El comentario puede ocupar toda la línea:
+
+      ```java
+      // Por Winterfell!
+      ```
+
+      También el comentario puede estar en la línea después de algún código:
+
+      ```java
+      System.out.println("Soy el Rey"); // => Por los Lannister!
+      ```
+
+  * **Comentarios de varias líneas** que comienzan con `/*` y terminan con `*/`. Es común comenzar cada línea con el carácter `*`, aunque técnicamente no es obligatorio:
+
+      ```java
+      /*
+      * La noche es oscura y
+      * está llena de terrores.
+      */
+      System.out.println("Soy el Rey"); // => Soy el Rey
+      ```
+
+  * **Comentarios de documentación** que comienzan con `/**` y terminan con `*/`. Para estos comentarios es obligatorio comenzar cada línea con el carácter `*`.
+
+      Los comentarios de documentación son un subtipo de los comentarios de varias líneas. Además, tienen una función adicional: se pueden recopilar con la herramienta especial javadoc y se pueden generar como documentación para su código. Hablaremos de ellos más adelante, cuando veamos las clases y los métodos.
+
+instructions: |
+  Crea un comentario de una línea con el texto: *No sabes nada, Jon Nieve!*.

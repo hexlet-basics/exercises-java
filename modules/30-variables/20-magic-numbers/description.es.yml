@@ -1,0 +1,64 @@
+---
+
+name: Números mágicos
+
+theory: |
+  Recordemos una de las lecciones anteriores:
+
+  ```java
+  // Conversión de euros a rublos a través de dólares
+  var euros = 1000;
+  var dólares = euros * 1.25; // 1250
+  var rublos = dólares * 60; // 75000
+  System.out.println(rublos); // => 75000
+  ```
+
+  Desde el punto de vista del desarrollo profesional, este código "huele mal". Así se describe el código que no cumple con las llamadas mejores prácticas (best practices). Y la razón aquí es la siguiente: en este momento, al ver los números *60* y *1.25*, es probable que te preguntes: "¿qué significan estos números?".
+
+  ¡Imagínate lo que sucederá en un mes! ¿Cómo lo entenderá un nuevo programador que no haya visto el código antes? En nuestro ejemplo, el contexto se recupera gracias a una buena nomenclatura. Pero en la vida real, el código es mucho más complicado, por lo que a menudo es imposible adivinar el significado de los números.
+
+  Este efecto es causado por los **números mágicos** (magic numbers) - números cuyo origen es imposible de entender sin un profundo conocimiento de lo que está sucediendo dentro de una sección de código.
+
+  La solución es simple: basta con crear variables con nombres adecuados y todo encajará en su lugar:
+
+  ```java
+  var dólaresEnEuro = 1.25;
+  var rublosEnDólar = 60;
+
+  var euros = 1000;
+  var dólares = euros * dólaresEnEuro; // 1250
+  var rublos = dólares * rublosEnDólar; // 75000
+  System.out.println(rublos); // => 75000
+  ```
+
+  Presta atención a los siguientes detalles:
+
+  * Hemos utilizado la nomenclatura *lowerCamelCase*
+  * Las dos nuevas variables están separadas de los cálculos posteriores por una línea en blanco. Estas variables tienen sentido incluso sin los cálculos, por lo que esta separación es apropiada y mejora la legibilidad.
+  * Hemos obtenido un código bien nombrado y estructurado, pero es más largo que la versión anterior. Esto ocurre a menudo y es normal, porque el código debe ser legible.
+
+instructions: |
+
+  Te has encontrado con un código que muestra en pantalla la cantidad total de habitaciones en posesión del actual rey:
+
+  ```java
+  var rey = "Rey Balon el 6to";
+  System.out.println(rey + " tiene " + (6 * 17) + " habitaciones.");
+  ```
+
+  Como puedes ver, estos son números mágicos: no está claro qué significa el _6_ y qué significa el _17_. Se puede adivinar si se conoce la historia de la familia real: cada nuevo rey hereda todos los castillos de sus antepasados y construye un nuevo castillo, una copia exacta del castillo de sus padres.
+
+  Esta extraña dinastía simplemente está multiplicando castillos idénticos...
+
+  Elimina los números mágicos creando nuevas variables y luego muestra el texto en pantalla.
+
+  El resultado será el siguiente:
+  <pre class='hexlet-basics-output'>
+  Rey Balon el 6to tiene 102 habitaciones.
+  </pre>
+
+  Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser lo suficientemente cortos y concisos para una lectura cómoda.
+
+  Recuerda: el código funcionará con cualquier nombre, y nuestro sistema siempre verifica solo el resultado en pantalla, por lo que completar esta tarea es tu responsabilidad.
+
+# tips: []
