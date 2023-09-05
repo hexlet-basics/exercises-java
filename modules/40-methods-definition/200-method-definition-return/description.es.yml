@@ -1,153 +1,153 @@
 ---
 
-name: Return Values
+name: Valores de Retorno
 
 theory: |
-  The methods we defined in previous lessons ended their work by printing some data to the screen:
+  Los métodos que definimos en las lecciones anteriores finalizaban su trabajo imprimiendo algunos datos en la pantalla:
 
   ```java
   public class App {
-      public static void greeting() {
-          System.out.println("Winter is coming");
+      public static void saludo() {
+          System.out.println("Se acerca el invierno");
       }
   }
   ```
 
-  There is not much benefit from such methods, as their results cannot be used within the program.
+  No hay mucho beneficio de tales métodos, ya que sus resultados no pueden ser utilizados dentro del programa.
 
-  Let's consider this with an example. Let's take the task of processing email. When a user registers on a website, they can enter their email in any way:
+  Veamos esto con un ejemplo. Tomemos la tarea de procesar correos electrónicos. Cuando un usuario se registra en un sitio web, puede ingresar su correo electrónico de cualquier manera:
 
-  * Add random spaces at the beginning or end `_support@hexlet.io__`
-  * Use letters in different cases `SUPPORT@hexlet.io`
+  * Agregar espacios aleatorios al principio o al final `_soporte@hexlet.io__`
+  * Usar letras en diferentes casos `SOPORTE@hexlet.io`
 
-  If we save the address in this form in the database, the user will not be able to log in to the website if they enter the address without spaces and in a different case.
+  Si guardamos la dirección en esta forma en la base de datos, el usuario no podrá iniciar sesión en el sitio web si ingresa la dirección sin espacios y en un caso diferente.
 
-  To prevent this from happening, the address needs to be prepared for storage in the database - converted to lowercase and trimmed of spaces at the beginning and end of the string. The whole task can be solved in a couple of lines:
+  Para evitar que esto suceda, la dirección debe prepararse para su almacenamiento en la base de datos, es decir, convertirse a minúsculas y recortarse los espacios al principio y al final de la cadena. La tarea completa se puede resolver en un par de líneas:
 
   ```java
   class App {
       public static void main(String[] args) {
-          // Get the address from the form
-          var email = "  SuppORT@hexlet.IO";
-          // Trim whitespace characters
-          var trimmedEmail = email.trim();
-          // Convert to lowercase
-          var preparedEmail = trimmedEmail.toLowerCase();
-          System.out.println(preparedEmail); // => support@hexlet.io
-          // Save to the database
+          // Obtén la dirección del formulario
+          var correo = "  SoPORTE@hexlet.IO";
+          // Recorta los caracteres de espacio en blanco
+          var correoRecortado = correo.trim();
+          // Conviértelo a minúsculas
+          var correoPreparado = correoRecortado.toLowerCase();
+          System.out.println(correoPreparado); // => soporte@hexlet.io
+          // Guardar en la base de datos
       }
   }
   ```
 
-  This code became possible only thanks to the return value. The `trim()` and `toLowerCase()` methods do not print anything to the screen. They **return** the result of their work, so we can assign it to variables. If instead of returning the result, they printed to the screen, we would not be able to assign the result of their work to a variable. Just like we cannot do with the `greeting()` method defined above:
+  Este código se volvió posible solo gracias al valor de retorno. Los métodos `trim()` y `toLowerCase()` no imprimen nada en la pantalla. Ellos **devuelven** el resultado de su trabajo, por lo que podemos asignarlo a variables. Si en lugar de devolver el resultado, imprimieran en la pantalla, no podríamos asignar el resultado de su trabajo a una variable. Tal como no podemos hacerlo con el método `saludo()` definido arriba:
 
   ```java
-  // Java will complain that `greeting()` does not return anything
-  // The code will not work
-  var message = App.greeting();
+  // Java se quejará de que `saludo()` no devuelve nada
+  // El código no funcionará
+  var mensaje = App.saludo();
   ```
 
-  Let's modify the `greeting()` method so that it starts returning data instead of printing it. To do this, we need to make two changes:
+  Modifiquemos el método `saludo()` para que comience a devolver datos en lugar de imprimirlos. Para hacerlo, necesitamos hacer dos cambios:
 
-  * Specify the return data type - in this case, it is a string `String`
-  * Use the `return` statement instead of printing to the screen
+  * Especificar el tipo de datos de retorno, en este caso, es una cadena `String`
+  * Usar la instrucción `return` en lugar de imprimir en la pantalla
 
-  Let's look at the modified code:
+  Veamos el código modificado:
 
   ```java
   class App {
-      public static String greeting() {
-          return "Winter is coming!";
+      public static String saludo() {
+          return "¡Se acerca el invierno!";
       }
   }
   ```
 
-  Instead of `void`, we now have `String` because the method has a return value. This way, we told Java that the result of the method's work will be a string.
+  En lugar de `void`, ahora tenemos `String` porque el método tiene un valor de retorno. De esta manera, le decimos a Java que el resultado del trabajo del método será una cadena.
 
-  Also, pay attention to the `return` statement - it is a special instruction. It takes the expression on the right and passes it to the code that called the method. As soon as Java encounters `return`, the execution of the method ends:
+  También presta atención a la instrucción `return`, es una instrucción especial. Toma la expresión a la derecha y la pasa al código que llamó al método. Tan pronto como Java encuentra `return`, la ejecución del método termina:
 
   ```java
-  // Now this code works
-  var message = App.greeting();
-  // We can perform some actions on the result
-  System.out.println(message.toUpperCase()); // => WINTER IS COMING!
+  // Ahora este código funciona
+  var mensaje = App.saludo();
+  // Podemos realizar algunas acciones en el resultado
+  System.out.println(mensaje.toUpperCase()); // => ¡SE ACERCA EL INVIERNO!
   ```
 
-  Any code after `return` is not executed:
+  Cualquier código después de `return` no se ejecuta:
 
   ```java
   class App {
-      public static String greeting() {
-          return "Winter is coming!";
-          // Any code below will never be executed
-          // Unreachable code in Java will not even compile
-          System.out.println("I will never be executed");
+      public static String saludo() {
+          return "¡Se acerca el invierno!";
+          // Ningún código debajo se ejecutará nunca
+          // El código inalcanzable en Java ni siquiera compilará
+          System.out.println("Nunca seré ejecutado");
       }
   }
   ```
 
-  Even if a method returns data, it does not limit it from printing. In addition to returning data, we can also print it:
+  Incluso si un método devuelve datos, esto no lo limita para imprimir. Además de devolver datos, también podemos imprimirlos:
 
   ```java
   class App {
-      public static String greeting() {
-          System.out.println("I will appear in the console");
-          return "Winter is coming!";
+      public static String saludo() {
+          System.out.println("Apareceré en la consola");
+          return "¡Se acerca el invierno!";
       }
   }
 
-  // Somewhere in another method of the program
-  // it will print the text to the screen and return the value
-  var value = App.greeting();
+  // En algún lugar en otro método del programa
+  // imprimirá el texto en la pantalla y devolverá el valor
+  var valor = App.saludo();
   ```
 
-  It is possible to return not only a specific value. Since `return` works with expressions, almost anything can appear to the right of it. Here, we should follow the principles of code readability:
+  Es posible devolver no solo un valor específico. Dado que `return` funciona con expresiones, casi cualquier cosa puede aparecer a la derecha de él. Aquí debemos seguir los principios de legibilidad del código:
 
   ```java
   class App {
-      public static String greeting() {
-          var message = "Winter is coming!";
-          return message;
-      }
-  }
-  ```
-
-  Here, we are not returning the variable itself - we are always returning the value that is stored in this variable. Below is an example with calculations:
-
-  ```java
-  class App {
-      public static long doubleFive() {
-          // or return 5 + 5;
-          var result = 5 + 5;
-          return result;
+      public static String saludo() {
+          var mensaje = "¡Se acerca el invierno!";
+          return mensaje;
       }
   }
   ```
 
-  In this example, `long` was used in the method definition because an integer is returned.
-
-  To test your knowledge from this lesson, try to answer the question. What do you think this code will output?
+  Aquí, no estamos devolviendo la variable en sí, siempre estamos devolviendo el valor que está almacenado en esta variable. A continuación, hay un ejemplo con cálculos:
 
   ```java
-  // Definition
   class App {
-      public static int run() {
+      public static long dobleCinco() {
+          // o return 5 + 5;
+          var resultado = 5 + 5;
+          return resultado;
+      }
+  }
+  ```
+
+  En este ejemplo, se utilizó `long` en la definición del método porque se devuelve un entero.
+
+  Para poner a prueba tus conocimientos de esta lección, intenta responder la pregunta. ¿Qué crees que mostrará este código?
+
+  ```java
+  // Definición
+  class App {
+      public static int ejecutar() {
           return 5;
           return 10;
       }
   }
 
-  // Usage
-  App.run(); // => ?
+  // Uso
+  App.ejecutar(); // => ?
   ```
 
 instructions: |
 
-  Implement a static method `sayHurrayThreeTimes()` that returns the string 'hurray! hurray! hurray!'.
+  Implementa un método estático llamado `decirVivaTresVeces()` que devuelva la cadena '¡viva! ¡viva! ¡viva!'.
 
   ```java
-  var hurray = App.sayHurrayThreeTimes();
-  System.out.println(hurray); // => hurray! hurray! hurray!
+  var viva = App.decirVivaTresVeces();
+  System.out.println(viva); // => ¡viva! ¡viva! ¡viva!
   ```
 
 # tips: []
