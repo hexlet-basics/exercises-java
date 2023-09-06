@@ -10,13 +10,12 @@ theory: |
   System.out.println(que); // => CaminodeReyes
   ```
 
- Esto significa que podemos concatenar una cadena y una variable que contiene una cadena:
+  Esto significa que podemos concatenar una cadena y una variable que contiene una cadena:
 
   ```java
- var primero = "Caminos";
- var que = primero + "de Reyes";
- System.out.println(que); // => CaminodeReyes
-
+  var primero = "Caminos";
+  var que = primero + "de Reyes";
+  System.out.println(que); // => CaminodeReyes
   ```
 
   Incluso podemos concatenar dos variables que contienen cadenas:
@@ -26,7 +25,6 @@ theory: |
   var ultimo = "de Reyes";
   var que = primero + ultimo;
   System.out.println(que); // => CaminodeReyes
-
   ```
 
   https://replit.com/@hexlet/java-basics-variables-4
@@ -55,4 +53,4 @@ tips:
   - |
     Piensa en qué cadena y en qué orden debes concatenar las variables para obtener una salida de dos líneas para el cuerpo del correo electrónico.
   - |
-    Recuerda que puedes crear una cadena que contenga solo la secuencia de control \n.
+    Recuerda que puedes crear una cadena que contenga solo la secuencia de control '\n'.
