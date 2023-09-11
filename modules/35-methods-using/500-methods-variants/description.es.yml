@@ -1,0 +1,95 @@
+---
+
+name: Métodos disponibles
+
+theory: |
+  Uno de los temas fundamentales en Java en el que se basa el código son las clases y los objetos. Aparecen literalmente desde las primeras líneas de código, pero aprender a utilizarlos no es tan sencillo. Por eso, el estudio de los objetos y las clases se extiende a lo largo de múltiples lecciones. En esta lección nos adentraremos un poco más en el funcionamiento del lenguaje. No te preocupes si aún no encajan todas las piezas, es normal. Las clases, los objetos y los métodos son un tema complejo que requiere tiempo.
+
+  Ya hemos visto métodos integrados en Java en diferentes formas:
+
+  ```java
+  System.out.println();
+  varname.toLowerCase();
+  varname.substring();
+  Integer.parseInt();
+  ChronoUnit.DAYS.between();
+  ```
+
+  Todos estos tipos de llamadas se pueden dividir en dos grupos:
+
+  1. Llamadas a métodos de objetos, como cadenas de texto
+  2. Llamadas a métodos estáticos, que no están relacionados con objetos específicos
+
+  ## Llamadas a métodos de objetos
+
+  Hasta ahora solo hemos trabajado con métodos de cadenas de texto, pero el principio es el mismo para cualquier tipo de objeto:
+
+  ```java
+  // Sintaxis para crear un objeto
+  // new - crea un nuevo objeto de la clase
+  var user = new User();
+
+  // Obtiene el nombre del usuario
+  user.getName();
+
+  // Ejemplos con otros objetos
+
+  // Obtiene el día actual
+  currentdate.getDayOfMonth();
+  // Comprueba si el archivo existe
+  file.exists();
+  ```
+
+  Estos métodos realizan acciones sobre los objetos en los que se llaman y a menudo no aceptan argumentos. Por simplicidad, se puede considerar que los objetos son datos que están disponibles dentro del método. Por ejemplo, el método `toLowerCase()` de una cadena de texto toma la cadena original, la transforma y devuelve el resultado.
+
+  Por cierto, `System.out.println()` es un método del objeto `out`, que se encuentra dentro de la clase `System`.
+
+  ## Llamadas a métodos estáticos
+
+  Pero no todas las llamadas a métodos están relacionadas con objetos: a veces hay una acción pero no hay un objeto específico. En estos casos se utilizan **métodos estáticos**.
+
+  ¿Qué puede ser esto? Operaciones matemáticas con números o acciones que no están relacionadas con un objeto específico, sino que se aplican a todos los objetos de un determinado tipo. En este caso, el método casi siempre se basa en los datos que se pasan como parámetros:
+
+  ```java
+  // Obtiene un número aleatorio, llamada directa a través de la clase Math
+  Math.random();
+
+  // Lee los datos de la ruta especificada
+  Files.readString(path);
+  ```
+
+  En este caso, las clases `Math` y `Files` solo se necesitan para realizar la llamada, ya que los métodos están definidos dentro de ellas. Java no permite definir métodos fuera de las clases.
+
+  Para ser honestos, no todo es tan sencillo. Siempre se puede imaginar algún objeto sobre el cual se realiza un cálculo. Lo contrario también es cierto: siempre se puede prescindir de los objetos. Hay lenguajes en los que no existen objetos en absoluto. Al final, todo depende de quien diseñe la parte específica del código:
+
+  ```java
+  // Sin objeto, método estático
+  Files.readString(path);
+
+  // Aunque también se podría hacer a través de un objeto de archivo
+  path.read();
+  ```
+
+  ## Conclusiones
+
+  * Los métodos estáticos no están relacionados con objetos específicos y se llaman directamente desde la clase
+  * Los métodos no estáticos construyen su lógica en relación a los datos del objeto mismo y se llaman en objetos específicos
+
+  Todo esto nos lleva suavemente a la posibilidad de crear nuestras propias clases, objetos y métodos, sin los cuales no se puede imaginar ningún programa, ni siquiera uno pequeño.
+
+instructions: |
+
+  La variable `emoji` contiene un emoticón triste en forma de texto *-(*. Tu tarea es convertir este emoticón en uno alegre utilizando dos transformaciones:
+
+    * Agregar un ojo a la izquierda *:*
+    * Reemplazar *(* por *)* (utilizando el método `replace()` de la cadena de texto)
+
+  Debe quedar así: *:-)*. Imprímelo en pantalla.
+
+# tips:
+#   - |
+#     [Cómo buscar información técnica](https://guides.hexlet.io/how-to-search/)
+
+# definitions:
+#   - name: Efecto secundario
+#     description: "una acción que modifica el entorno externo (el entorno de ejecución). Por ejemplo, mostrar algo en pantalla o enviar un correo electrónico."

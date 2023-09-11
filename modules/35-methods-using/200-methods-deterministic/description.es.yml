@@ -1,0 +1,43 @@
+---
+
+name: Determinismo
+
+theory: |
+  Independientemente del lenguaje de programación utilizado, los métodos tienen algunas propiedades fundamentales. Conocer estas propiedades facilita predecir el comportamiento de los métodos, las formas de probarlos y dónde utilizarlos. Una de estas propiedades es el determinismo. Un método se considera determinista cuando, para los mismos parámetros de entrada, devuelve siempre el mismo resultado. Por ejemplo, un método que extrae un carácter de una cadena es determinista.
+
+  ```java
+  "wow".charAt(1); // 'o'
+  "wow".charAt(1); // 'o'
+  ```
+
+  No importa cuántas veces llamemos a este método pasándole el valor `1`, siempre devolverá `'o'`. Por otro lado, un método que devuelve un número aleatorio no es determinista, ya que para una misma entrada (incluso si está vacía, es decir, no se aceptan parámetros) siempre obtendremos un resultado diferente. No importa cuán diferente sea, incluso si una de cada millón de llamadas devuelve algo diferente, automáticamente se considera un método no determinista.
+
+  ```java
+  // Método que devuelve un número aleatorio
+  Math.random(); // 0.09856613113197676
+  Math.random(); // 0.8839904367241888
+  ```
+
+  https://replit.com/@hexlet/java-basics-pure-functions
+
+  ¿Por qué es importante saber esto? El determinismo afecta seriamente muchos aspectos. Las funciones deterministas son convenientes para trabajar, son fáciles de optimizar y de probar. Si es posible hacer que una función sea determinista, es mejor hacerlo así.
+
+instructions: |
+
+  El método `Math.random()` devuelve un número aleatorio entre 0 y 1 con varios dígitos decimales. Sin embargo, en problemas reales, a veces es necesario obtener números enteros aleatorios. Implementa un código que imprima en pantalla un número entero aleatorio entre 0 y 10. Para obtener dicho número, debes multiplicar el resultado de llamar a `Math.random()` por 10 y convertir el tipo de dato del número obtenido de *double* a *int*.
+
+  ```java
+  // Conversión a int
+  (int) 0.932342; // 0
+  (int) 8.123412; // 8
+  ```
+
+  Intenta resolver este ejercicio en una sola línea.
+
+tips:
+  - |
+    [Funciones deterministas](https://es.wikipedia.org/wiki/Función_pura#Determinismo_de_la_función)
+
+# definitions:
+#   - name: Efecto secundario
+#     description: "acción que modifica el entorno externo (entorno de ejecución). Por ejemplo, mostrar en pantalla o enviar un correo electrónico."

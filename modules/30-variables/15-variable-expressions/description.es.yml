@@ -1,0 +1,82 @@
+---
+
+name: Expresiones en definiciones
+
+theory: |
+  Las variables son útiles no solo para almacenar y reutilizar información, sino también para simplificar cálculos complejos.
+
+  Veamos un ejemplo: necesitamos convertir euros a rublos a través de dólares. Los bancos a menudo realizan conversiones similares a través de una moneda intermedia al realizar compras en el extranjero.
+
+  Primero, convirtamos 50 euros a dólares. Supongamos que un euro equivale a 1.25 dólares:
+
+  ```java
+  var cantidadDolares = 50 * 1.25;
+  System.out.println(cantidadDolares);
+  ```
+
+  En el bloque anterior, asignamos un valor específico a una variable. Pero aquí, a la derecha del signo igual, hay una **expresión**:
+
+  ```java
+  var cantidadDolares = 50 * 1.25;
+  ```
+
+  El programa calculará el resultado *62.5* y lo asignará a la variable. Desde el punto de vista del programa, no importa si está escrito *62.5* o *50 * 1.25*. Ambas opciones son expresiones que deben evaluarse. Y se evalúan en el mismo valor *62.5*.
+
+  Cualquier cadena de texto es una expresión. La concatenación de cadenas también es una expresión. Cuando el programa encuentra una expresión, la evalúa y **devuelve** el resultado.
+
+  Aquí tienes algunos ejemplos de expresiones. A la derecha de cada expresión, se muestra el valor resultante:
+
+  ```java
+  62.5            // 62.5
+  50 * 1.25       // 62.5
+  120 / 10 * 2    // 24
+  "Hexlet"         // "Hexlet"
+  "Good" + "will" // "Goodwill"
+  ```
+
+  Las reglas de construcción del código permiten colocar cualquier cálculo donde se espera una expresión. Y el cálculo puede ser tanto matemático como de cadenas de texto, como la concatenación. El programa seguirá funcionando correctamente.
+
+  Por esta razón, no es posible describir y mostrar todos los casos de uso de todas las operaciones. Los programas están compuestos por muchas combinaciones de expresiones, y comprender este concepto es uno de los pasos clave en tu camino.
+
+  Volvamos a nuestro programa de conversión de moneda. Guardemos el valor del dólar en rublos como una variable separada. Calculemos el precio de 50 euros en dólares multiplicándolos por 1.25. Supongamos que 1 dólar equivale a 60 rublos:
+
+  ```java
+  var rublosPorDolar = 60;
+  var cantidadDolares = 50 * 1.25; // 62.5
+  var cantidadRublos = cantidadDolares * rublosPorDolar; // 3750
+  System.out.println(cantidadRublos); // => 3750
+  ```
+
+  Y ahora agreguemos texto a la salida utilizando la concatenación:
+
+  ```java
+  var rublosPorDolar = 60;
+  var cantidadDolares = 50 * 1.25; // 62.5
+  var cantidadRublos = cantidadDolares * rublosPorDolar; // 3750
+  System.out.println("El precio es " + cantidadRublos + " rublos");
+  // => El precio es 3750 rublos
+  ```
+
+  https://replit.com/@hexlet/java-basics-variables-3
+
+  Cualquier variable puede formar parte de cualquier expresión. En el momento de la evaluación, el valor de la variable se sustituye en lugar de su nombre. El valor de `cantidadDolares` se calcula antes de que se utilice en otras expresiones. Cuando llega el momento de usar la variable, Java conoce su valor porque ya lo ha calculado.
+
+instructions: |
+
+  Escribe un programa que tome la cantidad inicial de euros almacenada en la variable `cantidadEuros`, convierta los euros a dólares y los muestre en la pantalla. Luego, convierte el valor obtenido a rublos y lo muestra en una nueva línea.
+
+  Ejemplo de salida para 100 euros:
+
+  <pre class='hexlet-basics-output'>
+  125.0
+  7500.0
+  </pre>
+
+  Supongamos que:
+
+  - 1 euro = 1.25 dólares
+  - 1 dólar = 60 rublos
+
+tips:
+  - |
+    Para imprimir una nueva línea, puedes usar `\n` entre la impresión de los dólares y los rublos, o puedes usar el método `println()` la cantidad de veces necesaria.

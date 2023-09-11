@@ -1,0 +1,48 @@
+---
+
+name: Recorrido de caracteres
+
+theory: |
+  Los bucles no solo son útiles para trabajar con números, sino también para trabajar con cadenas de texto. Esto se debe principalmente a la capacidad de acceder a un carácter específico mediante su índice. A continuación se muestra un ejemplo de código que imprime las letras de cada palabra en líneas separadas:
+
+  ```java
+  public static void printNameBySymbol(String name) {
+      var i = 0;
+      // Esta condición se evaluará hasta el final de la cadena,
+      // incluyendo el último carácter. Su índice es `length() - 1`.
+      while (i < name.length()) {
+          // Accedemos al carácter mediante su índice
+          System.out.println(name.charAt(i));
+          i += 1;
+      }
+  }
+
+  var name = "Arya";
+  App.printNameBySymbol(name);
+  // "A"
+  // "r"
+  // "y"
+  // "a"
+  ```
+
+  Lo más importante en este código es establecer la condición correcta en el `while`. Esto se puede hacer de dos formas:
+
+  * `i < name.length()`
+  * `i <= name.length() - 1`
+
+  Ambas formas conducen al mismo resultado.
+
+instructions: |
+
+  Implementa el método estático `App.printReversedNameBySymbol()`, que imprime la palabra pasada como argumento carácter por carácter, en orden inverso, como se muestra en el ejemplo de la teoría.
+
+  ```java
+  var name = "Arya";
+  App.printReversedNameBySymbol(name);
+  // 'a'
+  // 'y'
+  // 'r'
+  // 'A'
+  ```
+
+tips: []

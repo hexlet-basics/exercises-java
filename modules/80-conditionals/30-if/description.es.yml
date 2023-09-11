@@ -1,0 +1,51 @@
+---
+
+name: Estructura condicional (if)
+
+theory: |
+  Las estructuras condicionales permiten ejecutar diferentes fragmentos de código basados en comprobaciones lógicas. Veamos un ejemplo típico:
+
+  * Una persona quiere pagar una compra con tarjeta.
+  * Si hay suficiente dinero en la cuenta, se deducirá automáticamente la cantidad necesaria.
+  * Si no hay suficiente dinero, la operación será rechazada.
+
+  Para el ejemplo, escribiremos un método que determina el tipo de una oración dada. Al principio, distinguirá entre oraciones normales e interrogativas:
+
+  ```java
+  public static String getTypeOfSentence(String sentence) {
+      if (sentence.endsWith("?")) {
+          return "pregunta";
+      }
+
+      return "general";
+  }
+
+  App.getTypeOfSentence("Hola");    // "general"
+  App.getTypeOfSentence("¿Hola?");  // "pregunta"
+  ```
+
+  `if` es una construcción del lenguaje que controla el orden de las instrucciones. Se le pasa una expresión lógica entre paréntesis y luego se describe un bloque de código entre llaves. Este bloque de código se ejecutará solo si la condición se cumple.
+
+  Si la condición no se cumple, se omitirá el bloque de código entre llaves y el método continuará su ejecución. En nuestro caso, la siguiente línea de código, `return "general";`, hará que el método devuelva una cadena y finalice.
+
+instructions: |
+
+  Implementa el método `getSentenceTone()`, que recibe una cadena y determina el tono de la oración. Si todos los caracteres están en mayúsculas, es un grito (`scream`). De lo contrario, es una oración normal (`normal`).
+
+  Ejemplos de llamadas:
+
+  ```java
+  App.getSentenceTone("Hola");  // "normal"
+  App.getSentenceTone("WOW");   // "scream"
+  ```
+
+  Algoritmo:
+
+  1. Genera una cadena en mayúsculas basada en la cadena de argumento utilizando `toUpperCase()`.
+  2. Compara esta cadena con la cadena original:
+      * Si las cadenas son iguales, significa que la cadena de argumento está en mayúsculas.
+      * De lo contrario, la cadena de argumento no está en mayúsculas.
+
+tips: []
+
+definitions: []

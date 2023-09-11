@@ -1,0 +1,5 @@
+---
+
+name: Variables
+description: |
+  La información se puede almacenar en "contenedores" especiales llamados variables. Esto te permite reutilizar datos existentes y evitar duplicarlos en diferentes partes del código. En este módulo, aprenderemos cómo modificar variables y nombrarlas de una manera comprensible para cualquier desarrollador que lea tu código. ¡Entenderás que inventar un nombre para una variable no es tan simple! También explicaremos cómo utilizar variables para simplificar cálculos complejos.

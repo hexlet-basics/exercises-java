@@ -1,0 +1,59 @@
+---
+
+name: Concatenación
+theory: |
+  Los programas constantemente operan con cadenas de texto. Todo lo que vemos en sitios web o aplicaciones móviles está representado de alguna manera como texto. Este texto, en su mayoría, es **dinámico**, es decir, se obtiene a partir de diferentes partes que se unen entre sí. La operación de unir cadenas de texto en programación se llama **concatenación** y se ve así:
+
+  ```java
+  // El operador es el mismo que se utiliza para sumar números,
+  // pero aquí tiene un significado diferente (semántica)
+  System.out.println("Dragon" + "stone");
+  // => Dragonstone
+  ```
+
+  La concatenación de cadenas siempre ocurre en el mismo orden en el que se escriben los operandos. El operando izquierdo se convierte en la parte izquierda de la cadena, y el operando derecho se convierte en la parte derecha. Aquí hay algunos ejemplos más:
+
+  ```java
+  System.out.println("Kings" + "wood"); // => Kingswood
+  // Orden inverso de las palabras
+  System.out.println("road" + "Kings"); // => roadKings
+  // Se pueden concatenar cualquier tipo de cadenas
+  System.out.println("King's" + "Landing"); // => King'sLanding
+  ```
+
+  En el último ejemplo, el nombre de la ciudad se escribió incorrectamente: *King's Landing* debería tener un espacio en medio. Pero en nuestras cadenas iniciales no había espacios, y los espacios alrededor del símbolo `+` en el código no tienen importancia, ya que no forman parte de las cadenas.
+
+  Hay tres formas de solucionar esta situación:
+
+  ```java
+  // Agregar un espacio en la parte izquierda
+  System.out.println("King's " + "Landing"); //  => King's Landing
+  // Agregar un espacio en la parte derecha
+  System.out.println("King's" + " Landing"); //  => King's Landing
+  // Agregar un espacio por separado
+  System.out.println("King's" + " " + "Landing"); //  => King's Landing
+  ```
+
+  Un espacio es simplemente un símbolo más, al igual que los demás. Cuantos más espacios haya, más grande será la separación:
+
+  ```java
+  System.out.println("King's " + " Landing");   // => King's  Landing
+  System.out.println("King's  " + "  Landing"); // => King's    Landing
+  ```
+
+  https://replit.com/@hexlet/java-basics-strings#Main.java
+
+instructions: |
+
+  Utilizando `System.out.println()`, realiza la concatenación de palabras y muestra en la pantalla la siguiente frase:
+
+  <pre class='hexlet-basics-output'>
+  Winter came for the House of Frey.
+  </pre>
+
+  Cada palabra debe ser escrita por separado y entre comillas, por ejemplo "Winter ". No olvides los espacios después de cada palabra.
+
+# definitions:
+#   - name: Concatenación
+#     description: |
+#       operación de unir dos cadenas de texto. Por ejemplo, `System.out.println("King's " + " Landing");`

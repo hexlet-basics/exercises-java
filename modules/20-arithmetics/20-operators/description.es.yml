@@ -1,0 +1,54 @@
+---
+
+name: Operadores
+theory: |
+  Antes de continuar, vamos a repasar la terminología básica. Un signo de operación, como `+`, se llama operador. Un **operador** es simplemente un símbolo que realiza una operación, como la suma:
+
+  ```java
+  System.out.println(8 + 2); // => 10
+  ```
+
+  En este ejemplo, `+` es el operador, y los números *8* y *2* son los **operandos**.
+
+  En el caso de la suma, tenemos dos operandos:
+
+  * Uno a la izquierda
+  * Otro a la derecha del signo *+*
+
+  Las operaciones que requieren dos operandos se llaman **binarias**. Si falta al menos un operando, el programa dará un error de sintaxis. Por ejemplo:
+
+  ```
+  `3 + ;`
+  ```
+
+  Las operaciones no solo pueden ser binarias. También pueden ser:
+
+  * Unarias: con un solo operando
+  * Ternarias: con tres operandos
+
+  Además, los operadores pueden tener la misma apariencia pero representar operaciones diferentes:
+
+  ```java
+  System.out.println(-3); // => -3
+  ```
+
+  En el ejemplo anterior, se aplica una operación unaria al número *3*. El operador "menos" antes del tres le indica al intérprete que tome el número *3* y encuentre su opuesto, es decir, *-3*.
+
+  Esto puede ser un poco confuso, ya que *-3* es tanto un número en sí mismo como un operador con un operando, pero así es la estructura de los lenguajes de programación.
+
+instructions: |
+
+  Escribe un programa que calcule la diferencia entre los números `6` y `-81` y muestre la respuesta en pantalla.
+
+
+definitions:
+  - name: "Operación aritmética"
+    description: "suma, resta, multiplicación y división."
+  - name: "Operador"
+    description: "un símbolo especial que crea una operación. Por ejemplo, `+` crea una operación de suma."
+  - name: "Operando"
+    description: "un objeto que participa en una operación. `3 * 6`: aquí, 3 y 6 son operandos."
+  - name: "Operación unaria"
+    description: "una operación con un solo operando. Por ejemplo, `-3` es una operación unaria para obtener el número opuesto al número tres."
+  - name: "Operación binaria"
+    description: "una operación con dos operandos. Por ejemplo, `3 + 9`."
