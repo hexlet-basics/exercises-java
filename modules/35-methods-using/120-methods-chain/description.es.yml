@@ -8,7 +8,7 @@ theory: |
   Tomemos como ejemplo la tarea de crear una dirección de página web basada en el nombre de un artículo ingresado por el usuario. Esta tarea a menudo surge al publicar artículos en blogs. Estas direcciones se ven así:
 
   ```
-  https://ru.hexlet.io/blog/posts/iz-vahtovika-v-programmirovanie
+  https://hexlet.la/blog/de-obrero-a-programador
   ```
 
   La última parte aquí, *iz-vahtovika-v-programmirovanie*, se crea automáticamente con el código que hemos escrito en Hexlet. Por cierto, tiene un nombre especial: se llama [**slug**](https://en.wikipedia.org/wiki/Clean_URL#Slug).
