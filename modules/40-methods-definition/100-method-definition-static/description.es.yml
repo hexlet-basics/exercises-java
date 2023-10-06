@@ -59,7 +59,7 @@ theory: |
   * Lo que afecta el funcionamiento del propio método
   * Cómo se ve este método fuera de la clase
 
-  La visibilidad está determinada por la palabra *public*. Esto permite llamar a los métodos desde fuera de la clase, como en el ejemplo anterior. Además de *public*, existe *private*, que se explica en Hexlet en el curso de [POO en Java](https://hexlet.la/courses/java-poo-basics).
+  La visibilidad está determinada por la palabra *public*. Esto permite llamar a los métodos desde fuera de la clase, como en el ejemplo anterior. Además de *public*, existe *private*, que se explica en Hexlet en el curso de [POO en Java](https://codica.la/courses/java-poo-basics).
 
   El funcionamiento del método está determinado por:
 
@@ -101,4 +101,4 @@ instructions: |
 
 tips:
   - |
-    [Naming in Programming](https://hexlet.la/blog/naming-in-programming)
+    [Naming in Programming](https://codica.la/blog/naming-in-programming)
