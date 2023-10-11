@@ -42,9 +42,9 @@ instructions: |
   El resultado en la pantalla debería lucir así:
 
   <pre class='hexlet-basics-output'>
-  ¡Hola, Joffrey!
-  Aquí tienes información importante sobre la seguridad de tu cuenta.
-  No pudimos verificar el nombre de soltera de tu madre.
+  Hello, Joffrey!
+  Here is important information about your account security.
+  We couldn't verify you mother's maiden name.
   </pre>
 
   Completa la tarea utilizando solamente dos System.out.println().
