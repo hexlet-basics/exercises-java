@@ -70,13 +70,13 @@ theory: |
 
 instructions: |
 
-  Implementa el método `esPensionista()`, que toma un parámetro: la edad de una persona, y verifica si es un pensionista. Se considera pensionista a una persona que tiene 60 años o más.
+  Implementa el método `isPensioner()`, que toma un parámetro: la edad de una persona, y verifica si es un pensionista. Se considera pensionista a una persona que tiene 60 años o más.
 
   Ejemplos de llamadas:
 
   ```java
-  App.esPensionista(75); // true
-  App.esPensionista(18); // false
+  App.isPensioner(75); // true
+  App.isPensioner(18); // false
   ```
 
 definitions:
