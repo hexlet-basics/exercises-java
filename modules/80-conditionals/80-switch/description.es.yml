@@ -116,17 +116,17 @@ instructions: |
 
   Implementa el método `getNumberExplanation()`, que recibe un número como entrada y devuelve una explicación para ese número. Si no hay una explicación para el número, se devuelve `just a number`. Solo hay explicaciones para los siguientes números:
 
-    * 666 - número del diablo
-    * 42 - respuesta para todo
-    * 7 - número primo
+    * 666 - devil number
+    * 42 - answer for everything
+    * 7 - prime number
 
   Ejemplos de llamadas a la función:
 
   ```java
   App.getNumberExplanation(8);   // just a number
-  App.getNumberExplanation(666); // número del diablo
-  App.getNumberExplanation(42);  // respuesta para todo
-  App.getNumberExplanation(7);   // número primo
+  App.getNumberExplanation(666); // devil number
+  App.getNumberExplanation(42);  // answer for everything
+  App.getNumberExplanation(7);   // prime number
   ```
 
 # tips:
