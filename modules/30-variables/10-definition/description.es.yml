@@ -52,9 +52,9 @@ theory: |
   Para facilitar el análisis del programa, se recomienda crear variables lo más cerca posible del lugar donde se utilizan.
 
 instructions: |
-  Crea una variable llamada `motto` con el contenido `¡Lo que está muerto nunca muere!`. Imprime el contenido de la variable.
+  Crea una variable llamada `motto` con el contenido `What Is Dead May Never Die!`. Imprime el contenido de la variable.
   <pre class='hexlet-basics-output'>
-  ¡Lo que está muerto nunca muere!
+  What Is Dead May Never Die!
   </pre>
 
 tips:
