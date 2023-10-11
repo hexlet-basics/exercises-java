@@ -143,11 +143,11 @@ theory: |
 
 instructions: |
 
-  Implementa un método estático llamado `decirVivaTresVeces()` que devuelva la cadena '¡viva! ¡viva! ¡viva!'.
+  Implementa un método estático llamado `sayHurrayThreeTimes()` que devuelva la cadena 'hurray! hurray! hurray!'.
 
   ```java
-  var viva = App.decirVivaTresVeces();
-  System.out.println(viva); // => ¡viva! ¡viva! ¡viva!
+  var viva = App.sayHurrayThreeTimes();
+  System.out.println(viva); // => hurray! hurray! hurray!
   ```
 
 # tips: []
