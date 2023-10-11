@@ -33,9 +33,9 @@ theory: |
   La cantidad de este tipo de errores se reduce mediante el uso de un editor correctamente configurado. Este tipo de editor resalta los nombres que se utilizan sin ser declarados y advierte sobre posibles problemas.
 
 instructions: |
-  Encuentra la variable no declarada en el programa y declárala asignándole el valor `"Dragón"`;
+  Encuentra la variable no declarada en el programa y declárala asignándole el valor `"Dragon"`;
   <pre class='hexlet-basics-output'>
-  Targaryen y Dragón
+  Targaryen and Dragon
   </pre>
 
 # tips: []
