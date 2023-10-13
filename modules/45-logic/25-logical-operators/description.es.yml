@@ -77,12 +77,12 @@ theory: |
 
 instructions: |
 
-  Implementa el método `esAñoBisiesto()`, que determina si un año es bisiesto o no. Un año es bisiesto si es divisible (es decir, no tiene residuo) por 400 o si es divisible por 4 y no es divisible por 100. Como puedes ver, la lógica necesaria ya está definida en la descripción, solo falta convertirla en código:
+  Implementa el método `isLeapYear()`, que determina si un año es bisiesto o no. Un año es bisiesto si es divisible (es decir, no tiene residuo) por 400 o si es divisible por 4 y no es divisible por 100. Como puedes ver, la lógica necesaria ya está definida en la descripción, solo falta convertirla en código:
 
   ```java
-  App.esAñoBisiesto(2018); // false
-  App.esAñoBisiesto(2017); // false
-  App.esAñoBisiesto(2016); // true
+  App.isLeapYear(2018); // false
+  App.isLeapYear(2017); // false
+  App.isLeapYear(2016); // true
   ```
 
   Puedes verificar la divisibilidad de la siguiente manera:

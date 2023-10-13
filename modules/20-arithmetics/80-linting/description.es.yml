@@ -11,7 +11,7 @@ theory: |
   En cualquier lenguaje de programación, existen utilidades llamadas **linters**. Estas verifican el código para asegurarse de que cumpla con los estándares. En Java, esto se hace con [checkstyle](https://github.com/checkstyle/checkstyle). Echa un vistazo a este ejemplo:
 
   ```java
-  System.out.println( "¡Hola, Mundo!" ); System.out.println("¡Soy un desarrollador!") ;
+  System.out.println( "Hello, World!" ); System.out.println("I'm a developer!") ;
   ```
 
   El linter mostrará errores en varios lugares:
@@ -32,8 +32,8 @@ theory: |
   El código con estas reglas se vería así:
 
   ```java
-  System.out.println("¡Hola, Mundo!");
-  System.out.println("¡Soy un desarrollador!");
+  System.out.println("Hello, World!");
+  System.out.println("I'm a developer!");
   ```
 
   Ahora el linter no mostrará errores. ¿Qué conclusión podemos sacar? El linter ayuda a escribir código que es más fácil de leer y analizar.

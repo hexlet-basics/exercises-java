@@ -42,8 +42,8 @@ instructions: |
   Te has encontrado con un código que muestra en pantalla la cantidad total de habitaciones en posesión del actual rey:
 
   ```java
-  var rey = "Rey Balon el 6to";
-  System.out.println(rey + " tiene " + (6 * 17) + " habitaciones.");
+  var rey = "King Balon the 6th";
+  System.out.println(rey + " has " + (6 * 17) + " rooms.");
   ```
 
   Como puedes ver, estos son números mágicos: no está claro qué significa el _6_ y qué significa el _17_. Se puede adivinar si se conoce la historia de la familia real: cada nuevo rey hereda todos los castillos de sus antepasados y construye un nuevo castillo, una copia exacta del castillo de sus padres.
@@ -54,7 +54,7 @@ instructions: |
 
   El resultado será el siguiente:
   <pre class='hexlet-basics-output'>
-  Rey Balon el 6to tiene 102 habitaciones.
+  King Balon the 6th has 102 rooms.
   </pre>
 
   Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser lo suficientemente cortos y concisos para una lectura cómoda.

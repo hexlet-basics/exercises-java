@@ -40,7 +40,7 @@ theory: |
           System.out.println(i);
           i = i + 1;
       }
-      System.out.println("¡terminado!");
+      System.out.println("finished!");
   }
 
   App.printNumbers(3);
@@ -50,7 +50,7 @@ theory: |
   1
   2
   3
-  ¡terminado!
+  finished!
   </pre>
 
   https://replit.com/@hexlet/java-basics-while
@@ -85,7 +85,7 @@ theory: |
   // El predicado devuelve false, por lo que la ejecución continúa después del ciclo
   while (4 <= 3)
 
-  // System.out.println("¡terminado!");
+  // System.out.println("finished!");
   // En este punto, i es igual a 4, pero ya no lo necesitamos
   // El método finaliza
   ```
@@ -111,7 +111,7 @@ theory: |
       while (i <= lastNumber) {
           System.out.println(i);
       }
-      System.out.println("¡terminado!");
+      System.out.println("finished!");
   }
   ```
 
@@ -136,7 +136,7 @@ instructions: |
   ```
 
   <pre class='hexlet-basics-output'>
-    4<br>3<br>2<br>1<br>¡terminado!
+    4<br>3<br>2<br>1<br>finished!
   </pre>
 
 # tips:
