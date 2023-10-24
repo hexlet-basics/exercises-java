@@ -11,7 +11,7 @@ theory: |
   https://codica.la/blog/de-obrero-a-programador
   ```
 
-  La última parte aquí, *iz-vahtovika-v-programmirovanie*, se crea automáticamente con el código que hemos escrito en Hexlet. Por cierto, tiene un nombre especial: se llama [**slug**](https://en.wikipedia.org/wiki/Clean_URL#Slug).
+  La última parte aquí, *de-obrero-a-programador*, se crea automáticamente con el código que hemos escrito en Hexlet. Por cierto, tiene un nombre especial: se llama [**slug**](https://en.wikipedia.org/wiki/Clean_URL#Slug).
 
   ¿Qué pasos se deben seguir para obtener una cadena similar? Aquí hay solo algunos de ellos:
 
