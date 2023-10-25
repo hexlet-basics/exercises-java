@@ -35,7 +35,7 @@ theory: |
   // Ejemplos con otros objetos
 
   // Obtiene el día actual
-  currentdate.getDayOfMonth();
+  currentDate.getDayOfMonth();
   // Comprueba si el archivo existe
   file.exists();
   ```
