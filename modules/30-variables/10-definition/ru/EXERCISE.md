@@ -1,0 +1,4 @@
+Создайте переменную с именем `motto` и содержимым `What Is Dead May Never Die!`. Распечатайте содержимое переменной.
+<pre class='hexlet-basics-output'>
+What Is Dead May Never Die!
+</pre>

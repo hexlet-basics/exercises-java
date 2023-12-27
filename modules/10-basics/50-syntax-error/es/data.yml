@@ -1,0 +1,8 @@
+name: Errores de sintaxis
+definitions:
+  - name: Compilador
+    description: >-
+      Un programa que realiza la transformación del código fuente a un lenguaje
+      de bajo nivel adecuado para la ejecución.
+  - name: Error de sintaxis
+    description: Una violación de las reglas gramaticales del lenguaje de programación.

@@ -1,0 +1,4 @@
+name: Логический тип
+definitions:
+  - name: Логический тип (boolean)
+    description: 'тип данных с двумя возможными значениями: true (истина) и false (ложь).'

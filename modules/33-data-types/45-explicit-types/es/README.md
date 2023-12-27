@@ -1,0 +1,17 @@
+Hasta ahora, al definir variables, hemos utilizado la palabra clave `var`, lo cual puede sorprender a aquellos que tienen experiencia en Java. Normalmente, la definición de variables se muestra así:
+
+```java
+int x = 3;
+String greeting = "¡Hola Hexlet!";
+
+// Error: tipos incompatibles: java.lang.String no se puede convertir a int
+int ops = "test";
+```
+
+¡Es hora de revelar la verdad! Java es un lenguaje de programación de tipado estático. En estos lenguajes, el tipo de una variable se establece al momento de su declaración. En la mayoría de los lenguajes, se especifica el tipo de la variable antes de su nombre, como en el ejemplo anterior, donde se utiliza el tipo entero (int) y el tipo cadena (String).
+
+Antes en Java, las variables solo se creaban de esta manera, hasta que apareció `var`. La palabra clave `var` es una característica especial que habilita la **inferencia de tipos**. La inferencia de tipos determina automáticamente el tipo del valor asignado y lo vincula a la variable. En los ejemplos anteriores, es obvio qué tipo corresponde a cada variable, entonces, ¿por qué especificarlo explícitamente?
+
+La inferencia de tipos en Java se introdujo en 2018, pero en otros lenguajes ha existido durante décadas. El primer lenguaje con inferencia de tipos se llama ML y se creó en 1973. Desde entonces, la inferencia de tipos se ha agregado a Ocaml, Haskell, C#, F#, Kotlin, Scala y muchos otros lenguajes.
+
+La inferencia de tipos es preferible en la mayoría de las situaciones, sin embargo, a veces no estamos satisfechos con el tipo inferido. En ese caso, podemos especificar el tipo explícitamente. Obtendrás más información al respecto en la próxima lección.
