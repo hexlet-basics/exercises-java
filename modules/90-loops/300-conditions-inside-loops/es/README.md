@@ -1,0 +1,39 @@
+El cuerpo de un bucle, al igual que el cuerpo de un método, es el lugar donde se ejecutan las instrucciones. Esto significa que podemos utilizar todo lo que hemos aprendido hasta ahora, incluyendo construcciones condicionales.
+
+Veamos un método que cuenta cuántas veces aparece una letra en una oración:
+
+```java
+countChars("El miedo corta más profundo que las espadas.", 'e'); // 4
+// Si no se encuentra ninguna coincidencia, el resultado es 0
+countChars("Sansa", 'y'); // 0
+```
+
+Primero, intenta responder las siguientes preguntas:
+
+* ¿Es esta operación una agregación?
+* ¿Cuál será la condición para verificar la aparición del carácter?
+
+Ahora veamos el fragmento de código:
+
+```java
+public static int countChars(String str, char ch) {
+  var i = 0;
+  var count = 0;
+  while (i < str.length()) {
+    if (str.charAt(i) == ch) {
+      // Solo contamos los caracteres que coinciden
+      count = count + 1;
+    }
+    // El contador se incrementa de todas formas
+    i = i + 1;
+  }
+
+  return count;
+}
+```
+
+https://replit.com/@hexlet/java-basics-conditions-inside-loops
+
+Este problema es una agregación. El método cuenta solo los caracteres deseados, pero aún así es necesario analizar cada carácter para calcular la suma total.
+
+La diferencia clave de este bucle con los que hemos visto anteriormente es que tiene una condición dentro del cuerpo. La variable `count` solo se incrementa cuando el carácter actual coincide con el carácter esperado. De lo contrario, es un método agregado típico que devuelve la cantidad de caracteres deseados al código que lo llama.

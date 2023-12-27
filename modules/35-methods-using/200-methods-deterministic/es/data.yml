@@ -1,0 +1,5 @@
+name: Determinismo
+tips:
+  - >
+    [Funciones
+    deterministas](https://es.wikipedia.org/wiki/Función_pura#Determinismo_de_la_función)

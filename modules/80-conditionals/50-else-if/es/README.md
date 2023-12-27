@@ -1,0 +1,51 @@
+En su versión más completa, la estructura `if` no solo contiene la rama `else`, sino también otras comprobaciones condicionales utilizando `else if`. Esta variante se utiliza cuando hay muchas comprobaciones que se excluyen mutuamente:
+
+```java
+if (/* algo */) {
+
+} else if (/* otra comprobación */) {
+
+} else if (/* otra comprobación */) {
+
+} else {
+
+}
+```
+
+Aquí hay dos puntos a tener en cuenta:
+
+* La rama `else` puede estar ausente.
+* El número de condiciones `else if` puede ser cualquier cantidad.
+
+Escribamos un método extendido como ejemplo para determinar el tipo de oración. Reconoce tres tipos de oraciones:
+
+```java
+App.getTypeOfSentence("¿Quién?"); // "La oración es una pregunta"
+App.getTypeOfSentence("No");      // "La oración es general"
+App.getTypeOfSentence("¡No!");   // "La oración es una exclamación"
+
+public static String getTypeOfSentence(String sentence)
+{
+    var sentenceType = "";
+
+    if (sentence.endsWith("?")) {
+        sentenceType = "pregunta";
+    } else if (sentence.endsWith("!")) {
+        sentenceType = "exclamación";
+    } else {
+        sentenceType = "general";
+    }
+
+    return "La oración es " + sentenceType;
+}
+```
+
+https://replit.com/@hexlet/java-basics-if-else
+
+Ahora todas las condiciones están organizadas en una única estructura. El operador `else if` significa "si la condición anterior no se cumple, pero la condición actual sí se cumple". La estructura es la siguiente:
+
+- Si el último carácter es `?`, entonces "pregunta"
+- De lo contrario, si el último carácter es `!`, entonces "exclamación"
+- De lo contrario, "general"
+
+En consecuencia, solo se ejecutará uno de los bloques de código relacionados con toda la estructura `if`.

@@ -1,0 +1,47 @@
+La suma, la concatenación, el cálculo del resto de la división y otras operaciones previamente discutidas son capacidades bastante básicas de los lenguajes de programación.
+
+Las matemáticas no se limitan a la aritmética, también hay muchas otras ramas con sus propias operaciones, como la geometría. Lo mismo ocurre con las cadenas de texto: se pueden invertir, cambiar el caso de las letras, eliminar caracteres innecesarios, y eso es solo lo más básico. A un nivel más alto, existe la lógica aplicada a una aplicación específica.
+
+Los programas realizan transacciones monetarias, calculan impuestos, generan informes. La cantidad de operaciones similares es infinita y es única para cada programa. Y todas ellas deben ser expresadas de alguna manera en el código.
+
+## Cómo se expresan las operaciones
+
+Para expresar cualquier operación arbitraria en programación, existe el concepto de **función**. Las funciones pueden ser tanto incorporadas en el lenguaje como agregadas por el programador. Ya estamos familiarizados con una función incorporada: `println()`.
+
+Las funciones son una de las construcciones clave en programación, sin ellas no se puede hacer prácticamente nada. Primero aprenderemos a utilizar las funciones ya creadas y luego aprenderemos a crear nuestras propias funciones.
+
+Aquí es necesario hacer una pequeña aclaración. En Java no es posible crear una función común, como lo permiten la mayoría de los otros lenguajes. Todas las funciones en Java se crean solo dentro de clases, que aún no hemos estudiado. Y las funciones que están definidas dentro de las clases se llaman **métodos**. Por lo tanto, en el futuro nos adheriremos a esta terminología.
+
+Comenzaremos con métodos simples para trabajar con cadenas de texto. A continuación se muestra un ejemplo de llamada al método `length()`, que cuenta la cantidad de caracteres en una cadena:
+
+```java
+"Hexlet".length(); // 6
+"ABBA".length(); // 4
+```
+
+Los **métodos** son acciones que se deben realizar sobre los datos a los que se aplican. En programación, los **objetos** son los datos que tienen métodos. En realidad, es un poco más complicado, pero por ahora esta definición es suficiente. En Java, todos los tipos de datos no primitivos (de referencia) son objetos. Veamos algunos ejemplos más con la adición de variables:
+
+```java
+var company = "Hexlet";
+
+var companyLength = company.length();
+System.out.println(companyLength); // => 6
+
+// Convertir a mayúsculas
+company.toUpperCase(); // "HEXLET"
+```
+
+https://replit.com/@hexlet/java-basics-methods-calling
+
+Lo más importante en el trabajo con métodos es comprender el concepto de retorno de valor. Los métodos casi nunca muestran datos en la pantalla, sino que los devuelven. Gracias a esta propiedad, podemos dividir nuestro programa en fragmentos que luego se combinan en algo más complejo.
+
+En los ejemplos anteriores, el resultado de llamar a cada método se guarda en variables. Pero esto no es obligatorio, podemos usar los métodos directamente:
+
+```java
+var company = "Hexlet";
+System.out.println(company.length()); // => 6
+```
+
+Gradualmente nos familiarizaremos con cada vez más métodos incorporados en el lenguaje. Hay tantos métodos que es imposible recordarlos todos. La buena noticia es que no es necesario. Nadie recuerda los nombres de los métodos de memoria.
+
+Lo más importante es tener una idea aproximada de lo que se necesita, y luego se pueden utilizar las sugerencias del editor, la documentación y Google. Los programadores pasan mucho tiempo en la documentación, tratando de entender cómo funciona todo.

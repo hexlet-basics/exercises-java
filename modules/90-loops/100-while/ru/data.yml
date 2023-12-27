@@ -1,0 +1,4 @@
+name: Цикл While
+definitions:
+  - name: Цикл While
+    description: инструкция для повторения кода, пока удовлетворяется какое-то условие.

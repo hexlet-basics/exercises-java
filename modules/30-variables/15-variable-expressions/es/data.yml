@@ -1,0 +1,6 @@
+name: Expresiones en definiciones
+tips:
+  - >
+    Para imprimir una nueva línea, puedes usar `\n` entre la impresión de los
+    dólares y los rublos, o puedes usar el método `println()` la cantidad de
+    veces necesaria.

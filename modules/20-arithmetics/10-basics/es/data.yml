@@ -1,0 +1,5 @@
+name: Operaciones aritméticas
+tips:
+  - >-
+    La división por cero produce un error. Para evitarlo, debes conocer las
+    estructuras condicionales (las aprenderás en las próximas lecciones).

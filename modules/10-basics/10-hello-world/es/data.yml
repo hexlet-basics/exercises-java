@@ -1,0 +1,7 @@
+name: ¡Hola, Mundo!
+tips:
+  - >
+    Si en el editor hay una línea que dice `// BEGIN` y `// END`, el código debe
+    escribirse entre esas líneas.
+  - |
+    [¿Qué es un compilador?](https://codica.la/guides/compiler/)
