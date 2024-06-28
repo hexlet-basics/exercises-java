@@ -33,7 +33,8 @@ theory: |
 
 instructions: |
 
-  Declara una variable llamada `greeting`, pero no la inicialices.
+  Defina una variable llamada `greeting`, pero no la inicialice. Luego asigne el valor a la variable `greeting`
+  significado *Hello Hexlet!*. Muestra el resultado en la pantalla.
 
 tips:
   - |
