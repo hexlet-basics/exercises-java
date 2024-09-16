@@ -10,10 +10,10 @@ public class App {
             } else {
                 result = result + current;
             }
-        i++;
-    }
+            i++;
+        }
 
-    return result;
-    // END
-}
+        return result;
+        // END
+    }
 }
