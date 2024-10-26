@@ -12,7 +12,7 @@ class Test {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
 
-        App.main(null);
+        App.printMotto();
 
         final var actual = out.toString().trim();
 
