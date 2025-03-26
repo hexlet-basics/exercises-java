@@ -17,7 +17,7 @@ var text = "it works!"
 App.truncate(text, 4); // it w...
 ```
 
-Реализовать этот метод можно различными способами, подскажем лишь один из них. Для решения этим способом вам понадобится взять подстроку из строки, переданной первым параметром в метод `truncate()`. Используйте для этого метод [substring()](https://ru.hexlet.io/qna/java/questions/kak-izvlech-podstroku-iz-stroki-v-java). Подумайте, исходя из задания, с какого индекса и по какой вам надо извлечь подстроку?
+Реализовать этот метод можно различными способами, подскажем лишь один из них. Для решения этим способом вам понадобится взять подстроку из строки, переданной первым параметром в метод `truncate()`. Используйте для этого метод [substring()](https://ru.hexlet.io/qna/java/questions/kak-izvlech-podstroku-iz-stroki-v-java?utm_source=code-basics&utm_medium=referral&utm_campaign=qna&utm_content=lesson). Подумайте, исходя из задания, с какого индекса и по какой вам надо извлечь подстроку?
 
   ```java
   var text = "welcome";

@@ -54,7 +54,7 @@ https://replit.com/@hexlet/java-basics-methods-definition
 * То, что влияет на работу самого метода
 * То, как этот метод видим за пределами класса
 
-За видимость отвечает слово *public*. Оно дает возможность вызывать методы снаружи класса, как в примере выше. Кроме него существует *private*, который разбирается на Хекслете в курсе по [ООП в Java](https://ru.hexlet.io/courses/java-oop-basics).
+За видимость отвечает слово *public*. Оно дает возможность вызывать методы снаружи класса, как в примере выше. Кроме него существует *private*, который разбирается на Хекслете в курсе по [ООП в Java](https://ru.hexlet.io/programs/java?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson).
 
 За работу метода отвечают:
 
