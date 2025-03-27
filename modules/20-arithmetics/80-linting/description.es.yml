@@ -38,7 +38,7 @@ theory: |
 
   Ahora el linter no mostrará errores. ¿Qué conclusión podemos sacar? El linter ayuda a escribir código que es más fácil de leer y analizar.
 
-  Recuerda que tener un linter no reemplaza el análisis y la simplificación independiente del código. En tus futuras prácticas en [Hexlet](https://ru.hexlet.io) y en el desarrollo real, el linter funcionará y te informará sobre cualquier violación.
+  Recuerda que tener un linter no reemplaza el análisis y la simplificación independiente del código. En tus futuras prácticas en [Hexlet](https://ru.hexlet.io/?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson) y en el desarrollo real, el linter funcionará y te informará sobre cualquier violación.
 
 instructions: |
 
