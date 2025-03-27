@@ -75,7 +75,7 @@ class MySuperClassName {
 }
 ```
 
-Об этом мы поговорим в курсе по [ООП в Java](https://ru.hexlet.io/courses/java-oop-basics).
+Об этом мы поговорим в курсе по [ООП в Java](https://ru.hexlet.io/programs/java?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson).
 
 Главное, что нужно сейчас запомнить — любые статические методы вызываются через точку после имени класса, а сами вызовы происходят внутри других методов:
 

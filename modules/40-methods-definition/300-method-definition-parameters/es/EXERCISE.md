@@ -17,7 +17,7 @@ var text = "¡funciona!"
 App.truncate(text, 4); // it w...
 ```
 
-Puedes implementar este método de diferentes maneras, solo te daremos una pista. Para resolverlo de esta manera, necesitarás tomar una subcadena de la cadena pasada como primer parámetro en el método `truncate()`. Utiliza el método [substring()](https://ru.hexlet.io/qna/java/questions/kak-izvlech-podstroku-iz-stroki-v-java) para esto. Piensa, según la tarea, desde qué índice y hasta qué índice debes extraer la subcadena.
+Puedes implementar este método de diferentes maneras, solo te daremos una pista. Para resolverlo de esta manera, necesitarás tomar una subcadena de la cadena pasada como primer parámetro en el método `truncate()`. Utiliza el método [substring()](https://ru.hexlet.io/qna/java/questions/kak-izvlech-podstroku-iz-stroki-v-java?utm_source=code-basics&utm_medium=referral&utm_campaign=qna&utm_content=lesson) para esto. Piensa, según la tarea, desde qué índice y hasta qué índice debes extraer la subcadena.
 
   ```java
   var text = "bienvenido";
