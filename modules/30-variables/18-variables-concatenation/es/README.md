@@ -21,5 +21,3 @@ var ultimo = "de Reyes";
 var que = primero + ultimo;
 System.out.println(que); // => CaminodeReyes
 ```
-
-https://replit.com/@hexlet/java-basics-variables-4

@@ -47,8 +47,6 @@ class App {
 }
 ```
 
-https://replit.com/@hexlet/java-basics-methods-parameters-1
-
 Analicemos este código en detalle. `char` nos indica el tipo de valor que se devuelve. Luego, entre paréntesis, se especifica el tipo del parámetro `String` y su nombre `str`.
 
 Dentro del método, no sabemos con qué valor específico estamos trabajando, por lo que los parámetros siempre se describen como variables.
@@ -80,8 +78,6 @@ class App {
 App.average(1, 5); // 3.0
 App.average(1, 2); // 1.5
 ```
-
-https://replit.com/@hexlet/java-basics-methods-parameters-2
 
 Los métodos pueden requerir cualquier cantidad de parámetros que necesiten para funcionar:
 

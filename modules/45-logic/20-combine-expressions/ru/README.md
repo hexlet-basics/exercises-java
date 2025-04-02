@@ -30,8 +30,6 @@ App.isEven(10); // true
 App.isEven(3); // false
 ```
 
-https://replit.com/@hexlet/java-basics-logical-operations-1
-
 В одном выражении мы скомбинировали два логических оператора:
 
 * `==` — проверка равенства

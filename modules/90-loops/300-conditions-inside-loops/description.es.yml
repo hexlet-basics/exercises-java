@@ -37,8 +37,6 @@ theory: |
   }
   ```
 
-  https://replit.com/@hexlet/java-basics-conditions-inside-loops
-
   Este problema es una agregación. El método cuenta solo los caracteres deseados, pero aún así es necesario analizar cada carácter para calcular la suma total.
 
   La diferencia clave de este bucle con los que hemos visto anteriormente es que tiene una condición dentro del cuerpo. La variable `count` solo se incrementa cuando el carácter actual coincide con el carácter esperado. De lo contrario, es un método agregado típico que devuelve la cantidad de caracteres deseados al código que lo llama.

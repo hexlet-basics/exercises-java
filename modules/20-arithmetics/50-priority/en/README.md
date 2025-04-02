@@ -30,5 +30,3 @@ System.out.println(((8 / 2) + 5) - (-3 / 2)); // => 11
 ```
 
 Remember: code is for people, because it'll be read by people, and machines will only execute it. The only thing that matters for the machines is the correctness of code. They don't distinguish between "clear" or "confusing".
-
-https://replit.com/@hexlet/java-basics-arithmetics

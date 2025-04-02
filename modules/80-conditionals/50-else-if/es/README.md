@@ -40,8 +40,6 @@ public static String getTypeOfSentence(String sentence)
 }
 ```
 
-https://replit.com/@hexlet/java-basics-if-else
-
 Ahora todas las condiciones están organizadas en una única estructura. El operador `else if` significa "si la condición anterior no se cumple, pero la condición actual sí se cumple". La estructura es la siguiente:
 
 - Si el último carácter es `?`, entonces "pregunta"

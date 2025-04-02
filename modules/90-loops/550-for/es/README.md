@@ -15,8 +15,6 @@ public static String reverseString(String str) {
 }
 ```
 
-https://replit.com/@hexlet/java-basics-conditions-for
-
 Este código se puede describir de la siguiente manera:
 
 > El ciclo con el índice `i` se repite mientras `i < str.length()`, y después de cada paso, `i` se incrementa en 1.

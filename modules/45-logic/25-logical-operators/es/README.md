@@ -49,8 +49,6 @@ public static boolean esBuenApartamento(int area, String calle) {
 }
 ```
 
-https://replit.com/@hexlet/java-basics-logical-operators
-
 El área de las matemáticas que estudia los operadores lógicos se llama **álgebra booleana**. A continuación se muestran las "tablas de verdad" que nos permiten determinar el resultado de la aplicación de un operador:
 
 ### Operador Y `&&`

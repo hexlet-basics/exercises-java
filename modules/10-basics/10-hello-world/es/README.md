@@ -14,8 +14,6 @@ class App {
 }
 ```
 
-https://replit.com/@hexlet/java-basics-hello-world
-
 El texto *¡Hola, Mundo!* aparecerá en la pantalla gracias al comando `System.out.println()`, donde `println()` es una abreviatura de la expresión en inglés *print line*. Este comando muestra en la pantalla el valor especificado entre paréntesis `("¡Hola, Mundo!")`, en este caso, una cadena de texto. La cadena de texto se encierra entre comillas dobles `""`. Si no se hace esto, el compilador mostrará un error de sintaxis:
 
 ```bash

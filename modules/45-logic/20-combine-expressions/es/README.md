@@ -30,8 +30,6 @@ App.esPar(10); // true
 App.esPar(3); // false
 ```
 
-https://replit.com/@hexlet/java-basics-logical-operations-1
-
 En una sola expresión hemos combinado dos operadores lógicos:
 
 * `==` - verificación de igualdad

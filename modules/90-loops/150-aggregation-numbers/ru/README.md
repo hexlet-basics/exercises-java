@@ -52,8 +52,6 @@ public static int sumNumbersFromRange(int start, int finish) {
 }
 ```
 
-https://replit.com/@hexlet/java-basics-loops-using-1
-
 Общая структура цикла здесь стандартна:
 
 * Счетчик, который инициализируется начальным значением диапазона

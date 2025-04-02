@@ -45,5 +45,3 @@ searchEngine.replace("go", "mo"); // "moogle"
 "hexlet".substring(1, 3); // "ex"
 "hexlet".substring(3, 6); // "let"
 ```
-
-https://replit.com/@hexlet/java-basics-methods-calling-1

@@ -41,8 +41,6 @@ theory: |
   System.out.println("King's  " + "  Landing"); // => King's    Landing
   ```
 
-  https://replit.com/@hexlet/java-basics-strings#Main.java
-
 instructions: |
 
   Utilizando `System.out.println()`, realiza la concatenación de palabras y muestra en la pantalla la siguiente frase:

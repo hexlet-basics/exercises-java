@@ -57,8 +57,6 @@ theory: |
   // => El precio es 3750 rublos
   ```
 
-  https://replit.com/@hexlet/java-basics-variables-3
-
   Cualquier variable puede formar parte de cualquier expresión. En el momento de la evaluación, el valor de la variable se sustituye en lugar de su nombre. El valor de `amountDollars` se calcula antes de que se utilice en otras expresiones. Cuando llega el momento de usar la variable, Java conoce su valor porque ya lo ha calculado.
 
 instructions: |
