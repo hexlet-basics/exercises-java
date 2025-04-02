@@ -34,5 +34,3 @@ System.out.println(((8 / 2) + 5) - (-4 / 2)); // => 11
 ```
 
 Recuerda: el código se escribe para las personas, porque las personas lo leerán, y las máquinas solo lo ejecutarán. Para las máquinas, no hay código "más" o "menos" comprensible, independientemente de si el código es correcto o no.
-
-https://replit.com/@hexlet/java-basics-arithmetics

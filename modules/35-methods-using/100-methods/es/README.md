@@ -31,8 +31,6 @@ System.out.println(companyLength); // => 6
 company.toUpperCase(); // "HEXLET"
 ```
 
-https://replit.com/@hexlet/java-basics-methods-calling
-
 Lo más importante en el trabajo con métodos es comprender el concepto de retorno de valor. Los métodos casi nunca muestran datos en la pantalla, sino que los devuelven. Gracias a esta propiedad, podemos dividir nuestro programa en fragmentos que luego se combinan en algo más complejo.
 
 En los ejemplos anteriores, el resultado de llamar a cada método se guarda en variables. Pero esto no es obligatorio, podemos usar los métodos directamente:

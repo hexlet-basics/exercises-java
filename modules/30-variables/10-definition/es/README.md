@@ -42,6 +42,4 @@ System.out.println(greeting2);
 ¡Madre!
 </pre>
 
-https://replit.com/@hexlet/java-basics-variables-1
-
 Para facilitar el análisis del programa, se recomienda crear variables lo más cerca posible del lugar donde se utilizan.

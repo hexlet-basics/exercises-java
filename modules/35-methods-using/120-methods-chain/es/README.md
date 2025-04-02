@@ -51,6 +51,4 @@ name = name.trim()
     .toLowerCase();
 ```
 
-https://replit.com/@hexlet/java-basics-methods-chain
-
 A pesar de la conveniencia de este mecanismo, no se debe abusar de él. Las variables intermedias pueden facilitar la comprensión del código.

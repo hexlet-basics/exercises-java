@@ -36,5 +36,3 @@ Un espacio es simplemente un símbolo más, al igual que los demás. Cuantos má
 System.out.println("King's " + " Landing");   // => King's  Landing
 System.out.println("King's  " + "  Landing"); // => King's    Landing
 ```
-
-https://replit.com/@hexlet/java-basics-strings#Main.java

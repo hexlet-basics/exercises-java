@@ -39,8 +39,6 @@ theory: |
 
   Recuerda: el código se escribe para las personas, porque las personas lo leerán, y las máquinas solo lo ejecutarán. Para las máquinas, no hay código "más" o "menos" comprensible, independientemente de si el código es correcto o no.
 
-  https://replit.com/@hexlet/java-basics-arithmetics
-
 instructions: |
 
   Dada la expresión `70 * 3 + 4 / 8 + 2`.

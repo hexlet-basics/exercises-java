@@ -15,8 +15,6 @@ theory: |
   System.out.println(saludo);
   ```
 
-  https://replit.com/@hexlet/java-basics-variables-2
-
   Java es un lenguaje de programación de tipado estático. Esto significa que el tipo de una variable se establece al definirla y no cambia después.
 
   En el ejemplo anterior, asignamos una cadena de texto al crear la variable. El compilador recuerda el tipo y verifica todos los cambios posteriores en la variable. Si intentamos asignar un número a esta misma variable, obtendremos el siguiente error:

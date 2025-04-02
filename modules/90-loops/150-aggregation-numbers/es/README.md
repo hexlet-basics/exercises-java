@@ -52,8 +52,6 @@ public static int sumNumbersFromRange(int start, int finish) {
 }
 ```
 
-https://replit.com/@hexlet/java-basics-loops-using-1
-
 La estructura general del bucle es la siguiente:
 
 * Un contador que se inicializa con el valor inicial del rango

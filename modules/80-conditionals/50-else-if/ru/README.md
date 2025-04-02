@@ -40,8 +40,6 @@ public static String getTypeOfSentence(String sentence)
 }
 ```
 
-https://replit.com/@hexlet/java-basics-if-else
-
 Теперь все условия выстроены в единую конструкцию. Оператор `else if` — это «если не выполнено предыдущее условие, но выполнено текущее». Получается такая схема:
 
 - Если последний символ `?`, то "question"

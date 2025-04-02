@@ -50,8 +50,6 @@ theory: |
   App.showCurrentDate(); // => Hoy es: 2021-10-25
   ```
 
-  https://replit.com/@hexlet/java-basics-methods-definition
-
   La definición de un método en Java implica muchas acciones que iremos viendo gradualmente.
 
   Se pueden dividir en dos grupos:

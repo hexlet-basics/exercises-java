@@ -51,8 +51,6 @@ theory: |
   "hexlet".substring(3, 6); // "let"
   ```
 
-  https://replit.com/@hexlet/java-basics-methods-calling-1
-
 instructions: |
 
   Se te han dado tres variables con los apellidos de diferentes personas. Construye y muestra en la pantalla una palabra con los caracteres en el siguiente orden:

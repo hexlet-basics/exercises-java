@@ -33,8 +33,6 @@ theory: |
   App.reverse(""); // ""
   ```
 
-  https://replit.com/@hexlet/java-basics-loops-using-2
-
   Es importante comprender cómo se construye la cadena: cada carácter siguiente se une a la cadena resultante por la izquierda, y al final la cadena queda invertida.
 
 instructions: |

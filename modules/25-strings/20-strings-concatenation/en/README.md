@@ -46,5 +46,3 @@ System.out.print("King's " + " Landing");   // => King's  Landing
 
 System.out.print("King's  " + "  Landing"); // => King's    Landing
 ```
-
-https://replit.com/@hexlet/java-basics-strings

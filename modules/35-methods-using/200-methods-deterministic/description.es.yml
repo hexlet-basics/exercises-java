@@ -18,8 +18,6 @@ theory: |
   Math.random(); // 0.8839904367241888
   ```
 
-  https://replit.com/@hexlet/java-basics-pure-functions
-
   ¿Por qué es importante saber esto? El determinismo afecta seriamente muchos aspectos. Las funciones deterministas son convenientes para trabajar, son fáciles de optimizar y de probar. Si es posible hacer que una función sea determinista, es mejor hacerlo así.
 
 instructions: |

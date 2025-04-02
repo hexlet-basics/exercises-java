@@ -30,6 +30,4 @@ var processedLanguage = language.toLowerCase();
 System.out.println(processedLanguage); // => java
 ```
 
-https://replit.com/@hexlet/java-basics-methods-as-expressions
-
 Такой подход нередко предпочтительнее по соображениям читаемости. Переменные, которые постоянно меняются, сложнее анализировать. В итоге все зависит от задачи. С опытом придет понимание, какой подход лучше.

@@ -48,8 +48,6 @@ App.printNumbers(3);
 finished!
 </pre>
 
-https://replit.com/@hexlet/java-basics-while
-
 В коде метода использован цикл `while`. Он состоит из трех элементов:
 
 * **Ключевое слово** `while`. Несмотря на схожесть с вызовом методов, это не вызов метода

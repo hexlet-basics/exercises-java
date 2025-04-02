@@ -101,8 +101,6 @@ class App {
 }
 ```
 
-https://replit.com/@hexlet/java-basics-switch
-
 Aunque `switch` se encuentra en el código, técnicamente siempre se puede prescindir de él.
 
 La utilidad de esta estructura radica en que expresa mejor la intención del programador cuando se necesita comprobar valores específicos de una variable. A diferencia de los bloques `else if`, el código con `switch` es un poco más largo, pero mucho más fácil de leer.

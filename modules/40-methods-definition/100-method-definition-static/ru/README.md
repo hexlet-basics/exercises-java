@@ -45,8 +45,6 @@ public class App {
 App.showCurrentDate(); // => Today is: 2021-10-25
 ```
 
-https://replit.com/@hexlet/java-basics-methods-definition
-
 Определение метода в Java включает в себя много действий, которые мы постепенно разберем.
 
 Их можно разделить на две группы:

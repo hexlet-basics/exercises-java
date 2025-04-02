@@ -17,5 +17,3 @@ System.out.print("It's" + ((int) 5.1));
 It's 5
 
 In case above, in spite of the fact, that 5.1 is the number, it has double type not int. Expression above bring this number type to int type, reject fraction part, because int type doesn't keep fraction part.
-
-https://replit.com/@hexlet/java-basics-data-types

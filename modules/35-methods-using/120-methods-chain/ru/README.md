@@ -51,6 +51,4 @@ name = name.trim()
     .toLowerCase();
 ```
 
-https://replit.com/@hexlet/java-basics-methods-chain
-
 Несмотря на удобство этого механизма, им не стоит злоупотреблять. Промежуточные переменные могут упростить понимание кода.

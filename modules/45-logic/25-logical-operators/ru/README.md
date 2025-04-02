@@ -49,8 +49,6 @@ public static boolean isGoodApartment(int area, String street) {
 }
 ```
 
-https://replit.com/@hexlet/java-basics-logical-operators
-
 Область математики, в которой изучаются логические операторы, называется **булевой алгеброй**. Ниже показаны «таблицы истинности» — по ним можно определить, каким будет результат применения оператора:
 
 ### Оператор И `&&`
