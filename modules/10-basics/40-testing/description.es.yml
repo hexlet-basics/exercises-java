@@ -16,8 +16,6 @@ theory: |
 
   Lo más importante comienza después de los dos puntos: "se esperaba: "35", pero fue "10"". Es decir, el código correcto debería haber devuelto 35, pero la solución actual no funciona correctamente y devuelve 10.
 
-  Además de nuestras pruebas, será extremadamente útil utilizar el servicio [repl.it](https://repl.it/languages/java).
-
   ---
 
   A veces, durante el proceso de resolución, puede parecer que has hecho todo correctamente, pero el sistema se "comporta de manera caprichosa" y no acepta la solución. Este comportamiento es prácticamente imposible. Las pruebas no funcionales simplemente no pueden llegar al sitio web, se ejecutan automáticamente después de cada cambio. En la gran mayoría de estos casos (y todos nuestros proyectos en conjunto han realizado millones de verificaciones a lo largo de los años), el error se encuentra en el código de la solución. Puede ser muy sutil, como haber ingresado accidentalmente una letra rusa en lugar de una letra en inglés, haber utilizado minúsculas en lugar de mayúsculas o haber olvidado poner una coma. Otros casos son más complicados. Es posible que tu solución funcione para un conjunto de datos de entrada, pero no funcione para otro. Por lo tanto, siempre lee atentamente la descripción de la tarea y los resultados de las pruebas. Casi seguro que habrá alguna indicación del error.
