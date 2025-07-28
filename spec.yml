@@ -1,7 +1,7 @@
 ---
 
 language:
-  docker_image: "hexletbasics/exercises-java"
+  docker_image: "ghcr.io/hexlet-basics/exercises-java"
   extension: java
   exercise_filename: App.java
   exercise_test_filename: Test.java
