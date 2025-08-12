@@ -4,7 +4,7 @@ En matemáticas escolares, estudiamos el concepto de "prioridad de la operación
 
 Por ejemplo, la multiplicación y la división tienen mayor prioridad que la suma y la resta:
 
-```
+```text
 2 + 3 * 2 = 8
 ```
 

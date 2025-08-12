@@ -1,8 +1,8 @@
 Tradicionalmente, se comienza a aprender un lenguaje de programación con el programa "Hello, World!", que muestra este texto en la pantalla.
 
-<pre class='hexlet-basics-output'>
-  ¡Hola, Mundo!
-</pre>
+```text
+¡Hola, Mundo!
+```
 
 En Java, este programa se vería así:
 
@@ -34,6 +34,6 @@ Por lo tanto, siempre que sea posible, ejecuta todos los ejemplos de la teoría 
 
 La forma más sencilla de comenzar con Java es en el sitio web [onecompiler](https://onecompiler.com/jshell), que te permite ejecutar el código línea por línea directamente en el navegador. Intenta ir allí ahora mismo y escribir este código:
 
-```
+```text
 System.out.println(85 * 3);
 ```

@@ -55,7 +55,7 @@ El nombre del parámetro puede ser cualquier cosa, no está relacionado con la f
 
 Los parámetros en Java siempre son obligatorios. Si un método requiere parámetros y intentamos escribir código sin ellos, el compilador mostrará un error:
 
-```sh
+```bash
 App.getLastChar(); // este código no tiene sentido
 method getLastChar in class App cannot be applied to given types;
   required: String

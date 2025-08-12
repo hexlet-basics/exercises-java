@@ -9,6 +9,6 @@
 
 Вывод результата должен быть примерно в таком виде:
 
-<pre class='hexlet-basics-output'>
+```text
 a b c d e
-</pre>
+```

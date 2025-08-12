@@ -1,7 +1,7 @@
 
 We want to show the dialogue of the Mother of Dragons with her child:
 
-```
+```text
 - Are you hungry?
 - Aaaarrrgh!
 ```
@@ -14,7 +14,7 @@ System.out.print("— Are you hungry?— Aaaarrrgh!");
 
 it will turn out like this:
 
-```
+```text
 — Are you hungry?— Aaaarrrgh!
 ```
 
@@ -28,7 +28,7 @@ System.out.print("— Are you hungry?\n— Aaaarrrgh!");
 
 result:
 
-```
+```text
 — Are you hungry?
 — Aaaarrrgh!
 ```
@@ -37,7 +37,7 @@ result:
 
 While typing in some Word, you press Enter at the end of the line. The editor puts a special invisible character at the end of the line, which is called LINE FEED (LF). In some editors, you can even turn on the display of invisible characters. Then the text will look something like this:
 
-```
+```text
 — Hello!¶
 — Oh, hi!¶
 — How are you?
@@ -55,7 +55,7 @@ System.out.print("Gregor Clegane\nDunsen\nPolliver\nChiswyck");
 
 The screen will display:
 
-```
+```text
 Gregor Clegane
 Dunsen
 Polliver
@@ -68,9 +68,10 @@ For convenience, there is a method `System.out.println`, which allows you to dis
 System.out.println("Hello");
 System.out.println("World");
 ```
+
 The screen will display:
 
-```
+```text
 Hello
 World
 ```
@@ -89,7 +90,7 @@ System.out.print("Dunsen");
 
 Here we print one line with the name, then one line “line feed”, and then another line. The program will display:
 
-```
+```text
 Gregor Clegane
 Dunsen
 ```
@@ -104,7 +105,7 @@ System.out.print("Joffrey loves using \\n");
 
 the screen will be released:
 
-```
+```text
 Joffrey loves using \n
 ```
 

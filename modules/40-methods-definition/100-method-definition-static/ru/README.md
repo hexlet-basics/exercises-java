@@ -21,9 +21,9 @@ Mailer.send(email, title, body);
 
 Создадим наш первый метод. Его задача — вывести на экран текущую дату:
 
-<pre class='hexlet-basics-output'>
+```text
 Today is: 2021-10-25
-</pre>
+```
 
 ```java
 import java.time.LocalDate;

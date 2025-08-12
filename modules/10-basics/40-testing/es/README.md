@@ -8,7 +8,9 @@ Por ejemplo, si tu tarea es escribir código para sumar dos números, el sistema
 
 Aquí tienes un ejemplo sencillo: en una de las futuras lecciones, tendrás que escribir código que realice cálculos y devuelva una respuesta. Supongamos que cometiste un pequeño error y el método devolvió un número incorrecto. El sistema responderá algo como esto:
 
-<pre class='hexlet-basics-output'>expected: "35" but was: "10"</pre>
+```text
+expected: "35" but was: "10"
+```
 
 Lo más importante comienza después de los dos puntos: "se esperaba: "35", pero fue "10"". Es decir, el código correcto debería haber devuelto 35, pero la solución actual no funciona correctamente y devuelve 10.
 

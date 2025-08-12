@@ -3,10 +3,10 @@ Escribe un programa que tome la cantidad inicial de euros almacenada en la varia
 
 Ejemplo de salida para 100 euros:
 
-<pre class='hexlet-basics-output'>
+```text
 125.0
 7500.0
-</pre>
+```
 
 Supongamos que:
 

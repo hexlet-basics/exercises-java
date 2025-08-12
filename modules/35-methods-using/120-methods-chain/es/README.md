@@ -2,7 +2,7 @@ El procesamiento de datos puede constar de una cantidad considerable de pasos qu
 
 Tomemos como ejemplo la tarea de crear una dirección de página web basada en el nombre de un artículo ingresado por el usuario. Esta tarea a menudo surge al publicar artículos en blogs. Estas direcciones se ven así:
 
-```
+```text
 https://codica.la/blog/de-obrero-a-programador
 ```
 

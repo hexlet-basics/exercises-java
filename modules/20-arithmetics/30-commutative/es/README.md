@@ -2,13 +2,13 @@ Todos recordamos de la escuela: "el resultado no cambia al cambiar el orden de l
 
 Una operación binaria se considera conmutativa si se obtiene el mismo resultado al intercambiar los operandos. Es evidente que la suma es una operación conmutativa:
 
-```
+```text
 3 + 2 = 2 + 3
 ```
 
 Sin embargo, la resta no es una operación conmutativa:
 
-```
+```text
 2 - 3 ≠ 3 - 2
 ```
 

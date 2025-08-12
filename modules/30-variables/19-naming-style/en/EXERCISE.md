@@ -9,7 +9,7 @@ For the body of the letter, use the variables `info` and `intro`, with the secon
 
 The result on the screen will look like this:
 
-```
+```text
 Hello, Joffrey!
 Here is an important information about your account security.
 We couldn't verify you mother's maiden name.

@@ -21,9 +21,9 @@ Este tipo de llamada realiza bastante lógica interna. Se conecta al servidor de
 
 Crearemos nuestro primer método. Su tarea es mostrar la fecha actual en la pantalla:
 
-<pre class='hexlet-basics-output'>
+```text
 Hoy es: 2021-10-25
-</pre>
+```
 
 ```java
 import java.time.LocalDate;

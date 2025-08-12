@@ -13,9 +13,9 @@ Esta extraña dinastía simplemente está multiplicando castillos idénticos...
 Elimina los números mágicos creando nuevas variables y luego muestra el texto en pantalla.
 
 El resultado será el siguiente:
-<pre class='hexlet-basics-output'>
+```text
 King Balon the 6th has 102 rooms.
-</pre>
+```
 
 Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser lo suficientemente cortos y concisos para una lectura cómoda.
 

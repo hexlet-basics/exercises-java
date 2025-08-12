@@ -1,8 +1,8 @@
 Изучать язык программирования по традиции начинают с программы "Hello, World!", которая выводит этот текст на экран.
 
-<pre class='hexlet-basics-output'>
-  Hello, World!
-</pre>
+```text
+Hello, World!
+```
 
 На языке Java эта программа будет выглядеть так:
 
@@ -35,6 +35,6 @@ System.out.println('Hello, World!');
 
 С Java проще всего начать на сайте [onecompiler](https://onecompiler.com/jshell), который позволяет запускать построчно код прямо в браузере. Попробуйте перейти туда прямо сейчас и набрать такой код:
 
-```
+```text
 System.out.println(85 * 3);
 ```

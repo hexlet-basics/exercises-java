@@ -60,7 +60,7 @@ La estructura general del bucle es la siguiente:
 
 El número de iteraciones en este bucle es igual a `finish - start + 1`. Por ejemplo, se necesitan 3 iteraciones para calcular el rango del 5 al 7:
 
-```md
+```text
 7 - 5 + 1 = 3
 ```
 

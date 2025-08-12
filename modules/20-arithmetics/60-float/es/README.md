@@ -6,7 +6,7 @@ En matemáticas, existen diferentes tipos de números, por ejemplo:
 
 Desde la perspectiva de los dispositivos informáticos, hay una brecha entre estos tipos de números. Intentemos sumar dos números racionales:
 
-```
+```text
 0.2 + 0.1 = 0.3
 ```
 

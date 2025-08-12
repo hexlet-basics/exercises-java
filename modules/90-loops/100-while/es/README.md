@@ -41,12 +41,12 @@ public static void printNumbers(int lastNumber) {
 App.printNumbers(3);
 ```
 
-<pre class='hexlet-basics-output'>
+```text
 1
 2
 3
 finished!
-</pre>
+```
 
 En el código del método se utiliza el ciclo `while`. Está compuesto por tres elementos:
 

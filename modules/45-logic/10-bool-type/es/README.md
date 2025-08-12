@@ -1,12 +1,12 @@
 Además de las operaciones aritméticas, en matemáticas escolares también conocemos las operaciones de comparación, por ejemplo:
 
-```
+```text
 5 > 4
 ```
 
 Esto se lee como una pregunta: "¿Cinco es mayor que cuatro?". En este caso, la respuesta es "sí". En otros casos, la respuesta puede ser "no", por ejemplo, para la siguiente expresión:
 
-```
+```text
 3 < 1
 ```
 
@@ -27,7 +27,7 @@ Aquí tienes una lista de las operaciones de comparación en Java:
 
 Veamos algunos ejemplos de operaciones lógicas:
 
-```
+```text
 5 > 4
 password == text
 ```

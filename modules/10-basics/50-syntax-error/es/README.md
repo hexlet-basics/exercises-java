@@ -16,11 +16,11 @@ System.out.println("alala
 
 Si ejecutamos el código anterior, veremos el siguiente mensaje:
 
-<pre class='hexlet-basics-output'>
+```text
 |  Error:
 |  unclosed string literal
 |  System.out.println("alala
-</pre>
+```
 
 Por un lado, los errores de sintaxis son los más simples porque están relacionados únicamente con las reglas gramaticales de escribir código, no con el significado del código en sí. Son fáciles de corregir, solo hay que encontrar la violación en la escritura.
 

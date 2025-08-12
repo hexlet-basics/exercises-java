@@ -7,7 +7,7 @@ Dentro de los lenguajes de programación de alto nivel, los datos se dividen en 
 
 El lenguaje de programación reconoce los tipos. Por lo tanto, Java no nos permitirá multiplicar una cadena de texto por otra cadena de texto. Pero sí nos permitirá multiplicar un número entero por otro número entero. La presencia de tipos y de tales restricciones en el lenguaje protege los programas de errores accidentales:
 
-```
+```text
 "uno" * "dos"
 Error:
 tipos de operandos incorrectos para el operador binario '*'

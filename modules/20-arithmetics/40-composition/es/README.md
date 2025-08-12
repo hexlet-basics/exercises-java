@@ -14,7 +14,7 @@ System.out.println(2 * 4 * 5 * 10); // 2 * 4 * 5 * 10 => 8 * 5 * 10 => 40 * 10 =
 
 Como puedes ver, las operaciones se pueden combinar entre sí y así calcular expresiones compuestas más complejas. Para entender cómo se realizan los cálculos dentro del intérprete, analicemos un ejemplo:
 
-```
+```text
 2 * 4 * 5 * 10
 ```
 

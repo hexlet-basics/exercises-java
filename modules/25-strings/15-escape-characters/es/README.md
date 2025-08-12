@@ -13,9 +13,9 @@ System.out.println("- ¿Tienes hambre?- ¡Aaaarrrgh!");
 
 Obtendremos esto:
 
-<pre class='hexlet-basics-output'>
+```text
 - ¿Tienes hambre?- ¡Aaaarrrgh!
-</pre>
+```
 
 No es lo que queríamos. Las líneas están una al lado de la otra en lugar de estar una debajo de la otra. Necesitamos decirle al intérprete "presiona Enter" - hacer un salto de línea después del signo de interrogación. Esto se puede hacer utilizando el carácter de salto de línea: `\n`:
 
@@ -25,10 +25,10 @@ System.out.println("- ¿Tienes hambre?\n- ¡Aaaarrrgh!");
 
 resultado:
 
-<pre class='hexlet-basics-output'>
+```text
 - ¿Tienes hambre?
 - ¡Aaaarrrgh!
-</pre>
+```
 
 `\n` es un carácter especial. En la literatura a menudo se le llama *LF* (Line Feed). Es posible que ahora estés pensando que esto es un error tipográfico, ya que aquí vemos dos caracteres `\` y `n`, pero no es así. Desde el punto de vista de la computadora, es un solo carácter de salto de línea invisible:
 
@@ -48,11 +48,11 @@ El carácter de salto de línea no es algo específico de la programación. Todo
 
 Muchos editores tienen una opción que permite mostrar caracteres invisibles. Esta opción ayuda a comprender dónde se encuentran, aunque es solo una representación esquemática, ya que estos caracteres invisibles no tienen una representación gráfica:
 
-<pre class='hexlet-basics-output'>
+```text
 - ¡Hola!¶
 - ¡Oh, hola!¶
 - ¿Cómo estás?
-</pre>
+```
 
 El dispositivo que muestra el texto correspondiente tiene en cuenta este carácter. Por ejemplo, una impresora, al encontrar un LF, avanza el papel hacia arriba una línea, y un editor de texto mueve todo el texto siguiente hacia abajo, también una línea.
 
@@ -91,10 +91,11 @@ Ten en cuenta los siguientes puntos:
 
     Aquí primero imprimimos una cadena "salto de línea" y luego imprimimos una cadena normal. El programa mostrará en la pantalla:
 
-    <pre class='hexlet-basics-output'>
-    <br>
+    ```text
+
+
     Dunsen
-    </pre>
+    ```
 
     ¿Por qué aparecieron dos líneas vacías antes de la cadena *Dunsen* en lugar de una? El caso es que `System.out.println()` agrega automáticamente un carácter de salto de línea al final al imprimir un valor.
 

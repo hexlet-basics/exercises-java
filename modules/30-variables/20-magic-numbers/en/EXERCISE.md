@@ -14,7 +14,7 @@ Get rid of the magic numbers by creating new variables, and then display the tex
 
 It will turn out like this:
 
-```
+```text
 King Balon the 6th has 102 rooms.
 ```
 

@@ -24,7 +24,7 @@ System.out.println("Dragon's mother");
   
 And what if we want to create such a string:
 
-```
+```text
 Dragon's mother said "No"
 ```
 

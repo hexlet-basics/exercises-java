@@ -19,10 +19,10 @@ En la línea `var greeting = "¡Padre!"`, se asigna el valor `"¡Padre!"` a la v
 
 Una vez que se crea la variable, puedes comenzar a usarla. Se inserta en los lugares donde solía estar nuestra frase. Durante la ejecución del código, en la línea `System.out.println(greeting)`, el contenido de la variable se inserta en lugar de la variable misma, y luego se ejecuta el código. Como resultado, la salida de nuestro programa será la siguiente:
 
-<pre class='hexlet-basics-output'>
+```text
 ¡Padre!
 ¡Padre!
-</pre>
+```
 
 Para el nombre de la variable, se puede utilizar cualquier conjunto de caracteres válidos, que incluyen letras del alfabeto inglés, números y el guión bajo `_`. Sin embargo, no se puede colocar un número al principio. Los nombres de las variables distinguen entre mayúsculas y minúsculas, es decir, `hello` y `heLLo` son dos nombres diferentes y dos variables diferentes. A continuación se muestra un ejemplo con dos variables diferentes:
 
@@ -35,11 +35,11 @@ System.out.println(greeting2);
 System.out.println(greeting2);
 ```
 
-<pre class='hexlet-basics-output'>
+```text
 ¡Padre!
 ¡Padre!
 ¡Madre!
 ¡Madre!
-</pre>
+```
 
 Para facilitar el análisis del programa, se recomienda crear variables lo más cerca posible del lugar donde se utilizan.

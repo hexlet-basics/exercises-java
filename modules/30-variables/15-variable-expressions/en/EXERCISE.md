@@ -3,7 +3,7 @@ Write a program that takes the original amount of euros recorded in the variable
 
 Example withdrawal for 100 euros:
 
-```
+```text
 125.0
 7500.0
 ```

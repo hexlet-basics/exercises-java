@@ -9,6 +9,6 @@ Se te han dado tres variables con los apellidos de diferentes personas. Construy
 
 La salida del resultado debe ser aproximadamente así:
 
-<pre class='hexlet-basics-output'>
+```text
 a b c d e
-</pre>
+```

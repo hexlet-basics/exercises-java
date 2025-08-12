@@ -1,4 +1,4 @@
 Encuentra la variable no declarada en el programa y declárala asignándole el valor `"Dragon"`;
-<pre class='hexlet-basics-output'>
+```text
 Targaryen and Dragon
-</pre>
+```

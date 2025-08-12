@@ -9,7 +9,7 @@ App.isLeapYear(2016); // true
 
 Puedes verificar la divisibilidad de la siguiente manera:
 
-```javascript
+```java
 // % - devuelve el residuo de la división del operando izquierdo por el operando derecho
 // Verificar si number es divisible por 10
 number % 10 == 0

@@ -18,9 +18,9 @@ System.out.println("La madre del dragón");
 
 Pero, ¿qué pasa si queremos crear una cadena de texto como esta:
 
-<pre class='hexlet-basics-output'>
+```text
 La madre del dragón dijo "No"
-</pre>
+```
 
 En ella hay tanto comillas simples como comillas dobles. ¿Qué hacer en esta situación? Si simplemente intentamos imprimir esta cadena de texto, obtendremos un error:
 
