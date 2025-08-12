@@ -12,7 +12,7 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: hexlet-basics/exercises-action@speedup-build
+      - uses: hexlet-basics/exercises-action@release
         with:
           DOCKER_USERNAME: ${{ github.actor }}
           DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
