@@ -14,7 +14,11 @@ class Test {
 
         App.main(null);
 
-        final var actual = out.toString().trim();
+        var actual = out.toString();
+
+        if (actual.endsWith(System.lineSeparator())) { // delete a newline character because println adds one
+            actual = actual.substring(0, actual.length() - System.lineSeparator().length());
+        }
 
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         System.out.println(actual);
