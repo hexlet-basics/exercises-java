@@ -14,7 +14,7 @@ class Test {
 
         App.main(null);
 
-        final var actual = out.toString().trim();
+        final var actual = out.toString();
 
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         System.out.println(actual);
