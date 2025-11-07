@@ -71,7 +71,7 @@ insert into language_category_items(id, language_category_id, language_landing_p
 ```
 Затем перейти в папку `hexlet-basics ` и загрузить новый код уроков    
 ```
-make make language-load L=java
+make language-load L=java
 ```
 после стартовать приложение
 ```
