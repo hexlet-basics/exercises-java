@@ -50,7 +50,38 @@ docker build -t exercises-java:latest .
 docker tag exercises-java:latest localhost:5000/exercises-java:latest    
 docker push localhost:5000/exercises-java:latest    
 ```
-и внести соответствующие изменения в `hexlet-basics`, которые потом не забыть откатить!!!    
+и внести соответствующие изменения в код `hexlet-basics`, которые потом не забыть откатить!!!    
+Затем применить патч к базе данных
+```
+truncate table languages cascade;
+truncate table language_lessons cascade;
+truncate table language_categories cascade;
+insert into languages(id, name, slug, exercise_filename, exercise_test_filename, updated_at, created_at, lessons_count, members_count, "order", learn_as, progress) values (1, 'Java', 'java', 'App.java', 'Test.java', now(), now(), 10, 0, 10, 'second_language', 'completed');
+insert into language_categories(id, name_ru, name_en, slug, created_at, updated_at, name, locale, header, description) values (1, ' ', ' ', 'programming-ru', now(), now(), 'Программирование', 'ru', 'Курсы', 'Дают профессию');
+insert into language_landing_pages(id, language_id, language_category_id, meta_title, locale, header, slug, "order", main, state, description, meta_description, created_at, updated_at, listed, used_in_header, used_in_description, outcomes_header, outcomes_description, footer, footer_name, name, landing_page_to_redirect_id) values (1, 1, 1, ' ', 'ru', ' ', 'java', null, true, 'published', ' ', ' ', now(), now(), true, ' ', ' ', ' ', ' ', true, ' ', ' ', null);
+insert into language_versions(id, exercise_filename, exercise_test_filename, extension, name, language_id, created_at, updated_at, state) values (1, 'App.java', 'Test.java', 'java', 'Java 21', 1, now(), now(), 'created');
+update languages set current_version_id = 1;
+insert into language_lessons(id, slug, state, "order", language_id, updated_at, created_at) values (1, 'java', ' ', 1, 1, now(), now());
+insert into language_modules(id, slug, language_id, updated_at, created_at) values (1, 'java', 1, now(), now());
+insert into language_module_versions(id, language_id, language_version_id, module_id, created_at, updated_at, "order") values (1, 1, 1, 1, now(), now(), 10);
+insert into language_lesson_versions(id, language_version_id, language_id, lesson_id, module_version_id, created_at, updated_at, "order", natural_order) values (1, 1, 1, 1, 1, now(), now(), 10, 10);
+insert into language_lesson_version_infos(id, locale, name, description, theory, tips, definitions, instructions, language_id, language_version_id, version_id, created_at, updated_at, language_lesson_id) values (1, 'ru', 'name in language lesson version infos', 'description', 'theory', null, null, null, 1, 1, 1, now(), now(), 1);
+insert into language_module_version_infos(id, name, description, locale, language_id, version_id, language_version_id, updated_at, created_at) values (1, 'name', 'desc', 'ru', 1, 1, 1, now(), now());
+insert into language_category_items(id, language_category_id, language_landing_page_id, created_at, updated_at) values (1, 1, 1, now(), now()); 
+```
+Затем перейти в папку `hexlet-basics ` и загрузить новый код уроков    
+```
+make make language-load L=java
+```
+после стартовать приложение
+```
+make services-app-run
+```
+Доступ к урокам по адресу
+```
+http://localhost:3000/ru/languages/java
+```
+
 
 ##
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=exercises-java)
