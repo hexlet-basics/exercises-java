@@ -5,7 +5,7 @@ public class App {
         // BEGIN
         email = email.trim();
         email = email.toLowerCase();
-        System.out.println(email);
+        System.out.print(email);
         // END
     }
 }
