@@ -7,17 +7,11 @@ import java.io.PrintWriter;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class Test {
+
     public static void main(String[] args) {
         final var expected = "support@hexlet.io";
-
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
-
-        App.main(null);
-
-        final var actual = out.toString();
-
-        System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
-        assertThat(actual).isEqualTo(expected);
+        final var actual = App.normalize();
+        assertThat(expected).isEqualTo(actual);
     }
+
 }
