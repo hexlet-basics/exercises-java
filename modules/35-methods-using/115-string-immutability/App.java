@@ -1,9 +1,11 @@
 public class App {
     public static void main(String[] args) {
-        var email = "\tSupporT@hexlet.io ";
+        var email = " SupporT@hexlet.io\n";
 
         // BEGIN
-        System.out.println(email.trim().toLowerCase());
+        email = email.trim();
+        email = email.toLowerCase();
+        System.out.println(email);
         // END
     }
 }
