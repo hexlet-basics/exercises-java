@@ -14,7 +14,12 @@ class Test {
 
         App.main(null);
 
-        final var actual = out.toString().trim();
+        String answer = out.toString();
+        if (answer != null && answer.endsWith("\n")) {
+            // remove linefeed added by println
+            answer = answer.substring(0, answer.length() - 1);
+        }
+        final var actual = answer;
 
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
         System.out.println(actual);
