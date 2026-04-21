@@ -41,7 +41,7 @@ App.getLastChar(name2); // 'o'
 ```java
 class App {
     public static char getLastChar(String str) {
-        // Вычисляем индекс последнего символа как длина строки, то есть 1
+        // Вычисляем индекс последнего символа как длина строки минус 1
         return str.charAt(str.length() - 1);
     }
 }
