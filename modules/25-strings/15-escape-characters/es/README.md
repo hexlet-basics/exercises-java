@@ -92,8 +92,8 @@ Ten en cuenta los siguientes puntos:
     Aquí primero imprimimos una cadena "salto de línea" y luego imprimimos una cadena normal. El programa mostrará en la pantalla:
 
     ```text
-
-
+    ㅤ
+    ㅤ
     Dunsen
     ```
 
