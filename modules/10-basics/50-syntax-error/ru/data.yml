@@ -1,5 +1,9 @@
 ---
 name: Ошибки оформления (синтаксиса)
+tips:
+  - >
+    [Редактор с подсветкой
+    синтаксиса](https://code.visualstudio.com/)
 definitions:
   - name: Компилятор
     description: >-
