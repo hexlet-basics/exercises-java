@@ -1,11 +1,11 @@
 public class App {
-    public static void main(String[] args) {
-        var name = "Brienna";
+  public static void main(String[] args) {
+    var name = "Brienna";
 
-        // BEGIN
-        name = "anneirB";
-        // END
+    // BEGIN
+    name = "anneirB";
+    // END
 
-        System.out.println(name);
-    }
+    System.out.println(name);
+  }
 }

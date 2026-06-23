@@ -1,11 +1,11 @@
 public class App {
-    public static void main(String[] args) {
-        var family = "Targaryen";
+  public static void main(String[] args) {
+    var family = "Targaryen";
 
-        // BEGIN
-        var pet = "Dragon";
-        // END
+    // BEGIN
+    var pet = "Dragon";
+    // END
 
-        System.out.println(family + " and " + pet);
-    }
+    System.out.println(family + " and " + pet);
+  }
 }

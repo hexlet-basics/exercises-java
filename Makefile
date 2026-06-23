@@ -12,7 +12,13 @@ compose-down:
 	docker-compose down -v --remove-orphans
 
 code-lint:
-	java -jar /opt/checkstyle.jar -c checkstyle.xml modules src
+	gradle --no-daemon spotlessCheck
+
+format:
+	gradle --no-daemon spotlessApply
+
+compose-format:
+	docker-compose run --rm -v "$(PWD):/exercises-java" exercises make format
 
 compile:
 	@(for i in $$(find . -type f -name Main.java); do javac $$(dirname $$i)/*.java ; done)

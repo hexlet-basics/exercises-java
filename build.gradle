@@ -1,0 +1,17 @@
+// Gradle здесь нужен только для линтинга кода уроков через spotless.
+// Это внутренний инструмент CI/разработки — студенты Gradle не запускают,
+// у них упражнения собираются голым javac (см. bin/test.sh).
+plugins {
+  id 'com.diffplug.spotless' version '8.7.0'
+}
+
+repositories {
+  mavenCentral()
+}
+
+spotless {
+  java {
+    target 'modules/**/*.java'
+    googleJavaFormat()
+  }
+}

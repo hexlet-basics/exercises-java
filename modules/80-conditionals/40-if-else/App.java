@@ -1,11 +1,11 @@
 public class App {
-    // BEGIN
-    public static String normalizeUrl(String site) {
-        if (site.startsWith("https://")) {
-            return site;
-        }
-
-        return "https://" + site;
+  // BEGIN
+  public static String normalizeUrl(String site) {
+    if (site.startsWith("https://")) {
+      return site;
     }
-    // END
+
+    return "https://" + site;
+  }
+  // END
 }
