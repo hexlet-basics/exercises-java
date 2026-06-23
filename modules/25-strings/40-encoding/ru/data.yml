@@ -1,0 +1,12 @@
+---
+name: Кодировки
+definitions:
+  - name: Кодировка
+    description: >-
+      набор символов, закодированных с помощью чисел для представления текста в
+      электронном виде.
+tips:
+  - |
+    [Таблица ASCII кодов](https://www.ascii-code.com/)
+  - |
+    [Что такое кодировки?](https://ru.hexlet.io/blog/posts/encoding)
