@@ -171,7 +171,8 @@
     <!-- See https://checkstyle.org/config_misc.html -->
     <module name="ArrayTypeStyle"/>
     <!-- <module name="FinalParameters"/> -->
-    <module name="TodoComment"/>
+    <!-- TodoComment отключён: в курсе есть уроки, где TODO-комментарии — часть задания -->
+    <!-- <module name="TodoComment"/> -->
     <module name="UpperEll"/>
 
     <!-- https://checkstyle.org/config_filters.html#SuppressionXpathFilter -->
