@@ -1,5 +1,9 @@
 ---
 name: Логический тип
+tips:
+  - >
+    [Тип boolean в
+    Java](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2.5)
 definitions:
   - name: Логический тип (boolean)
     description: 'тип данных с двумя возможными значениями: true (истина) и false (ложь).'
