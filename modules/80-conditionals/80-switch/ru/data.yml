@@ -1,3 +1,8 @@
 ---
 name: Конструкция Switch
-definitions: []
+tips: []
+definitions:
+  - name: switch
+    description: >-
+      способ выбрать поведение по значению переменной через ветки `case`,
+      например, `switch (count) { case 1: ... }`.
