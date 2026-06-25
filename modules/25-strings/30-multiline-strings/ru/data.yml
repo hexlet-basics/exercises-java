@@ -1,0 +1,11 @@
+---
+name: Многострочные строки
+definitions:
+  - name: Текстовый блок
+    description: >-
+      строковый литерал из нескольких строк, записанный между тройными двойными
+      кавычками `"""`.
+tips:
+  - >
+    [Текстовые
+    блоки](https://docs.oracle.com/en/java/javase/21/text-blocks/index.html)
