@@ -1,2 +1,5 @@
 ---
 name: Возврат значений
+tips:
+  - |
+    [Оператор return в Java](https://www.w3schools.com/java/ref_keyword_return.asp)
