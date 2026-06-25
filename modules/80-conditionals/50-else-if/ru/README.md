@@ -1,4 +1,30 @@
-В самой полной версии конструкция `if` содержит не только ветку `else`, но и другие условные проверки с помощью `else if`. Такой вариант используется при большом количестве проверок, которые взаимоисключают друг друга:
+Метод `getTypeOfSentence` различает только вопросительные и обычные предложения. Добавим в него поддержку восклицательных предложений. Сделаем это сначала через две отдельные проверки `if`:
+
+```java
+public static String getTypeOfSentence(String sentence) {
+    String sentenceType = "";
+
+    if (sentence.endsWith("?")) {
+        sentenceType = "question";
+    }
+
+    if (sentence.endsWith("!")) {
+        sentenceType = "exclamation";
+    } else {
+        sentenceType = "general";
+    }
+
+    return "Sentence is " + sentenceType;
+}
+
+App.getTypeOfSentence("Who?"); // "Sentence is general"
+App.getTypeOfSentence("No");   // "Sentence is general"
+App.getTypeOfSentence("No!");  // "Sentence is exclamation"
+```
+
+Технически этот код работает, но вопросительные предложения трактует неверно. Есть и проблема с семантикой. Наличие восклицательного знака проверяется в любом случае, даже когда уже нашелся вопросительный знак. Ветка `else` относится ко второму условию, но не к первому. Поэтому вопросительное предложение получает тип `"general"`.
+
+Чтобы выстроить проверки в единую цепочку, конструкция `if` поддерживает ветку `else if`. Такой вариант подходит, когда проверок много и они исключают друг друга:
 
 ```java
 if (/* что-то */) {
@@ -12,21 +38,16 @@ if (/* что-то */) {
 }
 ```
 
-Здесь стоит обратить внимание на два момента:
+Здесь обратите внимание на два момента:
 
-* Ветка `else` может отсутствовать
-* Количество `else if` условий может быть любым
+- Ветка `else` может отсутствовать
+- Количество веток `else if` может быть любым
 
-Напишем для примера расширенный метод определяющий тип предложения. Он распознает три вида предложений:
+Перепишем метод с `else if`:
 
 ```java
-App.getTypeOfSentence("Who?"); // "Sentence is question"
-App.getTypeOfSentence("No");   // "Sentence is general"
-App.getTypeOfSentence("No!");  // "Sentence is exclamation"
-
-public static String getTypeOfSentence(String sentence)
-{
-    var sentenceType = "";
+public static String getTypeOfSentence(String sentence) {
+    String sentenceType;
 
     if (sentence.endsWith("?")) {
         sentenceType = "question";
@@ -38,12 +59,34 @@ public static String getTypeOfSentence(String sentence)
 
     return "Sentence is " + sentenceType;
 }
+
+App.getTypeOfSentence("Who?"); // "Sentence is question"
+App.getTypeOfSentence("No");   // "Sentence is general"
+App.getTypeOfSentence("No!");  // "Sentence is exclamation"
 ```
 
-Теперь все условия выстроены в единую конструкцию. Оператор `else if` — это «если не выполнено предыдущее условие, но выполнено текущее». Получается такая схема:
+Теперь все условия выстроены в единую конструкцию. Оператор `else if` означает "если не выполнено предыдущее условие, но выполнено текущее".
 
-- Если последний символ `?`, то "question"
-- Иначе, если последний символ `!`, то "exclamation"
-- Иначе "general"
+```text
+  ┌─────────────────┐
+  │ условие 1?      │
+  └────┬────────┬───┘
+  true │        │ false
+        ↓        ↓
+┌──────────┐  ┌─────────────────┐
+│ тело if  │  │ условие 2?      │
+└──────────┘  └────┬────────┬───┘
+              true │        │ false
+                    ↓        ↓
+            ┌───────────┐ ┌──────────┐
+            │тело else if│ │ тело else│
+            └───────────┘ └──────────┘
+```
 
-В итоге выполнится только один из блоков кода, относящихся ко всей конструкции `if`.
+Логика метода устроена так:
+
+- Если последний символ `?`, то тип `"question"`
+- Иначе, если последний символ `!`, то тип `"exclamation"`
+- Иначе тип `"general"`
+
+В итоге выполнится только один из блоков, относящихся ко всей конструкции `if`.
