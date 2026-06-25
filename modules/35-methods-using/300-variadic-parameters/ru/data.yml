@@ -1,0 +1,12 @@
+---
+name: Методы с переменным числом параметров
+tips:
+  - >
+    [Метод String.join() в
+    документации](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html)
+definitions:
+  - name: Переменное число параметров (varargs)
+    description: >-
+      возможность метода принимать любое количество аргументов одного типа. В
+      объявлении записывается через три точки после типа, например `String...
+      values`.
