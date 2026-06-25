@@ -1,6 +1,8 @@
 ---
 name: Именование переменных
-tips: []
+tips:
+  - |
+    [Snake case](https://ru.wikipedia.org/wiki/Snake_case)
 definitions:
   - name: Стандарт кодирования
-    description: Набор синтаксических и стилистических правил написания кода.
+    description: набор синтаксических и стилистических правил написания кода.
