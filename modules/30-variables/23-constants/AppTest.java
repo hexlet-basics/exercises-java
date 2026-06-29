@@ -1,11 +1,13 @@
 import java.io.ByteArrayOutputStream;
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
 import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class AppTest {
     public static void main(String[] args) {
-        App.main(null);
+        final var expected = "3";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
@@ -14,6 +16,9 @@ class AppTest {
 
         final var actual = out.toString().trim();
 
-        assertThat(actual).isEmpty();
+        System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
+        System.out.println(actual);
+
+        assertThat(actual).isEqualTo(expected);
     }
 }

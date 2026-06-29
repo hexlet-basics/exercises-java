@@ -1,19 +1,12 @@
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class AppTest {
-    public static void main(final String[] args) {
-        App.main(null);
+    public static void main(final String[] args) throws Exception {
+        final var code = Files.readString(Path.of("App.java"));
 
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
-
-        App.main(null);
-
-        final var actual = out.toString().trim();
-
-        assertThat(actual).isEmpty();
+        assertThat(code).containsPattern("//\\s*TODO");
     }
 }
