@@ -1,7 +1,7 @@
 class App {
     public static void main(String[] args) {
         // BEGIN
-        // TODO: добавить метод приветствия
+        // TODO: add a greeting method
         // END
     }
 }

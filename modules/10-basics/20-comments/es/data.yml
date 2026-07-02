@@ -1,2 +1,11 @@
 ---
 name: Comentarios
+tips:
+  - >
+    [Más sobre los
+    comentarios](https://www.w3schools.com/java/java_comments.asp)
+definitions:
+  - name: Comentario
+    description: >
+      texto en el código de un programa que no afecta a la funcionalidad y es
+      añadido por los programadores para sí mismos y sus colegas.

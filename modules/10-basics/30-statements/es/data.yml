@@ -1,2 +1,15 @@
 ---
-name: Instrucciones
+name: Instrucciones (Statements)
+tips:
+  - |
+    [¿Qué es un compilador?](https://codica.la/guides/compiler/)
+definitions:
+  - name: Compilador
+    description: >-
+      programa que transforma el código fuente de Java a un formato que ejecuta
+      la máquina virtual de Java (JVM).
+  - name: Instrucción (statement)
+    description: >-
+      comando para la computadora escrito en un lenguaje de programación. El
+      código en Java es un conjunto de instrucciones, cada una de las cuales
+      termina con el carácter `;`.

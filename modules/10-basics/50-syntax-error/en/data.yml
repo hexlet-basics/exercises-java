@@ -1,0 +1,13 @@
+---
+name: Formatting (syntax) errors
+tips:
+  - >
+    [Editor with syntax
+    highlighting](https://code.visualstudio.com/)
+definitions:
+  - name: Compiler
+    description: >-
+      A program that converts source code into a low-level language suitable
+      for execution.
+  - name: Syntax error
+    description: A violation of the grammatical rules of a programming language.

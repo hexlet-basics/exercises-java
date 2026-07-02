@@ -1,0 +1,12 @@
+---
+name: How we check your solutions
+definitions:
+  - name: Tests
+    description: >
+      special code that checks programs for correctness by comparing the correct
+      result with the actual one.
+tips:
+  - |
+    [TDD](https://en.wikipedia.org/wiki/Test-driven_development)
+  - |
+    [Hexlet community on Telegram](https://t.me/hexletcommunity/12)
