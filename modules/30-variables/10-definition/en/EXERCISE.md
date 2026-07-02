@@ -1,1 +1,4 @@
-  Create a variable with the name `motto` and the contents of `What is Dead May Never Die!`. Print the contents of the variable.
+Create a variable named `motto` with the contents `What Is Dead May Never Die!`. Print the contents of the variable.
+```text
+What Is Dead May Never Die!
+```

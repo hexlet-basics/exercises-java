@@ -1,4 +1,8 @@
 
-Create two variables with the names “first number” and “second number” using lowerCamelCase. Write in the first variable the number `1.10`, in the second - `-100`. Display the product of the numbers written in the resulting variables.
+Create two variables named "first number" and "second number" in English, using lowerCamelCase. Write the number `1.10` into the first variable, and `-100` into the second. Print the product of the numbers written in the resulting variables to the screen.
 
-The code will work with any names, and our system always checks only the result on the screen, so the execution of this task is under your responsibility.
+```text
+-110.00000000000001
+```
+
+The code will work with any names, and our system always checks only the result on the screen, so completing this task is your responsibility.

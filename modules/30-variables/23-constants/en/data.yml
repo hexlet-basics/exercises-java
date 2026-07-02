@@ -1,2 +1,8 @@
 ---
 name: Constants
+tips: []
+definitions:
+  - name: Constant
+    description: >-
+      a way to store information and give it a name for later use in the code;
+      constants cannot be changed, unlike variables.

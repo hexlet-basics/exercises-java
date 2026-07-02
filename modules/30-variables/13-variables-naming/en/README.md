@@ -1,12 +1,38 @@
+Imagine we have a program like this:
 
-Variable naming is an important aspect of programming. The names should not only convey the meaning, but also follow the syntactic rules, which, as a rule, are not checked at all at the level of the language, but are necessary during development. The process of writing programs in the modern world is teamwork, and for better teamwork in a team, the code is written in the same style, as if one person was working on it.
+```java
+var x = "Father!";
+System.out.println(x);
+```
 
-The naming of variables can be divided into three main approaches, which sometimes combine with each other. All these approaches manifest themselves when the variable name consists of several words:
+From a technical point of view, everything works. But here a variable named `x` is used. Bad names make code harder to read and understand. Here are a few examples of unfortunate variables:
 
-* kebab-case - the variable components are separated by a hyphen. For example: `my-super-var`.
-* snake_case - underscore is used for separation. For example: `my_super_var`.
-* CamelCase - each word in a variable is written with a capital letter. For example: `MySuperVar`.
+```java
+var a = "John";
+var n = 42;
+var ddr = "New York";
+```
 
-In Java, CamelCase and its variation lowerCamelCase are used, in which the first letter of the first word is lowercase. It is lowerCamelCase that is used for variables.
+What are these variables? What is stored in them? To understand that, you have to read all the rest of the code and guess from the context.
 
-Another common rule is: do not use transliteration for names, only English. If you experience difficulties with English, use a translator. Over time, digging into someone else's code, you will form the right concepts for naming.
+The computer does not care what a variable is called. To it, `x`, `abc`, `message`, or `elephantInTheRoom` are just labels for storing data. For people, something else matters. Programmers read code much more often than they write it, and not only their own code, but also code written by other people. That is why variable names become an important part of communication through code.
+
+## Good examples
+
+```java
+var userName = "Arya Stark";
+var unpaidOrdersCount = 3;
+var maxAttempts = 5;
+```
+
+A good variable name helps you understand what the program does without having to read closely into every line. It is especially important to give names whose meaning is clear without context, without reading all the surrounding code.
+
+Here are a few tips:
+
+- Use English. It is the international standard. It is better to write `ordersCount` instead of `kolvoZakazov`. If English is still difficult for you, use a translator, that is fine. Over time it will become easier.
+- Try to make the name reflect the meaning of the variable. Let it be a bit longer, but understandable.
+- Do not be afraid to spend time picking a good name. It is an investment in the readability and maintainability of the code.
+
+Among programmers there is even a joke: "Some of the hardest tasks in programming remain cache invalidation and coming up with names for variables". Sometimes it really is hard to come up with a suitable name. Here is an example: how would you name a variable that stores the number of unpaid orders from customers with debt from the previous quarter?
+
+And now a little exercise. Come up with a name for a variable that will store "the number of the king's brothers and sisters". Write it down in a notebook or send it to yourself by email. Just the name, without explanations. After some time, look at it again and check whether the meaning of the variable is clear from the name alone.

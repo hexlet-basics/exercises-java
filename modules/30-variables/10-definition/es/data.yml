@@ -1,5 +1,11 @@
 ---
 name: ¿Qué es una variable?
 tips:
-  - |
-    [Nomenclatura en programación](https://codica.la/blog/naming-in-programming)
+  - >
+    [Nomenclatura en
+    programación](https://codica.la/blog/naming-in-programming)
+definitions:
+  - name: Variable
+    description: >-
+      una forma de guardar información y darle un nombre para su uso posterior en
+      el código.
