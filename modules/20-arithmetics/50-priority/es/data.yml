@@ -1,2 +1,7 @@
 ---
 name: Prioridad de las operaciones
+definitions:
+  - name: Expresión
+    description: >-
+      una secuencia de acciones sobre los datos que produce un resultado apto
+      para su uso posterior.

@@ -1,2 +1,5 @@
 ---
 name: Composición de operaciones
+definitions:
+  - name: Composición
+    description: un método para combinar varias operaciones simples en una operación compleja.

@@ -2,5 +2,14 @@
 name: Operaciones aritméticas
 tips:
   - >-
-    La división por cero produce un error. Para evitarlo, debes conocer las
-    estructuras condicionales (las aprenderás en las próximas lecciones).
+    Separa los operadores aritméticos de los operandos con espacios; es un buen
+    estilo de programación. Así la expresión se lee con más comodidad.
+  - La división por cero produce un error.
+  - >-
+    [División con resto](https://es.wikipedia.org/wiki/División_euclídea)
+definitions:
+  - name: Instrucción
+    description: >-
+      la parte autónoma más pequeña de un lenguaje de programación, un comando o
+      un conjunto de comandos. Un programa suele ser una secuencia de
+      instrucciones.

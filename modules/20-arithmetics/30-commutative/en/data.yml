@@ -1,0 +1,11 @@
+---
+name: Commutative operation
+tips:
+  - >-
+    [More about commutativity](https://en.wikipedia.org/wiki/Commutative_property)
+definitions:
+  - name: Commutativity
+    description: >-
+      a property of an operation in which changing the order of the operands
+      doesn't affect the result. For example, addition is commutative: changing
+      the order of the addends doesn't change the sum.
