@@ -1,5 +1,21 @@
 ---
 name: ¿Para qué sirven los tipos de datos?
 tips:
+  - >
+    [Literal](https://es.wikipedia.org/wiki/Constante_(inform%C3%A1tica))
   - |
     [Artículo sobre números decimales](https://habrahabr.ru/post/112953/)
+definitions:
+  - name: Tipo de datos
+    description: >-
+      un conjunto de datos en el código (una variedad de información). El tipo
+      define qué se puede hacer con los elementos de un conjunto concreto. Por
+      ejemplo, los números enteros, los números racionales y las cadenas son
+      tipos de datos diferentes.
+  - name: Tipos de datos primitivos
+    description: tipos básicos integrados en el propio lenguaje de programación.
+  - name: Cadena (string)
+    description: >
+      tipo de datos que describe un conjunto de caracteres (en otras palabras,
+      texto), por ejemplo `"text"`. En Java, las cadenas se escriben entre
+      comillas dobles.

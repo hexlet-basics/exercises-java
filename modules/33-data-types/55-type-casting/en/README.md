@@ -1,19 +1,43 @@
+In real programs, a situation often arises when data of one type needs to be turned into another. One example is working with forms on websites. Form data comes in text form, even if by its meaning there is a number there. To do something with such a value, it is converted into the needed type.
 
-Java is a strongly typed programming language. Using special syntax we can change type of variables:
+## Converting a string to a number
 
-```java
-System.out.print(Integer.parseInt("345"));
-```
-
-Type conversion works like this: before the value, the desired type is indicated in parentheses. As a result, the value on the right is converted to a value of another type indicated on the left in parentheses. At the moment we are familiar with only two types, but the transformation in Java works not only for the primitive types.
-
-Type conversion can be used inside compound expressions:
+Let's imagine that a string `"345"` came from a form, and we need to add another number to this number. The string is first turned into an integer:
 
 ```java
-//Additional brackets help to visually separate parts of the expression from each other
-System.out.print("It's" + ((int) 5.1));
+var number = Integer.parseInt("345");
+System.out.println(number + 5); // => 350
 ```
 
-It's 5
+The method `Integer.parseInt` takes a string and returns an integer of type *int*. In a similar way, a string is turned into a rational number using `Double.parseDouble`.
 
-In case above, in spite of the fact, that 5.1 is the number, it has double type not int. Expression above bring this number type to int type, reject fraction part, because int type doesn't keep fraction part.
+## Casting between primitive types
+
+If you need to convert from one primitive type to another, it is enough to specify the type in parentheses before the value. The value is converted to the type written in parentheses:
+
+```java
+var result = (int) 5.1;
+System.out.println(result); // => 5
+```
+
+When casting a rational number to an integer, the fractional part is discarded without rounding. That is why `(int) 5.9` gives `5`. In the opposite direction, `(double) 7` gives `7.0`.
+
+Casting also helps with division. Dividing an integer by an integer in Java gives an integer, and the fractional part is lost:
+
+```java
+System.out.println(7 / 2);          // => 3
+System.out.println((double) 7 / 2); // => 3.5
+```
+
+In the first case both values are integers, so the result is an integer. In the second case the dividend is cast to the type *double*, and the division became rational.
+
+## Casting inside compound expressions
+
+Type conversion also works inside large expressions. Additional parentheses help to visually separate the parts of the expression from each other:
+
+```java
+var result = 10 + ((int) 5.1);
+System.out.println(result); // => 15
+```
+
+Here `5.1` is cast to `5`, and then added to `10`.

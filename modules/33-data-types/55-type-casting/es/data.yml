@@ -1,2 +1,10 @@
 ---
 name: Conversión explícita de tipos
+tips:
+  - |
+    [Tipado](https://es.wikipedia.org/wiki/Tipado_fuerte)
+definitions:
+  - name: Conversión de tipos (casting)
+    description: >-
+      la conversión explícita de un valor de un tipo en un valor de otro tipo.
+      Por ejemplo, `(int) 5.1` convierte un número racional en entero.

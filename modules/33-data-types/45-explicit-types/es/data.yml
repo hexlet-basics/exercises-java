@@ -2,4 +2,16 @@
 name: Tipado explícito
 tips:
   - |
+    [Tipado](https://es.wikipedia.org/wiki/Tipado_fuerte)
+  - |
     [Artículo sobre números decimales](https://habrahabr.ru/post/112953/)
+definitions:
+  - name: Tipado estático
+    description: >-
+      un enfoque en el que el tipo de una variable se fija en su declaración y se
+      comprueba de antemano, en la etapa de compilación, aún antes de ejecutar el
+      programa.
+  - name: Inferencia de tipos (type inference)
+    description: >-
+      un mecanismo que determina por sí mismo el tipo del valor asignado y lo
+      vincula a la variable. En Java se activa con la palabra clave `var`.

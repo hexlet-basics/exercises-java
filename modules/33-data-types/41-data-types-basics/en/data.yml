@@ -1,5 +1,19 @@
 ---
-name: Data Types
+name: Why data types are needed
 tips:
+  - >
+    [Literal](https://en.wikipedia.org/wiki/Literal_(computer_programming))
   - |
     [Article on fractional numbers](https://habrahabr.ru/post/112953/)
+definitions:
+  - name: Data type
+    description: >-
+      a set of data in code (a kind of information). A type defines what
+      can be done with the elements of a particular set. For example, integers,
+      rational numbers, and strings are different data types.
+  - name: Primitive data types
+    description: basic types built into the programming language itself.
+  - name: String
+    description: >
+      a data type that describes a set of characters (in other words, text), for
+      example `"text"`. In Java, strings are written in double quotes.

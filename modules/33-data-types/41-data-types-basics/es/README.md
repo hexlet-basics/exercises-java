@@ -1,32 +1,44 @@
-Dentro de los lenguajes de programación de alto nivel, los datos se dividen en tipos. Por ejemplo, las cadenas de texto se clasifican como *String*, mientras que los números se clasifican como *int*.
+Los programas trabajan con información diferente. Puede ser texto, números, fechas, valores lógicos. Dentro de los lenguajes de programación de alto nivel, cada valor pertenece a algún tipo. Por ejemplo, las cadenas pertenecen al tipo *String*, y los números enteros al tipo *int*.
 
-¿Para qué sirven los tipos de datos? Para proteger el programa de errores difíciles de detectar. Los tipos de datos determinan dos cosas:
+¿Para qué sirven los tipos? Protegen el programa de errores difíciles de detectar. Un tipo define dos cosas.
 
-* Valores permitidos. Por ejemplo, en Java, los números se dividen en dos grupos de tipos: enteros (*int*) y racionales (*float*). Esta división está relacionada con las características técnicas del hardware.
-* Conjunto de operaciones permitidas. Por ejemplo, la operación de multiplicación tiene sentido para el tipo "números enteros". Pero no tiene sentido para el tipo "cadena de texto": multiplicar la palabra "mamá" por la palabra "cuaderno" no tiene sentido.
+* Valores permitidos. Por ejemplo, los números en Java se dividen en dos grupos. Los números enteros pertenecen al tipo *int*, y los racionales (decimales) al tipo *double*. Esta división está relacionada con las particularidades del funcionamiento del hardware.
+* Un conjunto de operaciones permitidas. Por ejemplo, la operación de multiplicación tiene sentido para los números enteros. Pero no tiene sentido para las cadenas. Multiplicar la palabra "mamá" por la palabra "cuaderno" es un sinsentido.
 
-El lenguaje de programación reconoce los tipos. Por lo tanto, Java no nos permitirá multiplicar una cadena de texto por otra cadena de texto. Pero sí nos permitirá multiplicar un número entero por otro número entero. La presencia de tipos y de tales restricciones en el lenguaje protege los programas de errores accidentales:
+El lenguaje de programación reconoce los tipos. Por eso Java no permitirá multiplicar una cadena por una cadena, pero sí permitirá multiplicar un número entero por otro número entero. La presencia de tipos y de tales restricciones protege los programas de errores accidentales:
 
 ```text
-"uno" * "dos"
+"one" * "two"
 Error:
-tipos de operandos incorrectos para el operador binario '*'
-  primer tipo:  java.lang.String
-  segundo tipo: java.lang.String
+bad operand types for binary operator '*'
+  first type:  java.lang.String
+  second type: java.lang.String
 ```
 
-¿Cómo sabe Java qué tipo de datos tiene delante? Cada valor se inicializa en algún lugar. Dependiendo de la forma de inicialización, se entiende qué es exactamente lo que tenemos delante.
+## Los números y las cadenas pertenecen a tipos diferentes
 
-Por ejemplo, un número es simplemente un número, no está envuelto entre comillas u otros caracteres emparejados. Pero las cadenas de texto siempre están delimitadas por comillas dobles. Por ejemplo, el valor `"234"` se considera una cadena de texto, aunque dentro de ella se escriban números:
+¿Cómo entiende Java qué tipo de datos tiene delante? Por la forma en que se escribe el valor. Un número se escribe sin comillas, mientras que las cadenas siempre están delimitadas por comillas dobles. Por ejemplo, el valor `"234"` se considera una cadena, aunque dentro estén escritos dígitos:
 
 ```java
-// El compilador entiende que aquí hay un número
-var edad = 33;
+System.out.println(5);     // => 5
+System.out.println("234"); // => 234
 ```
 
-En inglés, las cadenas de texto en programación se llaman *strings*, mientras que las líneas de los archivos de texto se llaman *lines*. Por ejemplo, en el código anterior hay una línea (*line*) y cero cadenas (*strings*). En el idioma ruso, a veces puede haber confusión, por lo tanto, en todas las lecciones utilizaremos los siguientes términos:
+En la pantalla el resultado se ve parecido, pero dentro del programa son valores diferentes. El número `5` pertenece al tipo *int*, y `"234"` al tipo *String*. Java no te dejará sumar una cadena y un número directamente sin una indicación explícita de cómo convertir los datos.
 
-* **Cadena de texto** - para denotar el tipo de datos *strings*
-* **Línea** - para denotar *lines* (líneas en archivos de texto)
+## Tipos primitivos y de referencia
 
-Hay muchos tipos de datos en Java, y también se pueden crear tipos personalizados. Gradualmente nos familiarizaremos con todos los necesarios y aprenderemos a usarlos correctamente.
+Una parte de los tipos está integrada en el lenguaje. Se les llama primitivos. Además de los números enteros *int* y los racionales *double*, incluyen el tipo lógico *boolean* con los valores `true` y `false`, así como el carácter *char*:
+
+```java
+int n = 5;           // número entero
+double x = 1.5;      // número racional
+boolean flag = true; // valor lógico
+char c = 'A';        // un carácter
+```
+
+Presta atención al tipo *char*. Un carácter se escribe entre comillas simples, por ejemplo `'A'`. En cambio, una cadena de un solo carácter se encierra entre comillas dobles, por ejemplo `"A"`. Son valores diferentes de tipos diferentes.
+
+El tipo *String* pertenece a los tipos de referencia y describe un conjunto de caracteres, es decir, texto. Al mismo tiempo, las cadenas se usan al mismo nivel que los tipos primitivos.
+
+Hay muchos tipos de datos en Java, y además se pueden crear los propios. Poco a poco nos familiarizaremos con todos los necesarios y aprenderemos a usarlos correctamente.
