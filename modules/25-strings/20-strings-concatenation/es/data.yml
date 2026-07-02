@@ -1,2 +1,10 @@
 ---
 name: Concatenación
+tips:
+  - >
+    Si en el editor aparecen las marcas `// BEGIN` y `// END`, debes escribir el
+    código entre esas líneas.
+definitions:
+  - name: Concatenación
+    description: |
+      operación de unir dos cadenas de texto. Por ejemplo, `System.out.println("King's " + "Landing")`

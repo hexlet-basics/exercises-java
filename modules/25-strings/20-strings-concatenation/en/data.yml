@@ -1,2 +1,10 @@
 ---
 name: Concatenation
+tips:
+  - >
+    If the editor has `// BEGIN` and `// END` markers, then you should write your
+    code between these lines.
+definitions:
+  - name: Concatenation
+    description: |
+      the operation of joining two strings. For example, `System.out.println("King's " + "Landing")`

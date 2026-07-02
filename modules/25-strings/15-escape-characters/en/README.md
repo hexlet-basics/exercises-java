@@ -1,57 +1,73 @@
-
-We want to show the dialogue of the Mother of Dragons with her child:
+We want to show a dialogue between the Mother of Dragons and her child:
 
 ```text
 - Are you hungry?
 - Aaaarrrgh!
 ```
 
-If you display a line with the following text:
+If you print a string with this text to the screen:
 
 ```java
-System.out.print("— Are you hungry?— Aaaarrrgh!");
+System.out.println("- Are you hungry?- Aaaarrrgh!");
 ```
 
-it will turn out like this:
+you get this:
 
 ```text
-— Are you hungry?— Aaaarrrgh!
+- Are you hungry?- Aaaarrrgh!
 ```
 
-We need to somehow tell the interpreter "click on enter" — to make a line break after the question mark.
-
-In Java, `\n` is a line break:
+Not what we wanted. The lines are placed one after another, not one below the other. We need to somehow tell the interpreter to "press Enter" — to make a line break after the question mark. This can be done using the line feed character: `\n`:
 
 ```java
-System.out.print("— Are you hungry?\n— Aaaarrrgh!");
+System.out.println("- Are you hungry?\n- Aaaarrrgh!");
 ```
 
 result:
 
 ```text
-— Are you hungry?
-— Aaaarrrgh!
+- Are you hungry?
+- Aaaarrrgh!
 ```
 
-`\n` is an example **of the escape sequence** (escape sequence). They are also called control structures.
-
-While typing in some Word, you press Enter at the end of the line. The editor puts a special invisible character at the end of the line, which is called LINE FEED (LF). In some editors, you can even turn on the display of invisible characters. Then the text will look something like this:
-
-```text
-— Hello!¶
-— Oh, hi!¶
-— How are you?
-```
-
-A device that outputs the corresponding text takes this symbol into account. For example, the printer, when meeting with LF, pulls the paper up one line, and the text editor transfers all subsequent text below, also one line.
-
-Although there are more than a dozen of such characters, there are often only a few in programming. In addition to line breaks, these characters include tabulation (a break, obtained by pressing the Tab button) and carriage returnValue (only in Windows). We, programmers, often need to use, for example, the translation of the string `\n` to properly format the text.
+`\n` is a special character. In the literature it is often denoted as *LF* (Line Feed). You might think this is a typo, since here we see two characters `\` and `n`, but that's not the case. From the computer's point of view, this is a single invisible line feed character:
 
 ```java
-System.out.print("Gregor Clegane\nDunsen\nPolliver\nChiswyck");
+// We haven't studied this, but you should know the truth
+// Below is code that returns the length of a string
+"a".length();    // 1
+"\n".length();   // 1 !!!
+"\n\n".length(); // 2 !!!
 ```
 
-**Attention! Escaping sequences like `\n` work only inside double quotes!**
+Why is it done this way? `\n` is just a way to write the line feed character, but the line feed itself, by its meaning, is a single character, though an invisible one.
+
+That is exactly why such a task arose. It had to be represented somehow on the keyboard. And since the number of keys on the keyboard is limited and reserved for the most important ones, all special characters are implemented as such notations.
+
+The line feed character is not something specific to programming. Everyone who has ever typed on a computer has used a line feed by pressing Enter.
+
+Many editors have an option that lets you turn on the display of invisible characters. This option helps you understand where they are, although it is only a schematic display, since these invisible characters have no graphical representation:
+
+```text
+- Hello!¶
+- Oh, hi!¶
+- How are you?
+```
+
+A device that outputs the corresponding text takes this character into account. For example, when a printer encounters LF, it pulls the paper up one line, and a text editor moves all subsequent text below, also by one line.
+
+`\n` is an example of an **escape sequence**. They are also called control constructs. Although there are dozens of such characters, in programming only a few are commonly encountered.
+
+Besides the line feed, such characters include:
+
+* Tabulation — the break you get by pressing the Tab key
+* Carriage return (only in Windows)
+
+Programmers often need to use the line feed `\n` to format text correctly:
+
+```java
+System.out.println("Gregor Clegane\nDunsen\nPolliver\nChiswyck");
+```
 
 The screen will display:
 
@@ -62,51 +78,65 @@ Polliver
 Chiswyck
 ```
 
-For convenience, there is a method `System.out.println`, which allows you to display some value on the console and then transfer the console to the next line. For example:
-
-```java
-System.out.println("Hello");
-System.out.println("World");
-```
-
-The screen will display:
-
-```text
-Hello
-World
-```
-
 Pay attention to the following points:
 
-1\. It does not matter what comes before or after `\n`: a character or an empty string. The transfer will be detected and executed in any case.
+1. It does not matter what comes before or after `\n`: a character or an empty string. The line feed will be detected and performed in any case
 
-2\. Remember that a string can contain only one character or zero characters at all? And the line can contain only `\n`:
+2. Remember that a string can contain one character or no characters at all. And a string can also contain only `\n`. Analyze the following example:
 
-```java
-System.out.print("Gregor Clegane");
-System.out.print("\n");
-System.out.print("Dunsen");
-```
+    ```java
+    System.out.println("\n");
+    System.out.println("Dunsen");
+    ```
 
-Here we print one line with the name, then one line “line feed”, and then another line. The program will display:
+    Here we first print the "line feed" string, and then print an ordinary string. The program will display:
 
-```text
-Gregor Clegane
-Dunsen
-```
+    <!-- NOTE: two blank characters here so the example works correctly. -->
+    ```text
+    ㅤ
+    ㅤ
+    Dunsen
+    ```
 
-3\. Despite the fact that in the source code of a program, a sequence of type `\n` looks like two characters, from the point of view of the interpreter it is a special single character.
+    Why did two empty lines appear before the string *Dunsen*, and not one? The point is that `System.out.println()` automatically adds a line feed character to the end when it outputs a value.
 
-4\. If we need to display `\n` exactly as text (two separate printable characters), then we can use the already known screening method, adding one more `\` at the beginning. That is, the sequence `\\n` is displayed as the characters `\` and `n` following each other.
+    Thus, we specified one line feed explicitly, passing this escape sequence character as an argument to the function, and the second line feed was added by the function itself automatically.
 
-```java
-System.out.print("Joffrey loves using \\n");
-```
+    Another code example:
 
-the screen will be released:
+    ```java
+    System.out.println("Polliver");
+    System.out.println("Gregor Clegane");
+    System.out.println();
+    System.out.println("Chiswyck\n");
+    System.out.println("Dunsen");
+    ```
 
-```text
-Joffrey loves using \n
-```
+    The output will be like this:
 
-A small but important note about Windows. On Windows, `\r\n` is used to translate strings by default. Such a combination works well only in Windows, but creates problems when transferring to other systems (for example, when the development team has both Windows and Linux users). The fact is that the sequence `\r\n` has a different interpretation depending on the selected encoding (discussed later). For this reason, in the development environment, it is customary to always use `\n` without `\r`, since LF is always treated the same way and works fine in any system. Remember to configure your editor to use `\n`.
+    ```text
+    Polliver
+    Gregor Clegane
+
+    Chiswyck
+
+    Dunsen
+    ```
+
+    You now have enough knowledge to figure out on your own why the output was formed exactly this way.
+
+3. If we need to display `\n` exactly as text (two separate printable characters), we can use the escaping method we already know, adding one more `\` at the beginning. That is, the sequence `\\n` will be displayed as the characters `\` and `n` following one after another:
+
+    ```java
+    System.out.println("Joffrey loves using \\n");
+    ```
+
+    the screen will display:
+
+    ```text
+    Joffrey loves using \n
+    ```
+
+A small but important note about Windows. In Windows, `\r\n` is used for line breaks by default — this is due to historical reasons. Such a combination works well only in Windows, but creates problems when transferring to other systems: for example, when a development team has both Windows and Linux users.
+
+The point is that the sequence `\r\n` is interpreted differently depending on the chosen encoding. That is why in the developer community it is customary to always use `\n` without `\r`, since LF is always interpreted the same way and works perfectly in any system. Don't forget to configure your editor to use `\n`.

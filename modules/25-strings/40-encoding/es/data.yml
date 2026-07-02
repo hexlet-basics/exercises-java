@@ -1,0 +1,12 @@
+---
+name: Codificaciones
+definitions:
+  - name: Codificación
+    description: >-
+      conjunto de caracteres codificados mediante números para representar texto
+      en formato electrónico.
+tips:
+  - |
+    [Tabla de códigos ASCII](https://www.ascii-code.com/)
+  - |
+    [¿Qué son las codificaciones?](https://ru.hexlet.io/blog/posts/encoding)

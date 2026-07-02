@@ -1,5 +1,6 @@
 ---
-name: Escaping sequences
+name: Escape sequences
 tips:
-  - |
-    [String History](https://en.wikipedia.org/wiki/Newline#History)j
+  - >
+    [History of the
+    newline](https://en.wikipedia.org/wiki/Newline#History)
