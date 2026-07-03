@@ -1,6 +1,8 @@
 ---
 name: Nomenclatura de variables
-tips: []
+tips:
+  - |
+    [Snake case](https://es.wikipedia.org/wiki/Snake_case)
 definitions:
-  - name: Convención de codificación
-    description: Un conjunto de reglas sintácticas y estilísticas para escribir código.
+  - name: Estándar de codificación
+    description: un conjunto de reglas sintácticas y estilísticas para escribir código.

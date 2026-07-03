@@ -2,5 +2,9 @@
 name: Expressions in definitions
 tips:
   - >
-    To translate a line, you can use `\ n` between the withdrawal of dollars and
-    rubles.
+    To move to a new line, you can use `\n` between printing dollars and rubles,
+    or call the `println()` method as many times as needed.
+definitions:
+  - name: Variable
+    description: >-
+      a way to store information and give it a name for later use in the code.

@@ -1,9 +1,15 @@
 ---
-name: Variables y Concatenación
+name: Variables y concatenación
 tips:
   - >
     Piensa en qué cadena y en qué orden debes concatenar las variables para
-    obtener una salida de dos líneas para el cuerpo del correo electrónico.
+    obtener esa salida de dos líneas del cuerpo del correo.
   - >
     Recuerda que puedes crear una cadena que contenga solo la secuencia de
-    control '\n'.
+    control `\n`. Puedes concatenar esta cadena con las variables para formatear
+    el texto correctamente.
+definitions:
+  - name: Concatenación
+    description: >
+      la operación de unir dos cadenas. Por ejemplo, `System.out.println("King's " +
+      "Landing")`

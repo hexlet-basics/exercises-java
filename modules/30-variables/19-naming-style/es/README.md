@@ -1,23 +1,52 @@
+`greeting` sirve como ejemplo de un nombre de variable simple y claro. Pero a menudo nombres como `name`, `email` o `price` resultan insuficientes. Por ejemplo, hay que describir el nombre de un usuario, la cantidad total de pedidos, la longitud máxima de un mensaje. Esos nombres ya constan de varias palabras. ¿Cómo se verá el nombre de la variable en ese caso?
 
-`greeting` - es un ejemplo de un nombre simple, pero no todos los nombres son tan simples. Con frecuencia, los nombres de las variables son compuestos, es decir, incluyen varias palabras. Por ejemplo, "nombre de usuario". En diferentes lenguajes de programación se utilizan diferentes convenciones de codificación, por lo que el nombre de la variable puede variar.
+En los distintos lenguajes de programación se usan diferentes estilos de nomenclatura. De eso depende cómo se verá un nombre compuesto. Por ejemplo, así se puede escribir una variable que almacena la longitud máxima de un mensaje:
 
-En la nomenclatura de variables se pueden identificar cuatro enfoques principales, que a veces se combinan entre sí. Todos estos enfoques se aplican cuando el nombre de la variable consta de varias palabras:
+1. `maxmessagelength`
+1. `maxMessageLength`
+1. `max-message-length`
+1. `max_message_length`
 
-* kebab-case - las partes compuestas de la variable se separan con guiones (`mi-super-var`)
-* snake_case - se utiliza un guion bajo para separar las palabras (`mi_super_var`)
-* CamelCase - cada palabra en la variable se escribe con mayúscula inicial (`MiSuperVar`)
-* lowerCamelCase - cada palabra en la variable se escribe con mayúscula inicial, excepto la primera (`miSuperVar`)
+## Estilos principales
 
-En Java se utiliza CamelCase y su variante lowerCamelCase, donde la primera letra de la primera palabra es minúscula.
+En la nomenclatura de variables se pueden distinguir cuatro enfoques principales. Todos ellos se manifiestan cuando el nombre consta de varias palabras:
 
-Es precisamente lowerCamelCase el que se utiliza para las variables. Esto significa que los nombres se unen entre sí, y todas las palabras, excepto la primera, se escriben con mayúscula inicial: `nombreDeUsuario`. Con tres palabras, se vería así: `miSuperVariable`.
+- kebab-case: las palabras se separan con un guion, por ejemplo `max-message-length`.
 
-Veamos cómo se ve esto en el código:
+  No funciona en Java, porque el guion se interpreta como el operador de resta.
+
+- snake_case: las palabras se separan con un guion bajo, por ejemplo `max_message_length`.
+
+- CamelCase (o UpperCamelCase): cada palabra con mayúscula inicial y sin separadores, por ejemplo `MaxMessageLength`.
+
+- lowerCamelCase: lo mismo, pero la primera palabra empieza con minúscula, por ejemplo `maxMessageLength`.
+
+## Cómo hacerlo correctamente en Java
+
+Para los nombres de variables en Java se adopta el estilo lowerCamelCase. Las palabras se unen entre sí, y cada palabra, excepto la primera, se escribe con mayúscula inicial:
 
 ```java
-var primerNombre = "John";
-System.out.println(primerNombre); // => John
-
-var numeroJugador = 24;
-System.out.println(numeroJugador); // => 24
+var userName = "Daenerys";
+var maxLength = 280;
+var totalOrdersCount = 17;
 ```
+
+- La primera palabra empieza con minúscula
+- Cada palabra siguiente empieza con mayúscula
+- No hay separadores entre las palabras
+
+Veámoslo en el código:
+
+```java
+var firstName = "John";
+System.out.println(firstName); // => John
+
+var playerNumber = 24;
+System.out.println(playerNumber); // => 24
+```
+
+## Cómo no hacerlo
+
+No conviene incluir el tipo de dato en el nombre de la variable. Esos nombres se leen peor y se quedan obsoletos rápidamente. Por ejemplo, `userNameString` o `messagesNumber` describen no el significado de la variable, sino su implementación técnica.
+
+El nombre debe responder a la pregunta "¿qué se almacena?", y no "¿de qué tipo es?". Por eso es mejor escribir `userName` en lugar de `userNameString` y `messagesCount` en lugar de `messagesNumber`.

@@ -4,3 +4,7 @@ tips:
   - >
     [Naming in
     programming](https://ru.hexlet.io/blog/posts/naming-in-programming?utm_source=code-basics&utm_medium=referral&utm_campaign=blog&utm_content=lesson)
+definitions:
+  - name: Variable
+    description: >-
+      a way to store information and give it a name for later use in the code.

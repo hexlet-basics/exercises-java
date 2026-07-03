@@ -2,4 +2,4 @@
 
 name: Variables
 description: |
-  Information can be placed in special "storage", and then use as many times as necessary. These storages are called modules.variables, and they help simplify the code and reduce unnecessary repetitions.
+  Information can be placed in special "storages" — variables. This lets you reuse existing data and avoid duplicating it in different parts of the code. In this module, we will look at how to change variables and name them so that reading your code is clear to any developer. You will realize that coming up with a variable name is not so simple! We will also explain how to use variables to simplify complex calculations.

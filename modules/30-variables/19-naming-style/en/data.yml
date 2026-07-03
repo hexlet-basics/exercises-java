@@ -1,10 +1,8 @@
 ---
-name: Variables and Concatenation
+name: Naming variables
 tips:
-  - >
-    Consider with which line and in what order you need to glue the
-    modules.variables together in order to get such a two-line output of the
-    letter body.
-  - >
-    Remember that you can create a string that contains only the control
-    sequence `\n`.
+  - |
+    [Snake case](https://en.wikipedia.org/wiki/Snake_case)
+definitions:
+  - name: Coding standard
+    description: a set of syntactic and stylistic rules for writing code.

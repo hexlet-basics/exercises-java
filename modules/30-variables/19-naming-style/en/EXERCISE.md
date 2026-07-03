@@ -1,18 +1,8 @@
 
-Sites are constantly sending emails to their users. A typical task is to make an automatic sending of a personal letter, where the user name is in the header. If somewhere in the site base the name of the person is stored as a string, then the task of generating the header is reduced to concatenation: for example, you need to glue the string `Hello` with the string where the name is written.
-
-Write a program that will generate the header and body of the letter, using the ready-made variables, and display the resulting lines on the screen.
-
-For the title, use the variables `firstName` and `greeting`, a comma and an exclamation point. Display it in the correct order.
-
-For the body of the letter, use the variables `info` and `intro`, with the second sentence should be on a new line.
-
-The result on the screen will look like this:
+Create two variables named "first number" and "second number" in English, using lowerCamelCase. Write the number `11` into the first variable, and `-100` into the second. Print the product of the numbers written in the resulting variables to the screen.
 
 ```text
-Hello, Joffrey!
-Here is an important information about your account security.
-We couldn't verify you mother's maiden name.
+-1100
 ```
 
-Perform the job using only two `System.out.print`.
+The code will work with any names, and our system always checks only the result on the screen, so completing this task is your responsibility.
