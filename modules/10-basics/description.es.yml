@@ -1,4 +1,4 @@
 ---
 name: Fundamentos de Java
 description: |
-  Aprenderemos Java desde cero, desde los conceptos básicos. El primer módulo es una base sólida para escribir programas significativos. En él, aprenderemos cómo escribir nuestro primer código en Java. Explicaremos qué son los comentarios y para qué sirven. A través de la verificación de sus soluciones, veremos qué es la prueba y cómo leer la salida de las pruebas.
+  Aprenderemos Java desde cero, desde lo más básico. El primer módulo es una base para escribir programas significativos. En él, veremos cómo darle un comando a la computadora en Java y escribir nuestro primer código. Explicaremos qué son las instrucciones y los comentarios y para qué sirven. A través del ejemplo de la verificación de tus soluciones en el sitio, veremos qué es el testing y cómo leer la salida de las pruebas. Explicaremos por qué no se pueden violar las reglas gramaticales de un lenguaje de programación.

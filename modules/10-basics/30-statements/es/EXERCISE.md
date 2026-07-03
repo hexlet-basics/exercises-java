@@ -1,4 +1,4 @@
-Imprime en pantalla uno tras otro tres nombres: *Robert*, *Stannis*, *Renly*. Como resultado, se mostrará en pantalla:
+Muestra en la pantalla, uno tras otro, tres nombres: *Robert*, *Stannis*, *Renly*. Como resultado, en la pantalla debería aparecer:
 
 ```text
 Robert
@@ -6,4 +6,4 @@ Stannis
 Renly
 ```
 
-Utiliza una llamada `System.out.println()` para cada nombre.
+Usa una llamada `System.out.println()` propia para cada nombre.

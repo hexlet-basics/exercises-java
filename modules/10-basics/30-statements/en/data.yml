@@ -1,0 +1,14 @@
+---
+name: Statements
+tips:
+  - |
+    [What is a compiler?](https://guides.hexlet.io/compiler/)
+definitions:
+  - name: Compiler
+    description: >-
+      a program that converts Java source code into a format executed by the
+      Java Virtual Machine (JVM).
+  - name: Statement
+    description: >-
+      a command for the computer written in a programming language. Java code
+      is a set of statements, each of which ends with a `;` character.

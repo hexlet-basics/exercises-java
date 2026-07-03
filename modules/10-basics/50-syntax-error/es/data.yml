@@ -1,9 +1,13 @@
 ---
-name: Errores de sintaxis
+name: Errores de formato (sintaxis)
+tips:
+  - >
+    [Editor con resaltado de
+    sintaxis](https://code.visualstudio.com/)
 definitions:
   - name: Compilador
     description: >-
-      Un programa que realiza la transformación del código fuente a un lenguaje
-      de bajo nivel adecuado para la ejecución.
+      Un programa que transforma el código fuente a un lenguaje de bajo nivel
+      adecuado para la ejecución.
   - name: Error de sintaxis
     description: Una violación de las reglas gramaticales del lenguaje de programación.
