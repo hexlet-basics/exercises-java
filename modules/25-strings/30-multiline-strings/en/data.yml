@@ -1,0 +1,11 @@
+---
+name: Multiline strings
+definitions:
+  - name: Text block
+    description: >-
+      a string literal of several lines, written between triple double
+      quotes `"""`.
+tips:
+  - >
+    [Text
+    blocks](https://docs.oracle.com/en/java/javase/21/text-blocks/index.html)

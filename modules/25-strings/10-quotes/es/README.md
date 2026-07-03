@@ -1,44 +1,107 @@
+Las cadenas de texto en Java aparecen a cada paso. Con su ayuda trabajamos con texto, mostramos mensajes en la pantalla, procesamos la entrada del usuario e intercambiamos datos con sistemas externos.
+
+Desde el punto de vista de Java, una cadena de texto es un conjunto de caracteres encerrado entre comillas dobles. Veamos algunos ejemplos.
+
 ```java
-"Hola"
-"Adiós"
+"Hello"
+"Goodbye"
 "G"
 " "
 ""
 ```
 
-¿Cuáles de estas cinco opciones son cadenas de texto? Con las primeras dos está claro: son definitivamente cadenas de texto, ya hemos trabajado con construcciones similares. ¿Pero qué pasa con las demás?
+Todas estas variantes son cadenas de texto.
 
-Cualquier carácter individual entre comillas es una cadena de texto. Una cadena de texto vacía `""` también es una cadena de texto. Es decir, consideramos como cadena de texto todo lo que está dentro de las comillas, incluso si es un espacio, un solo carácter o la ausencia total de caracteres.
+- `"Hello"` y `"Goodbye"` son cadenas de varios caracteres
+- `"G"` es una cadena de un solo carácter
+- `" "` es una cadena de un solo espacio
+- `""` es una cadena vacía, no contiene ningún carácter. Cumple el mismo papel que el 0 en matemáticas
 
-Imagina que quieres imprimir la frase *la madre del dragón*. El apóstrofe antes de la letra **s** es un carácter igual que una comilla simple. Intentemos. Esta versión del programa funcionará correctamente:
+Todo lo que está dentro de las comillas se considera una cadena de texto, aunque solo haya un espacio o nada en absoluto.
+
+Si mostramos estas cadenas en la pantalla, `"Hello"` y `"Goodbye"` se verán con claridad. En cambio, `" "` y `""` resultan confusas. Mostrar una cadena vacía se ve como una ausencia total de texto, mientras que una cadena con un espacio muestra un "espacio vacío" que visualmente es difícil de distinguir del vacío. Java distingue con claridad estos casos. Una cadena vacía significa la ausencia de caracteres, mientras que una cadena con un espacio contiene un carácter de espacio concreto.
+
+Pregunta de control. ¿Son iguales estas cadenas o no?
 
 ```java
-System.out.println("La madre del dragón");
+"hexlet"
+" hexlet"
 ```
 
-Pero, ¿qué pasa si queremos crear una cadena de texto como esta:
+## Terminología. ¿Cadena o línea?
+
+En programación existe una trampa terminológica.
+
+- Una cadena (string) es un tipo de dato, ese mismo conjunto de caracteres entre comillas, por ejemplo `"hello"`
+- Una línea (line) es una línea de texto en un archivo o en el código
+
+Por ejemplo, en el código de abajo hay una línea, pero no una cadena.
+
+```java
+System.out.println(5);
+```
+
+Para no confundirnos, en este curso nos atendremos a las siguientes formulaciones.
+
+- Cadena, cuando hablamos del tipo de dato
+- Línea, cuando hablamos de las líneas de código
+
+## Solo comillas dobles
+
+En algunos lenguajes las cadenas se pueden escribir tanto con comillas simples como con comillas dobles. En Java una cadena siempre se encierra entre comillas dobles `"`.
+
+```java
+System.out.println("Hello");
+```
+
+Las comillas simples también aparecen en Java, pero esa es una historia completamente distinta. Una notación como `'A'` representa un solo carácter, no una cadena. Por eso, cuando se trata de texto, usamos solo comillas dobles.
+
+## El problema con las comillas dentro de una cadena
+
+Imagina que quieres imprimir la frase *Dragon's mother*. En ella hay un apóstrofo (*'s*), que coincide con el carácter de comilla simple. Como la cadena está delimitada por comillas dobles, el apóstrofo que hay dentro no molesta.
+
+```java
+System.out.println("Dragon's mother");
+// => Dragon's mother
+```
+
+Java entiende que una comilla simple dentro de una cadena es un carácter corriente. La cadena empieza y termina con comillas dobles, y todo lo que hay entre ellas se considera su contenido.
+
+Las dificultades empiezan cuando dentro de la cadena hacen falta las propias comillas dobles. Imagina que queremos mostrar el siguiente texto:
 
 ```text
-La madre del dragón dijo "No"
+Dragon's mother said "No"
 ```
 
-En ella hay tanto comillas simples como comillas dobles. ¿Qué hacer en esta situación? Si simplemente intentamos imprimir esta cadena de texto, obtendremos un error:
+Si insertamos las comillas dobles directamente dentro de la cadena, el programa no compilará.
 
 ```java
-// Terminará con un error de sintaxis
-System.out.println("La madre del dragón dijo "No"");
+// Termina con un error de sintaxis
+System.out.println("Dragon's mother said "No"");
 ```
 
-Desde el punto de vista de Java, esta es una construcción extraña de dos componentes de tres:
+Desde el punto de vista de Java, aquí resulta una construcción extraña de tres partes.
 
-- La cadena de texto *"La madre del dragón dijo "*
-- La cadena de texto *""*
-- La palabra *No* entre ellos, que no se considera una cadena de texto porque no está entre comillas
+- La cadena `"Dragon's mother said "`
+- La palabra `No`, que no está entre comillas y por eso no se considera una cadena
+- La cadena vacía `""`
 
-No se puede imprimir esta cadena de texto de la manera habitual. Para imprimir cadenas de texto como esta, se utiliza el **carácter de escape**: `\`.
+Java decidirá que la primera cadena termina antes de la palabra *No*, y a continuación viene código incomprensible. Eso es lo que provoca el error.
 
-Si colocamos `\` antes de una comilla, significa que la comilla debe considerarse como parte de la cadena de texto, no como el inicio o el final de la misma:
+## El carácter de escape
+
+Para colocar una comilla doble dentro de una cadena, se la escapa con una barra invertida `\`. Le indica al compilador que el carácter que le sigue es parte de la cadena, no el límite de la cadena.
 
 ```java
-System.out.println("La madre del dragón dijo \"No\"");
+System.out.println("Dragon's mother said \"No\"");
+// => Dragon's mother said "No"
+```
+
+Aquí escapamos las comillas dobles dentro de una cadena encerrada entre comillas dobles. Java interpreta `\"` como un único carácter de comilla, no como dos caracteres separados. Estas notaciones se llaman secuencias de escape.
+
+Para mostrar la propia barra invertida, también se la escapa con una segunda barra.
+
+```java
+System.out.println("\\");
+// => \
 ```
