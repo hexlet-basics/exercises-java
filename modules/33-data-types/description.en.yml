@@ -1,5 +1,5 @@
 ---
 
-name: Data Types
+name: Data Types in Java
 description: |
-   Java is a strongly typed language with different data types. You will find out what this means in the current module.
+  Java is a language with strict static typing. How this affects the code, what types are, what kinds there are, and who infers them. All this is studied in this module.

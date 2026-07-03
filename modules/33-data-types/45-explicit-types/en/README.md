@@ -1,62 +1,62 @@
-
-Data types in Java are divided into two important groups according to how variables of this type are related and the values stored in them.
-
-What will the following code output?
+Until now, when defining variables, we used the keyword `var`. This may surprise those who already have experience with Java. Usually the definition of variables is shown like this:
 
 ```java
-var a = 10;
-var b = a;
-a = 20;
-System.out.print(b);
+int x = 3;
+String greeting = "Hello Hexlet!";
 ```
 
-10 will be output, because with the assignment b = a, the number 10, which at this moment is contained in a, will be written into the variable b.
+The time has come to reveal the cards. Java is a statically typed language. In such languages, the type of a variable is fixed at its declaration and does not change until the end of the program. The type is specified before the variable name. In the example above, this is an integer (*int*) and a string (*String*).
 
-If you write
+## The type is specified explicitly and does not change
+
+In a statically typed language, every variable has a type, and it is fixed. If a variable is declared as *int*, then only an integer can be put into it:
 
 ```java
-var a = "string";
-var b = a;
+int n = 5;
+double x = 1.5;
+boolean flag = true;
+char c = 'A';
+String s = "hi";
 ```
 
-- then the situation will be different.
-
-#### Briefly
-
-Primitive data types in Java:
-
-- Strings in quotes
-- The numbers `7`,` -198`, `0` and so on
-
-In fact, there are more, but now let's talk only about them.
----
-
-There are different ways to present data in programs.
-
-There are **strings** - character sets in quotes like `"Hello, World!"`. There are **integers** - for example, `7`, `-198`, `0`. These are two different categories of information - two different **data types**.
-
-The multiplication operation makes sense for integers but it does not make sense for strings: to multiply the word "mother" by the word "notepad" is nonsense.
-
-**The data type determines what can be done with the elements of a specific set of information.**
-
-A programming language recognizes types. Therefore, Java will not allow us to multiply a line by line (“multiply text by text”). But it will allow to multiply an integer by another integer. The presence of types and such restrictions in the language protects programs from random errors.
-
-Unlike strings, numbers do not need to be wrapped in quotes. To print the number 5, just write:
+An attempt to put a value of another type into a variable leads to an error. A string cannot be assigned to a variable of type *int*:
 
 ```java
-System.out.print(5);
+// Error: incompatible types: java.lang.String cannot be converted to int
+int ops = "test";
 ```
 
-Note that the number `5` and the string `"5"` are completely different things, although the output of `println` for this data is identical.
+## When types are checked
 
-Integers (`1`, `34`, `-19`, etc.) and rational numbers (`1.3`, `1.0`, `-14.324`, etc.) are two separate **types data**. This separation is associated with the characteristics of the device computers. **There are other types**, we will get to know them later.
+Java checks types in advance, even before the program runs, at the compilation stage. The compiler reads the code, checks the types of values and operations, and refuses to build the program if it finds a mismatch. That is why we will see the error from the example above before the program starts working.
 
-Here is another example, but with a rational number:
+In this, Java differs from languages with dynamic typing, where types are checked while the program is running. In such languages, a type mismatch error surfaces only at the moment the appropriate line of code executes. Static checking catches some errors earlier and helps not to carry them all the way to the user.
+
+Explicit type specification has a second advantage as well. The type next to the variable name works as a hint for whoever reads the code. From the line `int count = 0;` it is immediately clear that the variable stores an integer. Java takes control of types upon itself, and the code becomes clearer for people.
+
+## When Java casts types itself
+
+Sometimes values of different numeric types appear in one expression. If you add an integer and a rational number, Java itself casts the integer to a rational one:
 
 ```java
-System.out.print(10.234);
+double result = 1 + 1.5;
+System.out.println(result); // => 2.5
 ```
 
-The lines in programming are called "strings", and the lines of text files are called "lines". For example, the code above has one line (lines), and there are no lines (strings). In all the lessons we will say **string** to indicate the data type "string", and **line** to indicate lines (lines) in files).
+The integer `1` turns into `1.0`, and the result comes out as `2.5`. This happens because any integer can be represented exactly as a rational number, and no data is lost. But Java will not mix a string and a number by itself. For that, an explicit conversion is needed, and we will learn to do it.
 
-Programmers themselves can create new data types, albeit with certain restrictions.
+## Type inference and the word var
+
+Earlier in Java variables were created only with an explicit type specification, until the word `var` appeared. This is a special keyword that turns on the mechanism of **type inference**. Type inference itself determines the type of the assigned value and binds it to the variable:
+
+```java
+// The compiler understands that this is an integer
+var age = 33;
+
+// And this is a string
+var name = "Tom";
+```
+
+Type inference appeared in Java in 2018, although in some other languages it has existed for several decades. The first language with type inference is called ML, and it appeared as early as 1973. Since then, type inference has been added to OCaml, Haskell, C#, F#, Kotlin, Scala, and many other languages.
+
+The word `var` does not cancel static typing. The variable still has a type; the compiler infers it. After that the type is just as fixed, and you will not be able to put a value of another type into such a variable. Type inference is preferable in most situations. It happens that the inferred type does not suit us, and then the type is specified explicitly.

@@ -1,5 +1,16 @@
 ---
-name: Data Types
+name: Explicit typing
 tips:
   - |
+    [Typing](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
+  - |
     [Article on fractional numbers](https://habrahabr.ru/post/112953/)
+definitions:
+  - name: Static typing
+    description: >-
+      an approach in which the type of a variable is fixed at its declaration and
+      is checked in advance, at the compilation stage, before the program runs.
+  - name: Type inference
+    description: >-
+      a mechanism that itself determines the type of the assigned value and binds
+      it to the variable. In Java it is turned on with the keyword `var`.

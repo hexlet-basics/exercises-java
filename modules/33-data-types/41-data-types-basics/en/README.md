@@ -1,62 +1,44 @@
+Programs work with different information. This can be text, numbers, dates, boolean values. Inside high-level programming languages, every value belongs to some type. For example, strings belong to the type *String*, and integers belong to the type *int*.
 
-Data types in Java are divided into two important groups according to how variables of this type are related and the values stored in them.
+Why are types needed? They protect the program from hard-to-catch errors. A type defines two things.
 
-What will the following code output?
+* Allowed values. For example, numbers in Java are divided into two groups. Integers belong to the type *int*, and rational (fractional) numbers to the type *double*. This division is related to the specifics of how the hardware works.
+* A set of allowed operations. For example, the multiplication operation makes sense for integers. But it does not make sense for strings. Multiplying the word "mother" by the word "notepad" is nonsense.
 
-```java
-var a = 10;
-var b = a;
-a = 20;
-System.out.print(b);
+A programming language recognizes types. That is why Java will not allow multiplying a string by a string, but will allow multiplying an integer by another integer. The presence of types and such restrictions protects programs from accidental errors:
+
+```text
+"one" * "two"
+Error:
+bad operand types for binary operator '*'
+  first type:  java.lang.String
+  second type: java.lang.String
 ```
 
-10 will be output, because with the assignment b = a, the number 10, which at this moment is contained in a, will be written into the variable b.
+## Numbers and strings belong to different types
 
-If you write
-
-```java
-var a = "string";
-var b = a;
-```
-
-- then the situation will be different.
-
-#### Briefly
-
-Primitive data types in Java:
-
-- Strings in quotes
-- The numbers `7`,` -198`, `0` and so on
-
-In fact, there are more, but now let's talk only about them.
----
-
-There are different ways to present data in programs.
-
-There are **strings** - character sets in quotes like `"Hello, World!"`. There are **integers** - for example, `7`, `-198`, `0`. These are two different categories of information - two different **data types**.
-
-The multiplication operation makes sense for integers but it does not make sense for strings: to multiply the word "mother" by the word "notepad" is nonsense.
-
-**The data type determines what can be done with the elements of a specific set of information.**
-
-A programming language recognizes types. Therefore, Java will not allow us to multiply a line by line (“multiply text by text”). But it will allow to multiply an integer by another integer. The presence of types and such restrictions in the language protects programs from random errors.
-
-Unlike strings, numbers do not need to be wrapped in quotes. To print the number 5, just write:
+How does Java understand what type of data it is dealing with? By the way the value is written. A number is written without quotes, while strings are always enclosed in double quotes. For example, the value `"234"` is considered a string, even though digits are written inside it:
 
 ```java
-System.out.print(5);
+System.out.println(5);     // => 5
+System.out.println("234"); // => 234
 ```
 
-Note that the number `5` and the string `"5"` are completely different things, although the output of `println` for this data is identical.
+On the screen the result looks similar, but inside the program these are different values. The number `5` belongs to the type *int*, and `"234"` to the type *String*. Java will not let you add a string and a number directly without an explicit indication of how to convert the data.
 
-Integers (`1`, `34`, `-19`, etc.) and rational numbers (`1.3`, `1.0`, `-14.324`, etc.) are two separate **types data**. This separation is associated with the characteristics of the device computers. **There are other types**, we will get to know them later.
+## Primitive and reference types
 
-Here is another example, but with a rational number:
+Some types are built into the language. They are called primitive. Besides integers *int* and rational numbers *double*, they include the boolean type *boolean* with the values `true` and `false`, as well as the character type *char*:
 
 ```java
-System.out.print(10.234);
+int n = 5;           // integer
+double x = 1.5;      // rational number
+boolean flag = true; // boolean value
+char c = 'A';        // one character
 ```
 
-The lines in programming are called "strings", and the lines of text files are called "lines". For example, the code above has one line (lines), and there are no lines (strings). In all the lessons we will say **string** to indicate the data type "string", and **line** to indicate lines (lines) in files).
+Pay attention to the type *char*. A character is written in single quotes, for example `'A'`. But a string of one character is enclosed in double quotes, for example `"A"`. These are different values of different types.
 
-Programmers themselves can create new data types, albeit with certain restrictions.
+The type *String* belongs to reference types and describes a set of characters, that is, text. At the same time, strings are used on par with primitive types.
+
+There are many data types in Java, plus you can create your own. Gradually we will get to know all the necessary ones and learn to use them correctly.

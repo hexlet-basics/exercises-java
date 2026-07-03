@@ -1,1 +1,1 @@
-Crea una cadena de texto *One more time* con una especificación explícita de tipo y muéstrala en pantalla.
+Crea la cadena *One more time* con una indicación explícita del tipo y muéstrala en pantalla.
