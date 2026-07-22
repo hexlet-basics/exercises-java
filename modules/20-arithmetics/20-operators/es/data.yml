@@ -1,16 +1,18 @@
 ---
 name: Operadores
+tips:
+  - >-
+    Separa los operadores aritméticos de los operandos con espacios; es un buen
+    estilo de programación.
 definitions:
   - name: Operación aritmética
     description: suma, resta, multiplicación y división.
   - name: Operador
     description: >-
-      un símbolo especial que crea una operación. Por ejemplo, `+` crea una
+      un símbolo especial que crea una operación. Por ejemplo, `+` crea la
       operación de suma.
   - name: Operando
-    description: >-
-      un objeto que participa en una operación. `3 * 6`: aquí, 3 y 6 son
-      operandos.
+    description: 'un objeto que participa en una operación. `3 * 6`: aquí 3 y 6 son los operandos.'
   - name: Operación unaria
     description: >-
       una operación con un solo operando. Por ejemplo, `-3` es una operación

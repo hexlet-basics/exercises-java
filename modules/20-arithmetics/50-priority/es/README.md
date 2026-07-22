@@ -1,36 +1,64 @@
-Observa detenidamente la expresión *2 + 2 * 2* y calcula mentalmente el resultado. La respuesta correcta es *6*. Si obtuviste *8*, entonces esta lección es para ti.
+Mira la expresión `2 + 2 * 2` y calcula la respuesta mentalmente. La respuesta correcta es `6`. Si te salió `8`, esta lección es para ti.
 
-En matemáticas escolares, estudiamos el concepto de "prioridad de la operación". La prioridad determina en qué secuencia deben realizarse las operaciones.
+```java
+System.out.println(2 + 2 * 2); // 6
+```
 
-Por ejemplo, la multiplicación y la división tienen mayor prioridad que la suma y la resta:
+El resultado es `6`, y no `8`, debido a la prioridad de las operaciones. La prioridad determina en qué orden se realizan las acciones. La multiplicación y la división van antes que la suma y la resta:
 
 ```text
-2 + 3 * 2 = 8
+Prioridad de las operaciones (de mayor a menor):
+
+  * / %      multiplicación, división, resto
+   ↓
+  + -        suma, resta
 ```
 
-Sin embargo, a menudo los cálculos deben realizarse en un orden diferente al de la prioridad estándar. En situaciones complicadas, se puede especificar la prioridad utilizando paréntesis, al igual que en la escuela, por ejemplo:
+Por eso, en el ejemplo anterior primero se calcula `2 * 2`, y solo después se suma el dos al resultado.
 
-```
-(2 + 2) * 2
-```
-
-Los paréntesis se pueden colocar alrededor de cualquier operación. Pueden anidarse tantas veces como sea necesario. Aquí tienes un par de ejemplos:
+Cuando hay operaciones de la misma prioridad juntas, se realizan de izquierda a derecha:
 
 ```java
-System.out.println(3 * (4 - 2)); // => 6
-System.out.println(7 * 3 + (4 / 2) - (8 + (2 - 1))); // => 14
+System.out.println(8 / 2 * 3); // 12, primero 8 / 2 = 4, luego 4 * 3 = 12
 ```
 
-A veces, una expresión puede ser difícil de comprender visualmente. En ese caso, se pueden agregar paréntesis para hacerla más clara, aunque no afectarán la prioridad:
+## Control del orden de las operaciones
+
+A veces los cálculos deben ir de una forma distinta a la que dicta la prioridad. Entonces el orden se define con paréntesis, igual que en la escuela:
+
+```java
+System.out.println((2 + 2) * 2); // 8
+```
+
+Aquí los paréntesis obligan a sumar primero `2 + 2`, y solo después a multiplicar por dos.
+
+Los paréntesis se pueden poner alrededor de cualquier parte de una expresión y anidar unos dentro de otros tantas veces como se quiera:
+
+```java
+System.out.println(3 * (4 - 2));                     // 6
+System.out.println(7 * 3 + (4 / 2) - (8 + (2 - 1))); // 14
+```
+
+En el segundo ejemplo primero se calculan los paréntesis. `4 / 2` da `2`, y `8 + (2 - 1)` da `9`. Queda `21 + 2 - 9`, y al final `14`.
+
+Recuerda una regla. Cierra siempre los paréntesis. Un paréntesis sin cerrar provoca un error, y hasta los programadores experimentados se olvidan del de cierre.
+
+> Escribe los paréntesis en pareja de inmediato. Por ejemplo, escribe `()` y luego rellena la parte interior. La mayoría de los editores de código (incluido el nuestro) añaden ellos mismos el paréntesis de cierre en cuanto escribes el de apertura.
+
+## Paréntesis para la legibilidad
+
+A veces una expresión funciona correctamente, pero se ve enredada. En esos casos se añaden paréntesis para mayor claridad. No afectan al resultado, pero se vuelve más cómodo de leer.
 
 Antes:
+
 ```java
-System.out.println(8 / 2 + 5 - -4 / 2); // => 11
+System.out.println(8 / 2 + 5 - -4 / 2); // 11
 ```
 
 Después:
+
 ```java
-System.out.println(((8 / 2) + 5) - (-4 / 2)); // => 11
+System.out.println(((8 / 2) + 5) - (-4 / 2)); // 11
 ```
 
-Recuerda: el código se escribe para las personas, porque las personas lo leerán, y las máquinas solo lo ejecutarán. Para las máquinas, no hay código "más" o "menos" comprensible, independientemente de si el código es correcto o no.
+El código lo escriben y lo leen personas, mientras que la máquina solo lo ejecuta. Para la máquina no hay código más o menos comprensible; le basta con que el código sea sintácticamente correcto. Una expresión ordenada con paréntesis ayuda a la persona, sobre todo al trabajar en equipo y al analizar errores.

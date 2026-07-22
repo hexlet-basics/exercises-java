@@ -1,0 +1,21 @@
+---
+name: Operators
+tips:
+  - >-
+    Separate arithmetic operators from operands with spaces; it's good
+    programming style.
+definitions:
+  - name: Arithmetic operation
+    description: addition, subtraction, multiplication, and division.
+  - name: Operator
+    description: >-
+      a special symbol that creates an operation. For example, `+` creates the
+      addition operation.
+  - name: Operand
+    description: 'an object that participates in an operation. `3 * 6`: here 3 and 6 are the operands.'
+  - name: Unary operation
+    description: >-
+      an operation with one operand. For example, `-3` is a unary operation for
+      getting the number opposite to three.
+  - name: Binary operation
+    description: an operation with two operands. For example, `3 + 9`.

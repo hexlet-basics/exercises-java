@@ -1,0 +1,14 @@
+---
+name: Arithmetic operations
+tips:
+  - >-
+    Separate arithmetic operators from operands with spaces; it's good
+    programming style. This makes the expression easier to read.
+  - Division by zero results in an error.
+  - >-
+    [Division with remainder](https://en.wikipedia.org/wiki/Euclidean_division)
+definitions:
+  - name: Statement
+    description: >-
+      the smallest standalone part of a programming language, a command or a set
+      of commands. A program is usually a sequence of statements.

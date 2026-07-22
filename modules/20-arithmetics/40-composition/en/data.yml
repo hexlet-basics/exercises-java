@@ -1,0 +1,5 @@
+---
+name: Composition of operations
+definitions:
+  - name: Composition
+    description: a method of combining several simple operations into one complex operation.

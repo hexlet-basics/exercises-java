@@ -1,25 +1,60 @@
-¿Qué pasa si necesitamos calcular una expresión como *3 + 5 - 2*? Así es como lo escribiríamos:
+¿Qué hacer cuando en una misma línea se necesitan varias operaciones a la vez? Se escriben una tras otra, y Java procesa la expresión paso a paso siguiendo reglas estrictas.
+
+Tomemos un ejemplo solo con multiplicaciones:
 
 ```java
-System.out.println(3 + 5 - 2); // 3 + 5 - 2 => 8 - 2 => 6
+System.out.println(2 * 4 * 5 * 10); // 400
 ```
 
-Observa que la computadora realiza las operaciones aritméticas en el orden correcto: primero la división y la multiplicación, luego la suma y la resta. A veces es necesario cambiar este orden, lo veremos más adelante.
+Para entender cómo calcula Java, analicemos la expresión paso a paso:
 
-Otro ejemplo:
+- primero se calcula `2 * 4`, y queda `8 * 5 * 10`
+- luego `8 * 5`, y queda `40 * 10`
+- la última multiplicación da `400`
+
+Así las operaciones se conectan entre sí, y a partir de acciones simples se construyen expresiones cada vez más complejas.
+
+## ¿Y si las operaciones son diferentes?
+
+Mientras los operadores son iguales, todo va de izquierda a derecha. ¿Y qué pasa si mezclamos multiplicación y suma?
 
 ```java
-System.out.println(2 * 4 * 5 * 10); // 2 * 4 * 5 * 10 => 8 * 5 * 10 => 40 * 10 => 400
+System.out.println(2 + 3 * 4);
 ```
 
-Como puedes ver, las operaciones se pueden combinar entre sí y así calcular expresiones compuestas más complejas. Para entender cómo se realizan los cálculos dentro del intérprete, analicemos un ejemplo:
+¿Saldrá `20` o `14`? La respuesta es `14`.
 
 ```text
-2 * 4 * 5 * 10
+2 + 3 * 4
+    └─┬─┘
+2 +  12
+└──┬───┘
+   14
 ```
 
-En este ejemplo:
+Las operaciones tienen una prioridad, igual que en matemáticas. La multiplicación se realiza antes que la suma. Por eso primero se calcula `3 * 4`, y solo después se suma el dos. El orden se puede cambiar con paréntesis. En la expresión `(2 + 3) * 4` primero se suma `2 + 3`, y el resultado `5` se multiplica por `4`, y sale `20`.
 
-1. Primero calculamos *2 * 4* y obtenemos la expresión *8 * 5 * 10*
-2. Luego multiplicamos *8 * 5*. Al final tenemos *40 * 10*
-3. Finalmente, se realiza la última multiplicación y se obtiene el resultado *400*
+La misma regla funciona con la resta:
+
+```java
+System.out.println(10 - 2 * 3); // 4
+```
+
+Primero la multiplicación `2 * 3`, luego `10 - 6`, resultado `4`.
+
+## Números negativos dentro de una expresión
+
+Cuando en una expresión hay un menos unario, se aplica a su número antes que las demás operaciones:
+
+```java
+System.out.println(4 + -2); // 2
+System.out.println(6 - -2); // 8
+```
+
+Analicemos el segundo ejemplo. Primero el menos unario convierte `2` en `-2`, luego la operación se lee como `6 - (-2)`, y eso da `8`. Es lo mismo que `6 + 2`.
+
+## Qué hay que recordar
+
+- una expresión puede constar de varias operaciones
+- Java las evalúa paso a paso, de izquierda a derecha y teniendo en cuenta la prioridad
+- los paréntesis permiten fijar explícitamente el orden de los cálculos

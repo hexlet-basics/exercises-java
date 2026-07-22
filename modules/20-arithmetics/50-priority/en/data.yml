@@ -1,2 +1,7 @@
 ---
-name: Priority
+name: Operator priority
+definitions:
+  - name: Expression
+    description: >-
+      a sequence of actions on data that produces a result suitable for further
+      use.
