@@ -1,3 +1,8 @@
 ---
 name: Estructura Switch
-definitions: []
+tips: []
+definitions:
+  - name: switch
+    description: >-
+      forma de elegir el comportamiento según el valor de una variable mediante
+      ramas `case`, por ejemplo, `switch (count) { case 1: ... }`.

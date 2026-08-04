@@ -1,106 +1,134 @@
-Muchos lenguajes utilizan no solo la estructura condicional `if`, sino también `switch` en adición a ella. La estructura `switch` es una versión especializada de `if`, creada para algunas situaciones particulares.
+Muchos lenguajes usan no solo la construcción condicional `if`, sino también `switch` como complemento. La construcción `switch` es una versión especializada de `if`, creada para situaciones particulares.
 
-Por ejemplo, se debe utilizar cuando hay una cadena de `if else` con comprobaciones de igualdad:
+Por ejemplo, conviene usarla allí donde hay una cadena de `if else` con comprobaciones de igualdad:
 
 ```java
 if (status.equals("processing")) {
-    // Hacer algo
+    // Hacemos lo primero
 } else if (status.equals("paid")) {
-    // Hacer algo más
+    // Hacemos lo segundo
 } else if (status.equals("new")) {
-    // Hacer algo más
+    // Hacemos lo tercero
 } else {
-    // Hacer algo más
+    // Hacemos lo cuarto
 }
 ```
 
-Esta comprobación compuesta tiene una característica distintiva: cada rama aquí es una comprobación del valor de la variable `status`. La estructura `switch` permite escribir este código de forma más corta y expresiva:
+Esta comprobación compuesta tiene un rasgo distintivo. Cada rama comprueba aquí el valor de la variable `status`. La construcción `switch` escribe ese código de forma más corta y expresiva:
 
 ```java
 switch (status) {
     case "processing":
-        // Hacer algo
+        // Hacemos lo primero
         break;
     case "paid":
-        // Hacer algo más
+        // Hacemos lo segundo
         break;
     case "new":
-        // Hacer algo más
+        // Hacemos lo tercero
         break;
     default: // else
-        // Hacer algo más
+        // Hacemos lo cuarto
 }
 ```
 
-En términos de cantidad de elementos, `switch` es una estructura bastante compleja. Incluye:
+```text
+switch (valor) {
+  │
+  ├── case "a" → bloque 1
+  ├── case "b" → bloque 2
+  ├── case "c" → bloque 3
+  └── default  → bloque por defecto
+}
+```
 
-* Una declaración externa con la palabra clave `switch`. Tiene dos elementos:
-    - Una variable, cuyos valores serán utilizados por `switch` para seleccionar el comportamiento
-    - Llaves para los casos de selección
-* Las construcciones `case` y `default`, dentro de las cuales se describe el comportamiento para diferentes valores de la variable considerada. Cada `case` corresponde a un `if`, como en el ejemplo anterior. Aquí, `default` es una situación especial que corresponde a la rama `else` en las estructuras condicionales. Al igual que con `else`, no es obligatorio especificar `default`.
-* La construcción `break`, que evita la "caída". Si no se especifica, después de ejecutar el `case` necesario, la ejecución pasará al siguiente `case`. Este ciclo se repetirá hasta el `break` más cercano o hasta el final del `switch`.
+Desde el punto de vista de la cantidad de elementos, `switch` es una construcción bastante compleja. Incluye:
 
-Las llaves en `switch` no definen un bloque de código, como en otros lugares. Dentro de ellas solo se permite la sintaxis que se muestra arriba, donde se pueden utilizar `case` o `default`. Pero dentro de cada `case` (y `default`) la situación es diferente. Aquí se puede ejecutar cualquier código arbitrario:
+* La descripción externa con la palabra clave `switch`. En ella hay dos elementos: la variable por cuyos valores `switch` elige el comportamiento, y las llaves para las variantes de elección
+* Las construcciones `case` y `default`, dentro de las cuales se describe el comportamiento para los distintos valores de la variable. Cada `case` corresponde a un `if`, como en el ejemplo de arriba. Aquí `default` es una situación especial que corresponde a la rama `else` de las construcciones condicionales. Igual que con `else`, indicar `default` no es obligatorio
+* La construcción `break`, que evita la caída de una rama a otra. Sin ella, después del `case` necesario la ejecución pasará al `case` siguiente. Y así seguirá hasta el `break` más próximo o hasta el final del `switch`
+
+Las llaves en `switch` no definen un bloque de código, como en otros lugares. Dentro solo se admite la sintaxis que se muestra arriba. Allí se pueden usar `case` o `default`. Pero dentro de cada `case` y `default` la situación es otra. Ahí se ejecuta cualquier código arbitrario:
 
 ```java
 switch (count) {
-  case 1:
-    // Hacer algo útil
-    break;
-  case 2:
-    // Hacer algo útil
-    break;
-  default:
-    // Hacer algo
+    case 1:
+        // Hacemos algo útil
+        break;
+    case 2:
+        // Hacemos algo útil
+        break;
+    default:
+        // Hacemos algo
 }
 ```
 
-A veces, el resultado obtenido dentro de un `case` es el final de la ejecución del método que contiene el `switch`. En este caso, es necesario devolverlo de alguna manera al exterior. Para resolver esta tarea, hay dos formas.
+## La devolución de un valor desde switch
 
-La primera forma es crear una variable antes del `switch`, llenarla en los `case` y luego devolver el valor de esta variable al exterior:
+A veces el resultado obtenido dentro de un `case` termina el trabajo del método que contiene el `switch`. Entonces hay que devolverlo de alguna manera hacia fuera. Para eso hay dos formas.
+
+La primera forma crea una variable antes del `switch`, la rellena en los `case` y al final la devuelve hacia fuera:
 
 ```java
-class App {
-    public static String getExplanation(int count) {
-        // Declarar la variable
-        String result;
+public static String getExplanation(int count) {
+    // Declaramos la variable
+    String result;
 
-        // Llenarla
-        switch(count) {
-            case 1:
-                result = "uno";
-                break;
-            case 2:
-                result = "dos";
-                break;
-            default:
-                result = null;
-        }
+    // La rellenamos
+    switch (count) {
+        case 1:
+            result = "one";
+            break;
+        case 2:
+            result = "two";
+            break;
+        default:
+            result = null;
+    }
 
-        // Devolverla
-        return result;
+    // La devolvemos
+    return result;
+}
+```
+
+La segunda forma es más simple y corta. En lugar de una variable, dentro del `case` se puede hacer una devolución normal desde el método. Después de `return` no se ejecuta ningún código, por eso aquí `break` no hace falta:
+
+```java
+public static String getExplanation(int count) {
+    switch (count) {
+        case 1:
+            return "one";
+        case 2:
+            return "two";
+        default:
+            return null;
     }
 }
 ```
 
-La segunda forma es más simple y corta. En lugar de crear una variable, se puede utilizar `case`, dentro del cual se puede hacer un retorno normal del método. Después de `return`, no se ejecuta ningún código, por lo que podemos eliminar el `break`:
+## La expresión switch
+
+El `switch` clásico tiene una forma moderna con sintaxis de flecha. Se llama expresión switch y devuelve el valor directamente. Cada rama se escribe como `case valor -> resultado;`. Aquí no hacen falta ni `break` ni la caída entre ramas:
 
 ```java
-class App {
-    public static String getExplanation(int count) {
-
-        switch(count) {
-            case 1:
-                return "uno";
-            case 2:
-                return "dos";
-            default:
-                return null;
-        }
-    }
+public static String getExplanation(int count) {
+    return switch (count) {
+        case 1 -> "one";
+        case 2 -> "two";
+        default -> null;
+    };
 }
 ```
 
-Aunque `switch` se encuentra en el código, técnicamente siempre se puede prescindir de él.
+Una sola rama atiende varios valores si se enumeran separados por comas:
 
-La utilidad de esta estructura radica en que expresa mejor la intención del programador cuando se necesita comprobar valores específicos de una variable. A diferencia de los bloques `else if`, el código con `switch` es un poco más largo, pero mucho más fácil de leer.
+```java
+String season = switch (month) {
+    case 12, 1, 2 -> "winter";
+    case 3, 4, 5 -> "spring";
+    case 6, 7, 8 -> "summer";
+    default -> "autumn";
+};
+```
+
+`switch` aparece en el código, pero técnicamente siempre se puede prescindir de él. La utilidad de esta construcción está en que expresa mejor la intención del programador cuando hay que comprobar valores concretos de una variable. En comparación con los bloques `else if`, el código con `switch` se lee de forma más clara.

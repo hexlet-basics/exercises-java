@@ -11,3 +11,5 @@ App.convertString(""); // ""
 
 * `StringUtils.reverse()` – invierte una cadena de texto
 * `Character.isUpperCase()` – verifica si un carácter está en mayúscula
+
+Prueba a escribir dos variantes del método: con un if-else normal y con el operador ternario.

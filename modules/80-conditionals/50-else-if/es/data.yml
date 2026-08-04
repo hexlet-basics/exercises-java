@@ -1,2 +1,6 @@
 ---
 name: Estructura else if
+tips: []
+definitions:
+  - name: else if
+    description: forma de indicar varias condiciones alternativas.

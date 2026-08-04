@@ -1,0 +1,5 @@
+---
+
+name: Conditional constructs
+description: |
+  The task of a predicate function is to get an answer to a question, but usually that is not enough and a certain action has to be performed depending on the answer. If and Switch are Java constructs with the help of which a programmer can choose the needed behavior of the program depending on different conditions: skip some instructions and execute others. That is what we will study in practice in this module.
