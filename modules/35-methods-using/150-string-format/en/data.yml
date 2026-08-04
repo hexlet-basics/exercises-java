@@ -1,0 +1,11 @@
+---
+name: String formatting
+tips: []
+definitions:
+  - name: Template
+    description: >-
+      a string with `%s` markers, in whose places values are substituted.
+  - name: String.format
+    description: >-
+      a method that builds a string from a template and values, for example
+      `String.format("Hello, %s!", "World")` returns `Hello, World!`.

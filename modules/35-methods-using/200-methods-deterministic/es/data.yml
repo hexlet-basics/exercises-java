@@ -1,6 +1,10 @@
 ---
 name: Determinismo
 tips:
-  - >
-    [Funciones
-    deterministas](https://es.wikipedia.org/wiki/Función_pura#Determinismo_de_la_función)
+  - |
+    [Algoritmo determinista](https://es.wikipedia.org/wiki/Algoritmo_determinista)
+definitions:
+  - name: Efecto secundario
+    description: >-
+      acción que modifica el entorno externo (el entorno de ejecución). Por
+      ejemplo, la salida en pantalla o el envío de un correo.

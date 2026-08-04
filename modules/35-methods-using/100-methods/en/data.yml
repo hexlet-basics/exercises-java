@@ -1,0 +1,13 @@
+---
+name: Methods and their call
+tips: []
+definitions:
+  - name: Method
+    description: >-
+      an operation that belongs to an object or a class and is able to accept
+      data and return a result. A method is called through a dot, for example
+      `"Hexlet".length()`.
+  - name: Argument
+    description: >-
+      the information that a method receives when it is called. For example,
+      `Math.max(2, 3)` passes the arguments `2` and `3` to the `max()` method.

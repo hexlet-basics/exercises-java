@@ -1,0 +1,5 @@
+---
+
+name: Calling methods
+description: |
+  To express any arbitrary operation in programming, there is the concept of a "function". Functions are the building blocks that programmers use to build systems. In Java, functions are called methods. In this module, we will learn how to use methods that already exist. We will look at the method signature in the documentation and figure out how to use it.

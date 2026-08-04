@@ -1,2 +1,8 @@
 ---
-name: Cadenas de llamadas de métodos
+name: Cadenas de llamadas a métodos
+definitions:
+  - name: Cadena de métodos
+    description: >-
+      una técnica en la que los métodos se llaman uno tras otro, y cada
+      siguiente se aplica al resultado del anterior. Por ejemplo,
+      `"  Hexlet  ".trim().toLowerCase()`.

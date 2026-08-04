@@ -1,0 +1,11 @@
+---
+name: Formateo de cadenas
+tips: []
+definitions:
+  - name: Plantilla
+    description: >-
+      cadena con marcas `%s`, en cuyos lugares se sustituyen valores.
+  - name: String.format
+    description: >-
+      método que construye una cadena a partir de una plantilla y valores, por
+      ejemplo `String.format("Hello, %s!", "World")` devuelve `Hello, World!`.

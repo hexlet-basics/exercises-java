@@ -1,0 +1,10 @@
+---
+name: Determinism
+tips:
+  - |
+    [Pure function](https://en.wikipedia.org/wiki/Pure_function)
+definitions:
+  - name: Side effect
+    description: >-
+      an action that changes the external environment (the execution
+      environment). For example, printing to the screen or sending an email.

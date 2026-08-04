@@ -1,2 +1,13 @@
 ---
 name: Métodos y su llamada
+tips: []
+definitions:
+  - name: Método
+    description: >-
+      una operación que pertenece a un objeto o a una clase y es capaz de
+      recibir datos y devolver un resultado. Un método se llama a través de un
+      punto, por ejemplo `"Hexlet".length()`.
+  - name: Argumento
+    description: >-
+      la información que un método recibe al ser llamado. Por ejemplo,
+      `Math.max(2, 3)` pasa los argumentos `2` y `3` al método `max()`.

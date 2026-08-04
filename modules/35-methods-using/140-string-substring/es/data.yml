@@ -1,0 +1,12 @@
+---
+name: Subcadena
+tips: []
+definitions:
+  - name: Subcadena
+    description: una parte de una cadena que está contenida dentro de otra cadena.
+  - name: substring
+    description: >-
+      método de cadena que devuelve una subcadena según los índices de inicio y
+      fin. El carácter con el índice de inicio se incluye en el resultado, el
+      carácter con el índice de fin no, por ejemplo `"Hexlet".substring(0, 3)`
+      devuelve `Hex`.

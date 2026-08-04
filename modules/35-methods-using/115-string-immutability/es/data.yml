@@ -1,2 +1,8 @@
 ---
 name: Inmutabilidad de las cadenas
+definitions:
+  - name: Inmutabilidad
+    description: >-
+      una propiedad de los datos por la cual su contenido no se puede cambiar
+      después de crearlos. Los métodos devuelven datos nuevos, mientras que los
+      originales permanecen igual.
