@@ -1,0 +1,12 @@
+---
+name: Methods with a variable number of parameters
+tips:
+  - >
+    [The String.join() method in the
+    documentation](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html)
+definitions:
+  - name: Variable number of parameters (varargs)
+    description: >-
+      the ability of a method to accept any number of arguments of the same
+      type. In the declaration it is written using three dots after the type,
+      for example `String... values`.

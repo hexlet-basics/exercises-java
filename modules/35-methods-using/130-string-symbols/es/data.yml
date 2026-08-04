@@ -1,0 +1,10 @@
+---
+name: Caracteres de una cadena
+tips: []
+definitions:
+  - name: Índice
+    description: la posición de un carácter dentro de una cadena, el conteo empieza desde cero.
+  - name: charAt
+    description: >-
+      método de cadena que devuelve el carácter en el índice indicado, por
+      ejemplo `"Hexlet".charAt(0)` devuelve `H`.

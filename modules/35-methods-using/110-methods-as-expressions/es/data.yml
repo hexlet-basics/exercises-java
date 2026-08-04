@@ -1,2 +1,7 @@
 ---
-name: Llamada al método - expresión
+name: Llamada a un método — expresión
+definitions:
+  - name: Expresión
+    description: >-
+      una secuencia de acciones sobre los datos que conduce a un resultado, el
+      cual se puede usar más adelante.

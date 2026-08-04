@@ -1,0 +1,8 @@
+---
+name: Method call chains
+definitions:
+  - name: Method chain
+    description: >-
+      a technique in which methods are called one after another, and each next
+      one is applied to the result of the previous one. For example,
+      `"  Hexlet  ".trim().toLowerCase()`.

@@ -1,0 +1,7 @@
+---
+name: A method call is an expression
+definitions:
+  - name: Expression
+    description: >-
+      a sequence of actions on data that leads to a result, which can then be
+      used further.

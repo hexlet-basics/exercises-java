@@ -1,0 +1,7 @@
+---
+name: String immutability
+definitions:
+  - name: Immutability
+    description: >-
+      a property of data whereby its content cannot be changed after creation.
+      Methods return new data, while the original data stays the same.

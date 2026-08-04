@@ -1,0 +1,11 @@
+---
+name: Substring
+tips: []
+definitions:
+  - name: Substring
+    description: a part of a string that is contained inside another string.
+  - name: substring
+    description: >-
+      a string method that returns a substring by the start and end indexes. The
+      character at the start index is included in the result, the character at the
+      end index is not, for example `"Hexlet".substring(0, 3)` returns `Hex`.

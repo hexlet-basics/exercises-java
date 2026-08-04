@@ -1,40 +1,42 @@
-El procesamiento de datos puede constar de una cantidad considerable de pasos que deben realizarse.
+El procesamiento de datos puede constar de una gran cantidad de pasos que hay que realizar uno tras otro.
 
-Tomemos como ejemplo la tarea de crear una dirección de página web basada en el nombre de un artículo ingresado por el usuario. Esta tarea a menudo surge al publicar artículos en blogs. Estas direcciones se ven así:
+Tomemos como ejemplo la siguiente tarea: formar la dirección de una página web a partir del título de un artículo introducido por el usuario. Esta tarea surge a menudo al publicar artículos en blogs. Estas direcciones se ven así:
 
 ```text
 https://codica.la/blog/de-obrero-a-programador
 ```
 
-La última parte aquí, *de-obrero-a-programador*, se crea automáticamente con el código que hemos escrito en Hexlet. Por cierto, tiene un nombre especial: se llama [**slug**](https://en.wikipedia.org/wiki/Clean_URL#Slug).
+La última parte aquí, *de-obrero-a-programador*, se crea automáticamente con el código que escribimos en Hexlet. Tiene un nombre especial: se llama [**slug**](https://es.wikipedia.org/wiki/URL_sem%C3%A1ntica).
 
-¿Qué pasos se deben seguir para obtener una cadena similar? Aquí hay solo algunos de ellos:
+¿Qué pasos hay que realizar para obtener una cadena similar? Aquí solo algunos de ellos:
 
-* Convertir todo a minúsculas para evitar la creación accidental de duplicados de páginas en los motores de búsqueda.
-* Limpiar el nombre de los espacios en blanco alrededor. Pueden aparecer accidentalmente al ingresar el nombre.
-* Realizar transliteración. Es mejor que las direcciones solo contengan caracteres del alfabeto latino.
-* Eliminar todos los caracteres especiales, como signos de interrogación, exclamaciones, etc.
-* Reemplazar todos los espacios por guiones.
+* Convertir todo a minúsculas, para que no se creen accidentalmente duplicados de páginas idénticas en los motores de búsqueda
+* Limpiar el título de los espacios en blanco de los extremos. Pueden aparecer accidentalmente al escribir
+* Realizar la transliteración, porque en las direcciones es mejor usar caracteres del alfabeto latino
+* Recortar los caracteres especiales como los signos de interrogación y de exclamación
+* Reemplazar los espacios por guiones
 
-Algunos de estos pasos requieren conocimientos nuevos para nosotros, por lo que los omitiremos. Los demás pasos se verán más o menos así:
+Algunos de los pasos requieren conocimientos nuevos para nosotros, por eso los omitiremos. Los demás pasos se verán más o menos así:
 
 ```java
-// Nombre ingresado por el usuario. En inglés para mayor simplicidad
+// Nombre introducido por el usuario. En inglés para simplificar
 var name = " How much is the fish?   \n";
-// Eliminamos los espacios y saltos de línea al final
+// recortamos los espacios de los extremos y el salto de línea
 name = name.trim();
 // Eliminamos el signo de interrogación
 name = name.replace("?", "");
-// Reemplazamos los espacios por guiones
+// Reemplazamos los espacios por un guion
 name = name.replace(" ", "-");
 // Convertimos a minúsculas
 name = name.toLowerCase();
 System.out.println(name); // => how-much-is-the-fish
 ```
 
-Si observamos detenidamente este código, podemos notar un patrón común. El método devuelve los datos que asignamos a la variable y luego los procesa en una cadena de llamadas de métodos.
+Si observamos con atención este código, podemos notar un patrón común. Un método devuelve datos que asignamos a una variable, y luego los procesamos más adelante en la cadena.
 
-Este patrón se puede simplificar eliminando la reasignación intermedia de la variable:
+## La cadena de métodos
+
+Este patrón se puede simplificar eliminando la reescritura intermedia de la variable. Un método devuelve una nueva cadena, y a esta cadena se le aplica de inmediato el siguiente método. Esta técnica se llama **cadena de métodos (method chaining)**.
 
 ```java
 var name = " How much is the fish?   ";
@@ -42,7 +44,7 @@ name = name.trim().replace("?", "").replace(" ", "-").toLowerCase();
 System.out.println(name); // => how-much-is-the-fish
 ```
 
-Gracias a que cada método devuelve una nueva cadena, podemos seguir procesándola llamando a los métodos uno tras otro. Si la cadena de métodos se vuelve demasiado larga, se puede dividir en varias líneas:
+Los métodos se llaman uno tras otro, como eslabones de una cadena. Esto permite escribir un código compacto y legible. Si la cadena se vuelve demasiado larga, se puede dividir en varias líneas:
 
 ```java
 name = name.trim()
@@ -51,4 +53,55 @@ name = name.trim()
     .toLowerCase();
 ```
 
-A pesar de la conveniencia de este mecanismo, no se debe abusar de él. Las variables intermedias pueden facilitar la comprensión del código.
+A pesar de la comodidad de este mecanismo, no conviene abusar de él. Las variables intermedias a veces facilitan la comprensión del código.
+
+## Orden de evaluación
+
+En una cadena de métodos, el orden de ejecución va de izquierda a derecha. Cada método siguiente se llama sobre el resultado del anterior:
+
+```java
+var text = "  hExLeT  ";
+System.out.println(text.trim().toLowerCase().replace("h", "x")); // => xexlet
+```
+
+1. `"  hExLeT  "` es la cadena original.
+2. `trim()` elimina los espacios de los extremos y devuelve `"hExLeT"`.
+3. `toLowerCase()` convierte a minúsculas y devuelve `"hexlet"`.
+4. `replace("h", "x")` reemplaza `"h"` por `"x"` y devuelve `"xexlet"`.
+
+El mismo resultado se obtiene sin la cadena, mediante variables intermedias:
+
+```java
+var text = "  hExLeT  ";
+var step1 = text.trim();                 // "hExLeT"
+var step2 = step1.toLowerCase();         // "hexlet"
+var step3 = step2.replace("h", "x");     // "xexlet"
+System.out.println(step3);
+```
+
+Cada método devuelve una nueva cadena, y el siguiente método se aplica ya sobre ella.
+
+```text
+"  hExLeT  ".trim().toLowerCase().replace("h", "x")
+             │       │              │
+             ↓       ↓              ↓
+          "hExLeT"   │              │
+                  "hexlet"          │
+                              "xexlet"
+```
+
+En la cadena simplemente te mueves de izquierda a derecha, leyéndola como una oración común. Si se confunde el orden, el resultado puede diferir. Por ejemplo, el reemplazo de los espacios funcionará de otra manera si se hace antes de eliminar los espacios de los extremos. En unas situaciones el resultado coincidirá por casualidad, en otras el orden realmente influirá en el resultado.
+
+## Dónde termina la cadena
+
+La cadena se puede continuar mientras el resultado siga siendo una cadena u otro tipo que tenga métodos. Si un método devuelve un número u otro tipo primitivo, ya no se pueden llamar más métodos:
+
+```java
+var text = "hexlet";
+var index = text.toUpperCase().indexOf("E");
+System.out.println(index); // => 1
+```
+
+El método `indexOf()` devuelve el número `1`, es decir, la posición del primer carácter `"E"` en la cadena `"HEXLET"`. Un número no tiene métodos de cadena, por eso la cadena termina aquí.
+
+Las cadenas de métodos sirven como una forma cómoda de combinar varias operaciones sobre un valor sin variables intermedias.

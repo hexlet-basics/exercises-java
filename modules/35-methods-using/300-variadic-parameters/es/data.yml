@@ -1,0 +1,12 @@
+---
+name: Métodos con un número variable de parámetros
+tips:
+  - >
+    [El método String.join() en la
+    documentación](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html)
+definitions:
+  - name: Número variable de parámetros (varargs)
+    description: >-
+      la capacidad de un método de aceptar cualquier cantidad de argumentos del
+      mismo tipo. En la declaración se escribe con tres puntos después del tipo,
+      por ejemplo `String... values`.

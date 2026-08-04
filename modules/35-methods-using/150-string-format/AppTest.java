@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 class AppTest {
   public static void main(String[] args) {
-    final var expected = "Привет, Мир!";
+    final var expected = "Hello, World!";
 
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     System.setOut(new PrintStream(out));

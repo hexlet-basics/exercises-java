@@ -1,11 +1,20 @@
-Independientemente del lenguaje de programación utilizado, los métodos tienen algunas propiedades fundamentales. Conocer estas propiedades facilita predecir el comportamiento de los métodos, las formas de probarlos y dónde utilizarlos. Una de estas propiedades es el determinismo. Un método se considera determinista cuando, para los mismos parámetros de entrada, devuelve siempre el mismo resultado. Por ejemplo, un método que extrae un carácter de una cadena es determinista.
+Los métodos, en cualquier lenguaje de programación, tienen propiedades fundamentales. Estas propiedades ayudan a entender cómo se comportará un método en distintas situaciones, cómo probarlo y dónde aplicarlo. Una de esas propiedades es el **determinismo**.
+
+Un **método determinista** siempre devuelve el mismo resultado con los mismos datos de entrada. Por ejemplo, se puede llamar determinista al método que extrae un carácter de una cadena por su posición:
 
 ```java
 "wow".charAt(1); // 'o'
 "wow".charAt(1); // 'o'
+
+"hexlet".charAt(0); // 'h'
+"hexlet".charAt(0); // 'h'
 ```
 
-No importa cuántas veces llamemos a este método pasándole el valor `1`, siempre devolverá `'o'`. Por otro lado, un método que devuelve un número aleatorio no es determinista, ya que para una misma entrada (incluso si está vacía, es decir, no se aceptan parámetros) siempre obtendremos un resultado diferente. No importa cuán diferente sea, incluso si una de cada millón de llamadas devuelve algo diferente, automáticamente se considera un método no determinista.
+No importa cuántas veces llamemos a `charAt()` con el argumento `1` para la cadena `"wow"`, siempre devolverá `'o'`. El resultado depende solo de los datos de entrada y no cambia de una llamada a otra.
+
+## Métodos no deterministas
+
+Al tipo opuesto pertenecen los **métodos no deterministas**. Devuelven resultados distintos con los mismos datos de entrada o cuando no los hay (métodos sin argumentos). Un buen ejemplo es el método que devuelve un número aleatorio:
 
 ```java
 // Método que devuelve un número aleatorio
@@ -13,4 +22,21 @@ Math.random(); // 0.09856613113197676
 Math.random(); // 0.8839904367241888
 ```
 
-¿Por qué es importante saber esto? El determinismo afecta seriamente muchos aspectos. Las funciones deterministas son convenientes para trabajar, son fáciles de optimizar y de probar. Si es posible hacer que una función sea determinista, es mejor hacerlo así.
+Este método no tiene argumentos, pero su resultado es diferente cada vez. Cuán diferente sea no importa. Incluso si una sola llamada entre un millón da otro resultado, el método se considera no determinista.
+
+```text
+Determinista:                  No determinista:
+"wow".charAt(1) → siempre 'o'  Math.random() → 0.42
+"wow".charAt(1) → siempre 'o'  Math.random() → 0.91
+"wow".charAt(1) → siempre 'o'  Math.random() → 0.07
+```
+
+## Por qué esto es importante
+
+El determinismo influye en cómo trabajamos con los métodos.
+
+- los métodos deterministas son fáciles de probar y de predecir;
+- son más simples de optimizar y de reutilizar;
+- los métodos no deterministas son más difíciles de comprobar, porque el resultado cambia.
+
+Por eso, donde sea posible, es mejor intentar que un método siga siendo determinista.

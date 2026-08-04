@@ -1,0 +1,10 @@
+---
+name: String characters
+tips: []
+definitions:
+  - name: Index
+    description: the position of a character inside a string, counting starts from zero.
+  - name: charAt
+    description: >-
+      a string method that returns the character at the specified index, for
+      example `"Hexlet".charAt(0)` returns `H`.
