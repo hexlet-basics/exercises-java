@@ -1,3 +1,5 @@
 ---
-name: Recorrido de caracteres
-tips: []
+name: Recorrido de cadenas
+tips:
+  - |
+    [Iteración](https://es.wikipedia.org/wiki/Iteraci%C3%B3n)

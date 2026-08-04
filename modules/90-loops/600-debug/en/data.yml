@@ -1,0 +1,12 @@
+---
+name: Debugging
+tips:
+  - |
+    [Debugging](https://en.wikipedia.org/wiki/Debugging)
+definitions:
+  - name: Debugging
+    description: the process of finding and eliminating errors in a program.
+  - name: Call stack (stack trace)
+    description: >-
+      the chain of method calls that a program prints when an exception occurs;
+      it helps to find the place and the cause of the error.

@@ -1,22 +1,22 @@
-Otro uso de los bucles es la **formación de cadenas**. Este tipo de tarea es común en programación y se reduce a una simple agregación mediante concatenación.
+Otro uso de los ciclos es la **formación de cadenas**. Una tarea así aparece bastante a menudo en programación. Se reduce a la agregación habitual mediante concatenación.
 
-Hay una tarea que es popular en las entrevistas: **invertir una cadena**. Se puede resolver de muchas formas diferentes, pero la forma más básica es recorrerla carácter por carácter:
+Hay una tarea que es popular en las entrevistas: **invertir una cadena**. Se puede resolver de muchas maneras distintas, pero justamente el recorrido carácter a carácter se considera la básica:
 
 ```java
 App.reverse("Hexlet"); // "telxeH"
 ```
 
-La idea general de la inversión es tomar los caracteres uno por uno desde el principio de la cadena y unirlos en orden inverso. Veamos cómo funciona:
+La idea general de la inversión es la siguiente: hay que tomar los caracteres por turnos desde el principio de la cadena y unirlos en orden inverso. Comprobemos cómo funciona:
 
 ```java
 public static String reverse(String str) {
-    var i = str.length() - 1;
-    // El elemento neutral para las cadenas es una cadena vacía
+    var i = 0;
+    // El elemento neutro para las cadenas es la cadena vacía
     var result = "";
-    while (i >= 0) {
-        // Unir en orden inverso
-        result = result + str.charAt(i);
-        i -= 1;
+    while (i < str.length()) {
+        // Unimos en orden inverso
+        result = str.charAt(i) + result;
+        i += 1;
     }
 
     return result;
@@ -24,8 +24,8 @@ public static String reverse(String str) {
 
 var name = "Bran";
 App.reverse(name); // "narB"
-// Comprobación del elemento neutral
+// Comprobación del elemento neutro
 App.reverse(""); // ""
 ```
 
-Es importante comprender cómo se construye la cadena: cada carácter siguiente se une a la cadena resultante por la izquierda, y al final la cadena queda invertida.
+Es importante captar cómo se construye la cadena en sí: cada carácter siguiente se pega a la cadena resultante por la izquierda, y al final la cadena queda invertida.

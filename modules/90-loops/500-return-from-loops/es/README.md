@@ -1,14 +1,17 @@
+El trabajo con ciclos se reduce normalmente a dos escenarios. En el primero, el resultado se acumula durante las iteraciones y el trabajo con él se hace ya después del ciclo. Ese enfoque se llama agregación, y la inversión de una cadena pertenece a él. En el segundo, el ciclo se ejecuta hasta alcanzar el resultado necesario y termina antes de tiempo. Así está montada, por ejemplo, la comprobación de un número primo, que se divide sin resto solo por sí mismo y por uno.
 
-El trabajo con bucles generalmente se reduce a dos escenarios:
+Veamos el algoritmo de comprobación de la primalidad de un número. Dividiremos el número buscado `x` por todos los números del rango desde dos hasta `x - 1` y miraremos el resto. Si en ese rango no se encontró un divisor que divida `x` sin resto, entonces tenemos delante un número primo.
 
-1. Agregación: acumular un resultado durante las iteraciones y trabajar con él después del bucle. Invertir una cadena es un ejemplo de este tipo de escenario.
-2. Ejecutar el bucle hasta que se alcance un resultado deseado y salir. Por ejemplo, la tarea de buscar números primos. Recordemos que un número primo solo se divide exactamente por sí mismo y por uno.
+## Comprobación de la primalidad del número 5: análisis paso a paso
 
-Veamos un algoritmo simple para verificar si un número es primo. Intentaremos dividir el número buscado `x` por todos los números en el rango desde dos hasta `x - 1` y observar el resto de la división. Si no se encuentra ningún divisor en este rango que divida al número `x` sin dejar resto, entonces tenemos un número primo.
+1. Tomamos el número `x = 5`. Los posibles divisores los buscamos en el rango desde 2 hasta `x - 1`, es decir, desde 2 hasta 4
+2. Dividimos 5 por 2. El resto es igual a 1, no encontramos divisor, continuamos
+3. Dividimos 5 por 3. El resto es igual a 2, no encontramos divisor, continuamos
+4. Dividimos 5 por 4. El resto es igual a 1, no encontramos divisor, terminamos el recorrido
 
-Podemos notar que es suficiente verificar los números hasta `x - 1/2`. Por ejemplo, 11 no se divide por 2, 3, 4, 5. Pero garantizamos que no se dividirá por números mayores que la mitad de sí mismo.
+Resultado: en el rango desde 2 hasta 4 no se encontró ningún número por el que 5 se divida sin resto. Eso significa que 5 es un número primo.
 
-Por lo tanto, podemos realizar una pequeña optimización y verificar la división solo hasta `x / 2`:
+La búsqueda de divisores basta con limitarla a la mitad del número. Por ejemplo, 11 no se divide por 2, 3, 4, 5, y por números mayores que su mitad todavía menos se dividirá. Eso significa que el algoritmo se puede optimizar y comprobar la división solo hasta `x / 2`:
 
 ```java
 public static boolean isPrime(int number) {
@@ -35,6 +38,21 @@ App.isPrime(3); // true
 App.isPrime(4); // false
 ```
 
-El algoritmo está construido de tal manera que si durante la división secuencial por números hasta `x / 2` se encuentra al menos uno que divide sin dejar resto, entonces el argumento pasado no es un número primo y, por lo tanto, los cálculos posteriores no tienen sentido. En este punto, se debe devolver `false`.
+*Si somos honestos hasta el final, para resolver la tarea basta con comprobar los números hasta la raíz cuadrada de `number`. Pero aquí lo importante es centrarse en el trabajo con la condición dentro del ciclo*
 
-Y solo si el bucle se ejecuta por completo, se puede concluir que el número es primo, ya que no se encontró ningún número que divida al número sin dejar resto.
+La técnica principal de esta lección es la salida del método directamente desde dentro del ciclo:
+
+```text
+while (...) {
+    if (condición) {
+        return valor; ← salida del método (y del ciclo)
+    }
+    ...
+}
+─────────────────────────────────
+Sin return el ciclo llega hasta el final
+```
+
+El algoritmo está construido de tal manera que, al dividir de forma secuencial por los números hasta `x / 2`, basta con encontrar al menos un divisor sin resto. Entonces el argumento que se pasó es un número compuesto, y los cálculos posteriores no tienen sentido. En ese lugar está la devolución de `false`, y `return` termina de inmediato tanto el ciclo como el método entero.
+
+Y solo si el ciclo se ejecutó por completo y no se encontró ningún divisor sin resto, la ejecución llegará a la última línea. El método devolverá `true`, porque el número resultó ser primo.

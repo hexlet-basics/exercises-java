@@ -1,0 +1,13 @@
+---
+name: Depuración
+tips:
+  - >
+    [Depuración de
+    programas](https://es.wikipedia.org/wiki/Depuraci%C3%B3n_de_programas)
+definitions:
+  - name: Depuración
+    description: proceso de búsqueda y eliminación de errores en un programa.
+  - name: Pila de llamadas (stack trace)
+    description: >-
+      cadena de llamadas a métodos que el programa imprime cuando surge una
+      excepción; ayuda a encontrar el lugar y la causa del error.

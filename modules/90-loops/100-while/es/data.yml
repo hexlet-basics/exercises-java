@@ -1,7 +1,7 @@
 ---
 name: Ciclo While
 definitions:
-  - name: Bucle While
+  - name: Ciclo While
     description: >-
       una instrucción para repetir un bloque de código mientras se cumple una
       determinada condición.
