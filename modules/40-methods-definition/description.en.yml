@@ -1,0 +1,5 @@
+---
+
+name: Defining methods
+description: |
+  Defining your own methods makes writing and maintaining programs much easier. For example, the ability to define methods lets you combine complex (compound) operations into one — all the complexity can be hidden inside one simple method. By learning to create methods, you will take the first step towards building truly useful programs. And we will help you with that. In this module you will create your first method and learn how to give it (and variables along the way) understandable names.
