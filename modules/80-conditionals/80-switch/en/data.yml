@@ -1,0 +1,8 @@
+---
+name: The Switch construct
+tips: []
+definitions:
+  - name: switch
+    description: >-
+      a way to choose the behavior by the value of a variable through `case`
+      branches, for example, `switch (count) { case 1: ... }`.

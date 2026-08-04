@@ -1,7 +1,7 @@
-Observa la definición de un método que devuelve el módulo de un número:
+Observa la definición de un método que devuelve el valor absoluto del número que se le pasa:
 
 ```java
-// Si es mayor o igual a cero, devuelve el número. Si es menor, quita el signo
+// Si es mayor que cero, damos el propio número. Si es menor, le quitamos el signo
 public static int abs(int number) {
   if (number >= 0) {
     return number;
@@ -14,9 +14,9 @@ App.abs(10);  // 10
 App.abs(-10); // 10
 ```
 
-En Java existe una construcción que es similar a la estructura *if-else*, pero es una expresión. Se llama **operador ternario**.
+En Java existe una construcción que por su acción es análoga a `if-else`, pero que además es una expresión. Se llama **operador ternario**.
 
-El operador ternario es único en su tipo, ya que requiere tres operandos. Ayuda a escribir menos código para expresiones condicionales simples. Nuestro ejemplo anterior con el operador ternario se reduce a tres líneas de código:
+El operador ternario es el único de su tipo que exige tres operandos. Ayuda a escribir menos código para las expresiones condicionales simples. Nuestro ejemplo de arriba, con el operador ternario, se reduce a una sola línea:
 
 ```java
 public static int abs(int number) {
@@ -24,13 +24,40 @@ public static int abs(int number) {
 }
 ```
 
-El patrón general se ve así:
+La plantilla general se ve así:
 
 ```java
-<predicado> ? <expresión si verdadero> : <expresión si falso>
+<predicado> ? <expresión si es true> : <expresión si es false>
 ```
 
-Es decir, primero escribimos la expresión lógica y luego dos variantes de comportamiento:
+Primero se escribe la expresión lógica, y después dos variantes de comportamiento:
 
-1. Si la condición es verdadera, se ejecuta la variante antes de los dos puntos
-2. Si la condición es falsa, se ejecuta la variante después de los dos puntos
+1. Si la condición es verdadera, se evalúa la variante que está antes de los dos puntos
+2. Si la condición es falsa, se evalúa la variante que está después de los dos puntos
+
+Reescribamos con el operador ternario el método que determina el tipo de la oración.
+
+Antes:
+
+```java
+public static String getTypeOfSentence(String sentence) {
+    if (sentence.endsWith("?")) {
+        return "question";
+    }
+
+    return "general";
+}
+```
+
+Después:
+
+```java
+public static String getTypeOfSentence(String sentence) {
+    return sentence.endsWith("?") ? "question" : "general";
+}
+
+App.getTypeOfSentence("Hodor");  // "general"
+App.getTypeOfSentence("Hodor?"); // "question"
+```
+
+El operador ternario se puede anidar dentro de otro operador ternario. Pero eso se considera una mala práctica: ese código es difícil de leer.

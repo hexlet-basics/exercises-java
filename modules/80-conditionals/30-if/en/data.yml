@@ -1,0 +1,6 @@
+---
+name: The conditional construct (if)
+tips: []
+definitions:
+  - name: The conditional construct
+    description: 'a way to set a condition for executing code. For example, `if (x > 10) { ... }`'

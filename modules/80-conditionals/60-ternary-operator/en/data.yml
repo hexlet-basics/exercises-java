@@ -1,0 +1,8 @@
+---
+name: The ternary operator
+tips: []
+definitions:
+  - name: The ternary operator
+    description: >
+      A way to turn a simple conditional instruction into an expression, for
+      example, `number >= 0 ? number : -number`.

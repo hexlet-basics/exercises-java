@@ -1,4 +1,4 @@
-El método `getTypeOfSentence` distingue solo entre oraciones interrogativas y normales. Vamos a añadirle el soporte de las oraciones exclamativas. Lo haremos primero con dos comprobaciones `if` separadas:
+The `getTypeOfSentence` method distinguishes only between question sentences and ordinary ones. Let's add support for exclamatory sentences to it. We will do it first through two separate `if` checks:
 
 ```java
 public static String getTypeOfSentence(String sentence) {
@@ -22,28 +22,28 @@ App.getTypeOfSentence("No");   // "Sentence is general"
 App.getTypeOfSentence("No!");  // "Sentence is exclamation"
 ```
 
-Técnicamente este código funciona, pero interpreta mal las oraciones interrogativas. También hay un problema de semántica. La presencia del signo de exclamación se comprueba en cualquier caso, incluso cuando ya se ha encontrado un signo de interrogación. La rama `else` pertenece a la segunda condición, pero no a la primera. Por eso la oración interrogativa recibe el tipo `"general"`.
+Technically this code works, but it interprets question sentences incorrectly. There is also a problem with the semantics. The presence of an exclamation mark is checked in any case, even when a question mark has already been found. The `else` branch belongs to the second condition, but not to the first. That is why a question sentence gets the type `"general"`.
 
-Para poner las comprobaciones en una única cadena, la construcción `if` admite la rama `else if`. Esa variante sirve cuando hay muchas comprobaciones y se excluyen mutuamente:
+To line the checks up into a single chain, the `if` construct supports the `else if` branch. Such a variant fits when there are many checks and they exclude each other:
 
 ```java
-if (/* algo */) {
+if (/* something */) {
 
-} else if (/* otra comprobación */) {
+} else if (/* another check */) {
 
-} else if (/* otra comprobación */) {
+} else if (/* another check */) {
 
 } else {
 
 }
 ```
 
-Aquí fíjate en dos cosas:
+Pay attention to two things here:
 
-- La rama `else` puede estar ausente
-- La cantidad de ramas `else if` puede ser cualquiera
+- The `else` branch may be absent
+- The number of `else if` branches can be any
 
-Reescribamos el método con `else if`:
+Let's rewrite the method with `else if`:
 
 ```java
 public static String getTypeOfSentence(String sentence) {
@@ -65,28 +65,28 @@ App.getTypeOfSentence("No");   // "Sentence is general"
 App.getTypeOfSentence("No!");  // "Sentence is exclamation"
 ```
 
-Ahora todas las condiciones están puestas en una única construcción. El operador `else if` significa "si no se cumple la condición anterior, pero sí se cumple la actual".
+Now all the conditions are lined up into a single construct. The `else if` operator means "if the previous condition was not met, but the current one is".
 
 ```text
   ┌─────────────────┐
-  │ condición 1     │
+  │ condition 1     │
   └────┬────────┬───┘
   true │        │ false
         ↓        ↓
 ┌──────────┐  ┌─────────────────┐
-│ rama if  │  │ condición 2     │
+│ if body  │  │ condition 2     │
 └──────────┘  └────┬────────┬───┘
               true │        │ false
                     ↓        ↓
             ┌───────────┐ ┌──────────┐
-            │rama else if│ │ rama else│
+            │else if body│ │ else body│
             └───────────┘ └──────────┘
 ```
 
-La lógica del método está montada así:
+The logic of the method is arranged like this:
 
-- Si el último carácter es `?`, entonces el tipo es `"question"`
-- Si no, si el último carácter es `!`, entonces el tipo es `"exclamation"`
-- Si no, el tipo es `"general"`
+- If the last character is `?`, then the type is `"question"`
+- Otherwise, if the last character is `!`, then the type is `"exclamation"`
+- Otherwise the type is `"general"`
 
-Al final se ejecutará solo uno de los bloques que pertenecen a toda la construcción `if`.
+In the end only one of the blocks belonging to the whole `if` construct will be executed.

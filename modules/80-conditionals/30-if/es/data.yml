@@ -1,4 +1,6 @@
 ---
 name: Estructura condicional (if)
 tips: []
-definitions: []
+definitions:
+  - name: Estructura condicional
+    description: 'forma de indicar una condición para ejecutar código. Por ejemplo, `if (x > 10) { ... }`'

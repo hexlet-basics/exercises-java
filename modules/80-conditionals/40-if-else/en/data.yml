@@ -1,0 +1,8 @@
+---
+name: The if-else construct
+tips: []
+definitions:
+  - name: else
+    description: >-
+      a way to set the block of code that will be executed if the condition with
+      `if` was not met.
