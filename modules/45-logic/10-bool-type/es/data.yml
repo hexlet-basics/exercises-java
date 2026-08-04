@@ -1,5 +1,9 @@
 ---
 name: Tipo lógico
+tips:
+  - >
+    [El tipo boolean en
+    Java](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2.5)
 definitions:
   - name: Tipo lógico (boolean)
     description: >-

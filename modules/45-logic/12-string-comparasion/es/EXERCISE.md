@@ -1,17 +1,17 @@
 
-Implementa el método `isPalindrome()`, que determina si una palabra es un palíndromo o no. Un palíndromo es una palabra que se lee igual en ambos sentidos.
+Implementa el método `isPalindrome()`, que determina si una palabra es un palíndromo o no. Un palíndromo es una palabra que se lee igual en los dos sentidos.
 
 ```java
-App.isPalindrome("шалаш"); // true
-App.isPalindrome("ага"); // true
-App.isPalindrome("хекслет"); // false
+App.isPalindrome("reconocer"); // true
+App.isPalindrome("ana"); // true
+App.isPalindrome("hexlet"); // false
 
-// Las palabras pueden estar en cualquier caso
-App.isPalindrome("Ага"); // true
+// Las palabras se pueden pasar al método en cualquier combinación de mayúsculas y minúsculas
+App.isPalindrome("Ana"); // true
 ```
 
-Para determinar si una palabra es un palíndromo, debes invertir la cadena y compararla con la original. Para esto, utiliza el método `StringUtils.reverse()`
+Para determinar si una palabra es un palíndromo, hay que invertir la cadena y compararla con la original. Usa para eso el método `StringUtils.reverse()`
 
 ```java
-StringUtils.reverse("мама"); // "амам"
+StringUtils.reverse("mama"); // "amam"
 ```

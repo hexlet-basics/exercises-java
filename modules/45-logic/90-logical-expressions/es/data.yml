@@ -1,0 +1,15 @@
+---
+name: Expresiones lógicas
+tips:
+  - >
+    [Operadores y prioridad en
+    Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html)
+definitions:
+  - name: Expresión lógica compuesta
+    description: >
+      expresión formada por varias comparaciones y operadores lógicos, que se
+      evalúa a un único valor true o false.
+  - name: Evaluación abreviada
+    description: >
+      omisión del operando derecho de un operador cuando el resultado de la
+      expresión ya está determinado por el operando izquierdo.
