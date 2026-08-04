@@ -7,3 +7,8 @@ tips:
     [Conjunción](https://es.wikipedia.org/wiki/Conjunci%C3%B3n)
   - |
     [Disyunción](https://es.wikipedia.org/wiki/Disyunci%C3%B3n)
+definitions:
+  - name: Operadores lógicos
+    description: >-
+      los operadores "Y" (`&&`) y "O" (`||`), que permiten crear condiciones
+      lógicas compuestas.

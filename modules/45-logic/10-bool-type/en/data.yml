@@ -1,0 +1,9 @@
+---
+name: The logical type
+tips:
+  - >
+    [The boolean type in
+    Java](https://docs.oracle.com/javase/specs/jls/se21/html/jls-4.html#jls-4.2.5)
+definitions:
+  - name: The logical type (boolean)
+    description: 'a data type with two possible values: true and false.'

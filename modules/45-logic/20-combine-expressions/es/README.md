@@ -1,60 +1,60 @@
 
-Las operaciones lógicas son expresiones. Esto significa que **las operaciones lógicas se pueden combinar con otras expresiones**. Veamos un ejemplo. Supongamos que queremos verificar si un número es par. En programación, la paridad se verifica mediante el residuo de la división por 2:
+Las operaciones lógicas son expresiones. Eso significa que **las operaciones lógicas se pueden combinar con otras expresiones**. Veámoslo con un ejemplo. Supongamos que queremos comprobar la paridad de un número. En programación, la paridad se comprueba con el resto de la división por 2:
 
-* Si el residuo es 0, entonces el número es par
-* Si el residuo no es 0, entonces el número es impar
+* Si el resto es 0, el número era par
+* Si el resto no es 0, el número era impar
 
-El residuo de la división es un concepto simple pero muy importante en aritmética, álgebra, teoría de números y criptografía. La idea es simple: se debe dividir un número en grupos iguales. Si queda algo al final, eso es el residuo de la división.
+El resto de la división es un concepto simple, pero muy importante en aritmética, álgebra, teoría de números y criptografía. La idea es sencilla: hay que dividir un número en varios grupos iguales. Si al final queda algo, eso es el resto de la división.
 
-Dividimos caramelos entre personas:
+Repartimos caramelos a partes iguales entre personas:
 
-* 7 caramelos, 2 personas: 2 x 3 + **residuo 1**. Esto significa que 7 no es divisible por 2
-* 21 caramelos, 3 personas: 3 x 7 + **residuo 0**. Esto significa que 21 es divisible por 3
-* 19 caramelos, 5 personas: 5 x 3 + **residuo 4**. Esto significa que 19 no es divisible por 5
+* 7 caramelos, 2 personas: 2 x 3 + **resto 1**. Significa que 7 no es múltiplo de 2
+* 21 caramelos, 3 personas: 3 x 7 + **resto 0**. Significa que 21 es múltiplo de 3
+* 19 caramelos, 5 personas: 5 x 3 + **resto 4**. Significa que 19 no es múltiplo de 5
 
-En el código, el residuo se calcula utilizando el operador `%`:
+En el código, el resto se calcula con la ayuda del operador `%`:
 
 * `7 % 2` → `1`
 * `21 % 3` → `0`
 * `19 % 5` → `4`
 
-Usando esto, escribiremos un método para verificar la paridad:
+Con su ayuda escribiremos un método para comprobar la paridad:
 
 ```java
 // Definido en la clase App
-public static boolean esPar(int numero) {
-    return numero % 2 == 0;
+public static boolean isEven(int number) {
+    return number % 2 == 0;
 }
 
-App.esPar(10); // true
-App.esPar(3); // false
+App.isEven(10); // true
+App.isEven(3); // false
 ```
 
-En una sola expresión hemos combinado dos operadores lógicos:
+En una sola expresión hemos combinado dos operadores:
 
-* `==` - verificación de igualdad
-* `%` - operador aritmético de residuo de la división
+* `==` — comprobación de igualdad
+* `%` — operador aritmético del resto de la división
 
-**La prioridad de las operaciones aritméticas es mayor que la de las operaciones lógicas**. Esto significa que primero se calcula la expresión aritmética `numero % 2`, y luego el resultado se utiliza en la comparación lógica.
+**La prioridad de las operaciones aritméticas es mayor que la de las lógicas.** Eso significa que primero se calcula la expresión aritmética `number % 2`, y después el resultado participa en la comparación lógica.
 
-En ruso, esto se puede descifrar de la siguiente manera: "Es necesario calcular el residuo de la división del número `numero` por 2 y compararlo con cero; luego devolver el resultado de la comparación".
+En palabras, se puede leer así: «Hay que calcular el resto de la división del número `number` por 2 y compararlo con cero; después devolver el resultado de la comparación».
 
-Veamos otro ejemplo. Escribiremos un método que toma una cadena y verifica si la primera letra es mayúscula. El algoritmo será el siguiente:
+Veamos otro ejemplo. Escribamos un método que recibe una cadena y comprueba si la primera letra es mayúscula. El algoritmo de acciones será el siguiente:
 
-1. Obtener y guardar en una variable el primer carácter de la cadena argumento
-2. Comparar si el carácter es igual a su versión en mayúscula
-3. Devolver el resultado
+1. Obtenemos y guardamos en una variable el primer carácter de la cadena que llega como argumento
+2. Comparamos si el carácter es igual a su versión en mayúscula
+3. Devolvemos el resultado
 
-La implementación en código se verá así:
+Y así se verá la implementación en el código:
 
 ```java
-public static boolean esPrimeraLetraMayuscula(String cadena) {
-    var primeraLetra = cadena.charAt(0);
-    // La clase Character contiene varios métodos para trabajar con caracteres
-    // El método isUpperCase() verifica si el carácter pasado está en mayúscula
-    return Character.isUpperCase(primeraLetra);
+public static boolean isFirstLetterInUpperCase(String string) {
+    var firstLetter = string.charAt(0);
+    // La clase Character contiene distintos métodos para trabajar con caracteres
+    // El método isUpperCase() comprueba que el carácter que se le pasa está en mayúscula
+    return Character.isUpperCase(firstLetter);
 }
 
-App.esPrimeraLetraMayuscula("marmont"); // false
-App.esPrimeraLetraMayuscula("Robb"); // true
+App.isFirstLetterInUpperCase("marmont"); // false
+App.isFirstLetterInUpperCase("Robb"); // true
 ```
