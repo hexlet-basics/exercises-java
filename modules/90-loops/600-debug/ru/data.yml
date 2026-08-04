@@ -2,8 +2,8 @@
 name: Отладка
 tips:
   - >
-    [Как просить помощь с
-    кодом](https://guides.hexlet.io/ru/how-to-ask-questions/)
+    [Отладка
+    программы](https://ru.wikipedia.org/wiki/%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B)
 definitions:
   - name: Отладка
     description: процесс поиска и устранения ошибок в программе.
