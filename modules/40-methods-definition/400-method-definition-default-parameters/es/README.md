@@ -1,78 +1,61 @@
-<!-- Tal vez sea conveniente agregar una lección sobre la sobrecarga de métodos antes de esta -->
+En programación, muchos métodos tienen parámetros que cambian muy pocas veces. A menudo a un parámetro así conviene asignarle un único valor y usarlo cuando en la llamada no se pasa nada distinto. Ese valor se llama **valor predeterminado**.
 
-En programación, muchas funciones y métodos tienen parámetros que rara vez cambian.
+En muchos lenguajes el valor predeterminado se escribe directamente en la definición. Por ejemplo, en Python el método de elevar a una potencia se ve así:
 
-En estos casos, se les asignan **valores predeterminados** a estos parámetros, que se pueden cambiar según sea necesario. Esto reduce un poco la cantidad de código repetitivo.
+```python
+# El exponente es el segundo parámetro con el valor predeterminado 2
+def pow(x, base=2):
+    return x ** base
 
-Esto se puede ver claramente en el siguiente ejemplo:
-
-```java
-class App {
-    // Función de potenciación
-    // El exponente es el segundo parámetro con un valor predeterminado de 2
-    function pow(x, base = 2) {
-      return x ** base;
-    }
-}
-
-App.pow(3); // Resultado: 9, ya que se eleva al cuadrado de forma predeterminada
-// Elevar al cubo
-App.pow(3, 3); // 27
+pow(3)     # 9, por defecto elevamos al cuadrado
+pow(3, 3)  # 27, el exponente se pasa de forma explícita
 ```
 
-A diferencia de otros lenguajes, en Java no es posible asignar un valor predeterminado, pero se puede simular utilizando la **sobrecarga de métodos**.
+En Java los parámetros no tienen valores predeterminados. Sin embargo, el mismo resultado se consigue con la **sobrecarga de métodos**.
 
-¿Qué es la sobrecarga de métodos? Java permite crear varios métodos con el mismo nombre. Estos métodos deben tener:
+¿Qué es eso? Java permite crear varios métodos con el mismo nombre. Esos métodos iguales deben tener:
 
-* Diferentes tipos de parámetros de entrada
-* Diferente cantidad de parámetros
-* O ambas cosas a la vez
+* Distintos tipos de parámetros de entrada
+* Distinta cantidad de parámetros
+* O todo eso a la vez
 
-Veamos un ejemplo de un método que suma dos números:
+Veámoslo con el ejemplo de un método que suma números. Crearemos dos versiones de `sum()` en una misma clase. La primera recibe dos números; la segunda recibe solo uno y le suma 10:
 
 ```java
 class App {
     public static int sum(int x, int y) {
         return x + y;
     }
-}
 
-App.sum(2, 3); // 5
-```
-
-Ahora escribamos otro método `sum()` que solo recibe un parámetro y lo suma con el número 10:
-
-```java
-class App {
     public static int sum(int x) {
         return x + 10;
     }
 }
 
-App.sum(2); // 12
-App.sum(2, 1); // 3
+App.sum(2, 3); // 5, funcionó la versión con dos parámetros
+App.sum(2);    // 12, funcionó la versión con un parámetro
 ```
 
-El compilador ejecutará este código sin problemas y creará dos métodos con el mismo nombre. ¿Cómo sabe Java qué método utilizar?
+El compilador creará sin problemas dos métodos con un mismo nombre. ¿Cómo sabe Java a cuál de ellos llamar?
 
-Es muy simple: durante la compilación, se elige la versión del método que coincide en tipo y cantidad de parámetros. Si no se encuentra dicho método, se producirá un error.
+Durante la compilación se elige la versión del método que coincide en el tipo y la cantidad de parámetros. Cuando no hay un método adecuado, el compilador informa de un error.
 
-Ya hemos visto al menos un método sobrecargado: `substring()`. Por defecto, extrae una subcadena hasta el final, pero se le puede pasar un segundo parámetro que limite la longitud:
+Con al menos un método sobrecargado ya nos hemos encontrado: es el método `substring()`. Por defecto extrae la subcadena hasta el final, pero se le puede pasar un segundo parámetro que limite la longitud:
 
 ```java
-// Se llaman a dos métodos diferentes con el mismo nombre
+// Se llaman dos métodos distintos con un mismo nombre
 "hexlet".substring(3); // "let"
 "hexlet".substring(3, 5); // "le"
 ```
 
-La sobrecarga de métodos puede llevar a la duplicación de código, especialmente cuando se trata de valores predeterminados. En tales situaciones, la lógica es la misma, solo difiere en la inicialización inicial.
+La sobrecarga de métodos puede llevar a la duplicación de código, sobre todo cuando se trata de valores predeterminados. En esas situaciones la lógica es la misma, y la diferencia está solo en la inicialización inicial.
 
-Para reducir la duplicación, basta con seguir estos dos pasos:
+Para reducir la duplicación basta con dar dos pasos:
 
-* Primero, definir un método común que acepte la mayor cantidad de parámetros
-* Luego, llamar a ese método desde los métodos que tienen valores predeterminados
+* Primero, definir un método común que reciba la mayor cantidad de parámetros
+* Después, llamarlo desde aquellos métodos que tienen valores predeterminados
 
-En el código, se vería así:
+En el código se ve así:
 
 ```java
 class App {
@@ -81,10 +64,10 @@ class App {
     }
 
     public static int sum(int x) {
-        // Llamamos al método de suma ya existente
+        // Llamamos al método de suma que ya está listo
         return App.sum(x, 10);
     }
 }
 ```
 
-En este ejemplo, no hemos reducido el código, pero muestra claramente el principio descrito anteriormente.
+En este ejemplo no hemos acortado el código, pero muestra con claridad el principio descrito arriba.

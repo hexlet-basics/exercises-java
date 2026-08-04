@@ -1,0 +1,15 @@
+---
+name: Packages
+tips:
+  - >
+    [An example of a Java application with packages and
+    imports](https://github.com/hexlet-boilerplates/java-package)
+definitions:
+  - name: Package
+    description: >-
+      a mechanism for grouping classes into logically related groups; helps to
+      avoid name conflicts. It is specified with the `package` keyword.
+  - name: import
+    description: >-
+      a keyword that connects a class from another package so that you can refer
+      to it by its short name without specifying the package.

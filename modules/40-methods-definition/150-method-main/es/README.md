@@ -74,7 +74,7 @@ class MySuperClassName {
 }
 ```
 
-Hablaremos de esto en el curso de [POO en Java](https://codica.la/courses/java-poo-basics).
+Hablaremos de esto en el curso de [POO en Java](https://codica.la/carreras/java).
 
 Lo más importante que debes recordar ahora es que cualquier método estático se llama usando un punto después del nombre de la clase, y las llamadas en sí se realizan dentro de otros métodos:
 

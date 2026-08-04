@@ -1,0 +1,15 @@
+---
+name: Paquetes
+tips:
+  - >
+    [Ejemplo de aplicación en Java con paquetes e
+    importaciones](https://github.com/hexlet-boilerplates/java-package)
+definitions:
+  - name: Paquete
+    description: >-
+      mecanismo para agrupar clases en grupos relacionados lógicamente; ayuda a
+      evitar conflictos de nombres. Se indica con la palabra clave `package`.
+  - name: import
+    description: >-
+      palabra clave que conecta una clase de otro paquete para acceder a ella
+      por su nombre corto, sin indicar el paquete.

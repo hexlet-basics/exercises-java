@@ -1,2 +1,5 @@
 ---
-name: Valores de Retorno
+name: Devolución de valores
+tips:
+  - |
+    [La instrucción return en Java](https://www.w3schools.com/java/ref_keyword_return.asp)
