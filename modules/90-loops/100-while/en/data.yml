@@ -1,0 +1,5 @@
+---
+name: The While loop
+definitions:
+  - name: The While loop
+    description: an instruction for repeating code while some condition is satisfied.

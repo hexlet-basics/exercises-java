@@ -1,0 +1,10 @@
+---
+name: Syntactic sugar
+tips:
+  - |
+    [Syntactic sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)
+definitions:
+  - name: Syntactic sugar
+    description: >
+      these are syntactic features whose use does not affect the behavior of the
+      program, but makes using the language more convenient for a human.

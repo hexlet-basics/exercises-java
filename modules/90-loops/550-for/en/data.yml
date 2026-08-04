@@ -1,0 +1,8 @@
+---
+name: The For loop
+tips: []
+definitions:
+  - name: Aggregation
+    description: >-
+      Accumulating the result during the iterations and working with it after the
+      loop.

@@ -1,5 +1,10 @@
 ---
-name: Devolución de bucles
+name: Devolución desde los ciclos
 tips:
   - |
-    [Lista de números primos](https://es.wikipedia.org/wiki/Números_primos)
+    [Números primos](https://es.wikipedia.org/wiki/N%C3%BAmero_primo)
+definitions:
+  - name: Agregación
+    description: >-
+      Acumulación del resultado durante las iteraciones y trabajo con él después
+      del ciclo.
