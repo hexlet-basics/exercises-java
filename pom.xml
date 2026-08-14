@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Этот pom ничего не собирает: код уроков компилируется голым javac из bin/test.sh, и сборщик
+  здесь нужен ровно ради одного плагина. Форматом кода в java-проектах Хекслета занимается
+  spotless, а самостоятельной программы у него нет: он существует только плагином к gradle или
+  maven. Maven выбран как более лёгкий из двух — ему хватает pom и локального репозитория.
+
+  Набор правил в проекте не хранится: его задаёт google-java-format в варианте aosp (отступ в
+  четыре пробела). Это та же настройка, что в проектах студентов, поэтому код уроков и код,
+  который студент пишет в проекте, оформлены одинаково.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.hexlet.basics</groupId>
+    <artifactId>exercises-java</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spotless.version>3.9.0</spotless.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.diffplug.spotless</groupId>
+                <artifactId>spotless-maven-plugin</artifactId>
+                <version>${spotless.version}</version>
+                <configuration>
+                    <java>
+                        <!--
+                          Стандартных для maven каталогов src/main/java здесь нет: код уроков
+                          лежит в modules/<модуль>/<урок>/, поэтому пути перечислены явно.
+                        -->
+                        <includes>
+                            <include>modules/**/*.java</include>
+                        </includes>
+                        <importOrder/>
+                        <removeUnusedImports/>
+                        <googleJavaFormat>
+                            <style>AOSP</style>
+                        </googleJavaFormat>
+                        <formatAnnotations/>
+                        <endWithNewline/>
+                    </java>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

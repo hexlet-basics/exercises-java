@@ -12,7 +12,11 @@ compose-down:
 	docker-compose down -v --remove-orphans
 
 code-lint:
-	java -jar /opt/checkstyle.jar -c checkstyle.xml modules src
+	mvn -B spotless:check
+
+# Форматтер правит найденное сам, поэтому у проверки есть парная цель.
+code-lint-fix:
+	mvn -B spotless:apply
 
 compile:
 	@(for i in $$(find . -type f -name Main.java); do javac $$(dirname $$i)/*.java ; done)
@@ -28,6 +32,9 @@ compose-test:
 
 compose-code-lint:
 	docker-compose run --rm exercises make code-lint
+
+compose-code-lint-fix:
+	docker-compose run --rm exercises make code-lint-fix
 
 compose-description-lint:
 	docker-compose run --rm exercises make description-lint

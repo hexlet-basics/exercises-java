@@ -23,13 +23,36 @@ RUN ARCH=$(dpkg --print-architecture) \
   && tar -xzf /tmp/jdk.tar.gz -C ${JAVA_HOME} --strip-components=1 \
   && rm /tmp/jdk.tar.gz
 
-ARG CHECKSTYLE_VERSION=13.6.0
 ARG ASSERTJ_VERSION=3.27.7
 ARG COMMONS_LANG3_VERSION=3.20.0
 
-RUN curl -L https://github.com/checkstyle/checkstyle/releases/download/checkstyle-${CHECKSTYLE_VERSION}/checkstyle-${CHECKSTYLE_VERSION}-all.jar -o /opt/checkstyle.jar \
-  && curl -L https://repo1.maven.org/maven2/org/assertj/assertj-core/${ASSERTJ_VERSION}/assertj-core-${ASSERTJ_VERSION}.jar -o /opt/assertj.jar \
+RUN curl -L https://repo1.maven.org/maven2/org/assertj/assertj-core/${ASSERTJ_VERSION}/assertj-core-${ASSERTJ_VERSION}.jar -o /opt/assertj.jar \
   && curl -L https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/${COMMONS_LANG3_VERSION}/commons-lang3-${COMMONS_LANG3_VERSION}.jar -o /opt/commons_lang3.jar \
-  && chmod 644 /opt/checkstyle.jar /opt/assertj.jar /opt/commons_lang3.jar
+  && chmod 644 /opt/assertj.jar /opt/commons_lang3.jar
+
+# Maven стоит здесь ради единственного плагина — spotless, который проверяет формат кода уроков
+# (см. pom.xml). Своей программы у spotless нет, он существует только плагином к maven или gradle.
+# Линия 3.9: у Maven 4 пока нет релиза, в дистрибутиве Apache лежит rc.
+#
+# Ставим из tar.gz, а не из apt: пакет maven в Debian тянет за собой второй JDK, а тут уже стоит
+# Temurin из шага выше.
+ARG MAVEN_VERSION=3.9.16
+ENV MAVEN_HOME=/opt/maven
+ENV PATH=${MAVEN_HOME}/bin:$PATH
+
+RUN mkdir -p ${MAVEN_HOME} \
+  && curl -fsSL "https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz" -o /tmp/maven.tar.gz \
+  && tar -xzf /tmp/maven.tar.gz -C ${MAVEN_HOME} --strip-components=1 \
+  && rm /tmp/maven.tar.gz
+
+# Прогрев локального репозитория: сам плагин и google-java-format скачиваются один раз на сборке,
+# а не при каждом запуске make code-lint. Прогон идёт по файлу-пустышке, потому что код уроков
+# приезжает следующим слоем: иначе любая правка урока сбрасывала бы кеш и тянула зависимости
+# заново.
+COPY pom.xml .
+RUN mkdir -p modules/warmup \
+  && printf 'class Warmup {}\n' > modules/warmup/Warmup.java \
+  && mvn -B spotless:apply \
+  && rm -rf modules/warmup
 
 COPY . .
