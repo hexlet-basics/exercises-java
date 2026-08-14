@@ -1,7 +1,7 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 class AppTest {
     public static void main(final String[] args) throws Exception {

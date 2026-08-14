@@ -6,19 +6,19 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 
 class AppTest {
-  public static void main(String[] args) {
-    final var expected = "Summer\nhas come";
+    public static void main(String[] args) {
+        final var expected = "Summer\nhas come";
 
-    ByteArrayOutputStream out = new ByteArrayOutputStream();
-    System.setOut(new PrintStream(out));
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(out));
 
-    App.main(null);
+        App.main(null);
 
-    final var actual = out.toString().trim();
+        final var actual = out.toString().trim();
 
-    System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
-    System.out.println(actual);
+        System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
+        System.out.println(actual);
 
-    assertThat(actual).isEqualTo(expected);
-  }
+        assertThat(actual).isEqualTo(expected);
+    }
 }

@@ -1,4 +1,3 @@
-
 class App {
 
     public static void main(String[] args) {
@@ -6,5 +5,4 @@ class App {
         System.out.println("What Is Dead May Never Die");
         // END
     }
-
 }

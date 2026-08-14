@@ -5,8 +5,8 @@ public class App {
         var result = 1;
 
         while (i <= finish) {
-          result = result * i;
-          i = i + 1;
+            result = result * i;
+            i = i + 1;
         }
 
         return result;

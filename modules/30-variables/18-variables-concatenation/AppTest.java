@@ -1,13 +1,14 @@
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 class AppTest {
     public static void main(String[] args) {
-        final var expected = "Hello, Joffrey!\n"
-                + "Here is important information about your account security.\n"
-                + "We couldn't verify you mother's maiden name.";
+        final var expected =
+                "Hello, Joffrey!\n"
+                        + "Here is important information about your account security.\n"
+                        + "We couldn't verify you mother's maiden name.";
 
         App.main(null);
 

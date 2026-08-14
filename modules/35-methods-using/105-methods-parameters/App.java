@@ -11,9 +11,7 @@ public class App {
         var char4 = two.charAt(4);
         var char5 = two.charAt(2);
 
-        System.out.println(
-                char1 + " " + char2 + " " + char3 + " " + char4 + " " + char5
-                );
+        System.out.println(char1 + " " + char2 + " " + char3 + " " + char4 + " " + char5);
         // END
     }
 }
