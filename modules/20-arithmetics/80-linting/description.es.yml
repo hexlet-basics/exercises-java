@@ -38,7 +38,11 @@ theory: |
 
   Ahora el linter no mostrará errores. ¿Qué conclusión podemos sacar? El linter ayuda a escribir código que es más fácil de leer y analizar.
 
-  Recuerda que tener un linter no reemplaza el análisis y la simplificación independiente del código. En tus futuras prácticas en [Hexlet](https://ru.hexlet.io/?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson) y en el desarrollo real, el linter funcionará y te informará sobre cualquier violación.
+  El linter solo informa de la infracción. Para corregir el código se utilizan los formateadores, programas que ajustan el código al estándar por sí mismos.
+
+  En Java el formateo se configura con el plugin [spotless](https://github.com/diffplug/spotless). El formato en sí lo define [google-java-format](https://github.com/google/google-java-format), el estándar de estilo de Google. Basta un comando para que todo el código del proyecto quede uniforme, así que no hace falta discutir en el equipo dónde van los espacios y los saltos de línea.
+
+  Recuerda que tener un linter no reemplaza el análisis y la simplificación independiente del código. En los proyectos de [Hexlet](https://ru.hexlet.io/?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson) y en el desarrollo real la comprobación del estilo forma parte de la compilación, y el código con infracciones no llega a la revisión.
 
 instructions: |
 
