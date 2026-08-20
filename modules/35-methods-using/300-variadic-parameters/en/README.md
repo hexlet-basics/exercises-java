@@ -23,7 +23,7 @@ public static String join(String separator, String... values) {
 }
 ```
 
-The notation `String...` means "zero or more strings". Required parameters (like `separator`) go first, and the variable part is always last. Inside the method, these arguments are available as an ordinary array, so you can iterate over them and do something with them.
+The notation `String...` means "zero or more strings". Required parameters (like `separator`) go first, and the variable part is always last.
 
 ## Why it's needed
 

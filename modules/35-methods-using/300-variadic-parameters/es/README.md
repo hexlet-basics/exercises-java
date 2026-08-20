@@ -23,7 +23,7 @@ public static String join(String separator, String... values) {
 }
 ```
 
-La notación `String...` significa "cero o más cadenas". Los parámetros obligatorios (como `separator`) van primero, y la parte variable siempre va al final. Dentro del método, estos argumentos están disponibles como un array normal, por lo que se puede recorrerlos y hacer algo con ellos.
+La notación `String...` significa "cero o más cadenas". Los parámetros obligatorios (como `separator`) van primero, y la parte variable siempre va al final.
 
 ## Para qué sirve
 
