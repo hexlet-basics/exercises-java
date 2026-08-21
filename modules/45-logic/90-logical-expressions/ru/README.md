@@ -50,7 +50,7 @@ System.out.println(number >= 1 && number <= 10 && number % 2 == 0); // => true
 
 Java разворачивает его так:
 
-```java
+```text
 4 >= 1 && 4 <= 10 && 4 % 2 == 0
 true   && true    && 4 % 2 == 0   // два сравнения дали true
 true   && true    && 0 == 0       // посчитали остаток 4 % 2

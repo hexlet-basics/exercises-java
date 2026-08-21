@@ -2,7 +2,7 @@ Strings in Java appear at every step. We use them to work with text, print messa
 
 From Java's point of view, a string is a set of characters enclosed in double quotes. Let's look at some examples.
 
-```java
+```text
 "Hello"
 "Goodbye"
 "G"
@@ -23,7 +23,7 @@ If you print these strings to the screen, `"Hello"` and `"Goodbye"` will be clea
 
 A control question. Are these the same strings or not?
 
-```java
+```text
 "hexlet"
 " hexlet"
 ```

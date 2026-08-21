@@ -21,7 +21,7 @@ Cualquier cadena es una expresión. La concatenación de cadenas también es una
 
 Aquí tienes algunos ejemplos de expresiones. En los comentarios a la derecha de cada expresión se indica el valor resultante:
 
-```java
+```text
 62.5            // 62.5
 50 * 1.25       // 62.5
 120 / 10 * 2    // 24

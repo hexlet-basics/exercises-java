@@ -80,7 +80,7 @@ Now you know what the operators **AND**, **OR** and `!` mean. With their help yo
 
 When working with complex logical expressions, sometimes you need to invert them or rewrite them into an equivalent form that is more convenient to read. For this there are **De Morgan's laws**, two rules that describe how negation is distributed over a compound expression:
 
-```java
+```text
 !(A && B)  ==  !A || !B
 !(A || B)  ==  !A && !B
 ```

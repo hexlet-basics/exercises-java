@@ -100,7 +100,7 @@ The remainder helps in many tasks. It's used to check whether a number divides e
 
 For Java, there's no difference between `3+4` and `3 + 4`. The program understands both variants the same way and adds the numbers in both cases. The difference is only in readability. In programming, it's customary to separate arithmetic operators with spaces, because that makes the expression easier to read:
 
-```java
+```text
 3 + 4
 8 / 2
 7 % 3
@@ -108,7 +108,7 @@ For Java, there's no difference between `3+4` and `3 + 4`. The program understan
 
 The variant without spaces also works:
 
-```java
+```text
 3+4
 8/2
 7%3

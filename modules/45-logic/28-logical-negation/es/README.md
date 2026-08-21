@@ -80,7 +80,7 @@ Ahora ya sabes qué significan los operadores **Y**, **O** y `!`. Con su ayuda p
 
 Al trabajar con expresiones lógicas complejas, a veces hace falta invertirlas o reescribirlas en una forma equivalente que resulte más cómoda de leer. Para eso existen las **leyes de De Morgan**, dos reglas que describen cómo se reparte la negación por una expresión compuesta:
 
-```java
+```text
 !(A && B)  ==  !A || !B
 !(A || B)  ==  !A && !B
 ```

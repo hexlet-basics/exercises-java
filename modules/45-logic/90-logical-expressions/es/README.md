@@ -50,7 +50,7 @@ System.out.println(number >= 1 && number <= 10 && number % 2 == 0); // => true
 
 Java la despliega así:
 
-```java
+```text
 4 >= 1 && 4 <= 10 && 4 % 2 == 0
 true   && true    && 4 % 2 == 0   // dos comparaciones dieron true
 true   && true    && 0 == 0       // calculamos el resto 4 % 2

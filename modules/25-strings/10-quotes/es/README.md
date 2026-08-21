@@ -2,7 +2,7 @@ Las cadenas de texto en Java aparecen a cada paso. Con su ayuda trabajamos con t
 
 Desde el punto de vista de Java, una cadena de texto es un conjunto de caracteres encerrado entre comillas dobles. Veamos algunos ejemplos.
 
-```java
+```text
 "Hello"
 "Goodbye"
 "G"
@@ -23,7 +23,7 @@ Si mostramos estas cadenas en la pantalla, `"Hello"` y `"Goodbye"` se verán con
 
 Pregunta de control. ¿Son iguales estas cadenas o no?
 
-```java
+```text
 "hexlet"
 " hexlet"
 ```

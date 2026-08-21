@@ -100,7 +100,7 @@ El resto ayuda en muchas tareas. Con él se comprueba si un número se divide de
 
 Para Java no hay diferencia entre `3+4` y `3 + 4`. El programa entiende ambas variantes de la misma manera y en ambos casos suma los números. La diferencia está solo en la legibilidad. En programación se acostumbra a separar los operadores aritméticos con espacios, porque así la expresión se percibe más fácilmente:
 
-```java
+```text
 3 + 4
 8 / 2
 7 % 3
@@ -108,7 +108,7 @@ Para Java no hay diferencia entre `3+4` y `3 + 4`. El programa entiende ambas va
 
 La variante sin espacios también funciona:
 
-```java
+```text
 3+4
 8/2
 7%3

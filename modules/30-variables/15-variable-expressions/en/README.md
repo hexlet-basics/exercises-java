@@ -21,7 +21,7 @@ Any string is an expression. String concatenation is also an expression. When th
 
 Here are a few examples of expressions. In the comments to the right of each expression, the resulting value is written:
 
-```java
+```text
 62.5            // 62.5
 50 * 1.25       // 62.5
 120 / 10 * 2    // 24
