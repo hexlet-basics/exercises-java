@@ -37,7 +37,8 @@ Ahora echa un vistazo al siguiente código:
 
 ```java
 public static int sumNumbersFromRange(int start, int finish) {
-    // Técnicamente, se puede cambiar el valor de start, pero los argumentos de entrada deben mantenerse en su valor original
+    // Técnicamente, se puede cambiar el valor de start, pero los argumentos de entrada deben
+    // mantenerse en su valor original
     // Esto hace que el código sea más fácil de analizar
     var i = start;
     var sum = 0; // Inicialización de la suma

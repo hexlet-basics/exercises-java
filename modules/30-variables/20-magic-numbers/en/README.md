@@ -2,7 +2,6 @@
 Recall one of the past lessons:
 
 ```java
-
 var euros = 1000;
 var dollars = euros * 1.25; // => 1250
 var rubles = dollars * 60; // => 75000
@@ -17,7 +16,6 @@ This “smell” is called magic numbers. Numbers whose origin is impossible to 
 The way out is simple: it is enough to create variables with the correct names, how everything will fall into place.
 
 ```java
-
 var dollarsInEuro = 1.25;
 var roublesInDollar = 60;
 
