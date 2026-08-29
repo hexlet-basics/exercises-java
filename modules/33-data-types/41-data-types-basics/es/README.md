@@ -31,10 +31,10 @@ En la pantalla el resultado se ve parecido, pero dentro del programa son valores
 Una parte de los tipos está integrada en el lenguaje. Se les llama primitivos. Además de los números enteros *int* y los racionales *double*, incluyen el tipo lógico *boolean* con los valores `true` y `false`, así como el carácter *char*:
 
 ```java
-int n = 5;           // número entero
-double x = 1.5;      // número racional
+int n = 5; // número entero
+double x = 1.5; // número racional
 boolean flag = true; // valor lógico
-char c = 'A';        // un carácter
+char c = 'A'; // un carácter
 ```
 
 Presta atención al tipo *char*. Un carácter se escribe entre comillas simples, por ejemplo `'A'`. En cambio, una cadena de un solo carácter se encierra entre comillas dobles, por ejemplo `"A"`. Son valores diferentes de tipos diferentes.

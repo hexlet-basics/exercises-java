@@ -31,10 +31,10 @@ On the screen the result looks similar, but inside the program these are differe
 Some types are built into the language. They are called primitive. Besides integers *int* and rational numbers *double*, they include the boolean type *boolean* with the values `true` and `false`, as well as the character type *char*:
 
 ```java
-int n = 5;           // integer
-double x = 1.5;      // rational number
+int n = 5; // integer
+double x = 1.5; // rational number
 boolean flag = true; // boolean value
-char c = 'A';        // one character
+char c = 'A'; // one character
 ```
 
 Pay attention to the type *char*. A character is written in single quotes, for example `'A'`. But a string of one character is enclosed in double quotes, for example `"A"`. These are different values of different types.
