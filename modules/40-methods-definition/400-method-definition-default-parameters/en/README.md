@@ -5,9 +5,10 @@ In many languages the default value is written right in the definition. For exam
 ```python
 # The exponent is the second parameter with the default value 2
 def pow(x, base=2):
-    return x ** base
+    return x**base
 
-pow(3)     # 9, by default we raise to the second power
+
+pow(3)  # 9, by default we raise to the second power
 pow(3, 3)  # 27, the exponent is passed explicitly
 ```
 

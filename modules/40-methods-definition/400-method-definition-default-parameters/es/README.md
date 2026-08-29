@@ -5,9 +5,10 @@ En muchos lenguajes el valor predeterminado se escribe directamente en la defini
 ```python
 # El exponente es el segundo parámetro con el valor predeterminado 2
 def pow(x, base=2):
-    return x ** base
+    return x**base
 
-pow(3)     # 9, por defecto elevamos al cuadrado
+
+pow(3)  # 9, por defecto elevamos al cuadrado
 pow(3, 3)  # 27, el exponente se pasa de forma explícita
 ```
 

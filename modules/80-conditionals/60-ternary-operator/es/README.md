@@ -20,7 +20,7 @@ El operador ternario es el único de su tipo que exige tres operandos. Ayuda a e
 
 ```java
 public static int abs(int number) {
-  return number >= 0 ? number : -number;
+    return number >= 0 ? number : -number;
 }
 ```
 

@@ -20,7 +20,7 @@ The ternary operator is the only one of its kind that requires three operands. I
 
 ```java
 public static int abs(int number) {
-  return number >= 0 ? number : -number;
+    return number >= 0 ? number : -number;
 }
 ```
 

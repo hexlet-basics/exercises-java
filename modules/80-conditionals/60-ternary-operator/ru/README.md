@@ -20,7 +20,7 @@ App.abs(-10); // 10
 
 ```java
 public static int abs(int number) {
-  return number >= 0 ? number : -number;
+    return number >= 0 ? number : -number;
 }
 ```
 

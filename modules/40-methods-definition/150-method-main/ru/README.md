@@ -66,12 +66,11 @@ java App.java # компилирует и запускает на исполне
 
 ```java
 class MySuperClassName {
-    public static void oneMethod() {
-    }
-    public static void twoMethod() {
-    }
-    public static void threeMethod() {
-    }
+    public static void oneMethod() {}
+
+    public static void twoMethod() {}
+
+    public static void threeMethod() {}
 }
 ```
 
@@ -90,7 +89,6 @@ class MySuperClassName {
         MySuperClassName.threeMethod();
     }
 
-    public static void threeMethod() {
-    }
+    public static void threeMethod() {}
 }
 ```

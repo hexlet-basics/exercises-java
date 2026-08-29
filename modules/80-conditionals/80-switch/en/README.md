@@ -123,12 +123,13 @@ public static String getExplanation(int count) {
 One branch handles several values if you list them separated by commas:
 
 ```java
-String season = switch (month) {
-    case 12, 1, 2 -> "winter";
-    case 3, 4, 5 -> "spring";
-    case 6, 7, 8 -> "summer";
-    default -> "autumn";
-};
+String season =
+        switch (month) {
+            case 12, 1, 2 -> "winter";
+            case 3, 4, 5 -> "spring";
+            case 6, 7, 8 -> "summer";
+            default -> "autumn";
+        };
 ```
 
 `switch` occurs in code, but technically you can always do without it. The use of this construct is that it expresses the programmer's intention better when specific values of a variable need to be checked. Compared to `else if` blocks, code with `switch` reads more clearly.

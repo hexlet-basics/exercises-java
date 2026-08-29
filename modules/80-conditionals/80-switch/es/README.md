@@ -123,12 +123,13 @@ public static String getExplanation(int count) {
 Una sola rama atiende varios valores si se enumeran separados por comas:
 
 ```java
-String season = switch (month) {
-    case 12, 1, 2 -> "winter";
-    case 3, 4, 5 -> "spring";
-    case 6, 7, 8 -> "summer";
-    default -> "autumn";
-};
+String season =
+        switch (month) {
+            case 12, 1, 2 -> "winter";
+            case 3, 4, 5 -> "spring";
+            case 6, 7, 8 -> "summer";
+            default -> "autumn";
+        };
 ```
 
 `switch` aparece en el código, pero técnicamente siempre se puede prescindir de él. La utilidad de esta construcción está en que expresa mejor la intención del programador cuando hay que comprobar valores concretos de una variable. En comparación con los bloques `else if`, el código con `switch` se lee de forma más clara.

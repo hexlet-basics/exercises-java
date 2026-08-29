@@ -66,12 +66,11 @@ For simplicity we always use the name `App`, but in real code you will come acro
 
 ```java
 class MySuperClassName {
-    public static void oneMethod() {
-    }
-    public static void twoMethod() {
-    }
-    public static void threeMethod() {
-    }
+    public static void oneMethod() {}
+
+    public static void twoMethod() {}
+
+    public static void threeMethod() {}
 }
 ```
 
@@ -90,7 +89,6 @@ class MySuperClassName {
         MySuperClassName.threeMethod();
     }
 
-    public static void threeMethod() {
-    }
+    public static void threeMethod() {}
 }
 ```
