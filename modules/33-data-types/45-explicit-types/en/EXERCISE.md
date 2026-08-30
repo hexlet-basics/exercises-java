@@ -1,1 +1,1 @@
-Create the string *One more time* with an explicit type specification and print it to the screen.
+Create the string _One more time_ with an explicit type specification and print it to the screen.

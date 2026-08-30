@@ -30,7 +30,7 @@ result:
 - Aaaarrrgh!
 ```
 
-`\n` is a special character. In the literature it is often denoted as *LF* (Line Feed). You might think this is a typo, since here we see two characters `\` and `n`, but that's not the case. From the computer's point of view, this is a single invisible line feed character:
+`\n` is a special character. In the literature it is often denoted as _LF_ (Line Feed). You might think this is a typo, since here we see two characters `\` and `n`, but that's not the case. From the computer's point of view, this is a single invisible line feed character:
 
 ```java
 // We haven't studied this, but you should know the truth
@@ -60,8 +60,8 @@ A device that outputs the corresponding text takes this character into account. 
 
 Besides the line feed, such characters include:
 
-* Tabulation — the break you get by pressing the Tab key
-* Carriage return (only in Windows)
+- Tabulation — the break you get by pressing the Tab key
+- Carriage return (only in Windows)
 
 Programmers often need to use the line feed `\n` to format text correctly:
 
@@ -89,20 +89,21 @@ Pay attention to the following points:
     System.out.println("Dunsen");
     ```
 
-    Here we first print the "line feed" string, and then print an ordinary string. The program will display:
+   Here we first print the "line feed" string, and then print an ordinary string. The program will display:
 
     <!-- NOTE: two blank characters here so the example works correctly. -->
+
     ```text
     ㅤ
     ㅤ
     Dunsen
     ```
 
-    Why did two empty lines appear before the string *Dunsen*, and not one? The point is that `System.out.println()` automatically adds a line feed character to the end when it outputs a value.
+   Why did two empty lines appear before the string _Dunsen_, and not one? The point is that `System.out.println()` automatically adds a line feed character to the end when it outputs a value.
 
-    Thus, we specified one line feed explicitly, passing this escape sequence character as an argument to the function, and the second line feed was added by the function itself automatically.
+   Thus, we specified one line feed explicitly, passing this escape sequence character as an argument to the function, and the second line feed was added by the function itself automatically.
 
-    Another code example:
+   Another code example:
 
     ```java
     System.out.println("Polliver");
@@ -112,7 +113,7 @@ Pay attention to the following points:
     System.out.println("Dunsen");
     ```
 
-    The output will be like this:
+   The output will be like this:
 
     ```text
     Polliver
@@ -123,7 +124,7 @@ Pay attention to the following points:
     Dunsen
     ```
 
-    You now have enough knowledge to figure out on your own why the output was formed exactly this way.
+   You now have enough knowledge to figure out on your own why the output was formed exactly this way.
 
 3. If we need to display `\n` exactly as text (two separate printable characters), we can use the escaping method we already know, adding one more `\` at the beginning. That is, the sequence `\\n` will be displayed as the characters `\` and `n` following one after another:
 
@@ -131,7 +132,7 @@ Pay attention to the following points:
     System.out.println("Joffrey loves using \\n");
     ```
 
-    the screen will display:
+   the screen will display:
 
     ```text
     Joffrey loves using \n

@@ -49,5 +49,5 @@ Se vuelve especialmente complicado cuando se inserta el incremento en otras oper
 
 Recomendaciones de uso:
 
-* Nunca mezcles operaciones sin efectos secundarios con operaciones con efectos secundarios. Lo mismo se aplica a los métodos.
-* Utiliza el incremento y el decremento solo cuando no haya diferencia entre la forma prefija y la forma posfija, separados del resto del código, en una línea separada.
+- Nunca mezcles operaciones sin efectos secundarios con operaciones con efectos secundarios. Lo mismo se aplica a los métodos.
+- Utiliza el incremento y el decremento solo cuando no haya diferencia entre la forma prefija y la forma posfija, separados del resto del código, en una línea separada.

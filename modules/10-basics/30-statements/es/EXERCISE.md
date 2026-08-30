@@ -1,4 +1,4 @@
-Muestra en la pantalla, uno tras otro, tres nombres: *Robert*, *Stannis*, *Renly*. Como resultado, en la pantalla debería aparecer:
+Muestra en la pantalla, uno tras otro, tres nombres: _Robert_, _Stannis_, _Renly_. Como resultado, en la pantalla debería aparecer:
 
 ```text
 Robert

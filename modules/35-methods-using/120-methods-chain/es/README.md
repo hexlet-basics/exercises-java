@@ -6,15 +6,15 @@ Tomemos como ejemplo la siguiente tarea: formar la dirección de una página web
 https://codica.la/blog/de-obrero-a-programador
 ```
 
-La última parte aquí, *de-obrero-a-programador*, se crea automáticamente con el código que escribimos en Hexlet. Tiene un nombre especial: se llama [**slug**](https://es.wikipedia.org/wiki/URL_sem%C3%A1ntica).
+La última parte aquí, _de-obrero-a-programador_, se crea automáticamente con el código que escribimos en Hexlet. Tiene un nombre especial: se llama [**slug**](https://es.wikipedia.org/wiki/URL_sem%C3%A1ntica).
 
 ¿Qué pasos hay que realizar para obtener una cadena similar? Aquí solo algunos de ellos:
 
-* Convertir todo a minúsculas, para que no se creen accidentalmente duplicados de páginas idénticas en los motores de búsqueda
-* Limpiar el título de los espacios en blanco de los extremos. Pueden aparecer accidentalmente al escribir
-* Realizar la transliteración, porque en las direcciones es mejor usar caracteres del alfabeto latino
-* Recortar los caracteres especiales como los signos de interrogación y de exclamación
-* Reemplazar los espacios por guiones
+- Convertir todo a minúsculas, para que no se creen accidentalmente duplicados de páginas idénticas en los motores de búsqueda
+- Limpiar el título de los espacios en blanco de los extremos. Pueden aparecer accidentalmente al escribir
+- Realizar la transliteración, porque en las direcciones es mejor usar caracteres del alfabeto latino
+- Recortar los caracteres especiales como los signos de interrogación y de exclamación
+- Reemplazar los espacios por guiones
 
 Algunos de los pasos requieren conocimientos nuevos para nosotros, por eso los omitiremos. Los demás pasos se verán más o menos así:
 

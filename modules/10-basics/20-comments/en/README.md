@@ -53,7 +53,7 @@ While working, you'll come across code like this in our editor:
 // END
 ```
 
-*BEGIN* and *END* here are ordinary single-line comments that don't affect how the program runs at all. They show where to write the code for the exercise.
+_BEGIN_ and _END_ here are ordinary single-line comments that don't affect how the program runs at all. They show where to write the code for the exercise.
 
 ```java
 // BEGIN
@@ -61,4 +61,4 @@ While working, you'll come across code like this in our editor:
 // END
 ```
 
-When you see *BEGIN* and *END*, write your code between them and leave the rest unchanged.
+When you see _BEGIN_ and _END_, write your code between them and leave the rest unchanged.

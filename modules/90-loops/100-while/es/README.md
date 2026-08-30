@@ -50,9 +50,9 @@ finished!
 
 En el código del método se utiliza el ciclo `while`. Está compuesto por tres elementos:
 
-* La **palabra clave** `while`. Aunque se parece a una llamada a un método, no lo es.
-* El **predicado** es una condición que se especifica entre paréntesis después de `while` y se evalúa en cada iteración.
-* El **cuerpo del ciclo** es un bloque de código entre llaves, similar a un bloque de código en un método. Todas las constantes o variables definidas dentro de este bloque solo serán visibles dentro de él.
+- La **palabra clave** `while`. Aunque se parece a una llamada a un método, no lo es.
+- El **predicado** es una condición que se especifica entre paréntesis después de `while` y se evalúa en cada iteración.
+- El **cuerpo del ciclo** es un bloque de código entre llaves, similar a un bloque de código en un método. Todas las constantes o variables definidas dentro de este bloque solo serán visibles dentro de él.
 
 La construcción se lee de la siguiente manera: "haz lo que se especifica en el cuerpo del ciclo mientras la condición `i <= lastNumber` sea verdadera". Veamos cómo funciona este código para la llamada `App.printNumbers(3)`:
 
@@ -87,9 +87,9 @@ Lo más importante en un ciclo es su **finalización**, es decir, **salir del ci
 
 Por lo general, la tarea se reduce a introducir una variable llamada **contador del ciclo**. Funciona de la siguiente manera:
 
-* Primero, se inicializa el contador, es decir, se le asigna un valor inicial. En el ejemplo anterior, el contador es la instrucción `var i = 1`, que se ejecuta antes de entrar al ciclo.
-* Luego, en la condición del ciclo, se verifica si el contador ha alcanzado su valor límite.
-* Finalmente, el contador cambia su valor `i = i + 1`
+- Primero, se inicializa el contador, es decir, se le asigna un valor inicial. En el ejemplo anterior, el contador es la instrucción `var i = 1`, que se ejecuta antes de entrar al ciclo.
+- Luego, en la condición del ciclo, se verifica si el contador ha alcanzado su valor límite.
+- Finalmente, el contador cambia su valor `i = i + 1`
 
 Los principiantes cometen la mayoría de los errores en este punto. Supongamos que hay un error en la verificación del predicado. Esto puede llevar a un **bucle infinito**, una situación en la que el ciclo se ejecuta indefinidamente y el programa nunca se detiene.
 

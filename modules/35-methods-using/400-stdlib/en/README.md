@@ -4,6 +4,6 @@ For beginners, this information often looks like: "Go somewhere, I don't know wh
 
 Here are some tips on how to learn about new methods:
 
-* Always clearly track which data type you are currently working with. Almost always you will find the needed method in the corresponding section of the documentation — for example, to work with strings you need to study string methods
-* Periodically open the section with standard methods for the topic you are studying and simply skim through them, studying signatures and ways of use
-* Read other people's code more often, especially the code of the libraries you use. It is all available on GitHub
+- Always clearly track which data type you are currently working with. Almost always you will find the needed method in the corresponding section of the documentation — for example, to work with strings you need to study string methods
+- Periodically open the section with standard methods for the topic you are studying and simply skim through them, studying signatures and ways of use
+- Read other people's code more often, especially the code of the libraries you use. It is all available on GitHub

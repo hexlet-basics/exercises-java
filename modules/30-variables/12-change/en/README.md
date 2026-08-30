@@ -11,7 +11,7 @@ greeting = "Mother!";
 System.out.println(greeting); // => Mother!
 ```
 
-Here we first wrote one string (*Father!*) into the variable, and then another (*Mother!*). The name of the variable did not change, but the value inside became different. The keyword `var` is only needed when creating a variable. When changing the value, it is no longer written.
+Here we first wrote one string (_Father!_) into the variable, and then another (_Mother!_). The name of the variable did not change, but the value inside became different. The keyword `var` is only needed when creating a variable. When changing the value, it is no longer written.
 
 ```text
 Before: greeting ──→ "Father!"

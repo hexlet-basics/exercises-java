@@ -1,4 +1,4 @@
-La mayoría de los métodos aceptan un número fijo de argumentos: hay que pasar tantos valores como parámetros se indiquen en la declaración. Pero hay métodos a los que se les puede pasar cualquier cantidad de argumentos, desde cero hasta decenas. Estos métodos se llaman **métodos con un número variable de parámetros** (en inglés, *variadic*).
+La mayoría de los métodos aceptan un número fijo de argumentos: hay que pasar tantos valores como parámetros se indiquen en la declaración. Pero hay métodos a los que se les puede pasar cualquier cantidad de argumentos, desde cero hasta decenas. Estos métodos se llaman **métodos con un número variable de parámetros** (en inglés, _variadic_).
 
 Un buen ejemplo es el método `String.join()`. Une cadenas con un separador, y la cantidad de cadenas que se unen puede ser cualquiera:
 

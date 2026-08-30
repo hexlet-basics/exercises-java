@@ -16,9 +16,9 @@ En Java los parámetros no tienen valores predeterminados. Sin embargo, el mismo
 
 ¿Qué es eso? Java permite crear varios métodos con el mismo nombre. Esos métodos iguales deben tener:
 
-* Distintos tipos de parámetros de entrada
-* Distinta cantidad de parámetros
-* O todo eso a la vez
+- Distintos tipos de parámetros de entrada
+- Distinta cantidad de parámetros
+- O todo eso a la vez
 
 Veámoslo con el ejemplo de un método que suma números. Crearemos dos versiones de `sum()` en una misma clase. La primera recibe dos números; la segunda recibe solo uno y le suma 10:
 
@@ -53,8 +53,8 @@ La sobrecarga de métodos puede llevar a la duplicación de código, sobre todo 
 
 Para reducir la duplicación basta con dar dos pasos:
 
-* Primero, definir un método común que reciba la mayor cantidad de parámetros
-* Después, llamarlo desde aquellos métodos que tienen valores predeterminados
+- Primero, definir un método común que reciba la mayor cantidad de parámetros
+- Después, llamarlo desde aquellos métodos que tienen valores predeterminados
 
 En el código se ve así:
 

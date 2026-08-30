@@ -15,7 +15,7 @@ En el bloque anterior escribíamos un valor concreto en la variable. Pero aquí,
 var dollarsCount = 50 * 1.25;
 ```
 
-El programa calculará el resultado *62.5* y lo escribirá en la variable. Desde el punto de vista del programa, no importa qué esté escrito: *62.5* o *50 * 1.25*. Ambas variantes son expresiones que hay que calcular. Y ambas se calculan al mismo valor *62.5*.
+El programa calculará el resultado _62.5_ y lo escribirá en la variable. Desde el punto de vista del programa, no importa qué esté escrito: _62.5_ o _50 * 1.25_. Ambas variantes son expresiones que hay que calcular. Y ambas se calculan al mismo valor _62.5_.
 
 Cualquier cadena es una expresión. La concatenación de cadenas también es una expresión. Cuando el programa ve una expresión, la calcula y **devuelve** el resultado.
 

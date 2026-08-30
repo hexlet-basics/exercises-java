@@ -9,7 +9,6 @@ Look at the code and try to answer what the values of these expressions are:
 
 The correct answer: in the first case `true`, in the second — `false`. Why? To answer this question you need to dive a little into how computers work.
 
-
 In our programs we operate on data — numbers, strings, boolean values. We perform various operations — we store them in variables, multiply, divide, concatenate them.
 
 That is how a programmer sees their work. But inside the computer everything is a bit different. While running, the program gets access to and manipulates data through their addresses in memory:
@@ -28,15 +27,15 @@ System.out.println(name);
 
 Because of these technical peculiarities, the comparison of data with each other can be looked at in two ways:
 
-* *The same one* — the same piece of memory
-* *The same kind* — identical values regardless of where the addresses point
+- _The same one_ — the same piece of memory
+- _The same kind_ — identical values regardless of where the addresses point
 
 An example from real life: two identical glasses from one set. Despite being identical, they are still different glasses.
 
 Programming languages work with these notions differently. As in many other languages, in Java all data is divided into two large types:
 
-* Primitive data is compared by value, regardless of addresses
-* Reference data is compared by addresses
+- Primitive data is compared by value, regardless of addresses
+- Reference data is compared by addresses
 
 This is how primitive data works:
 

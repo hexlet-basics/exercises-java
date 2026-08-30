@@ -67,7 +67,7 @@ path.read();
 
 ## Conclusiones
 
-* Los métodos estáticos no están relacionados con objetos específicos y se llaman directamente desde la clase
-* Los métodos no estáticos construyen su lógica en relación a los datos del objeto mismo y se llaman en objetos específicos
+- Los métodos estáticos no están relacionados con objetos específicos y se llaman directamente desde la clase
+- Los métodos no estáticos construyen su lógica en relación a los datos del objeto mismo y se llaman en objetos específicos
 
 Todo esto nos lleva suavemente a la posibilidad de crear nuestras propias clases, objetos y métodos, sin los cuales no se puede imaginar ningún programa, ni siquiera uno pequeño.

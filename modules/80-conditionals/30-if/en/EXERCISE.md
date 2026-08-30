@@ -12,5 +12,5 @@ The algorithm:
 
 1. Generate an upper-case string based on the argument string with the help of `toUpperCase()`.
 2. Compare it with the original string:
-    * If the strings are equal, then the argument string is in upper case
-    * Otherwise the argument string is not in upper case
+    - If the strings are equal, then the argument string is in upper case
+    - Otherwise the argument string is not in upper case

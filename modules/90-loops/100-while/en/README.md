@@ -50,9 +50,9 @@ finished!
 
 The `while` loop is used in the code of the method. It consists of three elements:
 
-* The **keyword** `while`. Despite the similarity to method calls, this is not a method call
-* The **predicate** — the condition that is specified in parentheses after `while` and is evaluated on every iteration
-* The **body of the loop** — a block of code in curly braces, analogous to the block of code in a method. All the constants or variables defined inside this block will be visible only inside this block
+- The **keyword** `while`. Despite the similarity to method calls, this is not a method call
+- The **predicate** — the condition that is specified in parentheses after `while` and is evaluated on every iteration
+- The **body of the loop** — a block of code in curly braces, analogous to the block of code in a method. All the constants or variables defined inside this block will be visible only inside this block
 
 The construct reads like this: "do what is specified in the body of the loop while the condition `i <= lastNumber` is true". Let's take apart the work of this code for the call `App.printNumbers(3)`:
 
@@ -87,9 +87,9 @@ The most important thing in a loop is the ending of its work, that is, **exiting
 
 Usually the task comes down to introducing a variable called the **loop counter**. It works on the following principle:
 
-* First the counter is initialized, that is, an initial value is set for it. In the example above the counter is the instruction `var i = 1`, executed before entering the loop
-* Then the condition of the loop checks whether the counter has reached its limit value.
-* In the end the counter changes its value `i = i + 1`
+- First the counter is initialized, that is, an initial value is set for it. In the example above the counter is the instruction `var i = 1`, executed before entering the loop
+- Then the condition of the loop checks whether the counter has reached its limit value.
+- In the end the counter changes its value `i = i + 1`
 
 At this point beginners make the most mistakes. Let's imagine that the check in the predicate is written incorrectly in the code. This can lead to an **infinite loop** — a situation in which the loop works endlessly and the program never stops.
 

@@ -1,22 +1,22 @@
 
 Las operaciones lógicas son expresiones. Eso significa que **las operaciones lógicas se pueden combinar con otras expresiones**. Veámoslo con un ejemplo. Supongamos que queremos comprobar la paridad de un número. En programación, la paridad se comprueba con el resto de la división por 2:
 
-* Si el resto es 0, el número era par
-* Si el resto no es 0, el número era impar
+- Si el resto es 0, el número era par
+- Si el resto no es 0, el número era impar
 
 El resto de la división es un concepto simple, pero muy importante en aritmética, álgebra, teoría de números y criptografía. La idea es sencilla: hay que dividir un número en varios grupos iguales. Si al final queda algo, eso es el resto de la división.
 
 Repartimos caramelos a partes iguales entre personas:
 
-* 7 caramelos, 2 personas: 2 x 3 + **resto 1**. Significa que 7 no es múltiplo de 2
-* 21 caramelos, 3 personas: 3 x 7 + **resto 0**. Significa que 21 es múltiplo de 3
-* 19 caramelos, 5 personas: 5 x 3 + **resto 4**. Significa que 19 no es múltiplo de 5
+- 7 caramelos, 2 personas: 2 x 3 + **resto 1**. Significa que 7 no es múltiplo de 2
+- 21 caramelos, 3 personas: 3 x 7 + **resto 0**. Significa que 21 es múltiplo de 3
+- 19 caramelos, 5 personas: 5 x 3 + **resto 4**. Significa que 19 no es múltiplo de 5
 
 En el código, el resto se calcula con la ayuda del operador `%`:
 
-* `7 % 2` → `1`
-* `21 % 3` → `0`
-* `19 % 5` → `4`
+- `7 % 2` → `1`
+- `21 % 3` → `0`
+- `19 % 5` → `4`
 
 Con su ayuda escribiremos un método para comprobar la paridad:
 
@@ -32,8 +32,8 @@ App.isEven(3); // false
 
 En una sola expresión hemos combinado dos operadores:
 
-* `==` — comprobación de igualdad
-* `%` — operador aritmético del resto de la división
+- `==` — comprobación de igualdad
+- `%` — operador aritmético del resto de la división
 
 **La prioridad de las operaciones aritméticas es mayor que la de las lógicas.** Eso significa que primero se calcula la expresión aritmética `number % 2`, y después el resultado participa en la comparación lógica.
 

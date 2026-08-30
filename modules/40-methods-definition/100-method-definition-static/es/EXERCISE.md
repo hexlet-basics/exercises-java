@@ -1,5 +1,5 @@
 
-Implementa un método estático llamado `printMotto()` que muestre en la pantalla la frase *Winter is coming*.
+Implementa un método estático llamado `printMotto()` que muestre en la pantalla la frase _Winter is coming_.
 
 ```java
 // La clase App ya está definida

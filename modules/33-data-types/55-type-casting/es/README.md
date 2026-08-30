@@ -9,7 +9,7 @@ var number = Integer.parseInt("345");
 System.out.println(number + 5); // => 350
 ```
 
-El método `Integer.parseInt` recibe una cadena y devuelve un número entero de tipo *int*. De forma parecida se convierte una cadena en un número racional con `Double.parseDouble`.
+El método `Integer.parseInt` recibe una cadena y devuelve un número entero de tipo _int_. De forma parecida se convierte una cadena en un número racional con `Double.parseDouble`.
 
 ## Conversión entre tipos primitivos
 
@@ -29,7 +29,7 @@ System.out.println(7 / 2);          // => 3
 System.out.println((double) 7 / 2); // => 3.5
 ```
 
-En el primer caso ambos valores son enteros, por eso el resultado es entero. En el segundo caso el dividendo está convertido al tipo *double*, y la división pasó a ser racional.
+En el primer caso ambos valores son enteros, por eso el resultado es entero. En el segundo caso el dividendo está convertido al tipo _double_, y la división pasó a ser racional.
 
 ## Conversión dentro de expresiones compuestas
 

@@ -18,9 +18,9 @@ A diferencia de los lenguajes naturales, donde un texto con errores se puede ent
 
 Si un programa en Java está escrito de forma sintácticamente incorrecta, el compilador muestra en la pantalla:
 
-* Un mensaje de error
-* Una indicación del archivo
-* La línea del archivo donde, según él, ocurrió el error
+- Un mensaje de error
+- Una indicación del archivo
+- La línea del archivo donde, según él, ocurrió el error
 
 A continuación, un ejemplo de código con un error de sintaxis:
 

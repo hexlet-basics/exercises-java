@@ -34,8 +34,8 @@ Esta posibilidad se ha agregado a los lenguajes de programación para liberar al
 
 Este método acepta:
 
-* El primer parámetro es el índice desde el cual se debe comenzar a extraer la subcadena.
-* El segundo parámetro es el índice hasta el cual se deben extraer los caracteres.
+- El primer parámetro es el índice desde el cual se debe comenzar a extraer la subcadena.
+- El segundo parámetro es el índice hasta el cual se deben extraer los caracteres.
 
 Por defecto, se toma la cadena hasta el final:
 

@@ -30,7 +30,7 @@ resultado:
 - ¡Aaaarrrgh!
 ```
 
-`\n` es un carácter especial. En la literatura a menudo se le llama *LF* (Line Feed). Es posible que ahora estés pensando que esto es un error tipográfico, ya que aquí vemos dos caracteres `\` y `n`, pero no es así. Desde el punto de vista de la computadora, es un solo carácter de salto de línea invisible:
+`\n` es un carácter especial. En la literatura a menudo se le llama _LF_ (Line Feed). Es posible que ahora estés pensando que esto es un error tipográfico, ya que aquí vemos dos caracteres `\` y `n`, pero no es así. Desde el punto de vista de la computadora, es un solo carácter de salto de línea invisible:
 
 ```java
 // No hemos estudiado esto, pero debes saber la verdad
@@ -60,8 +60,8 @@ El dispositivo que muestra el texto correspondiente tiene en cuenta este caráct
 
 Además del salto de línea, estos caracteres incluyen:
 
-* Tabulación - la separación que se obtiene al presionar la tecla Tab
-* Retorno de carro (solo en Windows)
+- Tabulación - la separación que se obtiene al presionar la tecla Tab
+- Retorno de carro (solo en Windows)
 
 Los programadores a menudo necesitan usar el salto de línea `\n` para formatear correctamente el texto:
 
@@ -89,7 +89,7 @@ Ten en cuenta los siguientes puntos:
     System.out.println("Dunsen");
     ```
 
-    Aquí primero imprimimos una cadena "salto de línea" y luego imprimimos una cadena normal. El programa mostrará en la pantalla:
+   Aquí primero imprimimos una cadena "salto de línea" y luego imprimimos una cadena normal. El programa mostrará en la pantalla:
 
     ```text
     ㅤ
@@ -97,11 +97,11 @@ Ten en cuenta los siguientes puntos:
     Dunsen
     ```
 
-    ¿Por qué aparecieron dos líneas vacías antes de la cadena *Dunsen* en lugar de una? El caso es que `System.out.println()` agrega automáticamente un carácter de salto de línea al final al imprimir un valor.
+   ¿Por qué aparecieron dos líneas vacías antes de la cadena _Dunsen_ en lugar de una? El caso es que `System.out.println()` agrega automáticamente un carácter de salto de línea al final al imprimir un valor.
 
-    Por lo tanto, especificamos un salto de línea explícitamente pasando este carácter de secuencia de escape como argumento a la función, y el segundo salto de línea se agregó automáticamente por la función.
+   Por lo tanto, especificamos un salto de línea explícitamente pasando este carácter de secuencia de escape como argumento a la función, y el segundo salto de línea se agregó automáticamente por la función.
 
-    Otro ejemplo de código:
+   Otro ejemplo de código:
 
     ```java
     System.out.println("Polliver");
@@ -111,7 +111,7 @@ Ten en cuenta los siguientes puntos:
     System.out.println("Dunsen");
     ```
 
-    La salida será así:
+   La salida será así:
 
     ```text
     Polliver
@@ -122,7 +122,7 @@ Ten en cuenta los siguientes puntos:
     Dunsen
     ```
 
-    Ahora tienes suficiente conocimiento para entender por qué la salida se formó de esta manera.
+   Ahora tienes suficiente conocimiento para entender por qué la salida se formó de esta manera.
 
 3. Si necesitamos imprimir `\n` como texto (dos caracteres de impresión separados), podemos usar el método de escape que ya conocemos, agregando otro `\` al principio. Es decir, la secuencia `\\n` se mostrará como los caracteres `\` y `n` uno después del otro:
 
@@ -130,7 +130,7 @@ Ten en cuenta los siguientes puntos:
     System.out.println("Joffrey ama usar \\n");
     ```
 
-    se mostrará en la pantalla:
+   se mostrará en la pantalla:
 
     ```text
     Joffrey ama usar \n

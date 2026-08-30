@@ -4,6 +4,6 @@ Para los principiantes, esta información a menudo parece: "Ve allí, no sé dó
 
 Aquí hay algunos consejos sobre cómo aprender sobre nuevos métodos:
 
-* Siempre sigue claramente el tipo de datos con el que estás trabajando. Casi siempre encontrarás el método necesario en la sección correspondiente de la documentación, por ejemplo, para trabajar con cadenas, debes estudiar los métodos de cadena.
-* Abre periódicamente la sección de métodos estándar relacionados con el tema que estás estudiando y simplemente revísalos, estudiando las firmas y formas de uso.
-* Lee el código de otras personas con más frecuencia, especialmente el código de las bibliotecas que estás utilizando. Todo está disponible en GitHub.
+- Siempre sigue claramente el tipo de datos con el que estás trabajando. Casi siempre encontrarás el método necesario en la sección correspondiente de la documentación, por ejemplo, para trabajar con cadenas, debes estudiar los métodos de cadena.
+- Abre periódicamente la sección de métodos estándar relacionados con el tema que estás estudiando y simplemente revísalos, estudiando las firmas y formas de uso.
+- Lee el código de otras personas con más frecuencia, especialmente el código de las bibliotecas que estás utilizando. Todo está disponible en GitHub.

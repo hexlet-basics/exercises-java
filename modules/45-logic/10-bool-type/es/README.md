@@ -16,16 +16,16 @@ System.out.println(true);  // => true
 System.out.println(false); // => false
 ```
 
-En la práctica se usan pocas veces así, de forma tan directa, pero sobre ellos se construye la lógica del comportamiento del programa. Nos topamos con esto cada día, cuando introducimos códigos PIN y contraseñas, cuando realizamos acciones con distintos desenlaces posibles. Todas esas variantes están escritas dentro del programa en forma de expresiones condicionales. El programa razona más o menos así: *si es así, haz una cosa; si es de otra manera, haz otra*.
+En la práctica se usan pocas veces así, de forma tan directa, pero sobre ellos se construye la lógica del comportamiento del programa. Nos topamos con esto cada día, cuando introducimos códigos PIN y contraseñas, cuando realizamos acciones con distintos desenlaces posibles. Todas esas variantes están escritas dentro del programa en forma de expresiones condicionales. El programa razona más o menos así: _si es así, haz una cosa; si es de otra manera, haz otra_.
 
 En Java están disponibles las siguientes operaciones de comparación:
 
-* `<` — menor que
-* `<=` — menor o igual que
-* `>` — mayor que
-* `>=` — mayor o igual que
-* `==` — igual que
-* `!=` — distinto de
+- `<` — menor que
+- `<=` — menor o igual que
+- `>` — mayor que
+- `>=` — mayor o igual que
+- `==` — igual que
+- `!=` — distinto de
 
 Los lenguajes de programación adaptaron todas las operaciones matemáticas de comparación sin cambios, excepto los operadores de igualdad y desigualdad. En matemáticas, para la igualdad se usa el habitual `=`, pero en programación el símbolo `=` asigna valores a las variables. Por eso en Java se compara con la ayuda de `==`. Unos cuantos ejemplos mostrando el resultado en la pantalla:
 

@@ -44,9 +44,9 @@ switch (valor) {
 
 Desde el punto de vista de la cantidad de elementos, `switch` es una construcción bastante compleja. Incluye:
 
-* La descripción externa con la palabra clave `switch`. En ella hay dos elementos: la variable por cuyos valores `switch` elige el comportamiento, y las llaves para las variantes de elección
-* Las construcciones `case` y `default`, dentro de las cuales se describe el comportamiento para los distintos valores de la variable. Cada `case` corresponde a un `if`, como en el ejemplo de arriba. Aquí `default` es una situación especial que corresponde a la rama `else` de las construcciones condicionales. Igual que con `else`, indicar `default` no es obligatorio
-* La construcción `break`, que evita la caída de una rama a otra. Sin ella, después del `case` necesario la ejecución pasará al `case` siguiente. Y así seguirá hasta el `break` más próximo o hasta el final del `switch`
+- La descripción externa con la palabra clave `switch`. En ella hay dos elementos: la variable por cuyos valores `switch` elige el comportamiento, y las llaves para las variantes de elección
+- Las construcciones `case` y `default`, dentro de las cuales se describe el comportamiento para los distintos valores de la variable. Cada `case` corresponde a un `if`, como en el ejemplo de arriba. Aquí `default` es una situación especial que corresponde a la rama `else` de las construcciones condicionales. Igual que con `else`, indicar `default` no es obligatorio
+- La construcción `break`, que evita la caída de una rama a otra. Sin ella, después del `case` necesario la ejecución pasará al `case` siguiente. Y así seguirá hasta el `break` más próximo o hasta el final del `switch`
 
 Las llaves en `switch` no definen un bloque de código, como en otros lugares. Dentro solo se admite la sintaxis que se muestra arriba. Allí se pueden usar `case` o `default`. Pero dentro de cada `case` y `default` la situación es otra. Ahí se ejecuta cualquier código arbitrario:
 

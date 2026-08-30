@@ -34,8 +34,8 @@ cada carácter se procesa por turno
 
 Lo más importante en este código es poner la condición correcta en el `while`. Se puede hacer de dos maneras:
 
-* `i < name.length()`
-* `i <= name.length() - 1`
+- `i < name.length()`
+- `i <= name.length() - 1`
 
 Las dos maneras llevan al mismo resultado. La primera aparece más a menudo, porque tiene menos aritmética.
 

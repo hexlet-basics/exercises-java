@@ -12,16 +12,16 @@ System.out.println( "Hello, World!" ); System.out.println("I'm a developer!") ;
 
 The linter will complain about violations in several places at once:
 
-* '(' is followed by whitespace. [ParenPad]
-* ')' is preceded with whitespace. [ParenPad]
-* ';' is preceded with whitespace. [NoWhitespaceBefore]
-* Only one statement per line allowed. [OneStatementPerLine]
+- '(' is followed by whitespace. [ParenPad]
+- ')' is preceded with whitespace. [ParenPad]
+- ';' is preceded with whitespace. [NoWhitespaceBefore]
+- Only one statement per line allowed. [OneStatementPerLine]
 
 Let's analyze these errors:
 
-* The **ParenPad** rule, shown in square brackets, requires no spaces after the opening parenthesis and before the closing one
-* The **NoWhitespaceBefore** rule indicates that you shouldn't put an extra space before the semicolon
-* Each new statement should be written on a new line. This is indicated by the *OneStatementPerLine* rule
+- The **ParenPad** rule, shown in square brackets, requires no spaces after the opening parenthesis and before the closing one
+- The **NoWhitespaceBefore** rule indicates that you shouldn't put an extra space before the semicolon
+- Each new statement should be written on a new line. This is indicated by the _OneStatementPerLine_ rule
 
 Following these rules doesn't affect the result, but it helps to write code that's clearer and easier to grasp.
 

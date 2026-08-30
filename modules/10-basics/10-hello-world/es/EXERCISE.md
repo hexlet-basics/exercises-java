@@ -8,4 +8,4 @@ class App {
 }
 ```
 
-Si escribes *heLLo, woRld!* en lugar de *Hello, World!*, se considerará un texto diferente, porque las mayúsculas y minúsculas son caracteres distintos. El tamaño de la letra se llama *mayúsculas y minúsculas* (*case*), y se dice: **¡las mayúsculas y minúsculas importan!** Esto se aplica a casi todo en el código, así que acostúmbrate a prestar siempre atención a las mayúsculas y minúsculas.
+Si escribes _heLLo, woRld!_ en lugar de _Hello, World!_, se considerará un texto diferente, porque las mayúsculas y minúsculas son caracteres distintos. El tamaño de la letra se llama _mayúsculas y minúsculas_ (_case_), y se dice: **¡las mayúsculas y minúsculas importan!** Esto se aplica a casi todo en el código, así que acostúmbrate a prestar siempre atención a las mayúsculas y minúsculas.

@@ -5,9 +5,9 @@ Escriba un método `whoIsThisHouseToStarks()` para Sam, que reciba el apellido d
 
 Reglas de determinación:
 
-  * Amigos (`"friend"`): "Karstark", "Tally"
-  * Enemigos (`"enemy"`): "Lannister", "Frey"
-  * Todas las demás familias se consideran neutrales
+- Amigos (`"friend"`): "Karstark", "Tally"
+- Enemigos (`"enemy"`): "Lannister", "Frey"
+- Todas las demás familias se consideran neutrales
 
 Ejemplos de llamadas:
 

@@ -12,16 +12,16 @@ System.out.println( "Hello, World!" ); System.out.println("I'm a developer!") ;
 
 El linter mostrará errores en varios lugares:
 
-* '(' está seguido de un espacio en blanco. [ParenPad]
-* ')' está precedido de un espacio en blanco. [ParenPad]
-* ';' está precedido de un espacio en blanco. [NoWhitespaceBefore]
-* Solo se permite una instrucción por línea. [OneStatementPerLine]
+- '(' está seguido de un espacio en blanco. [ParenPad]
+- ')' está precedido de un espacio en blanco. [ParenPad]
+- ';' está precedido de un espacio en blanco. [NoWhitespaceBefore]
+- Solo se permite una instrucción por línea. [OneStatementPerLine]
 
 Analicemos estos errores:
 
-* La regla **ParenPad**, indicada entre corchetes, requiere que no haya espacios después del paréntesis de apertura y antes del paréntesis de cierre.
-* La regla **NoWhitespaceBefore** indica que no se debe colocar un espacio adicional antes del punto y coma.
-* Es común escribir cada nueva instrucción en una nueva línea. Esto es lo que indica la regla *OneStatementPerLine*.
+- La regla **ParenPad**, indicada entre corchetes, requiere que no haya espacios después del paréntesis de apertura y antes del paréntesis de cierre.
+- La regla **NoWhitespaceBefore** indica que no se debe colocar un espacio adicional antes del punto y coma.
+- Es común escribir cada nueva instrucción en una nueva línea. Esto es lo que indica la regla _OneStatementPerLine_.
 
 Cumplir con estas reglas no afecta el resultado, pero ayuda a escribir un código más comprensible y fácil de entender.
 

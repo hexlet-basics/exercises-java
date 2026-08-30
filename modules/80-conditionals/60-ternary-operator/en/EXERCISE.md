@@ -9,7 +9,7 @@ App.convertString("hello"); // "olleh"
 App.convertString(""); // ""
 ```
 
-* `StringUtils.reverse()` – reversing a string
-* `Character.isUpperCase()` – checking a character for upper case
+- `StringUtils.reverse()` – reversing a string
+- `Character.isUpperCase()` – checking a character for upper case
 
 Try to write two variants of the method: with an ordinary if-else, and with the ternary operator.

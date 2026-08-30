@@ -12,8 +12,8 @@ Métodos como estos no son de mucha utilidad, ya que el resultado de su trabajo 
 
 Veámoslo con un ejemplo. Tomemos la tarea de procesar el correo electrónico. Cuando un usuario se registra en un sitio, puede escribir su correo de cualquier manera:
 
-* Añadir espacios por accidente al principio o al final `_support@hexlet.io__`
-* Usar letras en distintas mayúsculas y minúsculas `SUPPORT@hexlet.io`
+- Añadir espacios por accidente al principio o al final `_support@hexlet.io__`
+- Usar letras en distintas mayúsculas y minúsculas `SUPPORT@hexlet.io`
 
 Si guardamos la dirección así en la base de datos, el usuario no podrá entrar en el sitio cuando escriba la dirección sin espacios y con otras mayúsculas.
 
@@ -44,8 +44,8 @@ var message = App.greeting();
 
 Cambiemos el método `greeting()` para que empiece a devolver datos en lugar de imprimirlos. Para eso tenemos que hacer dos correcciones:
 
-* Describir el tipo de los datos devueltos — aquí es la cadena `String`
-* Devolver el valor en lugar de imprimirlo en la pantalla
+- Describir el tipo de los datos devueltos — aquí es la cadena `String`
+- Devolver el valor en lugar de imprimirlo en la pantalla
 
 Veamos el código modificado:
 

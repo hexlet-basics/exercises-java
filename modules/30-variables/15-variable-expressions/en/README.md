@@ -15,7 +15,7 @@ In the previous block, we wrote a specific value into a variable. But here, to t
 var dollarsCount = 50 * 1.25;
 ```
 
-The program will calculate the result *62.5* and write it into the variable. From the program's point of view, it does not matter what is written: *62.5* or *50 * 1.25*. Both options are expressions that need to be calculated. And they are calculated to the same value *62.5*.
+The program will calculate the result _62.5_ and write it into the variable. From the program's point of view, it does not matter what is written: _62.5_ or _50 * 1.25_. Both options are expressions that need to be calculated. And they are calculated to the same value _62.5_.
 
 Any string is an expression. String concatenation is also an expression. When the program sees an expression, it calculates it and **returns** the result.
 

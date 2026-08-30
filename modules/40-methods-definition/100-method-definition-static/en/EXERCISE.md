@@ -1,5 +1,5 @@
 
-Implement a static method named `printMotto()` that prints the phrase *Winter is coming* to the screen.
+Implement a static method named `printMotto()` that prints the phrase _Winter is coming_ to the screen.
 
 ```java
 // The App class is already defined

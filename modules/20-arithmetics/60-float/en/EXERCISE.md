@@ -1,2 +1,2 @@
 
-Calculate and print on the screen the product of two numbers: *0.39* and *0.22*
+Calculate and print on the screen the product of two numbers: _0.39_ and _0.22_

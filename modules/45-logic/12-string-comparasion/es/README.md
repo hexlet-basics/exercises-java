@@ -27,15 +27,15 @@ System.out.println(name);
 
 Debido a estas características técnicas, podemos ver la comparación de datos de dos maneras:
 
-* *Lo mismo* - la misma área de memoria
-* *Igual* - valores idénticos, independientemente de las direcciones a las que apuntan
+- _Lo mismo_ - la misma área de memoria
+- _Igual_ - valores idénticos, independientemente de las direcciones a las que apuntan
 
 Un ejemplo de la vida real: dos vasos idénticos de un mismo conjunto. A pesar de su similitud, siguen siendo vasos diferentes.
 
 Los lenguajes de programación manejan estos conceptos de diferentes maneras. Al igual que en muchos otros lenguajes, en Java los datos se dividen en dos tipos principales:
 
-* Los datos primitivos se comparan por valor, independientemente de las direcciones
-* Los datos de referencia se comparan por direcciones
+- Los datos primitivos se comparan por valor, independientemente de las direcciones
+- Los datos de referencia se comparan por direcciones
 
 Así es como funcionan los datos primitivos:
 

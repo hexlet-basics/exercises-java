@@ -1,5 +1,5 @@
 
-Implementa el método `isInternationalPhone()`, que verifica el formato de un número de teléfono dado. Si el teléfono comienza con un *+*, significa que está en formato internacional.
+Implementa el método `isInternationalPhone()`, que verifica el formato de un número de teléfono dado. Si el teléfono comienza con un _+_, significa que está en formato internacional.
 
 ```java
 App.isInternationalPhone("89602223423"); // false

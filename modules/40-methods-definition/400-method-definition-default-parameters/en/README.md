@@ -16,9 +16,9 @@ In Java parameters have no default values. But the same result is achieved throu
 
 What is that? Java allows you to create several methods with the same name. Such identical methods must have:
 
-* Different types of input parameters
-* A different number of parameters
-* Or all of that at the same time
+- Different types of input parameters
+- A different number of parameters
+- Or all of that at the same time
 
 Let's look at the example of a method that adds numbers. We will create two versions of `sum()` in one class. The first accepts two numbers, the second accepts only one and adds 10 to it:
 
@@ -53,8 +53,8 @@ Method overloading can lead to code duplication, especially when it comes to def
 
 To reduce duplication it is enough to take two steps:
 
-* First, define a common method that accepts the most parameters
-* Then call it from those methods that have default values
+- First, define a common method that accepts the most parameters
+- Then call it from those methods that have default values
 
 In code it looks like this:
 

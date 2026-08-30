@@ -43,7 +43,7 @@ a && (b || c); // With parentheses it is clear what belongs to what
 
 Let's look at one more example. Imagine that we want to buy an apartment that satisfies these conditions:
 
-> More than 100 m² on any street **OR** more than 80 m² on the central street *Main Street*
+> More than 100 m² on any street **OR** more than 80 m² on the central street _Main Street_
 
 Let's write a method that checks the apartment. It accepts two parameters, the area and the name of the street. We compare strings through `.equals(...)`, because for strings this is the correct way of checking equality:
 
@@ -70,7 +70,7 @@ The area of mathematics in which logical operators are studied is called boolean
 ### The AND operator `&&`
 
 | A     | B     | A && B   |
-| ----- | ----- | -------  |
+| ----- | ----- | -------- |
 | true  | true  | **true** |
 | true  | false | false    |
 | false | true  | false    |
@@ -79,8 +79,8 @@ The area of mathematics in which logical operators are studied is called boolean
 ### The OR operator `||`
 
 | A     | B     | A &VerticalSeparator;&VerticalSeparator; B |
-| ----- | ----- | -------- |
-| true  | true  | **true** |
-| true  | false | **true** |
-| false | true  | **true** |
-| false | false | false    |
+| ----- | ----- | ------------------------------------------ |
+| true  | true  | **true**                                   |
+| true  | false | **true**                                   |
+| false | true  | **true**                                   |
+| false | false | false                                      |

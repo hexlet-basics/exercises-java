@@ -1,4 +1,4 @@
-Imagina que necesitas imprimir la frase *Father!* dos veces:
+Imagina que necesitas imprimir la frase _Father!_ dos veces:
 
 ```java
 System.out.println("Father!");
@@ -7,7 +7,7 @@ System.out.println("Father!");
 
 Este enfoque sirve si la frase aparece solo un par de veces. Pero ¿qué pasa si se usa con frecuencia, en diferentes partes del programa? Entonces tendrías que copiar la misma expresión una y otra vez.
 
-¿Y qué pasa si hay que cambiar la frase, por ejemplo reemplazar *Father!* por *Mother!*? Tendrías que buscar y corregir todas las apariciones a mano. Esto es incómodo y provoca errores.
+¿Y qué pasa si hay que cambiar la frase, por ejemplo reemplazar _Father!_ por _Mother!_? Tendrías que buscar y corregir todas las apariciones a mano. Esto es incómodo y provoca errores.
 
 ## Variables
 

@@ -1,5 +1,5 @@
 
-Websites constantly send emails to their users. A typical task is to set up automatic sending of a personal email where the header contains the user's name. If a person's name is stored somewhere in the site's database as a string, then the task of generating the header comes down to concatenation: for example, you need to join the string *Hello* with the string that holds the name.
+Websites constantly send emails to their users. A typical task is to set up automatic sending of a personal email where the header contains the user's name. If a person's name is stored somewhere in the site's database as a string, then the task of generating the header comes down to concatenation: for example, you need to join the string _Hello_ with the string that holds the name.
 
 Write a program that will generate the header and body of the email using the ready-made variables, and print the resulting strings to the screen.
 

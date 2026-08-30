@@ -48,7 +48,7 @@ In the first line, Java sees text and prints it literally. In the second, it see
 Besides addition, Java has the whole familiar set of operations:
 
 | Operation      | Symbol | Example | Result |
-|----------------|--------|---------|--------|
+| -------------- | ------ | ------- | ------ |
 | Addition       | `+`    | `2 + 3` | `5`    |
 | Subtraction    | `-`    | `7 - 2` | `5`    |
 | Multiplication | `*`    | `4 * 3` | `12`   |

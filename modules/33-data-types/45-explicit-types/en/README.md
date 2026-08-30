@@ -5,11 +5,11 @@ int x = 3;
 String greeting = "Hello Hexlet!";
 ```
 
-The time has come to reveal the cards. Java is a statically typed language. In such languages, the type of a variable is fixed at its declaration and does not change until the end of the program. The type is specified before the variable name. In the example above, this is an integer (*int*) and a string (*String*).
+The time has come to reveal the cards. Java is a statically typed language. In such languages, the type of a variable is fixed at its declaration and does not change until the end of the program. The type is specified before the variable name. In the example above, this is an integer (_int_) and a string (_String_).
 
 ## The type is specified explicitly and does not change
 
-In a statically typed language, every variable has a type, and it is fixed. If a variable is declared as *int*, then only an integer can be put into it:
+In a statically typed language, every variable has a type, and it is fixed. If a variable is declared as _int_, then only an integer can be put into it:
 
 ```java
 int n = 5;
@@ -19,7 +19,7 @@ char c = 'A';
 String s = "hi";
 ```
 
-An attempt to put a value of another type into a variable leads to an error. A string cannot be assigned to a variable of type *int*:
+An attempt to put a value of another type into a variable leads to an error. A string cannot be assigned to a variable of type _int_:
 
 ```java
 // Error: incompatible types: java.lang.String cannot be converted to int

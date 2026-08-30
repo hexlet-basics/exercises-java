@@ -8,7 +8,7 @@ var rublos = dólares * 60; // 75000
 System.out.println(rublos); // => 75000
 ```
 
-Desde el punto de vista del desarrollo profesional, este código "huele mal". Así se describe el código que no cumple con las llamadas mejores prácticas (best practices). Y la razón aquí es la siguiente: en este momento, al ver los números *60* y *1.25*, es probable que te preguntes: "¿qué significan estos números?".
+Desde el punto de vista del desarrollo profesional, este código "huele mal". Así se describe el código que no cumple con las llamadas mejores prácticas (best practices). Y la razón aquí es la siguiente: en este momento, al ver los números _60_ y _1.25_, es probable que te preguntes: "¿qué significan estos números?".
 
 ¡Imagínate lo que sucederá en un mes! ¿Cómo lo entenderá un nuevo programador que no haya visto el código antes? En nuestro ejemplo, el contexto se recupera gracias a una buena nomenclatura. Pero en la vida real, el código es mucho más complicado, por lo que a menudo es imposible adivinar el significado de los números.
 
@@ -28,6 +28,6 @@ System.out.println(rublos); // => 75000
 
 Presta atención a los siguientes detalles:
 
-* Hemos utilizado la nomenclatura *lowerCamelCase*
-* Las dos nuevas variables están separadas de los cálculos posteriores por una línea en blanco. Estas variables tienen sentido incluso sin los cálculos, por lo que esta separación es apropiada y mejora la legibilidad.
-* Hemos obtenido un código bien nombrado y estructurado, pero es más largo que la versión anterior. Esto ocurre a menudo y es normal, porque el código debe ser legible.
+- Hemos utilizado la nomenclatura _lowerCamelCase_
+- Las dos nuevas variables están separadas de los cálculos posteriores por una línea en blanco. Estas variables tienen sentido incluso sin los cálculos, por lo que esta separación es apropiada y mejora la legibilidad.
+- Hemos obtenido un código bien nombrado y estructurado, pero es más largo que la versión anterior. Esto ocurre a menudo y es normal, porque el código debe ser legible.

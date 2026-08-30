@@ -12,8 +12,8 @@ There is not much use in such methods, because the result of their work cannot b
 
 Let's look at this with an example. Take the task of processing an email address. When a user registers on some site, they can type the address in any way:
 
-* Accidentally add spaces at the beginning or at the end `_support@hexlet.io__`
-* Use letters in different cases `SUPPORT@hexlet.io`
+- Accidentally add spaces at the beginning or at the end `_support@hexlet.io__`
+- Use letters in different cases `SUPPORT@hexlet.io`
 
 If we save the address in this form into the database, the user will not be able to log in to the site when they type the address without spaces and in a different case.
 
@@ -44,8 +44,8 @@ var message = App.greeting();
 
 Let's change the `greeting()` method so that it starts returning data instead of printing it. For this we need to make two edits:
 
-* Describe the type of the returned data — here it is the string `String`
-* Return the value instead of printing it to the screen
+- Describe the type of the returned data — here it is the string `String`
+- Return the value instead of printing it to the screen
 
 Let's look at the changed code:
 

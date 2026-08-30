@@ -38,7 +38,7 @@ App.isPrime(3); // true
 App.isPrime(4); // false
 ```
 
-*To be completely honest, checking the numbers up to the square root of `number` is enough to solve the task. But here it is important to focus on working with a condition inside a loop*
+_To be completely honest, checking the numbers up to the square root of `number` is enough to solve the task. But here it is important to focus on working with a condition inside a loop_
 
 The main technique of this lesson is exiting the method right from inside the loop:
 

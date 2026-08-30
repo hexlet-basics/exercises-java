@@ -6,15 +6,15 @@ Let's take as an example the following task: form a web page address based on th
 https://ru.hexlet.io/blog/posts/iz-vahtovika-v-programmirovanie
 ```
 
-The last part here, *iz-vahtovika-v-programmirovanie*, is created automatically by code that we wrote at Hexlet. It has a special name — it is a [**slug**](https://en.wikipedia.org/wiki/Clean_URL#Slug).
+The last part here, _iz-vahtovika-v-programmirovanie_, is created automatically by code that we wrote at Hexlet. It has a special name — it is a [**slug**](https://en.wikipedia.org/wiki/Clean_URL#Slug).
 
 What steps need to be performed to get such a string? Here are just some of them:
 
-* Convert everything to lowercase, so that duplicates of identical pages are not accidentally created in search engines
-* Clean the title of whitespace characters at the edges. They can accidentally appear during input
-* Perform transliteration, because it is better to use Latin alphabet characters in addresses
-* Cut out special characters like question marks and exclamation marks
-* Replace spaces with hyphens
+- Convert everything to lowercase, so that duplicates of identical pages are not accidentally created in search engines
+- Clean the title of whitespace characters at the edges. They can accidentally appear during input
+- Perform transliteration, because it is better to use Latin alphabet characters in addresses
+- Cut out special characters like question marks and exclamation marks
+- Replace spaces with hyphens
 
 Some of the steps require knowledge that is new to us, so we will skip them. The remaining steps will look approximately like this:
 

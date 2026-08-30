@@ -44,9 +44,9 @@ switch (value) {
 
 From the point of view of the number of elements, `switch` is quite a complex construct. It includes:
 
-* The outer description with the `switch` keyword. It has two elements. These are the variable by whose values `switch` chooses the behavior, and the curly braces for the variants of choice
-* The `case` and `default` constructs, inside which the behavior for different values of the variable is described. Each `case` corresponds to an `if`, as in the example above. Here `default` is a special situation that corresponds to the `else` branch in conditional constructs. As with `else`, specifying `default` is not required
-* The `break` construct, which prevents fall-through. Without it, after the needed `case` the execution will pass to the next `case`. This will continue until the nearest `break` or until the end of the `switch`
+- The outer description with the `switch` keyword. It has two elements. These are the variable by whose values `switch` chooses the behavior, and the curly braces for the variants of choice
+- The `case` and `default` constructs, inside which the behavior for different values of the variable is described. Each `case` corresponds to an `if`, as in the example above. Here `default` is a special situation that corresponds to the `else` branch in conditional constructs. As with `else`, specifying `default` is not required
+- The `break` construct, which prevents fall-through. Without it, after the needed `case` the execution will pass to the next `case`. This will continue until the nearest `break` or until the end of the `switch`
 
 The curly braces in `switch` do not define a block of code, as in other places. Only the syntax shown above is allowed inside. There you can use `case` or `default`. But inside each `case` and `default` the situation is different. Here any arbitrary code is executed:
 

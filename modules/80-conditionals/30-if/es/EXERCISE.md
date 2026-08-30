@@ -12,5 +12,5 @@ Algoritmo:
 
 1. Genera una cadena en mayúsculas basada en la cadena de argumento utilizando `toUpperCase()`.
 2. Compara esta cadena con la cadena original:
-    * Si las cadenas son iguales, significa que la cadena de argumento está en mayúsculas.
-    * De lo contrario, la cadena de argumento no está en mayúsculas.
+    - Si las cadenas son iguales, significa que la cadena de argumento está en mayúsculas.
+    - De lo contrario, la cadena de argumento no está en mayúsculas.

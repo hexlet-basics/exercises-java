@@ -9,7 +9,7 @@ var number = Integer.parseInt("345");
 System.out.println(number + 5); // => 350
 ```
 
-The method `Integer.parseInt` takes a string and returns an integer of type *int*. In a similar way, a string is turned into a rational number using `Double.parseDouble`.
+The method `Integer.parseInt` takes a string and returns an integer of type _int_. In a similar way, a string is turned into a rational number using `Double.parseDouble`.
 
 ## Casting between primitive types
 
@@ -29,7 +29,7 @@ System.out.println(7 / 2);          // => 3
 System.out.println((double) 7 / 2); // => 3.5
 ```
 
-In the first case both values are integers, so the result is an integer. In the second case the dividend is cast to the type *double*, and the division became rational.
+In the first case both values are integers, so the result is an integer. In the second case the dividend is cast to the type _double_, and the division became rational.
 
 ## Casting inside compound expressions
 

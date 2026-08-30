@@ -10,8 +10,8 @@ App.countChars("Sansa", 'y'); // 0
 
 Primero intenta responder a estas preguntas:
 
-* ¿Es esta operación una agregación?
-* ¿Cuál será la comprobación de la aparición del carácter?
+- ¿Es esta operación una agregación?
+- ¿Cuál será la comprobación de la aparición del carácter?
 
 Y ahora veamos el código:
 

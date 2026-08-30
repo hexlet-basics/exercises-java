@@ -8,7 +8,7 @@ Esos valores se llaman constantes, y se acostumbra distinguirlos de las variable
 
 ## Ejemplo: el número π
 
-Tomemos el número π. Aproximadamente siempre es igual a *3.14* y no puede cambiar:
+Tomemos el número π. Aproximadamente siempre es igual a _3.14_ y no puede cambiar:
 
 ```java
 final var pi = 3.14;

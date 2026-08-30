@@ -17,11 +17,11 @@ System.out.println("road" + "Kings"); // => roadKings
 System.out.println("King's" + "Landing"); // => King'sLanding
 ```
 
-En el último ejemplo, el nombre de la ciudad quedó con un error: *King's Landing* debe escribirse con un espacio. Pero en nuestras cadenas originales no había espacios, y los espacios que hay en el propio código alrededor del símbolo `+` no influyen en nada, porque no forman parte de las cadenas.
+En el último ejemplo, el nombre de la ciudad quedó con un error: _King's Landing_ debe escribirse con un espacio. Pero en nuestras cadenas originales no había espacios, y los espacios que hay en el propio código alrededor del símbolo `+` no influyen en nada, porque no forman parte de las cadenas.
 
 ## El espacio también es un carácter
 
-Al unir cadenas, Java no inserta espacios automáticamente. Si hace falta un espacio entre las partes, se agrega manualmente. Hay tres salidas para la situación de *King's Landing*:
+Al unir cadenas, Java no inserta espacios automáticamente. Si hace falta un espacio entre las partes, se agrega manualmente. Hay tres salidas para la situación de _King's Landing_:
 
 ```java
 // Ponemos un espacio en la parte izquierda

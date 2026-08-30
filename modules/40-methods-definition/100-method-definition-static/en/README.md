@@ -60,15 +60,15 @@ Defining a method in Java includes many things that we will cover step by step.
 
 They can be divided into two groups:
 
-* What affects the work of the method itself
-* How this method is visible outside the class
+- What affects the work of the method itself
+- How this method is visible outside the class
 
-Visibility is handled by the word *public*. It makes it possible to call methods from outside the class, as in the example above. Besides it, there is *private*, which is covered at Hexlet in the [Java OOP](https://ru.hexlet.io/programs/java?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson) course.
+Visibility is handled by the word _public_. It makes it possible to call methods from outside the class, as in the example above. Besides it, there is _private_, which is covered at Hexlet in the [Java OOP](https://ru.hexlet.io/programs/java?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson) course.
 
 The work of the method is handled by:
 
-* *static* — detaches the method from an object and makes it possible to call it directly from the class
-* *void* is used if the method returns nothing. For example, this is the definition of the `System.out.println()` method. If the method returns some data, then the type of the returned data is specified instead of *void*
+- _static_ — detaches the method from an object and makes it possible to call it directly from the class
+- _void_ is used if the method returns nothing. For example, this is the definition of the `System.out.println()` method. If the method returns some data, then the type of the returned data is specified instead of _void_
 
 Unlike ordinary data, methods perform actions, so their names should almost always be verbs: "build something", "draw something", "open something".
 

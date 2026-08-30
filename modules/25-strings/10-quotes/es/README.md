@@ -58,7 +58,7 @@ Las comillas simples también aparecen en Java, pero esa es una historia complet
 
 ## El problema con las comillas dentro de una cadena
 
-Imagina que quieres imprimir la frase *Dragon's mother*. En ella hay un apóstrofo (*'s*), que coincide con el carácter de comilla simple. Como la cadena está delimitada por comillas dobles, el apóstrofo que hay dentro no molesta.
+Imagina que quieres imprimir la frase _Dragon's mother_. En ella hay un apóstrofo (_'s_), que coincide con el carácter de comilla simple. Como la cadena está delimitada por comillas dobles, el apóstrofo que hay dentro no molesta.
 
 ```java
 System.out.println("Dragon's mother");
@@ -86,7 +86,7 @@ Desde el punto de vista de Java, aquí resulta una construcción extraña de tre
 - La palabra `No`, que no está entre comillas y por eso no se considera una cadena
 - La cadena vacía `""`
 
-Java decidirá que la primera cadena termina antes de la palabra *No*, y a continuación viene código incomprensible. Eso es lo que provoca el error.
+Java decidirá que la primera cadena termina antes de la palabra _No_, y a continuación viene código incomprensible. Eso es lo que provoca el error.
 
 ## El carácter de escape
 

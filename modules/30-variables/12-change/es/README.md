@@ -11,7 +11,7 @@ greeting = "Mother!";
 System.out.println(greeting); // => Mother!
 ```
 
-Aquí primero escribimos una cadena (*Father!*) en la variable, y luego otra (*Mother!*). El nombre de la variable no cambió, pero el valor de su interior pasó a ser otro. La palabra clave `var` solo se necesita al crear la variable. Al cambiar el valor, ya no se escribe.
+Aquí primero escribimos una cadena (_Father!_) en la variable, y luego otra (_Mother!_). El nombre de la variable no cambió, pero el valor de su interior pasó a ser otro. La palabra clave `var` solo se necesita al crear la variable. Al cambiar el valor, ya no se escribe.
 
 ```text
 Antes:   greeting ──→ "Father!"

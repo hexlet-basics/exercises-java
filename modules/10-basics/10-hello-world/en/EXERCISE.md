@@ -8,4 +8,4 @@ class App {
 }
 ```
 
-If you write *heLLo, woRld!* instead of *Hello, World!*, it will be treated as different text, because uppercase and lowercase letters are different characters. The size of a letter is called *case*, and they say: **case matters!** This applies to almost everything in code, so get used to always paying attention to case.
+If you write _heLLo, woRld!_ instead of _Hello, World!_, it will be treated as different text, because uppercase and lowercase letters are different characters. The size of a letter is called _case_, and they say: **case matters!** This applies to almost everything in code, so get used to always paying attention to case.

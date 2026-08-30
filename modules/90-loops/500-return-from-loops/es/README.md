@@ -38,7 +38,7 @@ App.isPrime(3); // true
 App.isPrime(4); // false
 ```
 
-*Si somos honestos hasta el final, para resolver la tarea basta con comprobar los números hasta la raíz cuadrada de `number`. Pero aquí lo importante es centrarse en el trabajo con la condición dentro del ciclo*
+_Si somos honestos hasta el final, para resolver la tarea basta con comprobar los números hasta la raíz cuadrada de `number`. Pero aquí lo importante es centrarse en el trabajo con la condición dentro del ciclo_
 
 La técnica principal de esta lección es la salida del método directamente desde dentro del ciclo:
 

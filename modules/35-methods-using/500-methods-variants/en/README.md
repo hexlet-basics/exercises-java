@@ -67,7 +67,7 @@ path.read();
 
 ## Conclusions
 
-* Static methods are not tied to specific objects and are called directly from the class
-* Non-static methods build their logic relative to the data of the object itself and are called on specific objects
+- Static methods are not tied to specific objects and are called directly from the class
+- Non-static methods build their logic relative to the data of the object itself and are called on specific objects
 
 All this smoothly leads us to the possibility of creating classes, objects, and methods on our own, without which it is impossible to imagine any program, even a small one.

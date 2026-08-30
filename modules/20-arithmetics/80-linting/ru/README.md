@@ -12,16 +12,16 @@ System.out.println( "Hello, World!" ); System.out.println("I'm a developer!") ;
 
 Линтер будет ругаться на нарушение сразу в нескольких местах:
 
-* '(' is followed by whitespace. [ParenPad]
-* ')' is preceded with whitespace. [ParenPad]
-* ';' is preceded with whitespace. [NoWhitespaceBefore]
-* Only one statement per line allowed. [OneStatementPerLine]
+- '(' is followed by whitespace. [ParenPad]
+- ')' is preceded with whitespace. [ParenPad]
+- ';' is preceded with whitespace. [NoWhitespaceBefore]
+- Only one statement per line allowed. [OneStatementPerLine]
 
 Проанализируем данные ошибки:
 
-* Правило **ParenPad**, указанное в квадратных скобках, требует отсутствия пробелов после открывающейся и перед закрывающейся круглыми скобками
-* Правило **NoWhitespaceBefore** указывает, что перед точкой с запятой не нужно устанавливать лишний пробел
-* Каждую новую инструкцию принято записывать с новой строки. На это указывает правило *OneStatementPerLine*
+- Правило **ParenPad**, указанное в квадратных скобках, требует отсутствия пробелов после открывающейся и перед закрывающейся круглыми скобками
+- Правило **NoWhitespaceBefore** указывает, что перед точкой с запятой не нужно устанавливать лишний пробел
+- Каждую новую инструкцию принято записывать с новой строки. На это указывает правило _OneStatementPerLine_
 
 Соблюдение данных правил не влияет на результат, но помогает писать код понятнее и проще для восприятия.
 

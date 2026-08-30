@@ -1,4 +1,4 @@
-Most methods take a fixed number of arguments: as many parameters as are specified in the declaration, that is how many values you need to pass. But there are methods to which you can pass any number of arguments — from zero to dozens. Such methods are called **methods with a variable number of parameters** (in English, *variadic*).
+Most methods take a fixed number of arguments: as many parameters as are specified in the declaration, that is how many values you need to pass. But there are methods to which you can pass any number of arguments — from zero to dozens. Such methods are called **methods with a variable number of parameters** (in English, _variadic_).
 
 A good example is the `String.join()` method. It joins strings with a separator, and the number of strings being joined can be any:
 

@@ -28,6 +28,6 @@ System.out.print(rubles);
 
 Pay attention to the following details:
 
-* Naming _lowerCamelCase_
-* Two new variables are separated from subsequent calculations by a blank line. These variables make sense without computations, so this separation is appropriate, it improves readability.
-* It came out well-named and structured code, but it is longer than the previous version. This is often the case, and this is normal, because the code should be readable.
+- Naming _lowerCamelCase_
+- Two new variables are separated from subsequent calculations by a blank line. These variables make sense without computations, so this separation is appropriate, it improves readability.
+- It came out well-named and structured code, but it is longer than the previous version. This is often the case, and this is normal, because the code should be readable.

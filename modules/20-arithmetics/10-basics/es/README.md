@@ -48,7 +48,7 @@ En la primera línea, Java ve texto y lo imprime literalmente. En la segunda ve 
 Además de la suma, en Java existe todo el conjunto habitual de operaciones:
 
 | Operación            | Símbolo | Ejemplo | Resultado |
-|----------------------|---------|---------|-----------|
+| -------------------- | ------- | ------- | --------- |
 | Suma                 | `+`     | `2 + 3` | `5`       |
 | Resta                | `-`     | `7 - 2` | `5`       |
 | Multiplicación       | `*`     | `4 * 3` | `12`      |

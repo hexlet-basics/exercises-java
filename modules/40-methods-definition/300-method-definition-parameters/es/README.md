@@ -32,9 +32,9 @@ App.getLastChar(name2); // 'o'
 
 A partir de la descripción y de los ejemplos de código podemos sacar las siguientes conclusiones:
 
-* Necesitamos definir el método estático `getLastChar()` en la clase `App`
-* El método debe recibir un parámetro de tipo `String`
-* El método debe devolver un valor de tipo `char`
+- Necesitamos definir el método estático `getLastChar()` en la clase `App`
+- El método debe recibir un parámetro de tipo `String`
+- El método debe devolver un valor de tipo `char`
 
 Para empezar, definamos el método:
 

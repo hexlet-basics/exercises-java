@@ -32,9 +32,9 @@ App.getLastChar(name2); // 'o'
 
 From the description and the code examples we can draw the following conclusions:
 
-* We need to define the static method `getLastChar()` in the `App` class
-* The method must accept one parameter of type `String`
-* The method must return a value of type `char`
+- We need to define the static method `getLastChar()` in the `App` class
+- The method must accept one parameter of type `String`
+- The method must return a value of type `char`
 
 To begin with, let's define the method:
 

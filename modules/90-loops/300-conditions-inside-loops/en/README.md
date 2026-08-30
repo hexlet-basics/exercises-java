@@ -10,8 +10,8 @@ App.countChars("Sansa", 'y'); // 0
 
 First try to answer the questions:
 
-* Is this operation an aggregation?
-* What will the check for the occurrence of the character be?
+- Is this operation an aggregation?
+- What will the check for the occurrence of the character be?
 
 And now let's look at the code:
 

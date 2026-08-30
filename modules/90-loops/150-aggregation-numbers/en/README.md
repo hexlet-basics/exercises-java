@@ -2,10 +2,10 @@ In programming there is a separate class of tasks that cannot do without loops �
 
 Such tasks include finding:
 
-* The maximum value
-* The minimum value
-* The sum
-* The arithmetic mean
+- The maximum value
+- The minimum value
+- The sum
+- The arithmetic mean
 
 Their main feature is that the result depends on the whole set of data. To calculate the sum you need to add up **all** the numbers; to calculate the maximum you need to compare **all** the numbers.
 
@@ -29,9 +29,9 @@ To implement this code we will need a loop. We choose a loop exactly because add
 
 To understand the topic better, try to answer the questions:
 
-* What value should the counter be initialized with?
-* How will it change?
-* When must the loop stop?
+- What value should the counter be initialized with?
+- How will it change?
+- When must the loop stop?
 
 And now look at the code below:
 
@@ -54,9 +54,9 @@ public static int sumNumbersFromRange(int start, int finish) {
 
 The general structure of the loop here is standard:
 
-* The counter, which is initialized with the starting value of the range
-* The loop itself with the stopping condition when the end of the range is reached
-* Changing the counter at the end of the body of the loop
+- The counter, which is initialized with the starting value of the range
+- The loop itself with the stopping condition when the end of the range is reached
+- Changing the counter at the end of the body of the loop
 
 The number of iterations in such a loop equals `finish - start + 1`. For example, 3 iterations are needed to count the range from 5 to 7:
 
@@ -80,6 +80,6 @@ sum = sum + 5; // 14
 
 In mathematics there is the notion of the **neutral element of an operation**. An operation with such an element does not change the value the operation is performed on:
 
-* In addition any number plus zero gives the number itself
-* In subtraction it is the same
-* Even concatenation has a neutral element — it is the empty string: `"" + "one"` will be `"one"`
+- In addition any number plus zero gives the number itself
+- In subtraction it is the same
+- Even concatenation has a neutral element — it is the empty string: `"" + "one"` will be `"one"`

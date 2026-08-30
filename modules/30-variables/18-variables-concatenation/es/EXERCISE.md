@@ -1,5 +1,5 @@
 
-Los sitios web envían correos electrónicos constantemente a sus usuarios. Una tarea típica es configurar el envío automático de un correo personalizado, donde el encabezado contenga el nombre del usuario. Si el nombre de una persona se guarda en algún lugar de la base de datos del sitio como una cadena, la tarea de generar el encabezado se reduce a la concatenación: por ejemplo, hay que unir la cadena *Hola* con la cadena que contiene el nombre.
+Los sitios web envían correos electrónicos constantemente a sus usuarios. Una tarea típica es configurar el envío automático de un correo personalizado, donde el encabezado contenga el nombre del usuario. Si el nombre de una persona se guarda en algún lugar de la base de datos del sitio como una cadena, la tarea de generar el encabezado se reduce a la concatenación: por ejemplo, hay que unir la cadena _Hola_ con la cadena que contiene el nombre.
 
 Escribe un programa que genere el encabezado y el cuerpo del correo utilizando las variables ya preparadas, y que muestre las cadenas resultantes en la pantalla.
 

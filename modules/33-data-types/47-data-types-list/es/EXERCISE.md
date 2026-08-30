@@ -1,1 +1,1 @@
-Muestra en la pantalla el resultado de concatenar la palabra *hexlet*, el carácter *-* y el número 7.
+Muestra en la pantalla el resultado de concatenar la palabra _hexlet_, el carácter _-_ y el número 7.

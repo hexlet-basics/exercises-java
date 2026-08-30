@@ -18,9 +18,9 @@ Unlike natural languages, where text with errors can be understood from context,
 
 If a Java program is written syntactically incorrectly, the compiler prints on the screen:
 
-* An error message
-* An indication of the file
-* The line in the file where, in its opinion, the error occurred
+- An error message
+- An indication of the file
+- The line in the file where, in its opinion, the error occurred
 
 Below is an example of code with a syntax error:
 

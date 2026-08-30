@@ -1,5 +1,5 @@
 
-Implement the method `getHiddenCard()`, which accepts a credit card number (consisting of 16 digits) as a string and returns its hidden version, which can be used on a site for display. If the original card had the number *2034399002125581*, then the hidden version looks like this *\*\*\*\*5581*. In other words, the function replaces the first 12 characters with asterisks. The number of asterisks is controlled by the second, optional parameter. The default value is 4.
+Implement the method `getHiddenCard()`, which accepts a credit card number (consisting of 16 digits) as a string and returns its hidden version, which can be used on a site for display. If the original card had the number _2034399002125581_, then the hidden version looks like this *\*\*\*\*5581*. In other words, the function replaces the first 12 characters with asterisks. The number of asterisks is controlled by the second, optional parameter. The default value is 4.
 
 ```java
 // The credit card is passed inside as a string

@@ -17,11 +17,11 @@ System.out.println("road" + "Kings"); // => roadKings
 System.out.println("King's" + "Landing"); // => King'sLanding
 ```
 
-In the last example, the name of the city came out with a mistake: *King's Landing* should be written with a space. But there were no spaces in our original strings, and spaces in the code itself around the `+` symbol don't affect anything, because they are not part of the strings.
+In the last example, the name of the city came out with a mistake: _King's Landing_ should be written with a space. But there were no spaces in our original strings, and spaces in the code itself around the `+` symbol don't affect anything, because they are not part of the strings.
 
 ## A space is also a character
 
-When joining, Java does not insert spaces automatically. If you need a space between the parts, you add it manually. There are three ways out of the *King's Landing* situation:
+When joining, Java does not insert spaces automatically. If you need a space between the parts, you add it manually. There are three ways out of the _King's Landing_ situation:
 
 ```java
 // Put a space in the left part

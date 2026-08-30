@@ -6,4 +6,4 @@ App.countChars("HexlEt", 'e'); // 2
 App.countChars("HexlEt", 'E'); // 2
 ```
 
-* `Character.toLowerCase()` – переводит символ в нижний регистр
+- `Character.toLowerCase()` – переводит символ в нижний регистр

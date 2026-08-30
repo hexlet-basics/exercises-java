@@ -8,7 +8,7 @@ Such values are called constants, and it is customary to distinguish them from o
 
 ## Example: the number π
 
-Take the number π. Approximately it is always equal to *3.14* and cannot change:
+Take the number π. Approximately it is always equal to _3.14_ and cannot change:
 
 ```java
 final var pi = 3.14;

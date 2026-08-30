@@ -9,7 +9,7 @@ App.convertString("hello"); // "olleh"
 App.convertString(""); // ""
 ```
 
-* `StringUtils.reverse()` – переворот строки
-* `Character.isUpperCase()` – проверка символа на верхний регистр
+- `StringUtils.reverse()` – переворот строки
+- `Character.isUpperCase()` – проверка символа на верхний регистр
 
 Попробуйте написать два варианта функции: с обычным if-else, и с тернарным оператором.

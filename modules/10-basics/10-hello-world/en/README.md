@@ -14,7 +14,7 @@ class App {
 }
 ```
 
-The text *Hello, World!* appears on the screen thanks to the `System.out.println()` command, where `println()` is short for the English *print line*. It prints the value specified in the parentheses `("Hello, World!")` — in this case, a string. Instead of the example, you can print any other text:
+The text _Hello, World!_ appears on the screen thanks to the `System.out.println()` command, where `println()` is short for the English _print line_. It prints the value specified in the parentheses `("Hello, World!")` — in this case, a string. Instead of the example, you can print any other text:
 
 ```java
 System.out.println("Hexlet — a programming school");

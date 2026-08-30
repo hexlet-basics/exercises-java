@@ -34,8 +34,8 @@ This capability was added to languages to relieve the programmer of routine work
 
 This method takes as input:
 
-* As the first parameter, the index from which to start extracting the substring
-* As the second parameter, the index up to which to extract characters
+- As the first parameter, the index from which to start extracting the substring
+- As the second parameter, the index up to which to extract characters
 
 By default, the string is taken up to the end:
 

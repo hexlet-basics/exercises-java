@@ -60,15 +60,15 @@ La definición de un método en Java incluye muchas cosas que iremos viendo poco
 
 Se pueden dividir en dos grupos:
 
-* Lo que afecta al funcionamiento del propio método
-* Cómo se ve ese método fuera de la clase
+- Lo que afecta al funcionamiento del propio método
+- Cómo se ve ese método fuera de la clase
 
-De la visibilidad se encarga la palabra *public*. Permite llamar a los métodos desde fuera de la clase, como en el ejemplo anterior. Además de ella existe *private*, que se estudia en Hexlet en el curso de [POO en Java](https://codica.la/carreras/java).
+De la visibilidad se encarga la palabra _public_. Permite llamar a los métodos desde fuera de la clase, como en el ejemplo anterior. Además de ella existe _private_, que se estudia en Hexlet en el curso de [POO en Java](https://codica.la/carreras/java).
 
 Del funcionamiento del método se encargan:
 
-* *static* — desvincula el método del objeto y hace posible llamarlo directamente desde la clase
-* *void* se usa si el método no devuelve nada. Por ejemplo, esa es la definición del método `System.out.println()`. Si el método devuelve algún dato, en lugar de *void* se indica el tipo de los datos devueltos
+- _static_ — desvincula el método del objeto y hace posible llamarlo directamente desde la clase
+- _void_ se usa si el método no devuelve nada. Por ejemplo, esa es la definición del método `System.out.println()`. Si el método devuelve algún dato, en lugar de _void_ se indica el tipo de los datos devueltos
 
 A diferencia de los datos normales, los métodos realizan acciones, por eso sus nombres casi siempre deben ser verbos: "construir algo", "dibujar algo", "abrir algo".
 

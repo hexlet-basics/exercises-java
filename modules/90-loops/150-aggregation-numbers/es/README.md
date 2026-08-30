@@ -2,10 +2,10 @@ En programación, hay una clase de problemas que no se pueden resolver sin bucle
 
 Estos problemas incluyen:
 
-* Encontrar el valor máximo
-* Encontrar el valor mínimo
-* Calcular la suma
-* Calcular el promedio aritmético
+- Encontrar el valor máximo
+- Encontrar el valor mínimo
+- Calcular la suma
+- Calcular el promedio aritmético
 
 Su característica principal es que el resultado depende de todo el conjunto de datos. Para calcular la suma, es necesario sumar **todos** los números; para calcular el máximo, es necesario comparar **todos** los números.
 
@@ -29,9 +29,9 @@ Para implementar este código, necesitaremos un bucle. Elegimos un bucle porque 
 
 Para comprender mejor el tema, intenta responder a estas preguntas:
 
-* ¿Con qué valor inicializar el contador?
-* ¿Cómo cambiará el contador?
-* ¿Cuándo debe detenerse el bucle?
+- ¿Con qué valor inicializar el contador?
+- ¿Cómo cambiará el contador?
+- ¿Cuándo debe detenerse el bucle?
 
 Ahora echa un vistazo al siguiente código:
 
@@ -55,9 +55,9 @@ public static int sumNumbersFromRange(int start, int finish) {
 
 La estructura general del bucle es la siguiente:
 
-* Un contador que se inicializa con el valor inicial del rango
-* El bucle en sí, con una condición de finalización cuando se alcanza el final del rango
-* La modificación del contador al final del cuerpo del bucle
+- Un contador que se inicializa con el valor inicial del rango
+- El bucle en sí, con una condición de finalización cuando se alcanza el final del rango
+- La modificación del contador al final del cuerpo del bucle
 
 El número de iteraciones en este bucle es igual a `finish - start + 1`. Por ejemplo, se necesitan 3 iteraciones para calcular el rango del 5 al 7:
 
@@ -81,6 +81,6 @@ sum = sum + 5; // 14
 
 En matemáticas, existe el concepto de **elemento neutro de la operación**. Una operación con este elemento no cambia el valor sobre el que se realiza la operación:
 
-* En la suma, cualquier número más cero es igual al número original
-* En la resta, es lo mismo
-* Incluso en la concatenación, hay un elemento neutro: la cadena vacía `"" + "uno"` es `"uno"`
+- En la suma, cualquier número más cero es igual al número original
+- En la resta, es lo mismo
+- Incluso en la concatenación, hay un elemento neutro: la cadena vacía `"" + "uno"` es `"uno"`

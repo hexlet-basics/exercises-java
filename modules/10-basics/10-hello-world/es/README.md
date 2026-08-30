@@ -14,7 +14,7 @@ class App {
 }
 ```
 
-El texto *Hello, World!* aparece en la pantalla gracias al comando `System.out.println()`, donde `println()` es la abreviatura del inglés *print line*. Muestra en la pantalla el valor indicado entre paréntesis `("Hello, World!")` — en este caso, una cadena de texto. En lugar del ejemplo, puedes mostrar cualquier otro texto:
+El texto _Hello, World!_ aparece en la pantalla gracias al comando `System.out.println()`, donde `println()` es la abreviatura del inglés _print line_. Muestra en la pantalla el valor indicado entre paréntesis `("Hello, World!")` — en este caso, una cadena de texto. En lugar del ejemplo, puedes mostrar cualquier otro texto:
 
 ```java
 System.out.println("Hexlet — escuela de programación");

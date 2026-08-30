@@ -6,4 +6,4 @@ App.countChars("HexlEt", 'e'); // 2
 App.countChars("HexlEt", 'E'); // 2
 ```
 
-* `Character.toLowerCase()` – converts a character to lower case
+- `Character.toLowerCase()` – converts a character to lower case

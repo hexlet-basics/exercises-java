@@ -34,8 +34,8 @@ every character is processed in turn
 
 The main thing in this code is to set the correct condition in `while`. This can be done in two ways:
 
-* `i < name.length()`
-* `i <= name.length() - 1`
+- `i < name.length()`
+- `i <= name.length() - 1`
 
 Both ways lead to the same result. The first one occurs more often, because it has less arithmetic.
 

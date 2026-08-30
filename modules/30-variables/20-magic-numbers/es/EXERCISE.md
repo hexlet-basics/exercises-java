@@ -13,6 +13,7 @@ Esta extraña dinastía simplemente está multiplicando castillos idénticos...
 Elimina los números mágicos creando nuevas variables y luego muestra el texto en pantalla.
 
 El resultado será el siguiente:
+
 ```text
 King Balon the 6th has 102 rooms.
 ```

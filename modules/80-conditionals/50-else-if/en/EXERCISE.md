@@ -5,9 +5,9 @@ Write a method `whoIsThisHouseToStarks()` for Sam, which accepts the name of a f
 
 The rules for determining it:
 
-  * Friends (`"friend"`): "Karstark", "Tally"
-  * Enemies (`"enemy"`): "Lannister", "Frey"
-  * Any other families are considered neutral
+- Friends (`"friend"`): "Karstark", "Tally"
+- Enemies (`"enemy"`): "Lannister", "Frey"
+- Any other families are considered neutral
 
 Examples of calls:
 

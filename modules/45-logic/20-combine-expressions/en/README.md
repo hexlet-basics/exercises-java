@@ -1,22 +1,22 @@
 
 Logical operations are expressions. That means that **logical operations can be combined with other expressions**. Let's look at an example. Suppose we want to check whether a number is even. In programming, evenness is checked through the remainder of division by 2:
 
-* If the remainder is 0, then the number was even
-* If the remainder is not 0, then the number was odd
+- If the remainder is 0, then the number was even
+- If the remainder is not 0, then the number was odd
 
 The remainder of division is a simple, but very important concept in arithmetic, algebra, number theory and cryptography. The idea is simple: you need to divide a number into several equal groups. If something is left at the end, that is the remainder of the division.
 
 We divide candies equally between people:
 
-* 7 candies, 2 people: 2 x 3 + **remainder 1**. That means 7 is not a multiple of 2
-* 21 candies, 3 people: 3 x 7 + **remainder 0**. That means 21 is a multiple of 3
-* 19 candies, 5 people: 5 x 3 + **remainder 4**. That means 19 is not a multiple of 5
+- 7 candies, 2 people: 2 x 3 + **remainder 1**. That means 7 is not a multiple of 2
+- 21 candies, 3 people: 3 x 7 + **remainder 0**. That means 21 is a multiple of 3
+- 19 candies, 5 people: 5 x 3 + **remainder 4**. That means 19 is not a multiple of 5
 
 In code the remainder is calculated with the help of the `%` operator:
 
-* `7 % 2` → `1`
-* `21 % 3` → `0`
-* `19 % 5` → `4`
+- `7 % 2` → `1`
+- `21 % 3` → `0`
+- `19 % 5` → `4`
 
 With its help let's write a method for checking evenness:
 
@@ -32,8 +32,8 @@ App.isEven(3); // false
 
 In one expression we combined two operators:
 
-* `==` — the equality check
-* `%` — the arithmetic operator of the remainder of division
+- `==` — the equality check
+- `%` — the arithmetic operator of the remainder of division
 
 **The priority of arithmetic operations is higher than that of logical ones.** That means that first the arithmetic expression `number % 2` is calculated, and then the result takes part in the logical comparison.
 

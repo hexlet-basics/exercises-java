@@ -58,7 +58,7 @@ Single quotes also appear in Java, but that's a completely different story. A no
 
 ## The problem with quotes inside a string
 
-Imagine you want to print the phrase *Dragon's mother*. It contains an apostrophe (*'s*), which matches the single quote character. Since the string is bounded by double quotes, the apostrophe inside it doesn't cause any trouble.
+Imagine you want to print the phrase _Dragon's mother_. It contains an apostrophe (_'s_), which matches the single quote character. Since the string is bounded by double quotes, the apostrophe inside it doesn't cause any trouble.
 
 ```java
 System.out.println("Dragon's mother");
@@ -86,7 +86,7 @@ From Java's point of view, this results in a strange construction of three parts
 - The word `No`, which is not in quotes and therefore is not considered a string
 - The empty string `""`
 
-Java will decide that the first string ends before the word *No*, and then comes incomprehensible code. This is what causes the error.
+Java will decide that the first string ends before the word _No_, and then comes incomprehensible code. This is what causes the error.
 
 ## The escape character
 

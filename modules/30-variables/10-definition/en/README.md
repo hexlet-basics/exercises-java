@@ -1,4 +1,4 @@
-Imagine you need to print the phrase *Father!* twice:
+Imagine you need to print the phrase _Father!_ twice:
 
 ```java
 System.out.println("Father!");
@@ -7,7 +7,7 @@ System.out.println("Father!");
 
 This approach works if the phrase appears only a couple of times. But what if it is used often, in different parts of the program? Then you would have to copy the same expression over and over.
 
-And what if the phrase needs to be changed, for example to replace *Father!* with *Mother!*? You would have to find and fix every occurrence by hand. This is inconvenient and leads to errors.
+And what if the phrase needs to be changed, for example to replace _Father!_ with _Mother!_? You would have to find and fix every occurrence by hand. This is inconvenient and leads to errors.
 
 ## Variables
 

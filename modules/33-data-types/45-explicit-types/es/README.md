@@ -5,11 +5,11 @@ int x = 3;
 String greeting = "Hello Hexlet!";
 ```
 
-Ha llegado el momento de descubrir las cartas. Java es un lenguaje de tipado estático. En estos lenguajes, el tipo de una variable se fija en su declaración y no cambia hasta el final del programa. El tipo se indica antes del nombre de la variable. En el ejemplo anterior, se trata de un número entero (*int*) y una cadena (*String*).
+Ha llegado el momento de descubrir las cartas. Java es un lenguaje de tipado estático. En estos lenguajes, el tipo de una variable se fija en su declaración y no cambia hasta el final del programa. El tipo se indica antes del nombre de la variable. En el ejemplo anterior, se trata de un número entero (_int_) y una cadena (_String_).
 
 ## El tipo se indica explícitamente y no cambia
 
-En un lenguaje de tipado estático, cada variable tiene un tipo, y este está fijado. Si una variable se declara como *int*, entonces solo se puede poner en ella un número entero:
+En un lenguaje de tipado estático, cada variable tiene un tipo, y este está fijado. Si una variable se declara como _int_, entonces solo se puede poner en ella un número entero:
 
 ```java
 int n = 5;
@@ -19,7 +19,7 @@ char c = 'A';
 String s = "hi";
 ```
 
-Un intento de poner en una variable un valor de otro tipo provoca un error. Una cadena no se puede asignar a una variable de tipo *int*:
+Un intento de poner en una variable un valor de otro tipo provoca un error. Una cadena no se puede asignar a una variable de tipo _int_:
 
 ```java
 // Error: incompatible types: java.lang.String cannot be converted to int

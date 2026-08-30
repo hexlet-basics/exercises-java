@@ -28,8 +28,7 @@ Primitive data types in Java:
 - Strings in quotes
 - The numbers `7`,` -198`, `0` and so on
 
-In fact, there are more, but now let's talk only about them.
----
+## In fact, there are more, but now let's talk only about them
 
 There are different ways to present data in programs.
 

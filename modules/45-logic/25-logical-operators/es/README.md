@@ -43,7 +43,7 @@ a && (b || c); // Con paréntesis queda claro qué se refiere a qué
 
 Veamos otro ejemplo. Imaginemos que queremos comprar un apartamento que cumpla estas condiciones:
 
-> Más de 100 m² en cualquier calle **O** más de 80 m² en la calle central *Main Street*
+> Más de 100 m² en cualquier calle **O** más de 80 m² en la calle central _Main Street_
 
 Escribamos un método que comprueba el apartamento. Recibe dos parámetros, el área y el nombre de la calle. Las cadenas las comparamos con `.equals(...)`, porque para las cadenas esa es la forma correcta de comprobar la igualdad:
 
@@ -70,7 +70,7 @@ El área de las matemáticas en la que se estudian los operadores lógicos se ll
 ### El operador Y `&&`
 
 | A     | B     | A && B   |
-| ----- | ----- | -------  |
+| ----- | ----- | -------- |
 | true  | true  | **true** |
 | true  | false | false    |
 | false | true  | false    |
@@ -79,8 +79,8 @@ El área de las matemáticas en la que se estudian los operadores lógicos se ll
 ### El operador O `||`
 
 | A     | B     | A &VerticalSeparator;&VerticalSeparator; B |
-| ----- | ----- | -------- |
-| true  | true  | **true** |
-| true  | false | **true** |
-| false | true  | **true** |
-| false | false | false    |
+| ----- | ----- | ------------------------------------------ |
+| true  | true  | **true**                                   |
+| true  | false | **true**                                   |
+| false | true  | **true**                                   |
+| false | false | false                                      |

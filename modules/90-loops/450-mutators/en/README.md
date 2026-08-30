@@ -49,5 +49,5 @@ It becomes especially complicated when an increment is inserted inside other ope
 
 Recommendations for use:
 
-* Never mix operations without side effects with operations with side effects. The same goes for methods
-* Use increment and decrement only where there is no difference between the prefix and the postfix variant — separately from everything, on a separate line of code
+- Never mix operations without side effects with operations with side effects. The same goes for methods
+- Use increment and decrement only where there is no difference between the prefix and the postfix variant — separately from everything, on a separate line of code
