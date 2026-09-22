@@ -67,7 +67,7 @@ The parentheses around `area >= 80 && "Main Street".equals(street)` set the prio
 
 The area of mathematics in which logical operators are studied is called boolean algebra. **Truth tables** show what the result will be when each operator is applied.
 
-### The AND operator `&&`
+### The AND operator &&
 
 | A     | B     | A && B   |
 | ----- | ----- | -------- |
@@ -76,7 +76,7 @@ The area of mathematics in which logical operators are studied is called boolean
 | false | true  | false    |
 | false | false | false    |
 
-### The OR operator `||`
+### The OR operator ||
 
 | A     | B     | A &VerticalSeparator;&VerticalSeparator; B |
 | ----- | ----- | ------------------------------------------ |

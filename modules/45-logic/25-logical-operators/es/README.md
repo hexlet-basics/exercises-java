@@ -67,7 +67,7 @@ Los paréntesis alrededor de `area >= 80 && "Main Street".equals(street)` marcan
 
 El área de las matemáticas en la que se estudian los operadores lógicos se llama álgebra booleana. Las **tablas de verdad** muestran cuál será el resultado al aplicar cada operador.
 
-### El operador Y `&&`
+### El operador Y &&
 
 | A     | B     | A && B   |
 | ----- | ----- | -------- |
@@ -76,7 +76,7 @@ El área de las matemáticas en la que se estudian los operadores lógicos se ll
 | false | true  | false    |
 | false | false | false    |
 
-### El operador O `||`
+### El operador O ||
 
 | A     | B     | A &VerticalSeparator;&VerticalSeparator; B |
 | ----- | ----- | ------------------------------------------ |
