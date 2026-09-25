@@ -1,10 +1,9 @@
 public class App {
     public static void main(String[] args) {
         // BEGIN
-        var firstNumber = 1.10;
-        var secondNumber = -100;
+        var maxLoginAttempts = 2;
 
-        System.out.println(firstNumber * secondNumber);
+        System.out.println(maxLoginAttempts);
         // END
     }
 }

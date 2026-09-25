@@ -7,7 +7,7 @@ import java.io.PrintStream;
 
 class AppTest {
     public static void main(String[] args) {
-        final var expected = "-110.00000000000001";
+        final var expected = "2";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));

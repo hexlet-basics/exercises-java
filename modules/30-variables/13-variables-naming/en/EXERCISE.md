@@ -1,8 +1,5 @@
+Create a variable that describes the maximum number of login attempts and assign it the value `2`. Print its value.
 
-Create two variables named "first number" and "second number" in English, using lowerCamelCase. Write the number `1.10` into the first variable, and `-100` into the second. Print the product of the numbers written in the resulting variables to the screen.
+## Extra
 
-```text
--110.00000000000001
-```
-
-The code will work with any names, and our system always checks only the result on the screen, so completing this task is your responsibility.
+Once the exercise is passed, compare your variable name with the name used in the teacher's solution.

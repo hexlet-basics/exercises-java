@@ -1,8 +1,5 @@
+Crea una variable que describa la cantidad máxima de intentos de entrada en el sistema y asígnale el valor `2`. Muestra el valor en pantalla.
 
-Crea dos variables con los nombres «primer número» y «segundo número» en inglés, utilizando lowerCamelCase. Escribe el número `1.10` en la primera variable y `-100` en la segunda. Imprime en pantalla el producto de los números almacenados en las variables resultantes.
+## Extra
 
-```text
--110.00000000000001
-```
-
-El código funcionará con cualquier nombre, y nuestro sistema siempre verifica solo el resultado en pantalla, por lo que completar esta tarea es tu responsabilidad.
+Cuando el ejercicio esté superado, compara el nombre de tu variable con el nombre que se usa en la solución del profesor.
