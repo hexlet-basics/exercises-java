@@ -8,7 +8,7 @@ import java.io.PrintStream;
 class AppTest {
 
     public static void main(String[] args) {
-        final var expected = "87";
+        final var expected = "87\n29";
 
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
