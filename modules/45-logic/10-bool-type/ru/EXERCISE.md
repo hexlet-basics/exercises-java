@@ -5,5 +5,6 @@
 
 ```java
 App.isPensioner(75); // true
+App.isPensioner(60); // true
 App.isPensioner(18); // false
 ```
