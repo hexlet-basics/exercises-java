@@ -58,3 +58,11 @@ public static boolean isFirstLetterInUpperCase(String string) {
 App.isFirstLetterInUpperCase("marmont"); // false
 App.isFirstLetterInUpperCase("Robb"); // true
 ```
+
+Символ типа _char_ относится к примитивным типам, и методов у него нет. Запись `firstLetter.isUpperCase()` не компилируется, и Java сообщает об этом ошибкой `char cannot be dereferenced`. Методы для работы с символами собраны в классе `Character`, и символ передается им аргументом. Там же лежат методы, которые переводят символ в другой регистр.
+
+```java
+Character.isUpperCase('R'); // true
+Character.toUpperCase('r'); // 'R'
+Character.toLowerCase('R'); // 'r'
+```
