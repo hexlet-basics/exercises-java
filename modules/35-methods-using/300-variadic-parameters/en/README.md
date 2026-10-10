@@ -3,10 +3,16 @@ Most methods take a fixed number of arguments: as many parameters as are specifi
 A good example is the `String.join()` method. It joins strings with a separator, and the number of strings being joined can be any:
 
 ```java
-String.join("-", "2024", "01", "15");    // "2024-01-15"
-String.join(" ", "Hello", "world");      // "Hello world"
-String.join(", ", "a", "b", "c", "d");   // "a, b, c, d"
+public class App {
+    public static void main(String[] args) {
+        System.out.println(String.join("-", "2024", "01", "15")); // "2024-01-15"
+        System.out.println(String.join(" ", "Hello", "world")); // "Hello world"
+        System.out.println(String.join(", ", "a", "b", "c", "d")); // "a, b, c, d"
+    }
+}
 ```
+
+All three calls return a string. To see it in the console, pass the result to `System.out.println()`.
 
 The first argument is the separator, and everything that comes after it is the variable number of strings. In the first call there are three of them, in the second — two, in the third — four. The method itself adapts to any number of arguments.
 
@@ -17,11 +23,12 @@ The `String.format()` and `System.out.printf()` methods work the same way — th
 When a method is declared, the variable number of parameters is written using three dots after the type:
 
 ```java
-// String... values is exactly the variable number of string arguments
 public static String join(String separator, String... values) {
-    // here is the code that processes values
+    return String.join(separator, values);
 }
 ```
+
+Our `join()` method calls `String.join()` with the arguments it receives. The `return` statement passes the resulting string back to the code that called our method. When a method has the return type `String`, printing with `System.out.println()` does not replace returning the string.
 
 The notation `String...` means "zero or more strings". Required parameters (like `separator`) go first, and the variable part is always last.
 

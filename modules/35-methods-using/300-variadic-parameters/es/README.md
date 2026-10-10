@@ -3,10 +3,16 @@ La mayoría de los métodos aceptan un número fijo de argumentos: hay que pasar
 Un buen ejemplo es el método `String.join()`. Une cadenas con un separador, y la cantidad de cadenas que se unen puede ser cualquiera:
 
 ```java
-String.join("-", "2024", "01", "15");    // "2024-01-15"
-String.join(" ", "Hola", "mundo");       // "Hola mundo"
-String.join(", ", "a", "b", "c", "d");   // "a, b, c, d"
+public class App {
+    public static void main(String[] args) {
+        System.out.println(String.join("-", "2024", "01", "15")); // "2024-01-15"
+        System.out.println(String.join(" ", "Hola", "mundo")); // "Hola mundo"
+        System.out.println(String.join(", ", "a", "b", "c", "d")); // "a, b, c, d"
+    }
+}
 ```
+
+Las tres llamadas devuelven una cadena. Para verla en la consola, pasa el resultado a `System.out.println()`.
 
 El primer argumento es el separador, y todo lo que viene después es el número variable de cadenas. En la primera llamada hay tres, en la segunda dos, en la tercera cuatro. El método se adapta por sí mismo a cualquier cantidad de argumentos.
 
@@ -17,11 +23,12 @@ Los métodos `String.format()` y `System.out.printf()` funcionan de la misma man
 Cuando se declara un método, el número variable de parámetros se escribe con tres puntos después del tipo:
 
 ```java
-// String... values es justamente el número variable de argumentos de cadena
 public static String join(String separator, String... values) {
-    // aquí va el código que procesa values
+    return String.join(separator, values);
 }
 ```
+
+Nuestro método `join()` llama a `String.join()` con los argumentos recibidos. La instrucción `return` entrega la cadena al código que llamó a nuestro método. Si el tipo de retorno del método es `String`, imprimir con `System.out.println()` no sustituye la devolución de la cadena.
 
 La notación `String...` significa "cero o más cadenas". Los parámetros obligatorios (como `separator`) van primero, y la parte variable siempre va al final.
 
