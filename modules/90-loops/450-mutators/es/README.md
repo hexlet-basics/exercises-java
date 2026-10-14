@@ -32,10 +32,10 @@ La regla funciona de la misma manera para el incremento y el decremento. Para si
 var x = 5;
 
 System.out.println(++x); // => 6
-System.out.println(x);   // => 6
+System.out.println(x); // => 6
 
 System.out.println(x++); // => 6
-System.out.println(x);   // => 7
+System.out.println(x); // => 7
 ```
 
 Lo que sucede en el código anterior:
@@ -46,6 +46,8 @@ Lo que sucede en el código anterior:
 4. Como el valor ha cambiado, `System.out.println(x)` imprime 7.
 
 Se vuelve especialmente complicado cuando se inserta el incremento en otras operaciones: `x = i++ - 7 + --h`. Es casi imposible entender un código así.
+
+Un efecto secundario es un cambio de estado además de obtener el resultado de una expresión. En `x++` es el cambio de la propia variable `x`. Por ejemplo, después de `var height = x++`, `height` contiene el valor anterior de `x` y `x` ya ha aumentado en uno. Por eso hay que considerar por separado el resultado de la expresión y el estado de la variable.
 
 Recomendaciones de uso:
 

@@ -21,7 +21,9 @@ System.out.println(year); // => 2034
 
 El método se llama en la cadena a través de un punto. El primer argumento indica el índice de inicio, el segundo indica el índice de fin. El formato de la llamada es así:
 
-```java
+Esta escritura esquemática muestra el orden de los argumentos.
+
+```text
 cadena.substring(inicio, fin)
 ```
 
@@ -31,8 +33,8 @@ El carácter con el índice de inicio se incluye en el resultado, pero el carác
 var value = "code-basics";
 
 System.out.println(value.substring(5, 11)); // => basics (del índice 5 al 10)
-System.out.println(value.substring(0, 7));  // => code-ba (del índice 0 al 6)
-System.out.println(value.substring(2, 6));  // => de-b
+System.out.println(value.substring(0, 7)); // => code-ba (del índice 0 al 6)
+System.out.println(value.substring(2, 6)); // => de-b
 ```
 
 ¿Cómo se calcula todo esto? Cuando trabajamos con una cadena concreta, casi siempre lo calculamos a ojo.
@@ -64,7 +66,7 @@ La llamada `value.substring(3)` toma los caracteres desde el índice `3` y en ad
 
 ## Salida fuera de los límites de la cadena
 
-Los índices deben caer dentro de la cadena. Si pasas un índice mayor que la longitud de la cadena, el método lanza un error:
+Los límites deben estar entre cero y la longitud de la cadena, inclusive, y el inicio no debe superar el fin. Si pasas un índice mayor que la longitud de la cadena, el método lanza un error:
 
 ```java
 var value = "Hexlet";
@@ -75,3 +77,5 @@ System.out.println(value.substring(0, 10));
 La cadena `"Hexlet"` tiene seis caracteres, por lo que el índice de fin no puede ser mayor que `6`. Pasamos `10`, y el método terminó con el error `StringIndexOutOfBoundsException`. Antes de la llamada, conviene asegurarse de que los índices estén dentro de los límites de la cadena.
 
 Lo principal es entender la estructura básica `cadena.substring(inicio, fin)`, y en la práctica estas llamadas se convertirán rápidamente en un hábito.
+
+En `substring(begin, end)`, el límite final `end` puede ser igual a la longitud de la cadena, porque el carácter de ese límite no se incluye en el resultado. El límite inicial también puede ser igual a la longitud. Por ejemplo, `"Hexlet".substring(6)` devuelve la cadena vacía `""`.
