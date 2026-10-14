@@ -10,31 +10,35 @@ A compound logical expression in Java always evaluates to `true` or `false`. The
 
 ## The order of evaluation
 
-Arithmetic, comparisons and logical operators occur in one expression. Java evaluates them in a strict order of priorities:
+Arithmetic, comparisons and logical operators occur in one expression. Priority determines how the operators are grouped in the expression:
 
 ```text
 Priority (from high to low):
 
   ()                   parentheses
    ↓
-  * / %  + -           arithmetic
-   ↓
-  < <= > >=  == !=     comparisons
-   ↓
   !                    negation
+   ↓
+  * / %                multiplication, division, remainder
+   ↓
+  + -                  addition, subtraction
+   ↓
+  < <= > >=            numeric comparisons
+   ↓
+  == !=                equality
    ↓
   &&                   logical AND
    ↓
   ||                   logical OR
 ```
 
-First the arithmetic is calculated, then the comparisons give `true` or `false`, and only after that the logical operators join these values. The `&&` operator is true when both operands are true. The `||` operator is true when at least one is true. The `!` operator changes a value to the opposite one.
+Arithmetic has higher priority than comparisons, and comparisons bind more tightly than `&&` and `||`. Negation `!` has higher priority than comparisons. Thus, `!true == false` means `(!true) == false`. To negate the result of a comparison, use parentheses, as in `!(age >= 18)`. The operands themselves are evaluated from left to right, respecting short-circuit evaluation. The `&&` operator is true when both operands are true. The `||` operator is true when at least one is true. The `!` operator changes a value to the opposite one.
 
 ## Evaluation step by step
 
 Let's take apart the expression from the example above. We have `age` equal to `20`, and `hasConsent` equal to `true`:
 
-```java
+```text
 age >= 18 && hasConsent
 20 >= 18 && true          // we substituted the values of the variables
 true && true              // the comparison 20 >= 18 gave true
@@ -60,7 +64,7 @@ true                              // all the operands of && are true
 
 ## Parentheses and priority
 
-When `&&` and `||` are mixed in an expression, the order is set by parentheses. Without them `&&` is applied earlier than `||`, and the meaning may turn out not to be the intended one:
+When `&&` and `||` are mixed in an expression, the order is set by parentheses. Without them, `&&` binds its operands more tightly than `||`, and the meaning may turn out not to be the intended one:
 
 ```java
 // && binds b and c, so this is a || (b && c)
@@ -70,7 +74,7 @@ System.out.println(true || false && false); // => true
 System.out.println((true || false) && false); // => false
 ```
 
-The first expression first evaluates `false && false`, gets `false`, and then `true || false` gives `true`. In the second case the parentheses force `true || false` to be evaluated first, this gives `true && false`, and the result is `false`.
+In the first expression, `&&` groups the right-hand part, but this part is skipped. The left operand of `||` is already `true`, so the whole expression evaluates to `true`. In the second case the parentheses force `true || false` to be evaluated first, this gives `true && false`, and the result is `false`.
 
 ## Short-circuit evaluation
 
