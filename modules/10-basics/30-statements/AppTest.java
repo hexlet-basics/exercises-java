@@ -5,7 +5,7 @@ import java.io.PrintStream;
 
 class AppTest {
     public static void main(final String[] args) {
-        final var expected = "Robert\nStannis\nRenly";
+        final var expected = "Order #1337\nStatus: in delivery\nEstimated time: 2 days";
 
         App.main(null);
 
