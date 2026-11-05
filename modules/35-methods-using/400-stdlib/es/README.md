@@ -9,3 +9,64 @@ Aquí hay algunos consejos sobre cómo aprender sobre nuevos métodos:
 - Lee el código de otras personas con más frecuencia, especialmente el código de las bibliotecas que estás utilizando. Todo está disponible en GitHub.
 
 Supongamos que hay que quitar los espacios de los extremos de una cadena. Para buscar el método sirve la [documentación de la clase `String`](https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/String.html). La sección Method Summary muestra los métodos con descripciones breves. Allí `trim()` se describe como un método que devuelve una cadena sin espacios iniciales ni finales. Su enlace abre el contrato detallado. Para `"  Java  "`, la llamada a `trim()` devuelve `"Java"`. Las operaciones numéricas, como el valor absoluto, se encuentran en la [documentación de la clase `Math`](https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Math.html).
+
+## Cómo leer la documentación de un método
+
+La documentación describe qué datos recibe un método y qué resultado devuelve. La referencia de la biblioteca estándar de Java está organizada por clases, y cada clase tiene su propia página. En la página de una clase hay dos secciones que hacen falta para escribir una llamada. La sección Method Summary enumera los métodos de la clase en una tabla, y la sección Method Details describe cada método en detalle.
+
+Veamos el método `indexOf()`, que busca una subcadena y devuelve su posición. En la tabla Method Summary cada fila tiene tres columnas. La columna Modifier and Type muestra el tipo del resultado, la columna Method muestra el nombre del método con sus parámetros, y la columna Description resume lo que hace. Para `indexOf()` la tabla tiene varias filas, entre ellas estas dos.
+
+```text
+int    indexOf(String str)
+int    indexOf(String str, int fromIndex)
+```
+
+Al hacer clic en el nombre del método se abre su descripción en la sección Method Details. Empieza con la declaración completa del método.
+
+```text
+public int indexOf(String str, int fromIndex)
+```
+
+La tabla relaciona las partes de la declaración con los argumentos de la llamada `"Java".indexOf("a", 2)`.
+
+| Parte de la declaración | Qué significa | En la llamada `"Java".indexOf("a", 2)` |
+| --- | --- | --- |
+| `public` | El método está disponible desde cualquier código | Llamamos al método desde nuestro programa |
+| `int` | Tipo del resultado, un número entero | Obtenemos la posición del carácter |
+| `indexOf` | Nombre del método | Llamamos a `indexOf()` sobre la cadena `"Java"` |
+| `String str` | Parámetro de tipo `String`, la subcadena que se busca | Pasamos `"a"` |
+| `int fromIndex` | Parámetro de tipo `int`, la posición donde empieza la búsqueda | Pasamos `2` |
+
+Debajo de la declaración están las secciones Parameters y Returns. La sección Parameters explica cada parámetro. De `fromIndex` dice que es el índice desde el que empieza la búsqueda. La sección Returns describe el resultado. El método devuelve la posición de la primera aparición de la subcadena a partir del índice indicado, o `-1` si no la encuentra. La declaración muestra qué argumentos pasar, y la descripción explica qué se obtiene.
+
+```java
+System.out.println("Java".indexOf("a")); // => 1
+System.out.println("Java".indexOf("a", 2)); // => 3
+System.out.println("Java".indexOf("a", 4)); // => -1
+```
+
+La primera llamada encuentra la primera `a` en la posición `1`. La segunda empieza a buscar en la posición `2` y encuentra la segunda `a` en la posición `3`. La tercera empieza en la posición `4`, donde la cadena ya terminó, así que devuelve `-1`, tal como indica la sección Returns.
+
+## Sobrecargas en lugar de parámetros opcionales
+
+En Java los parámetros de un método no tienen valores por defecto. Si un argumento se puede omitir, la clase declara varios métodos con el mismo nombre y distintos parámetros. Estos métodos se llaman **sobrecargas**. Por eso en Method Summary `indexOf()` aparece en varias filas. La versión `indexOf(String str)` busca desde el principio de la cadena, y la versión `indexOf(String str, int fromIndex)` busca desde la posición indicada.
+
+Java elige la sobrecarga según los argumentos de la llamada. La llamada `"Java".indexOf("a")` con una cadena va a la primera versión, y la llamada `"Java".indexOf("a", 2)` con una cadena y un número va a la segunda. Para saber en qué se diferencian las versiones, se lee la descripción de cada una.
+
+## Notación en la referencia
+
+En las declaraciones de los métodos aparecen palabras y signos auxiliares. Ayudan a leer la declaración y no se copian en la llamada.
+
+| Notación en la referencia | Cómo leerla |
+| --- | --- |
+| `int indexOf(String str)` | El tipo va delante del nombre. `int` a la izquierda del método es el tipo del resultado, y `String` delante de `str` es el tipo del parámetro |
+| `static int max(int a, int b)` | La palabra `static` indica que el método se llama a través del nombre de la clase, por ejemplo `Math.max(3, 7)` |
+| `static String join(CharSequence delimiter, CharSequence... elements)` | Los puntos suspensivos después del tipo indican que en ese lugar se puede pasar cualquier cantidad de argumentos |
+
+Por ejemplo, la declaración `static int max(int a, int b)` de la referencia de la clase `Math` describe un método con dos parámetros. La llamada `Math.max(3, 7)` pasa los números `3` y `7` y devuelve `7`. Ni `static`, ni los tipos, ni los nombres `a` y `b` se copian en la llamada. En la declaración de `join()` aparece el tipo `CharSequence`. En su lugar también sirven cadenas, por eso la llamada `String.join(":", "8", "30")` funciona igual que en la lección sobre la cantidad variable de parámetros.
+
+Si el navegador traduce la página, hay que comparar los nombres de métodos y parámetros y los tipos con el original. En el código se usan los nombres originales de la documentación.
+
+## Trabajar con un método desconocido
+
+La lectura de la referencia empieza por la tarea. Por ejemplo, para encontrar la segunda `a` de una palabra, abrimos la página de la clase `String`, en Method Summary buscamos las sobrecargas de `indexOf()`, en Method Details leemos qué hace `fromIndex` y probamos la llamada `"Java".indexOf("a", 2)` en [JShell](https://onecompiler.com/jshell). Si el resultado coincide con la descripción, la llamada se puede usar en el programa.
