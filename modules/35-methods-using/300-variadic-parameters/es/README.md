@@ -35,3 +35,5 @@ La notación `String...` significa "cero o más cadenas". Los parámetros obliga
 ## Para qué sirve
 
 El número variable de parámetros hace que los métodos sean flexibles. No hay que crear métodos separados `join2()`, `join3()`, `join4()` para cada cantidad de cadenas: basta con un solo método que acepte cualquier cantidad de ellas. Esto elimina la duplicación y simplifica el trabajo con la biblioteca estándar: una enorme cantidad de sus métodos está diseñada precisamente para un número variable de argumentos.
+
+La escritura simplificada `String.join(String delimiter, String... values)` muestra los parámetros del método para argumentos de tipo cadena. Aquí `delimiter` recibe una cadena separadora y `values` recibe las cadenas que se unen. En `String.join(":", "8", "30", "00")`, `":"` es el separador y los otros tres argumentos corresponden a `values`. No hace falta declarar un método propio para esta llamada, ya que forma parte de la clase `String`.

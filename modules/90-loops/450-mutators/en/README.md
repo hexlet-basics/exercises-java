@@ -32,10 +32,10 @@ The rule works the same way for increment and decrement. For simplicity let's co
 var x = 5;
 
 System.out.println(++x); // => 6
-System.out.println(x);   // => 6
+System.out.println(x); // => 6
 
 System.out.println(x++); // => 6
-System.out.println(x);   // => 7
+System.out.println(x); // => 7
 ```
 
 What happens in the code above:
@@ -46,6 +46,8 @@ What happens in the code above:
 4. Since the value changed, `System.out.println(x)` printed 7
 
 It becomes especially complicated when an increment is inserted inside other operations: `x = i++ - 7 + --h`. It is almost impossible to understand such code.
+
+A side effect is a change of state in addition to producing the result of an expression. For `x++`, it is the change to the variable `x` itself. For example, after `var height = x++`, `height` holds the previous value of `x`, and `x` has increased by one. You therefore need to track the expression result and the variable state separately.
 
 Recommendations for use:
 

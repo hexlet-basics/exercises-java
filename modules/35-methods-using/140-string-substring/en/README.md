@@ -21,7 +21,9 @@ System.out.println(year); // => 2034
 
 The method is called on the string through a dot. The first argument sets the start index, the second sets the end index. The call format is:
 
-```java
+This schematic notation shows the order of the arguments.
+
+```text
 string.substring(start, end)
 ```
 
@@ -31,8 +33,8 @@ The character at the start index is included in the result, but the character at
 var value = "code-basics";
 
 System.out.println(value.substring(5, 11)); // => basics (indexes 5 through 10)
-System.out.println(value.substring(0, 7));  // => code-ba (indexes 0 through 6)
-System.out.println(value.substring(2, 6));  // => de-b
+System.out.println(value.substring(0, 7)); // => code-ba (indexes 0 through 6)
+System.out.println(value.substring(2, 6)); // => de-b
 ```
 
 How do you count all this? When working with a specific string, we almost always count by eye.
@@ -64,7 +66,7 @@ The call `value.substring(3)` takes characters from index `3` and further to the
 
 ## Going out of the string bounds
 
-The indexes must fall inside the string. If you pass an index greater than the string length, the method throws an error:
+The boundaries must range from zero to the string length, inclusive, and the start must not exceed the end. If you pass an index greater than the string length, the method throws an error:
 
 ```java
 var value = "Hexlet";
@@ -75,3 +77,5 @@ System.out.println(value.substring(0, 10));
 The string `"Hexlet"` has six characters, so the end index cannot be greater than `6`. We passed `10`, and the method terminated with a `StringIndexOutOfBoundsException` error. Before the call, you should make sure that the indexes are within the string bounds.
 
 The main thing is to understand the basic structure `string.substring(start, end)`, and in practice these calls will quickly become a habit.
+
+For `substring(begin, end)`, the end boundary `end` can equal the length of the string because the character at that boundary is excluded from the result. The start boundary can also equal the length. For example, `"Hexlet".substring(6)` returns the empty string `""`.

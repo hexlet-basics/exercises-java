@@ -10,31 +10,35 @@ Una expresión lógica compuesta en Java siempre se evalúa a `true` o a `false`
 
 ## El orden de evaluación
 
-En una misma expresión coinciden aritmética, comparaciones y operadores lógicos. Java los evalúa en un orden estricto de prioridades:
+En una misma expresión coinciden aritmética, comparaciones y operadores lógicos. La prioridad determina cómo se agrupan los operadores en la expresión:
 
 ```text
 Prioridad (de la más alta a la más baja):
 
   ()                   paréntesis
    ↓
-  * / %  + -           aritmética
-   ↓
-  < <= > >=  == !=     comparaciones
-   ↓
   !                    negación
+   ↓
+  * / %                multiplicación, división, resto
+   ↓
+  + -                  suma, resta
+   ↓
+  < <= > >=            comparación de números
+   ↓
+  == !=                igualdad
    ↓
   &&                   Y lógico
    ↓
   ||                   O lógico
 ```
 
-Primero se calcula la aritmética, después las comparaciones dan `true` o `false`, y solo entonces los operadores lógicos unen esos valores. El operador `&&` es verdadero cuando son verdaderos los dos operandos. El operador `||` es verdadero cuando es verdadero al menos uno. El operador `!` cambia el valor por el contrario.
+La aritmética tiene mayor prioridad que las comparaciones, y las comparaciones se agrupan antes que `&&` y `||`. La negación `!` tiene mayor prioridad que las comparaciones. Por eso `!true == false` significa `(!true) == false`. Para negar el resultado de una comparación hacen falta paréntesis, por ejemplo `!(age >= 18)`. Los operandos se evalúan de izquierda a derecha, respetando la evaluación abreviada. El operador `&&` es verdadero cuando son verdaderos los dos operandos. El operador `||` es verdadero cuando es verdadero al menos uno. El operador `!` cambia el valor al opuesto.
 
 ## La evaluación paso a paso
 
 Analicemos la expresión del ejemplo de arriba. Tenemos `age` igual a `20` y `hasConsent` igual a `true`:
 
-```java
+```text
 age >= 18 && hasConsent
 20 >= 18 && true          // sustituimos los valores de las variables
 true && true              // la comparación 20 >= 18 dio true
@@ -60,7 +64,7 @@ true                              // todos los operandos de && son verdaderos
 
 ## Los paréntesis y la prioridad
 
-Cuando en una expresión se mezclan `&&` y `||`, el orden lo marcan los paréntesis. Sin ellos, `&&` se aplica antes que `||`, y el sentido puede no ser el que se pretendía:
+Cuando en una expresión se mezclan `&&` y `||`, el orden lo marcan los paréntesis. Sin ellos, `&&` agrupa sus operandos con mayor prioridad que `||`, y el sentido puede no ser el que se pretendía:
 
 ```java
 // && une b y c, por eso esto es a || (b && c)
@@ -70,7 +74,7 @@ System.out.println(true || false && false); // => true
 System.out.println((true || false) && false); // => false
 ```
 
-La primera expresión calcula primero `false && false`, obtiene `false`, y después `true || false` da `true`. En el segundo caso los paréntesis obligan a calcular `true || false` primero, sale `true && false`, y el resultado es `false`.
+En la primera expresión, `&&` agrupa la parte derecha, pero esta no se evalúa. El operando izquierdo de `||` ya es `true`, por lo que el resultado de toda la expresión es `true`. En el segundo caso, los paréntesis obligan a calcular `true || false` primero, sale `true && false`, y el resultado es `false`.
 
 ## La evaluación abreviada
 

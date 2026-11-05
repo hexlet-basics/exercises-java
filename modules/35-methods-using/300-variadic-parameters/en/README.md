@@ -35,3 +35,5 @@ The notation `String...` means "zero or more strings". Required parameters (like
 ## Why it's needed
 
 A variable number of parameters makes methods flexible. There is no need to create separate methods `join2()`, `join3()`, `join4()` for each number of strings — one method is enough, which accepts any number of them. This removes duplication and simplifies working with the standard library: a huge number of its methods are designed precisely for a variable number of arguments.
+
+The simplified notation `String.join(String delimiter, String... values)` shows the method parameters for string arguments. Here, `delimiter` takes one separator string, and `values` takes the strings to join. In `String.join(":", "8", "30", "00")`, `":"` is the separator, and the other three arguments belong to `values`. You can call this method without declaring your own, since it already belongs to the `String` class.
