@@ -14,18 +14,37 @@ Suppose you need to remove spaces from the ends of a string. Start with the [doc
 
 Documentation describes what data a method accepts and what result it returns. The reference for the Java standard library is organized by classes, and each class has its own page. A class page has two sections you need to write a call. The Method Summary section lists the class's methods in a table, and the Method Details section describes each method in detail.
 
-Let's look at the `indexOf()` method, which searches for a substring and returns its position. Each row of the Method Summary table has three columns. The Modifier and Type column shows the result type, the Method column shows the method name with its parameters, and the Description column briefly says what it does. The table has several rows for `indexOf()`, including these two.
+Let's look at the `indexOf()` method, which searches for a substring and returns its position. For each method, the Method Summary table shows the result type, the name with parameters, and a short description. The table has several rows for `indexOf()`, including these two.
 
 ```text
 int    indexOf(String str)
 int    indexOf(String str, int fromIndex)
 ```
 
-Clicking the method name opens its description in the Method Details section. It starts with the full method declaration.
+Clicking the method name opens its description in the Method Details section. Here is the description of the second version, with part of the text omitted.
 
 ```text
 public int indexOf(String str, int fromIndex)
+
+Returns the index within this string of the first occurrence of the
+specified substring, starting at the specified index.
+...
+
+Parameters:
+    str - the substring to search for.
+    fromIndex - the index from which to start the search.
+Returns:
+    the index of the first occurrence of the specified substring,
+    starting at the specified index, or -1 if there is no such occurrence.
 ```
+
+Read the description from top to bottom.
+
+1. The first line is the method declaration with the result type, name, and parameters.
+2. The first sentence briefly says what the method does.
+3. Details follow. They may include formulas and notes, which you can skip on a first read.
+4. The Parameters section explains each parameter by its name from the declaration. Here `fromIndex` is the index where the search starts.
+5. The Returns section describes the result, including special cases. Here the method returns `-1` if the substring is not found.
 
 The table matches the parts of the declaration to the arguments of the call `"Java".indexOf("a", 2)`.
 
@@ -37,7 +56,7 @@ The table matches the parts of the declaration to the arguments of the call `"Ja
 | `String str` | A `String` parameter, the substring to search for | We pass `"a"` |
 | `int fromIndex` | An `int` parameter, the position where the search starts | We pass `2` |
 
-Below the declaration come the Parameters and Returns sections. The Parameters section explains each parameter. It says `fromIndex` is the index to start the search from. The Returns section describes the result. The method returns the position of the first occurrence of the substring starting at the given index, or `-1` if there is none. The declaration shows which arguments to pass, and the description explains what you get.
+The declaration shows which arguments to pass, and the description explains what you get. Let's check it with calls.
 
 ```java
 System.out.println("Java".indexOf("a")); // => 1

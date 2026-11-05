@@ -14,18 +14,37 @@ Supongamos que hay que quitar los espacios de los extremos de una cadena. Para b
 
 La documentación describe qué datos recibe un método y qué resultado devuelve. La referencia de la biblioteca estándar de Java está organizada por clases, y cada clase tiene su propia página. En la página de una clase hay dos secciones que hacen falta para escribir una llamada. La sección Method Summary enumera los métodos de la clase en una tabla, y la sección Method Details describe cada método en detalle.
 
-Veamos el método `indexOf()`, que busca una subcadena y devuelve su posición. En la tabla Method Summary cada fila tiene tres columnas. La columna Modifier and Type muestra el tipo del resultado, la columna Method muestra el nombre del método con sus parámetros, y la columna Description resume lo que hace. Para `indexOf()` la tabla tiene varias filas, entre ellas estas dos.
+Veamos el método `indexOf()`, que busca una subcadena y devuelve su posición. En la tabla Method Summary cada método indica el tipo del resultado, el nombre con sus parámetros y una descripción breve. Para `indexOf()` la tabla tiene varias filas, entre ellas estas dos.
 
 ```text
 int    indexOf(String str)
 int    indexOf(String str, int fromIndex)
 ```
 
-Al hacer clic en el nombre del método se abre su descripción en la sección Method Details. Empieza con la declaración completa del método.
+Al hacer clic en el nombre del método se abre su descripción en la sección Method Details. Abajo está la descripción de la segunda versión, con una parte del texto omitida.
 
 ```text
 public int indexOf(String str, int fromIndex)
+
+Returns the index within this string of the first occurrence of the
+specified substring, starting at the specified index.
+...
+
+Parameters:
+    str - the substring to search for.
+    fromIndex - the index from which to start the search.
+Returns:
+    the index of the first occurrence of the specified substring,
+    starting at the specified index, or -1 if there is no such occurrence.
 ```
+
+La descripción se lee de arriba abajo, paso a paso.
+
+1. La primera línea contiene la declaración del método con el tipo del resultado, el nombre y los parámetros.
+2. La primera oración resume qué hace el método.
+3. Luego vienen los detalles. A veces incluyen fórmulas y notas, y en la primera lectura se pueden saltar.
+4. La sección Parameters explica cada parámetro por el nombre que tiene en la declaración. Aquí `fromIndex` es el índice desde el que empieza la búsqueda.
+5. La sección Returns describe el resultado, incluidos los casos especiales. Aquí el método devuelve `-1` si no encuentra la subcadena.
 
 La tabla relaciona las partes de la declaración con los argumentos de la llamada `"Java".indexOf("a", 2)`.
 
@@ -37,7 +56,7 @@ La tabla relaciona las partes de la declaración con los argumentos de la llamad
 | `String str` | Parámetro de tipo `String`, la subcadena que se busca | Pasamos `"a"` |
 | `int fromIndex` | Parámetro de tipo `int`, la posición donde empieza la búsqueda | Pasamos `2` |
 
-Debajo de la declaración están las secciones Parameters y Returns. La sección Parameters explica cada parámetro. De `fromIndex` dice que es el índice desde el que empieza la búsqueda. La sección Returns describe el resultado. El método devuelve la posición de la primera aparición de la subcadena a partir del índice indicado, o `-1` si no la encuentra. La declaración muestra qué argumentos pasar, y la descripción explica qué se obtiene.
+La declaración muestra qué argumentos pasar, y la descripción explica qué se obtiene. Comprobémoslo con llamadas.
 
 ```java
 System.out.println("Java".indexOf("a")); // => 1
