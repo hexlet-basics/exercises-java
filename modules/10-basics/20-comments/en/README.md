@@ -39,7 +39,7 @@ System.out.println("I am the King"); // => For Lannisters!
 System.out.println("I am the King"); // => I am the King
 ```
 
-**Documentation comments** start with `/**` and end with `*/`. For these, it is required to start each line with the `*` character.
+**Documentation comments** start with `/**` and end with `*/`. It is also customary to start each line in them with the `*` character, although javadoc works without it.
 
 Documentation comments are a subtype of multi-line comments. In addition, they serve an extra function — they can be collected using the special javadoc tool and produced as documentation for your code. We'll talk about them later, when we cover classes and methods.
 

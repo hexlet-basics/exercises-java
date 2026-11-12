@@ -39,7 +39,7 @@ System.out.println("I am the King"); // => For Lannisters!
 System.out.println("I am the King"); // => I am the King
 ```
 
-**Comentarios de documentación** que comienzan con `/**` y terminan con `*/`. Para estos ya es obligatorio comenzar cada línea con el carácter `*`.
+**Comentarios de documentación** que comienzan con `/**` y terminan con `*/`. En ellos también es habitual comenzar cada línea con el carácter `*`, aunque javadoc funciona sin él.
 
 Los comentarios de documentación son un subtipo de los comentarios de varias líneas. Además, cumplen una función adicional: se pueden recopilar con la herramienta especial javadoc y generar como documentación de tu código. Hablaremos de ellos más adelante, cuando veamos las clases y los métodos.
 
