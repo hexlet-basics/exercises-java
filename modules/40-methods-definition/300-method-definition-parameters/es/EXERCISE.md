@@ -27,3 +27,5 @@ Este método se puede implementar de distintas maneras; te sugerimos solo una de
   ```
 
 Desde el punto de vista del sistema de comprobación, no importa de qué manera se implemente por dentro el método `truncate()`; lo importante es que cumpla la tarea planteada
+
+No necesitas llamar al método, lo llamarán las pruebas automáticas. El ejemplo de llamada de arriba solo muestra cómo se usará tu método.

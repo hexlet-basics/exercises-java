@@ -1,5 +1,5 @@
 
-Escribe un programa que tome la cantidad inicial de euros almacenada en la variable `eurosCount`, convierta los euros a dólares y lo muestre en pantalla. Luego convierte el valor obtenido a rublos y lo muestra en una nueva línea.
+Escribe un programa que tome la cantidad inicial de euros almacenada en la variable `eurosCount`, convierta los euros a dólares y lo muestre en pantalla. Luego convierte el valor obtenido a rublos y lo muestra en una nueva línea. La variable `eurosCount` ya está declarada en la plantilla, no hace falta declararla de nuevo. Muestra cada valor con una llamada separada a `System.out.println()`, es decir, dos llamadas para dos números.
 
 Ejemplo de salida para 100 euros:
 

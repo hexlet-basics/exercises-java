@@ -27,3 +27,5 @@ This method can be implemented in various ways; we will suggest just one of them
   ```
 
 From the point of view of the checking system it does not matter in which way the `truncate()` method is implemented inside — the main thing is that it does the task at hand
+
+You don't need to call the method, the automated tests will call it. The call example above only shows how your method will be used.
