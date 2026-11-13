@@ -1,9 +1,7 @@
-Print three names on the screen one after another: _Robert_, _Stannis_, _Renly_. As a result, the screen should display:
+Print the delivery status of a parcel to the screen: three lines, each with a separate `System.out.println()` call.
 
 ```text
-Robert
-Stannis
-Renly
+Order #1337
+Status: in delivery
+Estimated time: 2 days
 ```
-
-Use a separate `System.out.println()` call for each name.

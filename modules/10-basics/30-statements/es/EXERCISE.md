@@ -1,9 +1,7 @@
-Muestra en la pantalla, uno tras otro, tres nombres: _Robert_, _Stannis_, _Renly_. Como resultado, en la pantalla debería aparecer:
+Muestra en pantalla el estado de entrega de un paquete: tres líneas, cada una con su propia llamada a `System.out.println()`.
 
 ```text
-Robert
-Stannis
-Renly
+Order #1337
+Status: in delivery
+Estimated time: 2 days
 ```
-
-Usa una llamada `System.out.println()` propia para cada nombre.
