@@ -1,4 +1,4 @@
-Implement the `makeSentence()` method. Inside it, using the `String.join()` method, assemble a sentence from the separate words `Java`, `is`, and `awesome`, separating them with spaces. The method must return the finished string.
+Implement the `makeSentence()` method. Inside it, using the `String.join()` method, assemble a sentence from the separate words `Java`, `is`, and `awesome`, separating them with spaces. The method must return the finished string. The method is already declared in the file, you only need to write its body.
 
 ```java
 App.makeSentence(); // => "Java is awesome"

@@ -1,4 +1,4 @@
-Implementa el método `makeSentence()`. Dentro de él, con el método `String.join()`, arma una oración a partir de las palabras separadas `Java`, `is` y `awesome`, separándolas con espacios. El método debe devolver la cadena resultante.
+Implementa el método `makeSentence()`. Dentro de él, con el método `String.join()`, arma una oración a partir de las palabras separadas `Java`, `is` y `awesome`, separándolas con espacios. El método debe devolver la cadena resultante. El método ya está declarado en el archivo, solo tienes que escribir su cuerpo.
 
 ```java
 App.makeSentence(); // => "Java is awesome"
