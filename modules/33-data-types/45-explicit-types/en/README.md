@@ -47,7 +47,7 @@ The integer `1` turns into `1.0`, and the result comes out as `2.5`. This happen
 
 ## Type inference and the word var
 
-Earlier in Java variables were created only with an explicit type specification, until the word `var` appeared. This is a special keyword that turns on the mechanism of **type inference**. Type inference itself determines the type of the assigned value and binds it to the variable:
+The `var` keyword turns on **type inference**. Type inference determines the type of the assigned value and binds it to the variable.
 
 ```java
 // The compiler understands that this is an integer
@@ -56,7 +56,5 @@ var age = 33;
 // And this is a string
 var name = "Tom";
 ```
-
-Type inference appeared in Java in 2018, although in some other languages it has existed for several decades. The first language with type inference is called ML, and it appeared as early as 1973. Since then, type inference has been added to OCaml, Haskell, C#, F#, Kotlin, Scala, and many other languages.
 
 The word `var` does not cancel static typing. The variable still has a type; the compiler infers it. After that the type is just as fixed, and you will not be able to put a value of another type into such a variable. Type inference is preferable in most situations. It happens that the inferred type does not suit us, and then the type is specified explicitly.
