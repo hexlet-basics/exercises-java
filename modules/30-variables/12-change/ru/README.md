@@ -35,7 +35,7 @@ Java — статически типизированный язык. Тип пе
 ```java
 greeting = 5;
 // Error:
-// incompatible types: int cannot be converted to java.lang.String
+// incompatible types: int cannot be converted to String
 // несовместимые типы: число не может быть превращено в строку
 ```
 

@@ -35,7 +35,7 @@ If you try to assign a number to the same variable, we will get an error:
 ```java
 greeting = 5;
 // Error:
-// incompatible types: int cannot be converted to java.lang.String
+// incompatible types: int cannot be converted to String
 // incompatible types: a number cannot be turned into a string
 ```
 

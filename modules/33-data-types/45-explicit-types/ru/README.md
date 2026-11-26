@@ -22,7 +22,7 @@ String s = "hi";
 Попытка положить в переменную значение другого типа приводит к ошибке. Строку нельзя присвоить переменной типа _int_:
 
 ```java
-// Error: incompatible types: java.lang.String cannot be converted to int
+// Error: incompatible types: String cannot be converted to int
 int ops = "test";
 ```
 

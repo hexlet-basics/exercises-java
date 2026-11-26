@@ -22,7 +22,7 @@ String s = "hi";
 An attempt to put a value of another type into a variable leads to an error. A string cannot be assigned to a variable of type _int_:
 
 ```java
-// Error: incompatible types: java.lang.String cannot be converted to int
+// Error: incompatible types: String cannot be converted to int
 int ops = "test";
 ```
 

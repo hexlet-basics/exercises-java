@@ -55,7 +55,7 @@ byte y = 270;
 ```java
 char ch = 'a';
 
-// Error: incompatible types: java.lang.String cannot be converted to char
+// Error: incompatible types: String cannot be converted to char
 char ch2 = "b";
 ```
 
